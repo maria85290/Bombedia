@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_12.json :}\newline \par\Large\textbf {Title: \large Fernanda Câncio TVI Jornal das 8 12-05-16 }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Que \textbf{mulher} feia e horrorosa q horror ela é  Sócrates são os dois mais q pirosos  e provincianos sem nivel\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small Coitadinha da \textbf{cabra} que foi enganada e não sabia de nada. Esta \textbf{vaca} arrogante tenta agora limpar a sua suja imagem e fazer se de coitadinha e culpa ainda o correio da manhã por dizer a verdade e expor esta \textbf{vaca} pela \textbf{vaca} interesseira que na realidade é. Lamentavel o papel desta \textbf{mulherzinha} .......\normalsize   & \cellcolor{green!5}Cabra, Mulherzinha, Vaca & \cellcolor{green!5}Gender - Female sexuality, Social Class - Working class & \cellcolor{green!5}5/54 & \cellcolor{green!5}9.259 \\  \hline
+  \cellcolor{green!27}\small Puta vendida........andavas a mamar á custa dele.....eras montada e recebias guita.\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}1 & \cellcolor{red!27}1/202& \cellcolor{red!27}0.5 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Cabra, Vaca, Puta & \cellcolor{red!5}5 & \cellcolor{red!5}5/202& \cellcolor{red!5}2.48 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Mulherzinha & \cellcolor{red!27}1 & \cellcolor{red!27}1/202& \cellcolor{red!27}0.5 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Gender - Female sexuality;Social Class - Working class;%.
+
+\item The percentage of hate speech related words is 3.4653.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 7/7 occurences of hate speech related comments.\end{itemize}\end{document}

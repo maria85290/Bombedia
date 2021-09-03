@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_23.json :}\newline \par\Large\textbf {Title: \large Profissão Repórter - Transgêneros - 01 08 2018}\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Acontece comigo , sou brasileiro mas  sinto q sou  Americano nao aceito minha nacionalidade\normalsize   & \cellcolor{green!27}Nacionalidade & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small Sou \textbf{transexual} sou brasileira casada a 8 anos e vivo na belgica . E sou dona de casa bjs hehe\normalsize   & \cellcolor{green!5}Transexual & \cellcolor{green!5}Sexual Identity - Transexuality & \cellcolor{green!5}1/20 & \cellcolor{green!5}5.0 \\  \hline
+  \cellcolor{green!27}\small Como sempre, a rede Globo tentando incentivar a todos os telespectadores a aceitar essa ideia aberrativa de que uma criança pode escolher o seu sexo. Precisamos compreender que uma criança não tem essa maturidade associada a responsabilidade que um adulto tem de entender a complexidade que é trocar o seu \textbf{género} natural por outro. A criança deve ser orientada pelos pais para que ao invés de uma confusão mental como essa seja substituída pela educação, pelo amor e por tudo que venha ajudar a criança a crescer com uma mente saudável e equilibrada. Volto a dizer, uma criança não tem ideia de como um assunto como esse não cabe a ela decidir! Na própria entrevista acima podemos ver que o menino que foi entrevistado não tem equilíbrio emocional, podemos ver através das suas atitudes compulsivas  e tudo o mais...meninonascemenino\&meninanascemenina!\normalsize   & \cellcolor{green!27}Género & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/140 & \cellcolor{green!27}0.714 \\  \hline
+  \cellcolor{green!5}\small O sexo biologico não ( Macho e fêmea) Mas gênero sim ( homem e \textbf{mulher}) pois gênero foi inventado pela sociedade.\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/21 & \cellcolor{green!5}4.762 \\  \hline
+  \cellcolor{green!27}\small \@Canal Da Brigitte A criança é um ser completamente dependente de um responsável para crescer com saúde, para se tornar um indivíduo maduro para que no futuro com saúde e equilíbrio, venha tomar decisões tão decisivas em sua vida. Vemos no vídeo acima que as crianças entrevistadas são completamente desequilibradas. Repito dizendo: uma criança não tem maturidade, não tem consciência, não tem equilíbrio emocional para escolher \textbf{género} nem sexo.\normalsize   & \cellcolor{green!27}Género & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/69 & \cellcolor{green!27}1.449 \\  \hline
+  \cellcolor{green!5}\small acho super errado quando eles tiverem maiores de \textbf{idade} tiverem passado por acompanhamento ai sim se eles quiserem eles devem ser apoiados e respeitados mas uma crianca um adolescente que nao sabe o que quer da vida nao deve ter essa autonomia toda. Eu nao deixaria meus filhos escolherem sem ter maturidade ainda.\normalsize   & \cellcolor{green!5}Idade & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/53 & \cellcolor{green!5}1.887 \\  \hline
+  \cellcolor{green!27}\small Sabrine Lemos primeiramente eu disse como eu vejo a transexualiade em criancas. Quem quiser que deixe seus filhos desde crianca viverem sua transexualidade. Ao meu ver o correto é esperar a pessoa ser maior de \textbf{idade} para que ela possa arcar com as consequencias dos hormonios e da mudanca de genero. Nao disse que eu nao apoiaria ou seria contra mas existem muitos trans que voltam para o sexo que nasceram mesmo depois da transicao. Meus filhos nasceram biologicamente do sexo masculino se eles me disserem que nao se sentem assim que esperem fazer 18 anos para assumirem seu verdadeiro genero. Mas eu de forma alguma vestiria meu filho de menina daria hormonios ou trataria como menina.\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/117 & \cellcolor{green!27}0.855 \\  \hline
+  \cellcolor{green!5}\small \@Jackson Oliveira No final do meu COMENTÁRIO eu escrevi que RESPEITO o posicionamento dessas pessoas na busca pela felicidade...não  acho que seja o caminho, mesmo pq pra mim, felicidade é um estado de espírito, mas afirmo novamente, EU RESPEITO.  Agora...acredito que vcs, homo, bi, trans, pan e sei lá mais o quê,  precisam se aceitar antes de procurar aceitação da sociedade...qualquer discordância ou mero comentário não configura "julgamento", quiçá "\textbf{homofobia}" .Cara, procure paz de espírito, e, se conseguir, siga seu caminho, mas entenda, opinião é pessoal e é um direito...pronto! Ninguém precisa  sofrer por isso...a gente ouve, lê, absorve ou abstrai....morreu a história ...eu hein...\normalsize   & \cellcolor{green!5}Homofobia & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/106 & \cellcolor{green!5}0.943 \\  \hline
+  \cellcolor{green!27}\small Que nojo homem querendo ser \textbf{mulher} e \textbf{mulher} ser homem em que mundo estamos fim do mundo. Jesus está voltando .\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}2/21 & \cellcolor{green!27}9.524 \\  \hline
+  \cellcolor{green!5}\small Não é querer,isso vem de dentro,se fosse pra escolher, ninguém ia escolher passar por humilhação, xingamentos ser chamado de aberração\normalsize   & \cellcolor{green!5}Aberração & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/20 & \cellcolor{green!5}5.0 \\  \hline
+  \cellcolor{green!27}\small Jesus é baitola\normalsize   & \cellcolor{green!27}Baitola & \cellcolor{green!27}Sexual Identity - Male homosexuality & \cellcolor{green!27}1/3 & \cellcolor{green!27}33.333 \\  \hline
+  \cellcolor{green!5}\small Jesus é \textbf{travesti}!\normalsize   & \cellcolor{green!5}Travesti & \cellcolor{green!5}Sexual Identity - Transexuality & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small Ridícula é você com esse preconceito horroroso! Se não gosta, não assista!\normalsize   & \cellcolor{green!27}Ridícula & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small Meu fico triste ,estou pensando seriamente sobre meu eu de vdd mas comentários como esses me fazem não ter coragem, ninguém merece ser visto como uma \textbf{aberração}.\normalsize   & \cellcolor{green!5}Aberração & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/27 & \cellcolor{green!5}3.704 \\  \hline
+  \cellcolor{green!27}\small Wisley de Sabrit você fala como se isso fosse realmente certo, nascemos homem ou mulher\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small A Alexia não era \textbf{gay}, tinha noiva, em q momento ele descobriu q era trans?\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Nossa qnd falta de informação. É a msm coisa q dizer qnd vc decidiu pela opção \textbf{sexual}. Sendo que a palavra certa é ORIENTAÇÃO \textbf{SEXUAL}. E aí vc pergunta qnd começou sua orientação \textbf{sexual}?!  🙈🙉🙈🙉🙈\normalsize   & \cellcolor{green!27}Sexual & \cellcolor{green!27}Gender - General & \cellcolor{green!27}3/35 & \cellcolor{green!27}8.571 \\  \hline
+  \cellcolor{green!5}\small Samara Freitas \textbf{piranha}, pq vc não Ta dando palestra pelo mundo?\normalsize   & \cellcolor{green!5}Piranha & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Se é opção \textbf{sexual}, o que responder pra quem diz que nasceu assim? Afinal uma opção é uma escolha e tals .-.\normalsize   & \cellcolor{green!27}Sexual & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/22 & \cellcolor{green!27}4.545 \\  \hline
+  \cellcolor{green!5}\small Só que Alexia não ficava com homens, ele tinha noiva, era o homem da relação e não virou \textbf{gay}, virou trans, se transformou em \textbf{mulher}, teve q ter um conflito pessoal, o momento de decisão e aceitação, a descoberta, a reportagem n falou sobre isso. Só esse caso daria um programa inteiro, eu não entendi nada.\normalsize   & \cellcolor{green!5}Gay, Mulher & \cellcolor{green!5}Gender - General, Sexual Identity - General & \cellcolor{green!5}2/56 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small então, ela não precisaria ser \textbf{gay} pra ser trans, afinal, orientação \textbf{sexual} é diferente de gênero, inclusive, a Alexia pode ser trans, ou seja se sentir \textbf{mulher}, e ser \textbf{mulher}, mas ainda assim gostar de \textbf{mulher}, que no caso ela seria uma \textbf{mulher} trans lésbica.\normalsize   & \cellcolor{green!27}Gay, Mulher, Sexual & \cellcolor{green!27}Gender - General, Sexual Identity - General & \cellcolor{green!27}6/45 & \cellcolor{green!27}13.333 \\  \hline
+  \cellcolor{green!5}\small \@Joyce Hoffmann nossa mano. Imagine a confusão na cabeça da pessoa que vive essa situação? Eu teria entrado em parafuso, na adolescência, se sentir \textbf{mulher}, mas não gostar de homem, ter certeza q não é \textbf{gay}, mas Ta no corpo errado, meu Deus, que nó na mente. Será que por isso tantos adolescentes se suicidam? Hoje tem internet, tem esse vídeo pra esclarecer, mas e antes disso tudo? A pessoa devia se sentir sozinha no mundo, uma \textbf{aberração}, que triste mano. Forte isso.\normalsize   & \cellcolor{green!5}Aberração, Gay, Mulher & \cellcolor{green!5}Gender - General, Sexual Identity - General, Sexual Identity - Male homosexuality & \cellcolor{green!5}3/83 & \cellcolor{green!5}3.614 \\  \hline
+  \cellcolor{green!27}\small +Guima Tube com certeza, e se você reparar, ela quando " era homem", era exatamente o estereótipo másculo,  homem Macho, \textbf{machista}, deu pra ver pelos comentários dos colegas e até mesmo pela foto , provavelmente queria afirmar isso pra ela mesma, até conseguir se libertar dos preconceitos e aceitar quem é.\normalsize   & \cellcolor{green!27}Machista & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/51 & \cellcolor{green!27}1.961 \\  \hline
+  \cellcolor{green!5}\small Livia Maria é claramente uma contradição Biológica, nascemos homem ou mulher\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Nacionalidade & \cellcolor{red!27}1 & \cellcolor{red!27}1/2527& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Transexuality}  & \cellcolor{red!5}Transexual, Travesti & \cellcolor{red!5}2 & \cellcolor{red!5}2/2527& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Género, Mulher, Sexual, Machista & \cellcolor{red!27}19 & \cellcolor{red!27}19/2527& \cellcolor{red!27}0.75 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Idade & \cellcolor{red!5}2 & \cellcolor{red!5}2/2527& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Homofobia, Gay & \cellcolor{red!27}5 & \cellcolor{red!27}5/2527& \cellcolor{red!27}0.2 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Male homosexuality}  & \cellcolor{red!5}Aberração, Baitola & \cellcolor{red!5}4 & \cellcolor{red!5}4/2527& \cellcolor{red!5}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Ridícula, Piranha & \cellcolor{red!27}2 & \cellcolor{red!27}2/2527& \cellcolor{red!27}0.08 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - General;Sexual Identity - Transexuality;Gender - General;Age - General;Sexual Identity - General;Sexual Identity - Male homosexuality;Gender - Female sexuality;%.
+
+\item The percentage of hate speech related words is 1.385.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 35/114 occurences of hate speech related comments.\end{itemize}\end{document}

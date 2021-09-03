@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_130.json :}\newline \par\Large\textbf {Title: \large  Halle Berry, Keanu Reeves Talk Ageism In Hollywood }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small "don't do things that crush your soul" truly the best advice for anyone at any \textbf{age}.  Bravo keanu\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small We all \textbf{age}. It's good to take care of ourselves. God's word keeps us strong.😇🤔😎😍\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Keanu is a very \textbf{old} soul. He's just so full of wisdom. God bless\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small Hes \textbf{old} in general.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/4 & \cellcolor{green!5}25.0 \\  \hline
+  \cellcolor{green!27}\small He looks young outside, but \textbf{old} inside so many things he has seen\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small Fuck the term \textbf{AGEISM} and lets be smarter.... DONT BE A GULLIBLE instafool. This word doesn't exist, until morons who want to play smart and chic keep using as they were made to.\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/33 & \cellcolor{green!5}3.03 \\  \hline
+  \cellcolor{green!27}\small If women don't want to be judges on their \textbf{age} they should stop complaining about it and play \textbf{age} appropriate roles.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}2/21 & \cellcolor{green!27}9.524 \\  \hline
+  \cellcolor{green!5}\small Ageism? \textbf{Ageism}? EVERYTHING has an "ism" this generation is all about labelling crap!\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small So basically halle talks \textbf{ageism} in hollywood then.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/8 & \cellcolor{green!27}12.5 \\  \hline
+  \cellcolor{green!5}\small As long as you keep your bone  flexible and movable....\textbf{age} doesn't defines you\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small Exactly we should not be defined by a number don't give your \textbf{age} keep them guessing 😉\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small First time I hear about \textbf{ageism} being addressed\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small Madonna mentioned it when she released her new song... people and may I say other women were slagging her off.. saying act your \textbf{age}... stupid isn't it\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/27 & \cellcolor{green!27}3.704 \\  \hline
+  \cellcolor{green!5}\small \@Sarah Brennan yes it really is beyond ridiculous.  the media excasterbate the whole thing....its worse of course for Women than Men because we men dont really care so much about our \textbf{age}....we accept that we are getting older but those of us that are still young boys inside i think that gives us an edge.....where as ladies are so obssessed with appearance and \textbf{age} etc that it consumes them and they are afraid of their own bodies and skin for this reason.  its onyl a number at the end of the day......\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}2/92 & \cellcolor{green!5}2.174 \\  \hline
+  \cellcolor{green!27}\small Ger Gemini I agree... it seems a lot worse in America... Halle Berry is naturally pretty .. no Botox and stuff done to her face... And no one ridicules George Clooney or \textbf{M\textbf{ick}} Jagger so it is mad lol.. 😃\normalsize   & \cellcolor{green!27}Mick & \cellcolor{green!27}Nationality - Irish, Religious Identity - Roman Catholic & \cellcolor{green!27}2/40 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small Halles' \textbf{age} is starting to show.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Kyekwe W only coz you know she's aging 😂😂 other than that she's aging well for showing her \textbf{age}..\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small woman, you are definitely not defined or confined by a number. You look damn good for your \textbf{age}!!\normalsize   & \cellcolor{green!5}Age, Woman & \cellcolor{green!5}Age - General, Gender - General & \cellcolor{green!5}2/18 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small you're defining her by her age\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age, Ageism & \cellcolor{red!27}17 & \cellcolor{red!27}17/752& \cellcolor{red!27}2.26 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}3 & \cellcolor{red!5}3/752& \cellcolor{red!5}0.4 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Irish}  & \cellcolor{red!27}Mick & \cellcolor{red!27}1 & \cellcolor{red!27}1/752& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Religious Identity - Roman Catholic}  & \cellcolor{red!5}Mick & \cellcolor{red!5}1 & \cellcolor{red!5}1/752& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Woman & \cellcolor{red!27}1 & \cellcolor{red!27}1/752& \cellcolor{red!27}0.13 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Nationality - Irish;Religious Identity - Roman Catholic;Gender - General;%.
+
+\item The percentage of hate speech related words is 3.0585.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 23/60 occurences of hate speech related comments.\end{itemize}\end{document}

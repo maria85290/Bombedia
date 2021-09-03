@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_150.json :}\newline \par\Large\textbf {Title: \large  O Brasil é dirigido por um fantoche que é absolutamente ignorante, inimputável, incompetente e cruel }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small O \textbf{gajo} está estúpido, mas não é corrupto como os do PT.<br/>Espero que nas próximas o "Terror do PT" se candidate.<br/>Sérgio Moro.\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/22 & \cellcolor{green!27}4.545 \\  \hline
+  \cellcolor{green!5}\small Este jornalista tem credibilidade zero ... Essa é mais ou menos a descrição que se podia aplicar ao Lula com a agravante de ser \textbf{analfabeto} ... esse sim comprovadamente corrupto e julgado e condenado como tal mas na altura não o vimos tão indignado ... É um facto que o Bolsonaro está a gerir o problema da pandemia péssimamente mas convinhamos que o maior problema dos Brasileiros mais pobres nem é o coronavirus é a fome, sem trabalho e empregos não há comida na mesa.\normalsize   & \cellcolor{green!5}Analfabeto & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/85 & \cellcolor{green!5}1.176 \\  \hline
+  \cellcolor{green!27}\small "havia outras escolhas entre o PT e o Bolsonaro" mas muito eleitorado de bem deixou-se levar pelo populismo manipulador e pelo uso abusivo e gratuito da figura de Deus. Porque apenas com os votos dos menos esclarecidos e daqueles que cultivam a ignorância e o ódio apenas para proveito próprio, este \textbf{imbecil} e perigoso ignorante nunca teria ganho as eleições.\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/60 & \cellcolor{green!27}1.667 \\  \hline
+  \cellcolor{green!5}\small não ... nos 14 anos ateriores escolheram o populismo ... agora escolheram "O" Bolsonaro e o seu projecto ANTI politico corrupto a meter nos bolsos ... tal como nos EUA muitos ecolheram "O" Trump em vez da \textbf{V\textbf{elha}} representativa do pior do sistema politico corrupto americano\normalsize   & \cellcolor{green!5}Velha & \cellcolor{green!5}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!5}2/46 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small A parvoíce deve ser hereditária, já o \textbf{velho} o era e filho de burro não pode ser cavalo.\normalsize   & \cellcolor{green!27}Velho & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small A \textbf{mulher} é bonita mas a \textbf{gaja} já te passou o cartão que te tinha a passar. \textbf{Muda} o disco.\normalsize   & \cellcolor{green!5}Gaja, Muda, Mulher & \cellcolor{green!5}Gender - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}3/20 & \cellcolor{green!5}15.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo & \cellcolor{red!27}1 & \cellcolor{red!27}1/1300& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Analfabeto & \cellcolor{red!5}1 & \cellcolor{red!5}1/1300& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Imbecil, Muda & \cellcolor{red!27}2 & \cellcolor{red!27}2/1300& \cellcolor{red!27}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female age and physical appearance}  & \cellcolor{red!5}Velha & \cellcolor{red!5}1 & \cellcolor{red!5}1/1300& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velha, Velho & \cellcolor{red!27}2 & \cellcolor{red!27}2/1300& \cellcolor{red!27}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Gaja, Mulher & \cellcolor{red!5}2 & \cellcolor{red!5}2/1300& \cellcolor{red!5}0.15 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - White;Social Class - Working class;Physical Identity - Physical (and Mental) Impairments;Gender - Female age and physical appearance;Age - Over 65s;Gender - General;%.
+
+\item The percentage of hate speech related words is 0.6923.
+
+\item Considering that the variable \textbf{Physical Identity - Physical (and Mental) Impairments} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 9/36 occurences of hate speech related comments.\end{itemize}\end{document}

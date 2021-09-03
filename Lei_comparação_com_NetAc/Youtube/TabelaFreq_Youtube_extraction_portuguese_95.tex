@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_95.json :}\newline \par\Large\textbf {Title: \large  'refugiados' fogem, mas os Portugueses PAGAM regresso }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Há um conjunto de razões1) Porque alegadamente fogem de uma Guerra (daí serem designados como "refugiados")2) Porque TODOS perdem a documentação na travessia, NÃO perdem os iPhones mas perdem TODA a documentação o que inviabiliza o retorno pois não há provas da sua \textbf{nacionalidade} (até podem alegar que são Suecos)3) a verdade é que é a NOSSA elite que os vai lá buscar, (há vários vídeos que mostram a serviço de ferry que existe no mediterrâneo), para implementar uma directiva que se chama: Replacement Migration (Imigração de Substituição) experimente googlar e veja os múltiplos exemplos que encontra, desde a versão oficial até às outras :(\normalsize   & \cellcolor{green!27}Nacionalidade & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/108 & \cellcolor{green!27}0.926 \\  \hline
+  \cellcolor{green!5}\small Os Portuguêses têm que se juntar para angariar fundos para enviar para os Afrikaners que estão a viver nas ruas e a ser mortos na África do Sul poderem vir como turistas para Portugal e pedir asilo à chegada nos aeroportos por temerem pela sua vida porque são Afrikaner. Depois de termos muitos Bruxelas não nos pode impôr outros e nós ficamos com os Cristãos que ajudaram e salvaram a vida de muitos Portuguêses que fugiam de Angola e Moçambique em 1975 e a Alemanha , Suécia e Áustria que fiquem com os Muçulmanos que tanto gostam. Nada contra ninguém mas custa-me muito ver um povo que um dia lançou uma mão aos Portuguêses não ser ajudado apenas porque é \textbf{branco} e Cristão. Os Portuguêses têm que se unir para os tirar de lá porque os países do norte nada vao fazer.Porquê que não recebemos antes os que um dia nos ajudaram ? [LINK]  [LINK]  [LINK]  [LINK] \normalsize   & \cellcolor{green!5}Branco & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/158 & \cellcolor{green!5}0.633 \\  \hline
+  \cellcolor{green!27}\small o Minha gente está gente nao vai dar nada a portugal   exportação  de coitadinhos  para  pais de podre de pobres  arrumar  casa  ja agora de onde daiu o dinheiro  para as mesqutas vem de onde  fechem as fronteiras  antes seija tarde de mais  e sr merkel  ta a fazer um atentado aos valores  culturais  da ue essa cabeca vai rolar . uma ex nazita e ex cumunidta onde forao arranjar este espatalho  da guerra fria   dao tudo a segurança social  o \textbf{tuga} tem pontapes na peida\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/86 & \cellcolor{green!27}1.163 \\  \hline
+  \cellcolor{green!5}\small Boas a todos ,se alguém souber o paradeiro dos refugiados que Portugal acolheu com casas, roupas ,telemóveis , tudo aquilo que nao da a um Português sem abrigo ou com graves dificuldades ,peço a quem souber destes senhores refugiados que ligue para o 112 para dar informações sobre eles porque ficaria mais barato ao nosso querido estado Português .So nao entendo uma coisa !!se estes senhores refugiados vem a fugir da guerra , fome etc etc ,nem com boas condições dadas por nações muito sensíveis ao tema ,que e o caso de Portugal que prefere acolher refugiados que no dia seguinte do acolhimento já ninguém sabe deles ,nem os donos deles que deveriam ser responsáveis porque estamos a falar de segurança da nossa \textbf{nação} Portugal.Agora ainda vamos pagar para os reencaminhar ...Isto tem que mudar e ponto final.\normalsize   & \cellcolor{green!5}Nação & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/138 & \cellcolor{green!5}0.725 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Nacionalidade, Nação & \cellcolor{red!27}2 & \cellcolor{red!27}2/666& \cellcolor{red!27}0.3 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Branco & \cellcolor{red!5}1 & \cellcolor{red!5}1/666& \cellcolor{red!5}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Portuguese}  & \cellcolor{red!27}Tuga & \cellcolor{red!27}1 & \cellcolor{red!27}1/666& \cellcolor{red!27}0.15 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - General;Ethnicity - White;Nationality - Portuguese;%.
+
+\item The percentage of hate speech related words is 0.6006.
+
+\item Considering that the variable \textbf{Nationality - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/13 occurences of hate speech related comments.\end{itemize}\end{document}

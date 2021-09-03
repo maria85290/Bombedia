@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_39.json :}\newline \par\Large\textbf {Title: \large  Manuel Luís Goucha 'ataca' novo ministro no Facebook }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Já se está a fazer ao piso...como muitos. No país onde tudo se critica , como na parábola do burro, do rapaz e do \textbf{velho}. Assim (continua a ser) é Portugal. Os cataventos também: viram-se para onde o vento sopra !\normalsize   & \cellcolor{green!27}Velho & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/41 & \cellcolor{green!27}2.439 \\  \hline
+  \cellcolor{green!5}\small É preciso muita cautela quando se lida com rabichos. Têm raivinhas, puxam os cabelos, dão unhadas! Imaginem que este rabêta segue as pisadas da \textbf{bichona} Sócrates e atira com uma providência cautelar sobre o DISQUS?! Grande prejuízo! Todos de bico calado e inibidos de poder malhar doravante na corja esquerdista, \textbf{comunista} e demais sociais-fascistas. Só espero que o DISQUS aguente a pressão do looby \textbf{gay}......senão estamos tramados!\normalsize   & \cellcolor{green!5}Bichona, Comunista, Gay & \cellcolor{green!5}Ideological and Political Identity - General, Sexual Identity - General, Sexual Identity - Male homosexuality & \cellcolor{green!5}3/67 & \cellcolor{green!5}4.478 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velho & \cellcolor{red!27}1 & \cellcolor{red!27}1/1101& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay & \cellcolor{red!5}1 & \cellcolor{red!5}1/1101& \cellcolor{red!5}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Bichona & \cellcolor{red!27}1 & \cellcolor{red!27}1/1101& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ideological and Political Identity - General}  & \cellcolor{red!5}Comunista & \cellcolor{red!5}1 & \cellcolor{red!5}1/1101& \cellcolor{red!5}0.09 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Sexual Identity - General;Sexual Identity - Male homosexuality;Ideological and Political Identity - General;%.
+
+\item The percentage of hate speech related words is 0.3633.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/31 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,131 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[pdftex]{hyperref}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=1in]{geometry}
+\newcommand{\MinNumber}{0}\begin{document}
+
+\textbf {\huge Jornal publico:}\newline\newline\newline
+
+\centering\textbf{\large Table  1: Sintese dos resultados por ficheiro 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{||C{.40\mylength}||C{.30\mylength}||C{.30\mylength}||C{.30\mylength}||}
+\hline
+\textbf{Nome} & \textbf{N de Comentarios}  & \textbf{N de ocorrencias de hate Speech} & \textbf{Percentagem de hate Speech(\%)} \\
+\hline\cellcolor{green!27}Youtube-extraction-portuguese-1.pdf & \cellcolor{green!27}59 & \cellcolor{green!27}20 & \cellcolor{green!27}0,9921 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-2.pdf & \cellcolor{green!5}155 & \cellcolor{green!5}76 & \cellcolor{green!5}1,4893 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-3.pdf & \cellcolor{green!27}319 & \cellcolor{green!27}178 & \cellcolor{green!27}1,8509 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-4.pdf & \cellcolor{green!5}139 & \cellcolor{green!5}92 & \cellcolor{green!5}1,667 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-5.pdf & \cellcolor{green!27}77 & \cellcolor{green!27}26 & \cellcolor{green!27}2,4209 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-6.pdf & \cellcolor{green!5}2180 & \cellcolor{green!5}1004 & \cellcolor{green!5}1,1066 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-7.pdf & \cellcolor{green!27}451 & \cellcolor{green!27}318 & \cellcolor{green!27}1,8257 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-8.pdf & \cellcolor{green!5}277 & \cellcolor{green!5}105 & \cellcolor{green!5}1,3985 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-9.pdf & \cellcolor{green!27}310 & \cellcolor{green!27}94 & \cellcolor{green!27}1,4461 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-10.pdf & \cellcolor{green!5}108 & \cellcolor{green!5}37 & \cellcolor{green!5}1,2544 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-11.pdf & \cellcolor{green!27}40 & \cellcolor{green!27}19 & \cellcolor{green!27}2,0765 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-12.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}7 & \cellcolor{green!5}3,4653 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-13.pdf & \cellcolor{green!27}382 & \cellcolor{green!27}132 & \cellcolor{green!27}0,5618 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-14.pdf & \cellcolor{green!5}429 & \cellcolor{green!5}149 & \cellcolor{green!5}1,5164 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-15.pdf & \cellcolor{green!27}333 & \cellcolor{green!27}93 & \cellcolor{green!27}0,8992 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-16.pdf & \cellcolor{green!5}10442 & \cellcolor{green!5}2716 & \cellcolor{green!5}0,9384 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-17.pdf & \cellcolor{green!27}1312 & \cellcolor{green!27}489 & \cellcolor{green!27}1,4085 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-18.pdf & \cellcolor{green!5}211 & \cellcolor{green!5}128 & \cellcolor{green!5}3,2193 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-19.pdf & \cellcolor{green!27}54 & \cellcolor{green!27}11 & \cellcolor{green!27}0,793 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-20.pdf & \cellcolor{green!5}5391 & \cellcolor{green!5}2123 & \cellcolor{green!5}1,6146 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-21.pdf & \cellcolor{green!27}4655 & \cellcolor{green!27}1461 & \cellcolor{green!27}1,0523 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-22.pdf & \cellcolor{green!5}314 & \cellcolor{green!5}81 & \cellcolor{green!5}0,7344 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-23.pdf & \cellcolor{green!27}114 & \cellcolor{green!27}35 & \cellcolor{green!27}1,385 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-24.pdf & \cellcolor{green!5}357 & \cellcolor{green!5}109 & \cellcolor{green!5}0,7711 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-27.pdf & \cellcolor{green!27}1125 & \cellcolor{green!27}801 & \cellcolor{green!27}2,0671 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-28.pdf & \cellcolor{green!5}1367 & \cellcolor{green!5}1072 & \cellcolor{green!5}3,2168 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-30.pdf & \cellcolor{green!27}1572 & \cellcolor{green!27}1132 & \cellcolor{green!27}3,9361 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-31.pdf & \cellcolor{green!5}543 & \cellcolor{green!5}442 & \cellcolor{green!5}4,3715 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-32.pdf & \cellcolor{green!27}426 & \cellcolor{green!27}366 & \cellcolor{green!27}1,9299 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-33.pdf & \cellcolor{green!5}39 & \cellcolor{green!5}34 & \cellcolor{green!5}2,6114 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-34.pdf & \cellcolor{green!27}158 & \cellcolor{green!27}97 & \cellcolor{green!27}1,9827 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-35.pdf & \cellcolor{green!5}69 & \cellcolor{green!5}51 & \cellcolor{green!5}1,8484 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-36.pdf & \cellcolor{green!27}899 & \cellcolor{green!27}440 & \cellcolor{green!27}1,9975 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-37.pdf & \cellcolor{green!5}574 & \cellcolor{green!5}201 & \cellcolor{green!5}1,2255 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-39.pdf & \cellcolor{green!27}1163 & \cellcolor{green!27}276 & \cellcolor{green!27}0,667 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-40.pdf & \cellcolor{green!5}2511 & \cellcolor{green!5}579 & \cellcolor{green!5}0,5226 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-41.pdf & \cellcolor{green!27}3861 & \cellcolor{green!27}2868 & \cellcolor{green!27}4,1268 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-44.pdf & \cellcolor{green!5}228 & \cellcolor{green!5}68 & \cellcolor{green!5}0,9688 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-46.pdf & \cellcolor{green!27}62 & \cellcolor{green!27}6 & \cellcolor{green!27}0,5324 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-47.pdf & \cellcolor{green!5}147 & \cellcolor{green!5}20 & \cellcolor{green!5}0,7468 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-48.pdf & \cellcolor{green!27}216 & \cellcolor{green!27}191 & \cellcolor{green!27}4,2659 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-49.pdf & \cellcolor{green!5}32 & \cellcolor{green!5}9 & \cellcolor{green!5}1,6293 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-50.pdf & \cellcolor{green!27}99 & \cellcolor{green!27}26 & \cellcolor{green!27}0,8828 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-51.pdf & \cellcolor{green!5}20 & \cellcolor{green!5}3 & \cellcolor{green!5}1,0753 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-52.pdf & \cellcolor{green!27}70 & \cellcolor{green!27}34 & \cellcolor{green!27}2,4062 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-53.pdf & \cellcolor{green!5}48 & \cellcolor{green!5}19 & \cellcolor{green!5}2,1088 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-54.pdf & \cellcolor{green!27}16 & \cellcolor{green!27}11 & \cellcolor{green!27}2,8205 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-55.pdf & \cellcolor{green!5}1016 & \cellcolor{green!5}587 & \cellcolor{green!5}1,6603 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-56.pdf & \cellcolor{green!27}97 & \cellcolor{green!27}12 & \cellcolor{green!27}0,5004 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-57.pdf & \cellcolor{green!5}51 & \cellcolor{green!5}12 & \cellcolor{green!5}0,5249 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-58.pdf & \cellcolor{green!27}104 & \cellcolor{green!27}17 & \cellcolor{green!27}0,8543 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-59.pdf & \cellcolor{green!5}67 & \cellcolor{green!5}8 & \cellcolor{green!5}0,6757 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-61.pdf & \cellcolor{green!27}220 & \cellcolor{green!27}26 & \cellcolor{green!27}1,1324 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-62.pdf & \cellcolor{green!5}300 & \cellcolor{green!5}28 & \cellcolor{green!5}0,6114 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-63.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}10 & \cellcolor{green!27}3,3473 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-64.pdf & \cellcolor{green!5}59 & \cellcolor{green!5}33 & \cellcolor{green!5}1,9745 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-65.pdf & \cellcolor{green!27}70 & \cellcolor{green!27}25 & \cellcolor{green!27}2,2046 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-66.pdf & \cellcolor{green!5}67 & \cellcolor{green!5}18 & \cellcolor{green!5}1,3975 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-67.pdf & \cellcolor{green!27}65 & \cellcolor{green!27}44 & \cellcolor{green!27}3,9568 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-69.pdf & \cellcolor{green!5}105 & \cellcolor{green!5}35 & \cellcolor{green!5}1,6958 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-70.pdf & \cellcolor{green!27}1831 & \cellcolor{green!27}237 & \cellcolor{green!27}0,9323 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-71.pdf & \cellcolor{green!5}3167 & \cellcolor{green!5}941 & \cellcolor{green!5}1,9726 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-72.pdf & \cellcolor{green!27}658 & \cellcolor{green!27}377 & \cellcolor{green!27}1,7485 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-73.pdf & \cellcolor{green!5}33 & \cellcolor{green!5}4 & \cellcolor{green!5}0,2805 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-74.pdf & \cellcolor{green!27}296 & \cellcolor{green!27}239 & \cellcolor{green!27}1,3373 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-75.pdf & \cellcolor{green!5}256 & \cellcolor{green!5}116 & \cellcolor{green!5}1,0941 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-76.pdf & \cellcolor{green!27}51 & \cellcolor{green!27}38 & \cellcolor{green!27}0,9989 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-77.pdf & \cellcolor{green!5}14 & \cellcolor{green!5}6 & \cellcolor{green!5}2,0548 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-78.pdf & \cellcolor{green!27}140 & \cellcolor{green!27}101 & \cellcolor{green!27}3,7453 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-79.pdf & \cellcolor{green!5}89 & \cellcolor{green!5}11 & \cellcolor{green!5}0,5691 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-81.pdf & \cellcolor{green!27}217 & \cellcolor{green!27}30 & \cellcolor{green!27}0,511 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-82.pdf & \cellcolor{green!5}5280 & \cellcolor{green!5}356 & \cellcolor{green!5}1,0535 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-83.pdf & \cellcolor{green!27}379 & \cellcolor{green!27}143 & \cellcolor{green!27}0,584 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-84.pdf & \cellcolor{green!5}294 & \cellcolor{green!5}114 & \cellcolor{green!5}0,6618 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-85.pdf & \cellcolor{green!27}171 & \cellcolor{green!27}33 & \cellcolor{green!27}0,5094 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-86.pdf & \cellcolor{green!5}1971 & \cellcolor{green!5}306 & \cellcolor{green!5}0,4789 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-87.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}4 & \cellcolor{green!27}3,6036 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-88.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}1 & \cellcolor{green!5}0,3846 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-89.pdf & \cellcolor{green!27}18 & \cellcolor{green!27}1 & \cellcolor{green!27}0,4975 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-90.pdf & \cellcolor{green!5}152 & \cellcolor{green!5}49 & \cellcolor{green!5}0,5234 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-92.pdf & \cellcolor{green!27}4 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-93.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}1 & \cellcolor{green!5}0,8333 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-94.pdf & \cellcolor{green!27}29 & \cellcolor{green!27}3 & \cellcolor{green!27}0,3727 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-95.pdf & \cellcolor{green!5}13 & \cellcolor{green!5}4 & \cellcolor{green!5}0,6006 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-96.pdf & \cellcolor{green!27}23 & \cellcolor{green!27}9 & \cellcolor{green!27}1,1096 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-97.pdf & \cellcolor{green!5}22 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-98.pdf & \cellcolor{green!27}29 & \cellcolor{green!27}5 & \cellcolor{green!27}0,5476 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-99.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-100.pdf & \cellcolor{green!27}245 & \cellcolor{green!27}84 & \cellcolor{green!27}0,442 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-101.pdf & \cellcolor{green!5}26 & \cellcolor{green!5}4 & \cellcolor{green!5}0,2352 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-102.pdf & \cellcolor{green!27}7 & \cellcolor{green!27}1 & \cellcolor{green!27}0,7812 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-103.pdf & \cellcolor{green!5}38 & \cellcolor{green!5}17 & \cellcolor{green!5}0,6897 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-104.pdf & \cellcolor{green!27}488 & \cellcolor{green!27}104 & \cellcolor{green!27}1,1894 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-105.pdf & \cellcolor{green!5}193 & \cellcolor{green!5}24 & \cellcolor{green!5}0,4984 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-106.pdf & \cellcolor{green!27}77 & \cellcolor{green!27}18 & \cellcolor{green!27}0,5199 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-107.pdf & \cellcolor{green!5}54 & \cellcolor{green!5}41 & \cellcolor{green!5}0,927 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-108.pdf & \cellcolor{green!27}2928 & \cellcolor{green!27}1461 & \cellcolor{green!27}0,9834 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-109.pdf & \cellcolor{green!5}51 & \cellcolor{green!5}5 & \cellcolor{green!5}0,2237 \\  \hline
+  \cellcolor{green!27}Youtube-extraction-portuguese-110.pdf & \cellcolor{green!27}67 & \cellcolor{green!27}27 & \cellcolor{green!27}0,9893 \\  \hline
+  \cellcolor{green!5}Youtube-extraction-portuguese-111.pdf & \cellcolor{green!5}493 & \cellcolor{green!5}254 & \cellcolor{green!5}1,0802 \\  \hline
+  
+\end{longtable}
+\end{center}
+\end{document}

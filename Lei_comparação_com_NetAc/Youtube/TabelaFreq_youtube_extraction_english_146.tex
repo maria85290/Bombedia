@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_146.json :}\newline \par\Large\textbf {Title: \large  Gina Gershon on ageism in Hollywood }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small I think the main reason \textbf{ageism} against women exist is because of WOMEN. Women HATE women. They criticize each other for their appearance. It seems like that happens when you have female audiences critique their favorite actresses' appearances watch their films and TV shows.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/44 & \cellcolor{green!27}2.273 \\  \hline
+  \cellcolor{green!5}\small This \textbf{woman} is smart, funny and very beautiful. I loved how she portrayed that dry cleaner she did on Curb your enthusiasm. Absolutely over horny and super hilarious hard working housewife.\normalsize   & \cellcolor{green!5}Woman & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/31 & \cellcolor{green!5}3.226 \\  \hline
+  \cellcolor{green!27}\small Nice interview with hot white actress Gina Gershon. She got some good advice from hot white actress Sharon Stone at Sharon's birthday party. Sharon was right that most actresses don't get movie roles anymore when they get in their 40's and 50's. Sally Field and Meryl Streep are the few white actresses that are \textbf{old} who still do movies. Most of the movies Gina have done have been straight to video. She's done a few movies that have come to theaters. Hollywood does seem to be more \textbf{racist} towards women than men when it comes to getting big screen roles.\normalsize   & \cellcolor{green!27}Old, Racist & \cellcolor{green!27}Age - Over 65s, Ethnicity - General & \cellcolor{green!27}2/100 & \cellcolor{green!27}2.0 \\  \hline
+  \cellcolor{green!5}\small they almost always put an older women in a teen movie, 20+ year olds playing high school roles, they also almost always put a younger \textbf{woman} with the 50-80 year \textbf{old} man, at 40 an actress is seen as damaged goods most of the time unless, you gotta be a hot shit actress to still get roles in your 40's and 50's, probably easier to get tons of small roles as a grandma once you hit your 60's and 70's, anyway it's annoying, I enjoy men with women their own \textbf{age}, I enjoy films with \textbf{old} people, I enjoy movies best when the characters are played by actors not having to play younger or older than they are, I'm sure everyone does\normalsize   & \cellcolor{green!5}Age, Old, Woman & \cellcolor{green!5}Age - General, Age - Over 65s, Gender - General & \cellcolor{green!5}4/122 & \cellcolor{green!5}3.279 \\  \hline
+  \cellcolor{green!27}\small For women but not usually men.  Maybe the same should apply to \textbf{old} men as well since it's ridiculous how large the \textbf{age} gaps are between men and girls and how \textbf{common} they are in mainstream American movies.\normalsize   & \cellcolor{green!27}Age, Common, Old & \cellcolor{green!27}Age - General, Age - Over 65s, Social Class - Working class & \cellcolor{green!27}3/38 & \cellcolor{green!27}7.895 \\  \hline
+  \cellcolor{green!5}\small Who cares bloody \textbf{ageism}..She looks stunning\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small she still is pure sex\normalsize   & \cellcolor{green!27}Sex & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Ageism is alive and well everywhere...looking like Gina, who is not only still beautiful but looks super-healthy and fit...hell I'd brag about my \textbf{age}, even add on a few years just to shake folks up a bit.  She looks amazing!\normalsize   & \cellcolor{green!5}Age, Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}2/40 & \cellcolor{green!5}5.0 \\  \hline
+  \cellcolor{green!27}\small Ageism is a prejudice against naturally growing older, it sounds like the craziest thing ever and it almost baffles my mind to believe that it exists.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/26 & \cellcolor{green!27}3.846 \\  \hline
+  \cellcolor{green!5}\small As long as they stay relatively fit and don't ruin themselves with plastic surgeries, i find a lot of women stay as attractive or get more attractive in a different way with \textbf{age}. A lot of attraction is in confidence and personality, and you generally develop both as you \textbf{age}.I recently saw showgirls because of a reference to it being a boundary defining movie of the 90s, and 17 years later Gina looks just as attractive as she did back then.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}2/82 & \cellcolor{green!5}2.439 \\  \hline
+  \cellcolor{green!27}\small DAMN THIS \textbf{AGEISM} ahahahah\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small i dont know why I find this \textbf{woman} extremely unsexyPiers Morgan has a \textbf{weird} tasteI prefer to spend the night with a hammer or watching golf. Gina Gherson? Noooo thanks!!\normalsize   & \cellcolor{green!5}Weird, Woman & \cellcolor{green!5}Gender - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}2/32 & \cellcolor{green!5}6.25 \\  \hline
+  \cellcolor{green!27}\small Gina Gershon struggles with lack of talent, not \textbf{ageism}.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small If \textbf{sex} appeal and beauty is the basis for women getting roles, then it's a given that with \textbf{age} they'd lose roles to younger actresses. So the actual problem you're dealing with, is that the female role in film remains mostly focused on providing \textbf{sexual} appeal as opposed to actual characters. Indeed, that's the role Gershon filled quite nicely for many years. I still don't like Piers Morgan. And he's at his sleaziest when he's buttering his guests with flattery. Replace him soon.\normalsize   & \cellcolor{green!5}Age, Sex, Sexual & \cellcolor{green!5}Age - General, Gender - General & \cellcolor{green!5}3/83 & \cellcolor{green!5}3.614 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Ageism, Age & \cellcolor{red!27}12 & \cellcolor{red!27}12/1118& \cellcolor{red!27}1.0699999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Woman, Sex, Sexual & \cellcolor{red!5}6 & \cellcolor{red!5}6/1118& \cellcolor{red!5}0.54 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old & \cellcolor{red!27}4 & \cellcolor{red!27}4/1118& \cellcolor{red!27}0.36 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racist & \cellcolor{red!5}1 & \cellcolor{red!5}1/1118& \cellcolor{red!5}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Common & \cellcolor{red!27}1 & \cellcolor{red!27}1/1118& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Weird & \cellcolor{red!5}1 & \cellcolor{red!5}1/1118& \cellcolor{red!5}0.09 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Gender - General;Age - Over 65s;Ethnicity - General;Social Class - Working class;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 2.2361.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 25/61 occurences of hate speech related comments.\end{itemize}\end{document}

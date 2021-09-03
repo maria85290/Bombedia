@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_199.json :}\newline \par\Large\textbf {Title: \large  Say NO to Ageism - Older People's Commissioner for Wales }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small I don't know much about Wales, but in Russia \textbf{ageism} most of all happens to U-18s. NO ONE would trust your opinion if you're much younger. In any conflict if you are for example 50 years \textbf{old}, and your opponent is 15 y/o, u can always say "omg, u r too young for this shit and u don't understand \textbf{nothing}". It often happens when it comes to politic discussion, because mostly \textbf{elderly} people watch only TV and don't use the Internet to check some information. You might know, that TV is 95 controlled by the Russian government, so it makes easier for them to provide news they need. So, as for my country, we should firstly fight against \textbf{ageism} to teenagers, because at the moment, our point of view plays \textbf{nothing} in the life of society.Anyway, thanks to Older People's Commissioner for Wales for mention this really important topic, because still \textbf{ageism} is one of the most, if not the most widely happened kind of discrimination.From Russia 🇷🇺 with love.Keep fighting!SayNoToAgeism\normalsize   & \cellcolor{green!27}Ageism, Elderly, Nothing, Old & \cellcolor{green!27}Age - General, Age - Over 65s, Age - Youngsters & \cellcolor{green!27}7/175 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small Great video. I loved the graphics.I hate that our culture does not value \textbf{senior} citizens. I wrote a novella series of books where the heroes in the story are \textbf{elderly}.  They use '\textbf{old} school' methods to solve mysteries and catch the bad guys with the help of a ghost and a haunted photograph. At first, the younger adult characters dismiss them because of their \textbf{age}, but learn to respect them in the end. The series is called 'The Haunted Seniors of Specter County'. You can read it for free here if you are interested: [LINK] "Living next door to the local \textbf{senior} center, 10 year-\textbf{old} Henry thought he'd gotten used to the peculiarities and quirks of the retirees. Among the \textbf{old} timers is Sal; a \textbf{disabled} veteran with a talent for finding ingenious uses for ordinary objects, and Phyllis; a hoarder whose colossal handbag is filled with ordinary objects, plus a tiny dog with a knack for locating items within the giant bag. But Henry is about to discover that the lives of the seniors are even odder than they seem. Ghosts linger among the living and the dead live on in photographs. Aided by supernatural forces, Henry and a group of \textbf{elderly} misfits must face danger and overcome the obstacles of advanced \textbf{age} as they struggle to right wrongs and bring justice to criminals."\normalsize   & \cellcolor{green!5}Age, Disabled, Elderly, Old, Senior & \cellcolor{green!5}Age - General, Age - Over 65s, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}8/226 & \cellcolor{green!5}3.54 \\  \hline
+  \cellcolor{green!27}\small I was twice asked, in a menacing tone of voice: What's your date of birth?!" by hospital staff on two separate occasions whilst seeking treatment for a broken wrist. I never respond to 'Command and control tactics' ... and ended up going to another hospital where they don't identify people by their date of birth. This use of people's date of birth before asking their name in order to ensure they have the right person is being widely abused in British hospitals by staff who obviously have psychological/mental health issues and take it out on the \textbf{elderly}. Every hospital in the NHS has staff who, in former days, would be given their cards and told to find another profession if they began tormenting the \textbf{elderly}.\normalsize   & \cellcolor{green!27}Elderly & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}2/125 & \cellcolor{green!27}1.6 \\  \hline
+  \cellcolor{green!5}\small Ageism also happens to younger people .-.\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/7 & \cellcolor{green!5}14.286 \\  \hline
+  \cellcolor{green!27}\small It's not just \textbf{old} people\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Ageism, Age & \cellcolor{red!27}4 & \cellcolor{red!27}4/607& \cellcolor{red!27}0.66 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Elderly, Old, Senior & \cellcolor{red!5}10 & \cellcolor{red!5}10/607& \cellcolor{red!5}1.6500000000000001 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Nothing & \cellcolor{red!27}1 & \cellcolor{red!27}1/607& \cellcolor{red!27}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Disabled & \cellcolor{red!5}1 & \cellcolor{red!5}1/607& \cellcolor{red!5}0.16 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Age - Youngsters;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 2.6359.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 19/9 occurences of hate speech related comments.\end{itemize}\end{document}

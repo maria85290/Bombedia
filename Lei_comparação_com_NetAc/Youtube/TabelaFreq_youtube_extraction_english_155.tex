@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_155.json :}\newline \par\Large\textbf {Title: \large  A Small Ulta Haul \& Ageism At Its Best }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Hi \textbf{Hun}. I totally agree with you about the sponge applicators on the end of products. My favourite concealer is Maybelline The Eraser Eye, but it has that Sponge......big hugs......Bella xxxx🌺🌺🌺\normalsize   & \cellcolor{green!27}Hun & \cellcolor{green!27}Nationality - German & \cellcolor{green!27}1/31 & \cellcolor{green!27}3.226 \\  \hline
+  \cellcolor{green!5}\small My mom had open heart surgery in her seventies and two other very serious surgeries later in her early 80's. She lived to be just days shy of her 93rd birthday. Never did her \textbf{doctors} say anything like that to us. When a doctor is that negative, it's time to find another one. Gerri, your skin is gorgeous and I love your makeup. Be blessed ... xoxo\normalsize   & \cellcolor{green!5}doctors & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/67 & \cellcolor{green!5}1.493 \\  \hline
+  \cellcolor{green!27}\small Nikki, I'm sure most \textbf{doctors} would t say that to people. I think in both cases with me they were confiding in me, having been in the business for a number of years. My aunt lived till she was 95 and my mother died at 81. Longevity is certainly more prevalent today.\normalsize   & \cellcolor{green!27}doctors & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/52 & \cellcolor{green!27}1.923 \\  \hline
+  \cellcolor{green!5}\small Geri, how \textbf{old} are you?  If you don't mind me asking because you look as if you will certainley live another ten years.  I am 84yrs young and have started wearing makeup.  So no way am I going to die soon and give up so much fun.  My doc said last time that he has 3 patients over 100 and many in their 90,s.  He is very young and no way does he want me to give up.  I think you have too much product on your eyes but what do I know.  Love you and your channel.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/98 & \cellcolor{green!5}1.02 \\  \hline
+  \cellcolor{green!27}\small Geri, your comments on \textbf{ageism} stunned me! I personally know loads of people in their 70s who have had successful heart surgery, for one. This sounds like plain \textbf{old} insurance cost-cutting to me. Have you considered complaining to your doctor's superiors? Such blatant discrimination is depressing--which definitely isn't good for anyone's health. Many people decide not to pursue zillions of tests, just as some forego treatment--not necessarily because of their \textbf{age}, but sometimes, yes. That should be the individual's prerogative, not medical policy.\normalsize   & \cellcolor{green!27}Age, Ageism, Old & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}3/83 & \cellcolor{green!27}3.614 \\  \hline
+  \cellcolor{green!5}\small Debbie, I'm so happy you're enjoying the videos. What these \textbf{ageist} statements suggest is that we are not valued as we \textbf{age} and that is a sad commentary. Thanks for those kind words.\normalsize   & \cellcolor{green!5}Age, Ageist & \cellcolor{green!5}Age - General & \cellcolor{green!5}2/33 & \cellcolor{green!5}6.061 \\  \hline
+  \cellcolor{green!27}\small Regarding \textbf{ageism}. What the you know what!! I just started back going to the gym because well I need to and I just want to feel better. The guy they assign to me is 84 years \textbf{old} but I didn't know his \textbf{age} until he told me and I could not believe he was that \textbf{age} because He just didn't look that \textbf{age} (hell I don't know what \textbf{age} suppose to look like anymore) he really looked like he was my \textbf{age} which is 64 that's 20 years younger than he looked. He was handsome too... tall good looking man in great shape he was one of the people who worked at the gym so tell me please what are \textbf{Doctors} and people in general thinking...that once you turned a certain \textbf{age} you going to die and just give up.... what is it... what are they thinking... don't they know we are living longer taking better care if our selves and they too if they are lucky one hope to live a long and healthy life. "What the ...."\normalsize   & \cellcolor{green!27}Age, Ageism, Old, doctors & \cellcolor{green!27}Age - General, Age - Over 65s, Nationality - General & \cellcolor{green!27}9/179 & \cellcolor{green!27}5.028 \\  \hline
+  \cellcolor{green!5}\small linda, it's alarming how little value they put on us as we \textbf{age}. It's tantamount to sending us out to that iceberg.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/22 & \cellcolor{green!5}4.545 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - German}  & \cellcolor{red!27}Hun & \cellcolor{red!27}1 & \cellcolor{red!27}1/1050& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - General}  & \cellcolor{red!5}doctors & \cellcolor{red!5}3 & \cellcolor{red!5}3/1050& \cellcolor{red!5}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old & \cellcolor{red!27}3 & \cellcolor{red!27}3/1050& \cellcolor{red!27}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Age, Ageism, Ageist & \cellcolor{red!5}12 & \cellcolor{red!5}12/1050& \cellcolor{red!5}1.1400000000000001 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - German;Nationality - General;Age - Over 65s;Age - General;%.
+
+\item The percentage of hate speech related words is 1.8095.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 19/25 occurences of hate speech related comments.\end{itemize}\end{document}

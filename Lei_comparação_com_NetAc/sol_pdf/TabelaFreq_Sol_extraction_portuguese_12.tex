@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_12.json :}\newline \par\Large\textbf {Title: \large  Telespetador decidiu dizer a Goucha que estava farto dele e o apresentador respondeu à letra }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Um bando de homofobicos num pais a beira mar plantado. Quem nao gosta \textbf{muda} de canal. Pk tanta raiva do homem, mais parece dor de corno.\normalsize   & \cellcolor{green!27}Muda & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/26 & \cellcolor{green!27}3.846 \\  \hline
+  \cellcolor{green!5}\small Ainda não repararam que o Goucha só responde porque vê necessidade de tal..<br/>O homem é \textbf{gay}, sim, e o que tem? Prejudica alguém por isso? Não, é a resposta!!<br/>Agora ridículos e descarados são vocês, que veem para aqui criticar o homem só por ter feito um comentário!!\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/47 & \cellcolor{green!5}2.128 \\  \hline
+  \cellcolor{green!27}\small Um \textbf{idiota} e convencido este Goucha...\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small andamos todos admirados como é que ainda não se lembraram de criar um canal exclusivamente \textbf{LGBT}..pelos vistos está na moda ser \textbf{gay} na televisão...\normalsize   & \cellcolor{green!5}Gay, LGBT & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}2/24 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small Vai tomar no Rabo nojento, deves ser \textbf{gay} atras do armario, deves andar nos wc a fazê brich e vens para aqui criticar os Gays, lava a boca nojento,preconceitos é crime e tu devias tarde preso, não prestas como ser humano. ..mata te\normalsize   & \cellcolor{green!27}Gay & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}1/43 & \cellcolor{green!27}2.326 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Muda, Idiota & \cellcolor{red!27}2 & \cellcolor{red!27}2/505& \cellcolor{red!27}0.4 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay, LGBT & \cellcolor{red!5}4 & \cellcolor{red!5}4/505& \cellcolor{red!5}0.79 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Sexual Identity - General;%.
+
+\item The percentage of hate speech related words is 1.1881.
+
+\item Considering that the variable \textbf{Sexual Identity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 6/26 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_186.json :}\newline \par\Large\textbf {Title: \large  Age Discrimination Towards Teenagers }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small She killed her f*cking pimp. Pimps are \textbf{sex} traffickers and they deserve to die\normalsize   & \cellcolor{green!27}Sex & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small I once got kicked off a see  saw by a mother ( we would always get off if a kid was hovering and wanted a turn, better yet we would sometimes stay on so they had someone to see saw with) XD  I was so shocked because my friend swore under her breath and I was about to flip on my friend for swearing with children present. THEN  THE \textbf{OLD} LADY SWEAR MUCH LOUDER, I was like okay thought we were dealing with an adult, not an overpowered 9 year old\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}2/91 & \cellcolor{green!5}2.198 \\  \hline
+  \cellcolor{green!27}\small But when you say "not an overpowered 9 year \textbf{old}", that's being \textbf{ageist} towards 9 year olds.\normalsize   & \cellcolor{green!27}Ageist, Old & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}2/17 & \cellcolor{green!27}11.765 \\  \hline
+  \cellcolor{green!5}\small meep meep an overpowered 9 year \textbf{old}? Geez this is the problem\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/12 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small I totally agree. Children, no matter what \textbf{age}, should have every right that an adult would have here in America, it is unconstitutional to deny children the same rights as adults, as all men are created equal. I pray children get the same rights as adults one day.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/48 & \cellcolor{green!27}2.083 \\  \hline
+  \cellcolor{green!5}\small +J Kirby Da Rock (PK Freeze) 50 years ago the rights of \textbf{l\textbf{g\textbf{bt}}} people were not taken seriously but now they are, systematic \textbf{ageism} will be gone if people actually work to get rid of it like they did\normalsize   & \cellcolor{green!5}Ageism, LGBT & \cellcolor{green!5}Age - General, Sexual Identity - General, Sexual Identity - Male homosexuality, Sexual Identity - Transexuality & \cellcolor{green!5}4/39 & \cellcolor{green!5}10.256 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Sex & \cellcolor{red!27}1 & \cellcolor{red!27}1/314& \cellcolor{red!27}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}3 & \cellcolor{red!5}3/314& \cellcolor{red!5}0.96 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Ageist, Age, Ageism & \cellcolor{red!27}3 & \cellcolor{red!27}3/314& \cellcolor{red!27}0.96 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}LGBT & \cellcolor{red!5}1 & \cellcolor{red!5}1/314& \cellcolor{red!5}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}LGBT & \cellcolor{red!27}1 & \cellcolor{red!27}1/314& \cellcolor{red!27}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Transexuality}  & \cellcolor{red!5}LGBT & \cellcolor{red!5}1 & \cellcolor{red!5}1/314& \cellcolor{red!5}0.32 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Age - Over 65s;Age - General;Sexual Identity - General;Sexual Identity - Male homosexuality;Sexual Identity - Transexuality;%.
+
+\item The percentage of hate speech related words is 3.1847.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 11/10 occurences of hate speech related comments.\end{itemize}\end{document}

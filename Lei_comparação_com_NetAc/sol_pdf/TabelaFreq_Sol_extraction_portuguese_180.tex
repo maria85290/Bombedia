@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_180.json :}\newline \par\Large\textbf {Title: \large  António Costa admite adotar medidas ainda mais restritivas nas próximas semanas }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Agora eh je Portugal e os portugueses vão cair na total desgraça .... Com as imposições deste \textbf{idiota} !\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small Nem mais! Ng corre com este \textbf{idiota} o português gosta !\normalsize   & \cellcolor{green!5}Idiota & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Do que está á espera o POVO PORTUGUÊS?A Liberdade está a ser retirada, estão á espera que lhe roubem a \textbf{mulher} e os filhos???????????MAIS 48 ANOS DE FASCISMO?Políticos portugueses mais virulentos que o Covid-19.\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/37 & \cellcolor{green!27}2.703 \\  \hline
+  \cellcolor{green!5}\small já é mais \textbf{velho} que o cagar.\normalsize   & \cellcolor{green!5}Velho & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/7 & \cellcolor{green!5}14.286 \\  \hline
+  \cellcolor{green!27}\small De boas intenções está o Inferno cheio! E quando quem as manifesta não passa dum Ditadorzeco da treta, estamos falados. Está Portugal nas mãos de um PS \textbf{nazi} comandado por um ditador fantoche de seu nome Costa. Estamos a viver um dos momentos mais tristes e deprimentes em toda a História do nosso País. Ou Resistimos ou morremos! CdS\normalsize   & \cellcolor{green!27}Nazi & \cellcolor{green!27}Nationality - German & \cellcolor{green!27}1/59 & \cellcolor{green!27}1.695 \\  \hline
+  \cellcolor{green!5}\small 🤣🤣🤣subiu-lhe à cabeça o poder....só pode..devem fazer rapidamente uma avaliacao psiquiatrica ao \textbf{m\textbf{onhé}} 🤣🤣\normalsize   & \cellcolor{green!5}Monhé & \cellcolor{green!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!5}2/14 & \cellcolor{green!5}14.286 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Idiota & \cellcolor{red!27}2 & \cellcolor{red!27}2/2038& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}1 & \cellcolor{red!5}1/2038& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velho & \cellcolor{red!27}1 & \cellcolor{red!27}1/2038& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - German}  & \cellcolor{red!5}Nazi & \cellcolor{red!5}1 & \cellcolor{red!5}1/2038& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh)}  & \cellcolor{red!27}Monhé & \cellcolor{red!27}1 & \cellcolor{red!27}1/2038& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Indian}  & \cellcolor{red!5}Monhé & \cellcolor{red!5}1 & \cellcolor{red!5}1/2038& \cellcolor{red!5}0.05 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Gender - General;Age - Over 65s;Nationality - German;Ethnicity - Asian (South- India, Pakistan, Bangladesh);Nationality - Indian;%.
+
+\item The percentage of hate speech related words is 0.3435.
+
+\item Considering that the variable \textbf{Physical Identity - Physical (and Mental) Impairments} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 7/47 occurences of hate speech related comments.\end{itemize}\end{document}

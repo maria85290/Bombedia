@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_35.json :}\newline \par\Large\textbf {Title: \large  Racismo de ciganos no Lumiar }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Nunca vi num jornal a dizer que foi preso um \textbf{cigano} por violar.... Agora os brancos só aparecem no jornal pk roubam, matam,violam.etc. Basta que os ciganos nem no jornal aparecem\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/31 & \cellcolor{green!27}3.226 \\  \hline
+  \cellcolor{green!5}\small \@DJ Nuno Já viste a bofia mandar parar algum \textbf{cigano} ? Eu nunca vi , e devem ter a carta 5  deles , ainda faz uma semana o meu sobrinho de 11 anos foi roubado por 3 putos ciganos que ainda meterem a faca na barriga do \textbf{miúdo} pra roubarem-lhe o telemovel , está neste momento a emergir uma geração de ciganos que pode ser a pior de sempre em Portugal , mas o mais giro é que estes são os ciganos criados pelo estado português via subsídios dos anos 90 , ciganos que estão entre os 15 e os 25 e pico , o português têm que evita-los porque um \textbf{gajo} parte um \textbf{cigano} desses ao meio e vêm os lelos todos com a pistola , e os media ainda os levam ao colo .\normalsize   & \cellcolor{green!5}Cigano, Gajo, Miúdo & \cellcolor{green!5}Age - Youngsters, Ethnicity - Roma, Ethnicity - White & \cellcolor{green!5}4/137 & \cellcolor{green!5}2.92 \\  \hline
+  \cellcolor{green!27}\small hahhaha na comunidade cigana a pedofilia corre solta basta ver com que \textbf{idade} se casam as raparigas 14 , 15 , 16 anos .... ganha mas é juizo\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/28 & \cellcolor{green!27}3.571 \\  \hline
+  \cellcolor{green!5}\small essa teve coragem de denunciar centenas delas levam e calam e vem este \textbf{atrasado} falar dos brancos.... nós brancos somos otários é de vos sustentarmos.. basta ver os bairros de habitação social todos vandalizados  so pk vos dao as casas mas nao vos sai tusto do bolso\normalsize   & \cellcolor{green!5}Atrasado & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/47 & \cellcolor{green!5}2.128 \\  \hline
+  \cellcolor{green!27}\small a tanta pessoa burra e estupida neste nosso portugual, se ja entenderan sou \textbf{cigano} de \textbf{etnia} e cidadao portugues, nao existe \textbf{raça}, e \textbf{etnia}, sua prof... burra\normalsize   & \cellcolor{green!27}Cigano, Etnia, Raça & \cellcolor{green!27}Ethnicity - General, Ethnicity - Roma & \cellcolor{green!27}4/27 & \cellcolor{green!27}14.815 \\  \hline
+  \cellcolor{green!5}\small \@Filipe Silva vai tu embora pa.cona da tua maee,sabes pk meu.\textbf{ganda} Otário ignorante do caralho,quem cheira mal e quem sao corruptos são voces brancs fato e gravata,que roubam dinheiro e roubam.ao estado,e voces coitados escravos nu mundo,noz somos povo de deus e tu e as pessoas que disseram mal contra os ciganos vão arder todos nu.inferno pk so deus nu meio.disto tudo é que nos pode julgar....\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/67 & \cellcolor{green!5}1.493 \\  \hline
+  \cellcolor{green!27}\small por isso a tua mãe é puta\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/7 & \cellcolor{green!27}14.286 \\  \hline
+  \cellcolor{green!5}\small Cuidado com o que você dizer filho da \textbf{puta} os ciganos que não são como você pensa eu sei como ves aos  ciganos . era assim nec nos tihamos que tratar-te . FIHO DA \textbf{PUTA}.\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}2/35 & \cellcolor{green!5}5.714 \\  \hline
+  \cellcolor{green!27}\small Olha portoand tu deserteza a apeseluta que não fiseste issu que eskreveste pq se tu deseste issu bem alto e cuspiste o \textbf{cigano} ou a cigana devia de ser maluka de não te partir essa boka toda mas claro para tu tares com tanta raiva os ciganos tu ja cumeste pouco por a boca\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/54 & \cellcolor{green!27}1.852 \\  \hline
+  \cellcolor{green!5}\small E tu devias ter estudado na casa pia quando a gertudes nunes fazia aquelas famosas festas com grandes senhores da sociadade portuguesa ou tambem devias ir a praia com o motorista mais famoso de portugal com o nome carlos silvino ou ires a uma consulta daquele medico famoso que adora crianças .... ou dar uma entrevista a um dos melhores apresentador de tv um,a coisa te garanto nenhum deles é \textbf{cigano} ....isso sim são escoria mas esses como tem estatutos não se passa nada seu bando de pedofilos ...\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}1/89 & \cellcolor{green!5}1.124 \\  \hline
+  \cellcolor{green!27}\small Ó artista valentão máuzão ..porque tu não dizes que andas a descontar para pagares segurança ao carlos silvino sim aquele que viola crianças por exemplo nesse caso da casa pia tem algum \textbf{cigano} como arguido ? no caso face oculta tem algum \textbf{cigano} ? em casos de abandono de idosos e crianças tem algum \textbf{cigano} ? nós os ciganos temos de tudo bons e maus mas uma coisa te garanto não temos pedofilos já voçês ....já agora quando vires um \textbf{cigano} na rua grita como diseste aqui morte aos ciganos\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}4/90 & \cellcolor{green!27}4.444 \\  \hline
+  \cellcolor{green!5}\small Bem tenho a certeza que tu és um grande recista porque em vez te tu dizeres para fecharem os ciganos na escola e depois pegar fogo 1 ponto nem tu nem 10000 como tu tinham essa capacidade de fazer isso depois éra melhor fecharem o CARLOS CRUZ O CARLOS SILVINO O HUGO MARÇAL E COMPANHIA LIMITADA  e depois porem fogo .....em algum desses arguidos vêz algum \textbf{cigano} ????em caso de mal tratos a idosos vêz algum \textbf{cigano} ..nós temo de tudo um pouco bons e máus mas pedofilos não temos já tu não sei\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}2/94 & \cellcolor{green!5}2.128 \\  \hline
+  \cellcolor{green!27}\small o nome do video é \textbf{racismo} de ciganos, alguem que me moste um video mundial de um \textbf{cigano} a ajuda alguem, e depois dissem que somos racistas\normalsize   & \cellcolor{green!27}Cigano, Racismo & \cellcolor{green!27}Ethnicity - General, Ethnicity - Roma & \cellcolor{green!27}2/27 & \cellcolor{green!27}7.407 \\  \hline
+  \cellcolor{green!5}\small quanta ingnorancia,sou \textbf{cigano} e sei como e dificil .pois o preconceito ta ai. mais adoraria que alguem como esse besta ai falasse mal de minha mae pra mim quebrar todos os dentes dele, ta inssastifeito com a vida filho de uma egua? vou te da uma ideia pra vc nao ter nenhuma preocupaçao e nem problemas.  suba em cima da mesa coloque uma cordinha no pescosso e  pule. os incapazes tem senpre que colocar a culpa de seus fracassos em alguem\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}1/81 & \cellcolor{green!5}1.235 \\  \hline
+  \cellcolor{green!27}\small fdx mas ha mais d 1 \textbf{raça} d ciganos?! crl, sao piores k os ratos!!!\normalsize   & \cellcolor{green!27}Raça & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small é triste ver tanta ignorancia no meio destes comentarios racistas ,nos ciganos há pessoas boas e pessoas más nunca se deve globarisar toda uma \textbf{etnia} nas acões de alguns indevidoos .e com respeito aesses comentarios que tranbordom de violencia ,é notoria a covardia de quem se esconde atrás de um monitor. Não quero deixar de dizer que a violencia é usada por aqueles que lhe faltam argumentos.!sou \textbf{cigano}  portugues ou portugues \textbf{cigano}  o que entereça é que não há ninguem mais portugues que eu.\normalsize   & \cellcolor{green!5}Cigano, Etnia & \cellcolor{green!5}Ethnicity - General, Ethnicity - Roma & \cellcolor{green!5}3/84 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small lol se fosses \textbf{cigano} ja nao dizias isso\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/8 & \cellcolor{green!27}12.5 \\  \hline
+  \cellcolor{green!5}\small Caros cidadãos que estão para aqui com discussões de m*rdaVenho informar-vos que pelos comentários que li tenho vergonha de ser Portugues porque somos o povo mais \textbf{racista} que já conheci.Para esses infelizes que dizem que os ciganos deviam morrer queria ver se eram da mesma opinião se tivessem nascido ciganos. As coisas que eu mais odeio são as "religiões" e a "raças" que so trazem guerras a este mundoPaz e acabem com o racismo\normalsize   & \cellcolor{green!5}Racismo, Racista & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}2/77 & \cellcolor{green!5}2.597 \\  \hline
+  \cellcolor{green!27}\small o \textbf{racismo} nunca vai acabar \textbf{idiota} porque não somos todos iguais embora os traidores gostem de dizer que somos todos iguais.\normalsize   & \cellcolor{green!27}Idiota, Racismo & \cellcolor{green!27}Ethnicity - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/21 & \cellcolor{green!27}9.524 \\  \hline
+  \cellcolor{green!5}\small estou utilizando a conta de um amigo! nao sou \textbf{cigano} epa ou checoog em vez de keimarmos os ciganos deviamos keimar os pidofilos e violadores ke ha no nosso pais ke sao 90 da popolaçao dos homens isso sim e uma vergolha epa kresce e aperece os ciganos nao sao a ameaça mas sim os portugueses!\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}1/56 & \cellcolor{green!5}1.786 \\  \hline
+  \cellcolor{green!27}\small \@genteboa1ify Filho da \textbf{puta} aprende a ler depois vem falar comigo. N sabes ler nem escrever portugues monte de merda. continua para aí a ladrar pa quem perceber esses grunhidos\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/30 & \cellcolor{green!27}3.333 \\  \hline
+  \cellcolor{green!5}\small \@KillerChaijBalin a \textbf{puta} que te pariu e a merda que ta neste pais, portugueses filhos da \textbf{puta}, RACISTAS\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}2/18 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small Para que tanta descusão? Somos tds iguais... foda.se quando é que vai acabar o \textbf{Racismo}!!!!! PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, PEACE, , PEACE, PEACE, PEACE, PEACE!\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/74 & \cellcolor{green!27}1.351 \\  \hline
+  \cellcolor{green!5}\small GENTE CIGANOS NOA SAO MERDA , SIMPLESMENTE SÃO PESSOAS COM OUTROS HÁBITOS É COM A VER AFRICANOS INGLÊS ,   TANTO  FAZ MERDA O QUE NÃO É \textbf{CIGANO} COM QUEM É , TANTO ROUBA O  \textbf{CIGANO} COM NEM  QUEM É \textbf{CIGANO} , TANTO  ESA PRESO UM \textbf{CIGANO} COM MUITOS QUE NÃO O SÃO , POR FAVOR TENHO  13 ANOS E SEI MUITO BEM  QUE AH CIGANOS E CIGANOS TEM TODOS DIREITO  A VIDA ! COM OUTRA PESSOA QUAL QUERE\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}4/78 & \cellcolor{green!5}5.128 \\  \hline
+  \cellcolor{green!27}\small epá, em vez de se preocuparem com a nossa \textbf{etnia}, que tem os seus males, é verdade, e quem não os tem que atire a 1ªpedra, porque é que não se preocupam antes com a pedófilia, tipo: pais a violar os filhos, irmão a fornicar as irmãs, esse malucos que ai andam a abusar de anjinhos que são as crianças, esse são problemas muito maiores e VOÇES NÃO VÊM CIGANOS nas tv's e jornais a serm acusados disso,AO PASSO QUE NA VOSSA \textbf{RAÇA}.......... ui ui.\normalsize   & \cellcolor{green!27}Etnia, Raça & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}2/86 & \cellcolor{green!27}2.326 \\  \hline
+  \cellcolor{green!5}\small \@vivaosciganos E ainda agridem o INEM que foi socorrer um \textbf{cigano} haviam de deixa-lo la apodreçer o vosso lugar era na selva e não na sociedade escumalha\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}1/27 & \cellcolor{green!5}3.704 \\  \hline
+  \cellcolor{green!27}\small \@vivaosciganos Ve-se logo que és \textbf{cigano} és mais um daqueles que anda os tiros nas ruas desapareçe pa\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small lool  axo  graça  aos  ciganos  querem  os  mesmos  direitos  k  a  nossa  \textbf{raça}  até  ai  concordo  esta  muito  certo!!!mas  perguntem-lhes  se  querem  descontar  se  querem  ser  mandados  por  um  chefe  acham  mesmo???  pahhh  andamento  com  esses  ratos  daqui  pra  fora  mas  é  já , e  não  só,  brasucas  e  ucranianada   e  pretalhada foraaaaaaaaaaaaa\normalsize   & \cellcolor{green!5}Raça & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/54 & \cellcolor{green!5}1.852 \\  \hline
+  \cellcolor{green!27}\small filhos da \textbf{puta} sao uns merdas do carralho so fazem e merda noobs !!!!!!!! extreminemnos\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small CIGANOS FILHOS DA \textbf{PUTA}.não corram os ciganos de PORTUGAL não... são um povo violento vivem do crime e do rendimento minimo. bate-se num vem a família inteira loltristes do caralho... não se pode fazer mal aos coelhos, não se pode fazer mal ás cegonhas, não se pode fazer mal aos ciganos e uma pessoa não pode fazer mal a nada. xDxD (by GF)\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/65 & \cellcolor{green!5}1.538 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Roma}  & \cellcolor{red!27}Cigano & \cellcolor{red!27}24 & \cellcolor{red!27}24/2705& \cellcolor{red!27}0.89 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Miúdo & \cellcolor{red!5}1 & \cellcolor{red!5}1/2705& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo & \cellcolor{red!27}1 & \cellcolor{red!27}1/2705& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Idade & \cellcolor{red!5}1 & \cellcolor{red!5}1/2705& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Atrasado, Idiota & \cellcolor{red!27}2 & \cellcolor{red!27}2/2705& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Etnia, Raça, Racismo, Racista & \cellcolor{red!5}12 & \cellcolor{red!5}12/2705& \cellcolor{red!5}0.44 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Ganda, Puta & \cellcolor{red!27}9 & \cellcolor{red!27}9/2705& \cellcolor{red!27}0.33 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Roma;Age - Youngsters;Ethnicity - White;Age - General;Physical Identity - Physical (and Mental) Impairments;Ethnicity - General;Gender - Female sexuality;%.
+
+\item The percentage of hate speech related words is 1.8484.
+
+\item Considering that the variable \textbf{Ethnicity - Roma} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 51/69 occurences of hate speech related comments.\end{itemize}\end{document}

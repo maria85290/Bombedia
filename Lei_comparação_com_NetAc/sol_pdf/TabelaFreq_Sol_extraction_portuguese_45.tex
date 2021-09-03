@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_45.json :}\newline \par\Large\textbf {Title: \large  'É muito claro na minha vida que eu já não quero fazer programas diários' }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Aproveite para pagar ao desgraçado que lhe emprestou dinheiro e ficou a "ver navios" pois vendeu o restaurante ao "marido" por um euro e que não tem bens para pagar. Os bancos já não lhe emprestavam dinheiro e arranjou um \textbf{totó} que caiu na fama do senhor...<br/>É arrogante para com os seus colaboradores que nem apareceram ao jantar que este lhes ofereceu por a TVI ter quebrado a tradição.\normalsize   & \cellcolor{green!27}Totó & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/69 & \cellcolor{green!27}1.449 \\  \hline
+  \cellcolor{green!5}\small Esta \textbf{gaja} não é aquela que engole a palhinha? <br/>Imagine-se esta \textbf{gaja} de manhã a dizer mmerda e à noite a chupar a piroka ao outro. <br/>e a levar na kloaka a seguir. Mas imagine-se mesmo.\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}2/36 & \cellcolor{green!5}5.556 \\  \hline
+  \cellcolor{green!27}\small Esta velharia \textbf{bichona} devia era ir lavar CHÃO e ganhar +600 euros para ver o que é bom, paspalho \textbf{lerdo}.\normalsize   & \cellcolor{green!27}Bichona, Lerdo & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments, Sexual Identity - Male homosexuality & \cellcolor{green!27}2/20 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small Quem é esta \textbf{gaja} que se chama Goucha? Devia cortar o buço, as tugas já não usam buço há muito tempo.\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/21 & \cellcolor{green!5}4.762 \\  \hline
+  \cellcolor{green!27}\small - Olha lá + Amigo virtual , consegues acreditar que possa existir algo de " muito claro " , na vivência do manuel luis goucha ?🤔+ Não . 😐- E porquê ? 🙄+ Por que vive constantemente com um Enorme "Buraco \textbf{Negro}" , que lhe "suga toda a claridade"..  🤭- ÁH ÁH ÁH ÁH ÁH ÁH ÁH ! 👌😂 Este - meu + Amigo virtual , sai + se com cada uma NA realidade...😏\normalsize   & \cellcolor{green!27}Negro & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/78 & \cellcolor{green!27}1.282 \\  \hline
+  \cellcolor{green!5}\small Não se esqueça que o \textbf{mariconço} ainda tem de ir fazer as coisinhas ao "marido" e tudo o mais! Vergonha de mariconços!\normalsize   & \cellcolor{green!5}Mariconço & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/22 & \cellcolor{green!5}4.545 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Totó & \cellcolor{red!27}1 & \cellcolor{red!27}1/692& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Gaja & \cellcolor{red!5}2 & \cellcolor{red!5}2/692& \cellcolor{red!5}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Bichona, Mariconço & \cellcolor{red!27}2 & \cellcolor{red!27}2/692& \cellcolor{red!27}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Lerdo & \cellcolor{red!5}1 & \cellcolor{red!5}1/692& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Negro & \cellcolor{red!27}1 & \cellcolor{red!27}1/692& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Youngsters;Gender - General;Sexual Identity - Male homosexuality;Physical Identity - Physical (and Mental) Impairments;Ethnicity - Black;%.
+
+\item The percentage of hate speech related words is 1.0116.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 8/26 occurences of hate speech related comments.\end{itemize}\end{document}

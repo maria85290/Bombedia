@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_132.json :}\newline \par\Large\textbf {Title: \large  Mau tempo impede Greta de discursar no Parlamento }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Ninguém perde tempo com o parlamento do país mais \textbf{rasca} da Europa ocidental, mesmo sendo aquele com a maior frota automóvel e que mais CO2 emite por deputado.\normalsize   & \cellcolor{green!27}Rasca & \cellcolor{green!27}Social Class - Working class & \cellcolor{green!27}1/28 & \cellcolor{green!27}3.571 \\  \hline
+  \cellcolor{green!5}\small ESta menina não devia estar na escola a estudar  em vez de ser o papagaio de interesses escondidos? Que pais são estes que deixam uma jovenzita andar num veleiro mundo fora podendo perder a vida,<br/> ou afinal o bote e as viagens são pura encenação.  Eu dou ouvidos a gente adulta que estudou sobre o assunto e não a uma \textbf{miúda} irreverente e mal educada fantoche que outros manajam. De onde vem o dinheiro para tanta viagem?<br/>Só de ouvir o nome da \textbf{miúda} fico bom pele de galinha, etou farta.\normalsize   & \cellcolor{green!5}Miúda & \cellcolor{green!5}Gender - General & \cellcolor{green!5}2/90 & \cellcolor{green!5}2.222 \\  \hline
+  \cellcolor{green!27}\small Não há dinheiro que pague e/ou escola que consiga ensinar o que esta \textbf{miúda} está a fazer e aprender ao mesmo tempo.<br/>Depois de um ano a fazer o que ela tem feito, a discursar para a União Europeia, Congresso dos EUA, Nações Unidas, entre outros, ela merece um doutoramento em relações internacionais.No final da sua experiência, estou certo que será ela própria a ser convidada para dar aulas nas escolas...\normalsize   & \cellcolor{green!27}Miúda & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/71 & \cellcolor{green!27}1.408 \\  \hline
+  \cellcolor{green!5}\small Enquanto a miuda inicialmente tomou uma postura natural para a sua \textbf{idade} sobre os problemas ambientais foi interessante de seguir, depois veio o deslumbramento e "tráfico de influências" e deixou de ter interesse de ela gritar , choramingar e falar repetidamente o mesmo estilo de discurso .\normalsize   & \cellcolor{green!5}Idade & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/47 & \cellcolor{green!5}2.128 \\  \hline
+  \cellcolor{green!27}\small Mas esta menina não está em \textbf{idade} escolar obrigatória? E porque é que ela segue de Lisboa para Madrid de comboio? A bicicleta não é menos poluente? Atenção mas tem de ser bicicleta sem motor elétrico.\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/36 & \cellcolor{green!27}2.778 \\  \hline
+  \cellcolor{green!5}\small IDIOTA\normalsize   & \cellcolor{green!5}Idiota & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/1 & \cellcolor{green!5}100.0 \\  \hline
+  \cellcolor{green!27}\small É verdade, \textbf{miúda} doente que nada diz senão besteira... Porque o problema do clima é só um, EXCESSO DE POPULAÇÃO, principalmente em países de terceiro mundo, que a sua industrialização criam a maiores níveis de poluição, China, Índia... mas claro, não é politicamente correcto dizer... Vamos é criar "impostos" idiotas para sustentar as politicas esquerdopatas socialistas e entreter o povinho ignorante.\normalsize   & \cellcolor{green!27}Miúda & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/61 & \cellcolor{green!27}1.639 \\  \hline
+  \cellcolor{green!5}\small doente ?!  a mim da-me a impressão que a \textbf{gaja} se droga  ......\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Rasca & \cellcolor{red!27}1 & \cellcolor{red!27}1/3436& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Miúda, Gaja & \cellcolor{red!5}4 & \cellcolor{red!5}4/3436& \cellcolor{red!5}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Idade & \cellcolor{red!27}2 & \cellcolor{red!27}2/3436& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Idiota & \cellcolor{red!5}1 & \cellcolor{red!5}1/3436& \cellcolor{red!5}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Social Class - Working class;Gender - General;Age - General;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 0.2328.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 9/71 occurences of hate speech related comments.\end{itemize}\end{document}

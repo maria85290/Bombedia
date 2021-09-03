@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_134.json :}\newline \par\Large\textbf {Title: \large  Imagine a world without ageism }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small I don't like it when \textbf{old} ppl call me young lady\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small Great video.  Examples of \textbf{ageism} I've witnessed include (1) much younger people addressing older people as "Honey" or "Sweetie", (2) using baby talk or high-pitched voices, or (3) talking to family members or others about an older person (instead of to that older person directly) when that older person is present.\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/51 & \cellcolor{green!5}1.961 \\  \hline
+  \cellcolor{green!27}\small Thank you for the video. As a 71 years young passionate person  I believe that \textbf{ageism} in Australia does not go far enough and that some of the issues raised are ignored by older adults themselves. In this regard, consciousness, spirituality [non-religious] creativity, mindfulness embracing challenges of growth and eventual phase known as 'death,' should be a part of the broader conversation and involvement.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/64 & \cellcolor{green!27}1.562 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old & \cellcolor{red!27}1 & \cellcolor{red!27}1/299& \cellcolor{red!27}0.33 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Ageism & \cellcolor{red!5}2 & \cellcolor{red!5}2/299& \cellcolor{red!5}0.67 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Age - General;%.
+
+\item The percentage of hate speech related words is 1.0033.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 3/6 occurences of hate speech related comments.\end{itemize}\end{document}

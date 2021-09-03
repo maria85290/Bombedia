@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_115.json :}\newline \par\Large\textbf {Title: \large  Milhares na marcha LGBT no Porto }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Meu caro amigo Chaparral, a mãe natureza fez-nos para sermos felizes e nao sermos formatados por uma sociedade sem escrúpulos! Não foi a mãe natureza que nos fez para gostarmos de x ou de y, é a sociedade que todos os dias teima em condenar, julgar e rotular o outro por uma característica que não foi escolhida, pensada ou desejada. As pessoas são como são, cada um é como é, e todos nos devemos respeitar nas nossas semelhanças e nas nossas diferenças. E quanto à exibição de diferenças, a marcha não é uma exibição nem tão pouco uma passagem de modelos. A marcha é uma forma de luta e protesto que os que podem fazem em nome deles e daqueles outros que gostavam, mas não podem por medo de repressão no trabalho, na escola ou até mesmo na própria família!<br/>É por mentes como a sua que todos os dias filhos são expulsos de casa por uma orientação \textbf{sexual} daquela que os pais sonharam para eles, que todos os dias trabalhadores vão para o desemprego por serem homossexuais ou qualquer outra orientação \textbf{sexual} que não a heterossexual, que todos os dias jovens acabam no suicídio porque são reprimidos e vítimas de bullying nas escolas, no trabalho e, pior ainda, na sua própria família! A marcha é lutar por uma sociedade livre de preconceitos, de estigmas, de discriminação! Olhe para as coisas como elas são e não como gostaria que elas fossem!\normalsize   & \cellcolor{green!27}Sexual & \cellcolor{green!27}Gender - General & \cellcolor{green!27}2/240 & \cellcolor{green!27}0.833 \\  \hline
+  \cellcolor{green!5}\small felizmente que ser \textbf{gay} não é obrigatório nem proibido, mas a Mãe Natureza achou por bem escolher criar o homem e a \textbf{mulher} para se complementarem e se reproduzirem e o mundo seria mesmo um paraiso para todos, mas o Homem com as suas manias resolveu mudar de rumo às leis da natureza, possivelmente estragou tudo, veremos só o tempo o dirá.Mas fazer marchas para exibir as diferenças isso sim é contra natura.....\normalsize   & \cellcolor{green!5}Gay, Mulher & \cellcolor{green!5}Gender - General, Sexual Identity - General & \cellcolor{green!5}2/74 & \cellcolor{green!5}2.703 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Sexual, Mulher & \cellcolor{red!27}2 & \cellcolor{red!27}2/344& \cellcolor{red!27}0.58 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay & \cellcolor{red!5}1 & \cellcolor{red!5}1/344& \cellcolor{red!5}0.29 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Sexual Identity - General;%.
+
+\item The percentage of hate speech related words is 0.8721.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/3 occurences of hate speech related comments.\end{itemize}\end{document}

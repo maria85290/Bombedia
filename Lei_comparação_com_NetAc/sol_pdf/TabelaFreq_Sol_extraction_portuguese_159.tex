@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_159.json :}\newline \par\Large\textbf {Title: \large  Padre encontrado morto na praia de São Pedro de Moel }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Cá para mim foi mais um \textbf{padreco} que levou a catequista para a farra mas a mistura de whisky, coca e viagra bateu torto...\normalsize   & \cellcolor{green!27}Padreco & \cellcolor{green!27}Religious Identity - Roman Catholic & \cellcolor{green!27}1/24 & \cellcolor{green!27}4.167 \\  \hline
+  \cellcolor{green!5}\small Aguenta nessa kornadura a vossa derrota no Basquetebol, \textbf{parolo} do cacete ..Besta ANIMALÓIDE do gayfica ..Mentecapto ..Boi !!\normalsize   & \cellcolor{green!5}Parolo & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/18 & \cellcolor{green!5}5.556 \\  \hline
+  \cellcolor{green!27}\small INCHA, PORCO FILHO DE PPUTA ..\textbf{PAROLO} DO CACETE DO GAYFICA ..SOFRE AÍ MOURO FILHO DE PPUTA ..MENTECAPTO ..BOI !!\normalsize   & \cellcolor{green!27}Parolo & \cellcolor{green!27}Social Class - Working class & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small Porco filho da ppuutta ..\textbf{Parolo} do cacete ..Mouro de mierda ..Mentecapto ..Boi !!\normalsize   & \cellcolor{green!5}Parolo & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small Tanta discussão por aqui e tão fútil, e ninguém se foca na essência da notícia, ou na falta dela neste caso. Estes "jornaleiros" deste pasquim manhoso, já ficam todos felizes em dar títulos, porque notícias não dão. Se dessem notícias, estariamos agora a saber que \textbf{idade} tinha o padre, se padecia de alguma doença, se tinha inimigos, se houve entretanto investigação sobre as causas da morte, etc etc....Mas não, o pasquim manhoso contentou-se em publicar o aparecimento de um cadáver de um padre na praia, que por acaso era pároco em Maceira, ponto. Grande informação, ficamos elucidados.\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/97 & \cellcolor{green!27}1.031 \\  \hline
+  \cellcolor{green!5}\small Parece que estava desde ontem um padre desaparecido e o cronista tentou fundir a noticia de ontem do desaparecimento do tal padre com a pessoa que encontraram hoje e que veio a ser identificado como o padre que ontem andava desaparecido , é claro que a noticia podia ter sido dada de outra forma mas o alarido que uma parte dos comentadores por aqui fizeram foi só mais uma opinião , afinal o \textbf{gajo} pifou e dito de uma maneira ou de outra é altura de investigar se foi crime ou suicídio.\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/92 & \cellcolor{green!5}1.087 \\  \hline
+  \cellcolor{green!27}\small KÓPIAS KORNUDO ..TRAVESTIDO \textbf{ROTO} FILHO DE PPUTA ..LADRÃO DE NICKS .. MENTECAPTO ..BOI !!\normalsize   & \cellcolor{green!27}Roto & \cellcolor{green!27}Sexual Identity - Male homosexuality & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Religious Identity - Roman Catholic}  & \cellcolor{red!27}Padreco & \cellcolor{red!27}1 & \cellcolor{red!27}1/973& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Parolo & \cellcolor{red!5}3 & \cellcolor{red!5}3/973& \cellcolor{red!5}0.31 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Idade & \cellcolor{red!27}1 & \cellcolor{red!27}1/973& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}1 & \cellcolor{red!5}1/973& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Roto & \cellcolor{red!27}1 & \cellcolor{red!27}1/973& \cellcolor{red!27}0.1 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Religious Identity - Roman Catholic;Social Class - Working class;Age - General;Ethnicity - White;Sexual Identity - Male homosexuality;%.
+
+\item The percentage of hate speech related words is 0.7194.
+
+\item Considering that the variable \textbf{Social Class - Working class} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 7/39 occurences of hate speech related comments.\end{itemize}\end{document}

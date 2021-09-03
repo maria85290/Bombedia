@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_163.json :}\newline \par\Large\textbf {Title: \large  Crianças forçadas a puxar Porsche do padre | Vídeo }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Que é feito do jericó e das folhas de palmeira?Se o Papa anda de Cinquecento e Jesus andava de jumento, quem é este artolas para se fazer puxar num Porsche?Este \textbf{gajo} é perfeitamente patético, dentro ou fora da igreja. Enfim, quando se perde a noção do ridículo descamba nestas misérias.\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/52 & \cellcolor{green!27}1.923 \\  \hline
+  \cellcolor{green!5}\small A estupidez e a ignorância sempre andaram de mão dada com as igrejas, particularmente com a católica… O lado \textbf{imbecil} dos indivíduos revela-se nas crendices e praticas religiosas, os padres sempre se aproveitaram dessa miséria intelectual humana, de tal forma que padre que não abusasse da servidão da populaça era considerado mau padre… Nos nossos dias, na Europa, com toda a informação e instrução livre a acessível a todos, continuam a servi-los e estes energúmenos continuam a vexar, humilhar e desprezar estas populações que os veneram… Incrível? … Não!... É assim mesmo, o humano enquanto multidão é por natureza estupido e haverá sempre chicos espertos que se aproveitam dessa apoucada existência grupal, existencial, seja na religião, no futebol ou na política...\normalsize   & \cellcolor{green!5}Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/121 & \cellcolor{green!5}0.826 \\  \hline
+  \cellcolor{green!27}\small Em pleno século XXI!! Uma \textbf{aberração}! Uma estupidez que até doí! O povo é \textbf{cego} e a religião tira proveito...a todos os níveis! Mas ainda há alguém que preste vassalagem a esta gente?<br/>Já nem falo na presunção do padre...com um porches!\normalsize   & \cellcolor{green!27}Aberração, Cego & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments, Sexual Identity - Male homosexuality & \cellcolor{green!27}2/41 & \cellcolor{green!27}4.878 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo & \cellcolor{red!27}1 & \cellcolor{red!27}1/479& \cellcolor{red!27}0.21 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Imbecil, Cego & \cellcolor{red!5}2 & \cellcolor{red!5}2/479& \cellcolor{red!5}0.42 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Aberração & \cellcolor{red!27}1 & \cellcolor{red!27}1/479& \cellcolor{red!27}0.21 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - White;Physical Identity - Physical (and Mental) Impairments;Sexual Identity - Male homosexuality;%.
+
+\item The percentage of hate speech related words is 0.8351.
+
+\item Considering that the variable \textbf{Physical Identity - Physical (and Mental) Impairments} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/15 occurences of hate speech related comments.\end{itemize}\end{document}

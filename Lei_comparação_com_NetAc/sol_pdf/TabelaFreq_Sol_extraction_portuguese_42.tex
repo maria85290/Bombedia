@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_42.json :}\newline \par\Large\textbf {Title: \large  Cristina Ferreira quis roubar marido de Manuel Luís Goucha }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small - Ó + Amigo virtual..+ Sim - Amigo real ?- Porque será que a cristina ferreira está com aquele ar de parv....isto é , com "aquele ar" , aqui na foto ?+ Está a desafiar o touro , mas esqueceu - se de vestir de \textbf{v\textbf{ermelho}} ..- ÁH ÁH ÁH ÁH ÁH ÁH ÁH ÁH ÁH ÁH !+ eh eh .. pois ..\normalsize   & \cellcolor{green!27}Vermelho & \cellcolor{green!27}Ethnicity - Native American, Ideological and Political Identity - General & \cellcolor{green!27}2/68 & \cellcolor{green!27}2.941 \\  \hline
+  \cellcolor{green!5}\small Será o marido, ou a \textbf{mulher} do dito cujo...!!!<br/>É que esta questão é um quebra cabeças dos diabos...!!!<br/>Que venha o primeiro e... Decifre o mistério...!!!\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/25 & \cellcolor{green!5}4.0 \\  \hline
+  \cellcolor{green!27}\small Marido? Um homem ser marido de outro, será que o outro é a esposa?? Jajajajajajjajajajaa!ISTO É DISCRIMINAÇÃO CONTRA OS HÉTEROS! ISTO É ILEGAL!Vejamos, os gays podem escolher quem é a viúva, ou o viúvo, logo, escolhem para ser viúva o \textbf{rabeta} que tenha os rendimentos e a reforma mais pequena, para abocanhar tudo aquilo que as viúvas héteros conseguem abocanhar e que é recusado aos viúvos héteros....✔️Os gays podem ser tudo o que quiserem, na via pública, nos empregos e dentro de casa e os discriminados são eles? Hehehehehe. Discriminados são os héteros! Que nem um piropo a uma \textbf{mulher} podem dar. Senão estamos tramados.✔️ Começa a ficar fora de moda ser hétero e isso vê-se na natalidade actual😈🥃.✔️ Não percebo o que pretende o Lobby \textbf{gay}, mas a médio prazo irá degenerar a sociedade🎃será um preço demasiado alto a pagar, pelas crianças de hoje e futuros adultos de amanhã👻 Está escrito 🖋.\normalsize   & \cellcolor{green!27}Gay, Mulher, Rabeta & \cellcolor{green!27}Gender - General, Sexual Identity - General, Sexual Identity - Male homosexuality & \cellcolor{green!27}3/158 & \cellcolor{green!27}1.899 \\  \hline
+  \cellcolor{green!5}\small Significa que Goucha é a \textbf{mulher} do Rui ? TÁ bem .Nem interessava o que é quem .\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native American}  & \cellcolor{red!27}Vermelho & \cellcolor{red!27}1 & \cellcolor{red!27}1/620& \cellcolor{red!27}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ideological and Political Identity - General}  & \cellcolor{red!5}Vermelho & \cellcolor{red!5}1 & \cellcolor{red!5}1/620& \cellcolor{red!5}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}3 & \cellcolor{red!27}3/620& \cellcolor{red!27}0.48 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay & \cellcolor{red!5}1 & \cellcolor{red!5}1/620& \cellcolor{red!5}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Rabeta & \cellcolor{red!27}1 & \cellcolor{red!27}1/620& \cellcolor{red!27}0.16 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Native American;Ideological and Political Identity - General;Gender - General;Sexual Identity - General;Sexual Identity - Male homosexuality;%.
+
+\item The percentage of hate speech related words is 1.129.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 7/24 occurences of hate speech related comments.\end{itemize}\end{document}

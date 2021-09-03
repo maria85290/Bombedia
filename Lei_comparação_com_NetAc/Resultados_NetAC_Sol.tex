@@ -1,0 +1,225 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[pdftex]{hyperref}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=1in]{geometry}
+\newcommand{\MinNumber}{0}\begin{document}
+
+\textbf {\huge Jornal publico:}\newline\newline\newline
+
+\centering\textbf{\large Table  1: Sintese dos resultados por ficheiro 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{||C{.40\mylength}||C{.30\mylength}||C{.30\mylength}||C{.30\mylength}||}
+\hline
+\textbf{Nome} & \textbf{N de Comentarios}  & \textbf{N de ocorrencias de hate Speech} & \textbf{Percentagem de hate Speech(\%)} \\
+\hline\cellcolor{green!27}sol-extraction-portuguese-1.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}7 & \cellcolor{green!27}1,4433 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-2.pdf & \cellcolor{green!5}8 & \cellcolor{green!5}7 & \cellcolor{green!5}2,1672 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-4.pdf & \cellcolor{green!27}24 & \cellcolor{green!27}14 & \cellcolor{green!27}1,5421 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-5.pdf & \cellcolor{green!5}22 & \cellcolor{green!5}9 & \cellcolor{green!5}1,6746 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-6.pdf & \cellcolor{green!27}40 & \cellcolor{green!27}8 & \cellcolor{green!27}0,5739 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-7.pdf & \cellcolor{green!5}20 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-8.pdf & \cellcolor{green!27}10 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-9.pdf & \cellcolor{green!5}3 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-10.pdf & \cellcolor{green!27}28 & \cellcolor{green!27}6 & \cellcolor{green!27}0,7989 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-11.pdf & \cellcolor{green!5}16 & \cellcolor{green!5}7 & \cellcolor{green!5}1,9608 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-12.pdf & \cellcolor{green!27}26 & \cellcolor{green!27}6 & \cellcolor{green!27}1,1881 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-13.pdf & \cellcolor{green!5}4 & \cellcolor{green!5}1 & \cellcolor{green!5}3,8462 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-14.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-15.pdf & \cellcolor{green!5}3 & \cellcolor{green!5}1 & \cellcolor{green!5}4,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-16.pdf & \cellcolor{green!27}14 & \cellcolor{green!27}1 & \cellcolor{green!27}0,3311 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-17.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}3 & \cellcolor{green!5}2,027 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-18.pdf & \cellcolor{green!27}10 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-19.pdf & \cellcolor{green!5}2 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-20.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-21.pdf & \cellcolor{green!5}8 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-22.pdf & \cellcolor{green!27}16 & \cellcolor{green!27}8 & \cellcolor{green!27}0,6006 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-23.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}1 & \cellcolor{green!5}1,0204 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-24.pdf & \cellcolor{green!27}21 & \cellcolor{green!27}4 & \cellcolor{green!27}1,0526 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-25.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-26.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}1 & \cellcolor{green!27}1,8182 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-27.pdf & \cellcolor{green!5}52 & \cellcolor{green!5}10 & \cellcolor{green!5}0,4237 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-28.pdf & \cellcolor{green!27}28 & \cellcolor{green!27}2 & \cellcolor{green!27}0,2033 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-29.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}1 & \cellcolor{green!5}0,8696 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-30.pdf & \cellcolor{green!27}8 & \cellcolor{green!27}4 & \cellcolor{green!27}0,7692 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-31.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-32.pdf & \cellcolor{green!27}4 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-33.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-34.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-37.pdf & \cellcolor{green!5}9 & \cellcolor{green!5}5 & \cellcolor{green!5}2,2124 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-38.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-39.pdf & \cellcolor{green!5}31 & \cellcolor{green!5}4 & \cellcolor{green!5}0,3633 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-40.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}2 & \cellcolor{green!27}0,5076 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-41.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-42.pdf & \cellcolor{green!27}24 & \cellcolor{green!27}7 & \cellcolor{green!27}1,129 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-43.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}1 & \cellcolor{green!5}0,2747 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-44.pdf & \cellcolor{green!27}8 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-45.pdf & \cellcolor{green!5}26 & \cellcolor{green!5}8 & \cellcolor{green!5}1,0116 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-46.pdf & \cellcolor{green!27}10 & \cellcolor{green!27}3 & \cellcolor{green!27}1,4493 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-47.pdf & \cellcolor{green!5}38 & \cellcolor{green!5}3 & \cellcolor{green!5}0,2412 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-48.pdf & \cellcolor{green!27}7 & \cellcolor{green!27}1 & \cellcolor{green!27}1,1111 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-49.pdf & \cellcolor{green!5}13 & \cellcolor{green!5}1 & \cellcolor{green!5}0,4673 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-50.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-51.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}1 & \cellcolor{green!5}1,0526 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-52.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}1 & \cellcolor{green!27}0,5102 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-53.pdf & \cellcolor{green!5}11 & \cellcolor{green!5}2 & \cellcolor{green!5}0,6993 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-54.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}8 & \cellcolor{green!27}1,6471 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-55.pdf & \cellcolor{green!5}4 & \cellcolor{green!5}1 & \cellcolor{green!5}0,9174 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-56.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}1 & \cellcolor{green!27}1,4925 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-57.pdf & \cellcolor{green!5}22 & \cellcolor{green!5}4 & \cellcolor{green!5}0,8333 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-58.pdf & \cellcolor{green!27}4 & \cellcolor{green!27}1 & \cellcolor{green!27}0,7576 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-59.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}1 & \cellcolor{green!5}0,3802 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-60.pdf & \cellcolor{green!27}13 & \cellcolor{green!27}2 & \cellcolor{green!27}0,8403 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-61.pdf & \cellcolor{green!5}24 & \cellcolor{green!5}9 & \cellcolor{green!5}3,4351 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-62.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}6 & \cellcolor{green!27}2,0134 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-63.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-64.pdf & \cellcolor{green!27}86 & \cellcolor{green!27}71 & \cellcolor{green!27}1,7503 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-65.pdf & \cellcolor{green!5}19 & \cellcolor{green!5}11 & \cellcolor{green!5}1,3767 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-66.pdf & \cellcolor{green!27}40 & \cellcolor{green!27}16 & \cellcolor{green!27}1,2317 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-67.pdf & \cellcolor{green!5}26 & \cellcolor{green!5}6 & \cellcolor{green!5}0,7082 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-68.pdf & \cellcolor{green!27}81 & \cellcolor{green!27}67 & \cellcolor{green!27}1,9399 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-69.pdf & \cellcolor{green!5}35 & \cellcolor{green!5}21 & \cellcolor{green!5}1,5184 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-70.pdf & \cellcolor{green!27}26 & \cellcolor{green!27}26 & \cellcolor{green!27}1,5816 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-71.pdf & \cellcolor{green!5}104 & \cellcolor{green!5}82 & \cellcolor{green!5}1,9879 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-72.pdf & \cellcolor{green!27}24 & \cellcolor{green!27}36 & \cellcolor{green!27}3,4413 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-73.pdf & \cellcolor{green!5}33 & \cellcolor{green!5}41 & \cellcolor{green!5}2,8679 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-74.pdf & \cellcolor{green!27}71 & \cellcolor{green!27}40 & \cellcolor{green!27}1,3315 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-75.pdf & \cellcolor{green!5}73 & \cellcolor{green!5}62 & \cellcolor{green!5}2,2989 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-76.pdf & \cellcolor{green!27}49 & \cellcolor{green!27}27 & \cellcolor{green!27}1,4146 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-77.pdf & \cellcolor{green!5}34 & \cellcolor{green!5}12 & \cellcolor{green!5}0,8705 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-78.pdf & \cellcolor{green!27}21 & \cellcolor{green!27}24 & \cellcolor{green!27}2,2417 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-79.pdf & \cellcolor{green!5}15 & \cellcolor{green!5}4 & \cellcolor{green!5}1,5385 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-80.pdf & \cellcolor{green!27}17 & \cellcolor{green!27}13 & \cellcolor{green!27}1,8987 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-81.pdf & \cellcolor{green!5}21 & \cellcolor{green!5}3 & \cellcolor{green!5}0,8547 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-82.pdf & \cellcolor{green!27}38 & \cellcolor{green!27}12 & \cellcolor{green!27}1,2903 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-83.pdf & \cellcolor{green!5}14 & \cellcolor{green!5}9 & \cellcolor{green!5}2,8391 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-84.pdf & \cellcolor{green!27}10 & \cellcolor{green!27}1 & \cellcolor{green!27}0,5917 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-85.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-86.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-87.pdf & \cellcolor{green!5}13 & \cellcolor{green!5}10 & \cellcolor{green!5}1,4535 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-88.pdf & \cellcolor{green!27}16 & \cellcolor{green!27}15 & \cellcolor{green!27}1,5942 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-89.pdf & \cellcolor{green!5}20 & \cellcolor{green!5}2 & \cellcolor{green!5}0,3356 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-91.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}6 & \cellcolor{green!27}3,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-92.pdf & \cellcolor{green!5}13 & \cellcolor{green!5}4 & \cellcolor{green!5}0,9709 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-93.pdf & \cellcolor{green!27}18 & \cellcolor{green!27}10 & \cellcolor{green!27}1,6949 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-94.pdf & \cellcolor{green!5}10 & \cellcolor{green!5}1 & \cellcolor{green!5}0,5376 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-95.pdf & \cellcolor{green!27}4 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-96.pdf & \cellcolor{green!5}31 & \cellcolor{green!5}18 & \cellcolor{green!5}0,8782 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-97.pdf & \cellcolor{green!27}8 & \cellcolor{green!27}1 & \cellcolor{green!27}0,4762 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-98.pdf & \cellcolor{green!5}8 & \cellcolor{green!5}2 & \cellcolor{green!5}0,8032 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-99.pdf & \cellcolor{green!27}90 & \cellcolor{green!27}54 & \cellcolor{green!27}1,1825 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-100.pdf & \cellcolor{green!5}22 & \cellcolor{green!5}5 & \cellcolor{green!5}0,3187 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-101.pdf & \cellcolor{green!27}3 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-102.pdf & \cellcolor{green!5}8 & \cellcolor{green!5}3 & \cellcolor{green!5}1,3393 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-103.pdf & \cellcolor{green!27}23 & \cellcolor{green!27}3 & \cellcolor{green!27}0,4093 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-104.pdf & \cellcolor{green!5}18 & \cellcolor{green!5}2 & \cellcolor{green!5}0,3527 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-105.pdf & \cellcolor{green!27}11 & \cellcolor{green!27}8 & \cellcolor{green!27}4,3243 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-106.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}2 & \cellcolor{green!5}1,3699 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-107.pdf & \cellcolor{green!27}10 & \cellcolor{green!27}9 & \cellcolor{green!27}2,0362 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-108.pdf & \cellcolor{green!5}37 & \cellcolor{green!5}11 & \cellcolor{green!5}0,8574 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-109.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-110.pdf & \cellcolor{green!5}38 & \cellcolor{green!5}14 & \cellcolor{green!5}0,9371 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-111.pdf & \cellcolor{green!27}18 & \cellcolor{green!27}11 & \cellcolor{green!27}1,7405 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-112.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}3 & \cellcolor{green!5}2,381 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-113.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}3 & \cellcolor{green!27}3,7975 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-114.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}3 & \cellcolor{green!5}3,7975 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-115.pdf & \cellcolor{green!27}3 & \cellcolor{green!27}4 & \cellcolor{green!27}0,8721 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-116.pdf & \cellcolor{green!5}19 & \cellcolor{green!5}2 & \cellcolor{green!5}0,3578 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-117.pdf & \cellcolor{green!27}8 & \cellcolor{green!27}9 & \cellcolor{green!27}3,0822 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-118.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}3 & \cellcolor{green!5}1,9737 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-119.pdf & \cellcolor{green!27}25 & \cellcolor{green!27}12 & \cellcolor{green!27}2,0797 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-120.pdf & \cellcolor{green!5}25 & \cellcolor{green!5}16 & \cellcolor{green!5}1,9093 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-121.pdf & \cellcolor{green!27}13 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-122.pdf & \cellcolor{green!5}39 & \cellcolor{green!5}22 & \cellcolor{green!5}1,0668 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-123.pdf & \cellcolor{green!27}22 & \cellcolor{green!27}10 & \cellcolor{green!27}1,1905 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-124.pdf & \cellcolor{green!5}64 & \cellcolor{green!5}25 & \cellcolor{green!5}0,8211 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-125.pdf & \cellcolor{green!27}25 & \cellcolor{green!27}10 & \cellcolor{green!27}0,5708 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-126.pdf & \cellcolor{green!5}64 & \cellcolor{green!5}18 & \cellcolor{green!5}1,0645 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-127.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}3 & \cellcolor{green!27}0,8696 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-128.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-129.pdf & \cellcolor{green!27}37 & \cellcolor{green!27}2 & \cellcolor{green!27}0,2994 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-130.pdf & \cellcolor{green!5}50 & \cellcolor{green!5}5 & \cellcolor{green!5}0,3028 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-131.pdf & \cellcolor{green!27}15 & \cellcolor{green!27}7 & \cellcolor{green!27}2,4735 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-132.pdf & \cellcolor{green!5}71 & \cellcolor{green!5}9 & \cellcolor{green!5}0,2328 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-133.pdf & \cellcolor{green!27}83 & \cellcolor{green!27}20 & \cellcolor{green!27}0,5747 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-134.pdf & \cellcolor{green!5}13 & \cellcolor{green!5}4 & \cellcolor{green!5}1,1696 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-135.pdf & \cellcolor{green!27}63 & \cellcolor{green!27}21 & \cellcolor{green!27}1,4247 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-136.pdf & \cellcolor{green!5}14 & \cellcolor{green!5}2 & \cellcolor{green!5}0,738 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-137.pdf & \cellcolor{green!27}16 & \cellcolor{green!27}2 & \cellcolor{green!27}0,5848 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-138.pdf & \cellcolor{green!5}21 & \cellcolor{green!5}3 & \cellcolor{green!5}0,566 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-139.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-140.pdf & \cellcolor{green!5}30 & \cellcolor{green!5}2 & \cellcolor{green!5}0,2829 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-141.pdf & \cellcolor{green!27}4 & \cellcolor{green!27}1 & \cellcolor{green!27}1,0309 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-142.pdf & \cellcolor{green!5}57 & \cellcolor{green!5}2 & \cellcolor{green!5}0,107 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-143.pdf & \cellcolor{green!27}36 & \cellcolor{green!27}9 & \cellcolor{green!27}0,5932 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-144.pdf & \cellcolor{green!5}23 & \cellcolor{green!5}3 & \cellcolor{green!5}0,4747 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-145.pdf & \cellcolor{green!27}105 & \cellcolor{green!27}29 & \cellcolor{green!27}0,7361 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-146.pdf & \cellcolor{green!5}76 & \cellcolor{green!5}15 & \cellcolor{green!5}0,467 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-147.pdf & \cellcolor{green!27}14 & \cellcolor{green!27}3 & \cellcolor{green!27}0,4747 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-148.pdf & \cellcolor{green!5}40 & \cellcolor{green!5}3 & \cellcolor{green!5}0,2681 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-149.pdf & \cellcolor{green!27}48 & \cellcolor{green!27}3 & \cellcolor{green!27}0,1741 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-150.pdf & \cellcolor{green!5}36 & \cellcolor{green!5}9 & \cellcolor{green!5}0,6923 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-151.pdf & \cellcolor{green!27}13 & \cellcolor{green!27}2 & \cellcolor{green!27}0,7273 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-152.pdf & \cellcolor{green!5}60 & \cellcolor{green!5}4 & \cellcolor{green!5}0,2706 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-153.pdf & \cellcolor{green!27}33 & \cellcolor{green!27}3 & \cellcolor{green!27}0,2662 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-154.pdf & \cellcolor{green!5}87 & \cellcolor{green!5}16 & \cellcolor{green!5}0,5457 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-155.pdf & \cellcolor{green!27}38 & \cellcolor{green!27}4 & \cellcolor{green!27}0,2817 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-156.pdf & \cellcolor{green!5}17 & \cellcolor{green!5}2 & \cellcolor{green!5}0,7937 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-157.pdf & \cellcolor{green!27}18 & \cellcolor{green!27}3 & \cellcolor{green!27}0,5272 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-158.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-159.pdf & \cellcolor{green!27}39 & \cellcolor{green!27}7 & \cellcolor{green!27}0,7194 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-160.pdf & \cellcolor{green!5}8 & \cellcolor{green!5}2 & \cellcolor{green!5}0,2551 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-161.pdf & \cellcolor{green!27}26 & \cellcolor{green!27}9 & \cellcolor{green!27}0,7547 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-162.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}1 & \cellcolor{green!5}0,565 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-163.pdf & \cellcolor{green!27}15 & \cellcolor{green!27}4 & \cellcolor{green!27}0,8351 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-164.pdf & \cellcolor{green!5}21 & \cellcolor{green!5}9 & \cellcolor{green!5}0,5545 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-165.pdf & \cellcolor{green!27}10 & \cellcolor{green!27}2 & \cellcolor{green!27}0,6135 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-166.pdf & \cellcolor{green!5}15 & \cellcolor{green!5}3 & \cellcolor{green!5}0,3409 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-167.pdf & \cellcolor{green!27}28 & \cellcolor{green!27}24 & \cellcolor{green!27}2,0408 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-168.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}3 & \cellcolor{green!5}0,4354 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-169.pdf & \cellcolor{green!27}29 & \cellcolor{green!27}6 & \cellcolor{green!27}0,5231 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-170.pdf & \cellcolor{green!5}13 & \cellcolor{green!5}9 & \cellcolor{green!5}2,2785 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-171.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}4 & \cellcolor{green!27}3,3898 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-172.pdf & \cellcolor{green!5}14 & \cellcolor{green!5}1 & \cellcolor{green!5}0,3937 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-173.pdf & \cellcolor{green!27}16 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-174.pdf & \cellcolor{green!5}56 & \cellcolor{green!5}3 & \cellcolor{green!5}0,4115 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-175.pdf & \cellcolor{green!27}13 & \cellcolor{green!27}5 & \cellcolor{green!27}2,6316 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-176.pdf & \cellcolor{green!5}128 & \cellcolor{green!5}20 & \cellcolor{green!5}0,6305 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-177.pdf & \cellcolor{green!27}14 & \cellcolor{green!27}5 & \cellcolor{green!27}2,0243 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-178.pdf & \cellcolor{green!5}88 & \cellcolor{green!5}15 & \cellcolor{green!5}0,7235 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-179.pdf & \cellcolor{green!27}99 & \cellcolor{green!27}11 & \cellcolor{green!27}0,4216 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-180.pdf & \cellcolor{green!5}47 & \cellcolor{green!5}7 & \cellcolor{green!5}0,3435 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-182.pdf & \cellcolor{green!27}32 & \cellcolor{green!27}1 & \cellcolor{green!27}0,0677 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-184.pdf & \cellcolor{green!5}56 & \cellcolor{green!5}15 & \cellcolor{green!5}0,6382 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-185.pdf & \cellcolor{green!27}59 & \cellcolor{green!27}17 & \cellcolor{green!27}0,8277 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-186.pdf & \cellcolor{green!5}20 & \cellcolor{green!5}2 & \cellcolor{green!5}0,3311 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-187.pdf & \cellcolor{green!27}27 & \cellcolor{green!27}3 & \cellcolor{green!27}0,2336 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-188.pdf & \cellcolor{green!5}119 & \cellcolor{green!5}16 & \cellcolor{green!5}0,4036 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-190.pdf & \cellcolor{green!27}30 & \cellcolor{green!27}2 & \cellcolor{green!27}0,3929 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-192.pdf & \cellcolor{green!5}44 & \cellcolor{green!5}1 & \cellcolor{green!5}0,0747 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-193.pdf & \cellcolor{green!27}58 & \cellcolor{green!27}14 & \cellcolor{green!27}0,8661 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-194.pdf & \cellcolor{green!5}22 & \cellcolor{green!5}3 & \cellcolor{green!5}1,0309 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-195.pdf & \cellcolor{green!27}7 & \cellcolor{green!27}1 & \cellcolor{green!27}1,4493 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-196.pdf & \cellcolor{green!5}15 & \cellcolor{green!5}2 & \cellcolor{green!5}0,6515 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-198.pdf & \cellcolor{green!27}9 & \cellcolor{green!27}2 & \cellcolor{green!27}1,3699 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-199.pdf & \cellcolor{green!5}17 & \cellcolor{green!5}7 & \cellcolor{green!5}2,3891 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-200.pdf & \cellcolor{green!27}33 & \cellcolor{green!27}14 & \cellcolor{green!27}1,6706 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-201.pdf & \cellcolor{green!5}9 & \cellcolor{green!5}1 & \cellcolor{green!5}0,5051 \\  \hline
+  \cellcolor{green!27}sol-extraction-portuguese-202.pdf & \cellcolor{green!27}32 & \cellcolor{green!27}5 & \cellcolor{green!27}0,5369 \\  \hline
+  \cellcolor{green!5}sol-extraction-portuguese-204.pdf & \cellcolor{green!5}10 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  
+\end{longtable}
+\end{center}
+\end{document}

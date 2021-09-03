@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_160.json :}\newline \par\Large\textbf {Title: \large  Discrimination against age }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small 'Despite the fact the United States' \textbf{Age} Discrimination in Employment Act (ADEA) has been in place for over 35 years, \textbf{age} discrimination in employment remains pervasive.'~ Laurie McCann, \textbf{Senior} attorney, AARP Litigation Foundation…'Negative perceptions of older workers were perceived as inflexible, unwilling to adapt technology, lacking an aggressive spirit, resistant to new ways, having some physical limitations, costing more for health insurance and complacent…Typically 90 of \textbf{age} discrimination suits do not make it to trial…One reason is that \textbf{age} discrimination in the employment process is difficult to prove'… [LINK] \normalsize   & \cellcolor{green!27}Age, Senior & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}5/92 & \cellcolor{green!27}5.435 \\  \hline
+  \cellcolor{green!5}\small Ohhhh this makes me very mad is you said a curtain \textbf{race} mimics what they see on tv that is a huge generalisation and I am incredibly mad you said that and you said all children act this way you sir/madam are a hippocrit\normalsize   & \cellcolor{green!5}Race & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/44 & \cellcolor{green!5}2.273 \\  \hline
+  \cellcolor{green!27}\small Many people abuse in several time or everytime. The unlawful to harass a person because of his or her \textbf{age}.  Unlawful \textbf{age} discrimination happens when someone is treated unfavourably because of their \textbf{age}, without justification, or is harassed or victimised because of their \textbf{age}. We can include fighting younger \textbf{age} than them, bullying, punishing, and hardtalk.If your child cadger a bread will you give him or her a punch? Harassment includes behaviour that is offensive, frightening or in any way distressing. It may be intentional bullying which is obvious or violent, but can also be unintentional, subtle and insidious.No culture was exempt from the problem, and no culture can claim to be exempt today. While we've made dishearteningly little progress, at least we've started taking a relatively clear-eyed look at the groups that are affected and the situations in which discrimination occurs. At least we're willing to acknowledge discrimination as a problem, although we can't even be trusted to get that right much of the time.But do you believe that  every life is valuable?This \textbf{age} discrimination can cause a war and can cause of death.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}6/189 & \cellcolor{green!27}3.175 \\  \hline
+  \cellcolor{green!5}\small i actually broke my mouse (not kidding, seriously) when i saw this. 1:00 Kids are not stupid because of \textbf{age}.They dont mimic stuff because of \textbf{age}. im probably smarter than a lot of you adults, and have better grammar. kids act like that because they get mad when they say "Hey guys i think i saw something over there!" and they are then ignored. We Go to this behavior because YOU disrespect US. We also deserve the right of speech. we need all the rights in the constitution, freedom for ALL. it also made me mad when i went to staples to get a new mouse, and told my mom to stay in the car. that i could handle it. then at the cashier the \textbf{woman} said "sorry honey, you need a adult with you. your too young." i don't think that was in the store policy. what was that? it was her being \textbf{ageist}. i should have been \textbf{racist} to her, but i wasn't. couse' i was the lil' nice kid. Martin Luther king and \textbf{Abe} Lincoln freed \textbf{colored} people. Cezar Chaves helped the latins. I want to be the next in the list to free young and experienced people, they don't have rights. Experienced people have to go to homes, and kids are forced to take some subjects at school they don't want to. i could list other stuff, but im just going to put etc. someone help put a stop to this.\normalsize   & \cellcolor{green!5}Abe, Age, Ageist, Colored, Racist, Woman & \cellcolor{green!5}Age - General, Ethnicity - Black, Ethnicity - General, Gender - General, Religious Identity - Jewish & \cellcolor{green!5}7/245 & \cellcolor{green!5}2.857 \\  \hline
+  \cellcolor{green!27}\small your the best i couldnt find an \textbf{ageism} video then i finally found your video this is an awsome video your awsome\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/22 & \cellcolor{green!27}4.545 \\  \hline
+  \cellcolor{green!5}\small It's wrong when you discriminate SOLELY on \textbf{age}. If someone is equally as qualified to do something, it's wrong to forbid them from doing it. The child wouldn't have the proper training to do so nor the proper reasoning capabilities of driving said tank. As for the man, it would simply be a threat to the children for him to be there *shrugs*\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/63 & \cellcolor{green!5}1.587 \\  \hline
+  \cellcolor{green!27}\small Qualifications over \textbf{age} anytime anywhere."You cannot gamble if under 21?"That's a ridiculous law, anyone who's qualified should gamble\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small Great video.  Thanks for putting an emphasis on the fact that we all deserve respect, no matter what \textbf{age} we are.  Keep up the good work.  And remember: First you are young; then you are middle-aged; then you are old; then you are wonderful. - Lady Diana Cooper\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/48 & \cellcolor{green!5}2.083 \\  \hline
+  \cellcolor{green!27}\small Thank you so much for your message, it is beautiful, I'm going to illustrate a short presentation on \textbf{Ageism} at Psychology class - Stereotypes and Prejudice at Curry College, Milton, MA. I hope you don't mind, I could never make a video like your. Happy Holidays, Merry Christmas and Happy New Year. Denise.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/53 & \cellcolor{green!27}1.887 \\  \hline
+  \cellcolor{green!5}\small Age discrimination is \textbf{age} discrimination reguardless of what the conditions and or circumstances are, you ether do it or you do not,Example: 50 year \textbf{old} man want to go back to kindergarden Example 2: 5 year \textbf{old} wants to drive a fully armed nuclear tankNow what is the primairy reason why these people will not be allowed to do what they want?\normalsize   & \cellcolor{green!5}Age, Old & \cellcolor{green!5}Age - General, Age - Over 65s & \cellcolor{green!5}4/64 & \cellcolor{green!5}6.25 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age, Ageist, Ageism & \cellcolor{red!27}17 & \cellcolor{red!27}17/1107& \cellcolor{red!27}1.54 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Senior, Old & \cellcolor{red!5}3 & \cellcolor{red!5}3/1107& \cellcolor{red!5}0.27 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Race, Racist & \cellcolor{red!27}2 & \cellcolor{red!27}2/1107& \cellcolor{red!27}0.18 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Woman & \cellcolor{red!5}1 & \cellcolor{red!5}1/1107& \cellcolor{red!5}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Colored & \cellcolor{red!27}1 & \cellcolor{red!27}1/1107& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Religious Identity - Jewish}  & \cellcolor{red!5}Abe & \cellcolor{red!5}1 & \cellcolor{red!5}1/1107& \cellcolor{red!5}0.09 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Ethnicity - General;Gender - General;Ethnicity - Black;Religious Identity - Jewish;%.
+
+\item The percentage of hate speech related words is 2.2584.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 28/19 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_216.json :}\newline \par\Large\textbf {Title: \large  How racism made me funny | Ruven Govender | TEDxMacquarieUniversity }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small You are segregating..... using the word white people is \textbf{racism} in itself.\normalsize   & \cellcolor{green!27}Racism & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small He's talking about \textbf{racism} and then he says imagine explaining the gym to an \textbf{African} kid. Africa has 54 countries including the Islands. He desperately needed a laugh and then used the ignorance of the people to get it.  The title is befitting " \textbf{Racism} did make him funny ".\normalsize   & \cellcolor{green!5}African, Racism & \cellcolor{green!5}Ethnicity - Black, Ethnicity - General & \cellcolor{green!5}3/50 & \cellcolor{green!5}6.0 \\  \hline
+  \cellcolor{green!27}\small hwhahaha white people most of the time they don't go hahaha lol  is he \textbf{Indian} or \textbf{African} American?  Love the \textbf{Indian} accent\normalsize   & \cellcolor{green!27}African, Indian & \cellcolor{green!27}Ethnicity - Black, Ethnicity - Native-American & \cellcolor{green!27}3/22 & \cellcolor{green!27}13.636 \\  \hline
+  \cellcolor{green!5}\small That tee shirt is FUCING \textbf{CRAZY}, I NEED THAT ..............\normalsize   & \cellcolor{green!5}Crazy & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small U r not African\normalsize   & \cellcolor{green!27}African & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small He doesn't look entirely \textbf{Indian}.\normalsize   & \cellcolor{green!5}Indian & \cellcolor{green!5}Ethnicity - Native-American & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small Boring jokes about \textbf{racism}, self pity jokes are annoying 😴😴😴\normalsize   & \cellcolor{green!27}Racism & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small Racism is fun when you're around with the white people. :p\normalsize   & \cellcolor{green!5}Racism & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Talks like these which are plenty is driving \textbf{racism}.\normalsize   & \cellcolor{green!27}Racism & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small I think he got conflicted here because, under apartheid South Africa, Indians were higher than \textbf{black} people. He believed he was not \textbf{black} but brown with a South \textbf{African} mindset. When he got to New Zealand he got told he was \textbf{black} and to adjust to being \textbf{black} is very difficult especially when you grew up \textbf{Indian}. Trevor Noah hit the ground running cos he accepted his \textbf{black} side.\normalsize   & \cellcolor{green!5}African, Black, Indian & \cellcolor{green!5}Ethnicity - Black, Ethnicity - Native-American & \cellcolor{green!5}7/69 & \cellcolor{green!5}10.145 \\  \hline
+  \cellcolor{green!27}\small Why are u whites complain of he is being \textbf{racist} wen Muslims have to deal with rascim every day wen ur complaining of one vid\normalsize   & \cellcolor{green!27}Racist & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small YEA! it is totally funny when it is against white people, huh?! Same for every other color. don't be \textbf{racist} and say i couldn't go up to an \textbf{indian} and say "you \textbf{indian} people are taking our jobs" and not end up on the news\normalsize   & \cellcolor{green!5}Indian, Racist & \cellcolor{green!5}Ethnicity - General, Ethnicity - Native-American & \cellcolor{green!5}3/45 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small white people should stop listening and supporting this shit. The fact is every \textbf{nation} wants to wipe white people off. The guy is just slamming white people. I can belive people are laughing to this. white people have to be more proud of them self. World won't survive without white people.\normalsize   & \cellcolor{green!27}Nation & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/51 & \cellcolor{green!27}1.961 \\  \hline
+  \cellcolor{green!5}\small ojke ojke Hmmmmmm… No one wants to wipe white people off the Earth the way they want to wipe Blacks, Hispanics, Asians, and others off. He's not slamming them either, just joking around and making a point about \textbf{racism}. White people are already proud enough, proud to the point that they think they rule with an iron fist over everyone else. I think we really could survive without white people; It's less McDonald's-filled weight off of our shoulders, to be perfectly honest with you.\normalsize   & \cellcolor{green!5}Racism & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/84 & \cellcolor{green!5}1.19 \\  \hline
+  \cellcolor{green!27}\small Idiot. Govender. Tamilian brown skin! you are not \textbf{black} as blacks are!\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small being supportive = \textbf{racist}. Bye-Bye.\normalsize   & \cellcolor{green!5}Racist & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small people do not understand what \textbf{racism} is.  even though some \textbf{black} people themselves say that \textbf{race} matter, the minute you point out a difference in their \textbf{race}, they call you \textbf{racist}.  pointing out that Africans are good at sports is not \textbf{racist}.  how distorted one has to be to take a compliment as an insult.  \textbf{Racism} is to think that your \textbf{race} is  better (not different) than other races, therefore minimizing the value of the other human. Yet Muslims think they are better than the rest of humanity based on their faith and how you call that?  they are never accused of it, yet they go around playing victim.\normalsize   & \cellcolor{green!27}Black, Race, Racism, Racist & \cellcolor{green!27}Ethnicity - Black, Ethnicity - General & \cellcolor{green!27}8/109 & \cellcolor{green!27}7.339 \\  \hline
+  \cellcolor{green!5}\small "Muslim" isn't a \textbf{race} dude. He's not even from a Muslim country even if he is a Muslim. He's \textbf{Indian}.\normalsize   & \cellcolor{green!5}Indian, Race & \cellcolor{green!5}Ethnicity - General, Ethnicity - Native-American & \cellcolor{green!5}2/20 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small no no i know, it was just an example of real prejudice yet not acknowledged by society for what is on the contrary there is an exageration with relation to \textbf{black} and white.\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/33 & \cellcolor{green!27}3.03 \\  \hline
+  \cellcolor{green!5}\small indian? you look \textbf{black}. you could totally pass for \textbf{black}.\normalsize   & \cellcolor{green!5}Black, Indian & \cellcolor{green!5}Ethnicity - Black, Ethnicity - Native-American & \cellcolor{green!5}3/10 & \cellcolor{green!5}30.0 \\  \hline
+  \cellcolor{green!27}\small So what, there are some pigmies in Africa look white with \textbf{African} features.\normalsize   & \cellcolor{green!27}African & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small he said , \textbf{indian} born in south africa..\normalsize   & \cellcolor{green!5}Indian & \cellcolor{green!5}Ethnicity - Native-American & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small \@GSH RDY look white but have \textbf{african} features, your sentence doesn't make sense\normalsize   & \cellcolor{green!27}African & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small High time \textbf{Indian} stand ups stop doing racism-they-faced jokes now. Russel peters did that a light year back and it was good then\normalsize   & \cellcolor{green!5}Indian & \cellcolor{green!5}Ethnicity - Native-American & \cellcolor{green!5}1/23 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small 10 months later still \textbf{nobody} cares\normalsize   & \cellcolor{green!27}Nobody & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Juratory List \textbf{nothing} would happen lol\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small He's so \textbf{racist} against white people. Imagine if a white man stood up and said similar things about \textbf{black} people. Just imagine...\normalsize   & \cellcolor{green!27}Black, Racist & \cellcolor{green!27}Ethnicity - Black, Ethnicity - General & \cellcolor{green!27}2/22 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small Brittany Renick he is not \textbf{racist} about whites but he was making a mockery of India his own country and the accent as well which South \textbf{Indian} uses frequently\normalsize   & \cellcolor{green!5}Indian, Racist & \cellcolor{green!5}Ethnicity - General, Ethnicity - Native-American & \cellcolor{green!5}2/29 & \cellcolor{green!5}6.897 \\  \hline
+  \cellcolor{green!27}\small Brittany Renick this dude is indian\normalsize   & \cellcolor{green!27}Indian & \cellcolor{green!27}Ethnicity - Native-American & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Samuel115sHe is \textbf{Indian} indeed and he is also \textbf{black}. He refers to himself as a \textbf{black} \textbf{Indian}. For the record, I am by no means \textbf{racist}. I believe we are all equal in the eyes of God and I believe in one \textbf{race} that descended from Adam and Eve. However, videos like this rub me wrong as blacks often gang up on innocent whites for absolutely no reason. I believe while yes there are \textbf{racist} whites out there, there are also many \textbf{racist} blacks. I never owned a slave. I would never ever own a slave or look down on another person because of the color of their skin yet I have encountered many situations in life where a \textbf{black} person has been extremely harsh to me because I am white. White have been pansies lately if I am honest and act too scared to stand up for themselves in fear of being called \textbf{racist}. But I prefer to enlighten others on a better way. God's way. I do not want a \textbf{black} to ever ever feel looked down upon by a white and vice versa. I do not think there should be rules that there has to be a certain amount of blacks in a movie in order for the producer to not get sued for \textbf{racism} when blacks have entire channels dedicated to their color such as BET. I want equality all the way around. Equality for blacks, whites, Hispanics, Asians, etc.\normalsize   & \cellcolor{green!5}Black, Indian, Race, Racism, Racist & \cellcolor{green!5}Ethnicity - Black, Ethnicity - General, Ethnicity - Native-American & \cellcolor{green!5}12/245 & \cellcolor{green!5}4.898 \\  \hline
+  \cellcolor{green!27}\small \@Brittany Renick​​​ originally there would have been no such thing as "\textbf{racist} blacks" here in the west. \textbf{Black} people started getting \textbf{racist} after all the \textbf{racism} and and rejection they faced from white people. \textbf{Black} \textbf{racism} is more anger, jealously, frustration, bitterness or retaliation as apposed to we're better than your kind and I don't like you cuz your different. \textbf{Racism} is bad no matter what however I have noticed that the motives for white \textbf{racism} vs \textbf{black} \textbf{racism} are very different. Here in the west, White \textbf{racism} usually comes from a place of ignorance or a one off bad experience. \textbf{black} \textbf{racism} cannot be based on ignorance cuz were encounter white people all day everyday so ignorance is impossible for us.\normalsize   & \cellcolor{green!27}Black, Racism, Racist & \cellcolor{green!27}Ethnicity - Black, Ethnicity - General & \cellcolor{green!27}13/122 & \cellcolor{green!27}10.656 \\  \hline
+  \cellcolor{green!5}\small All \textbf{racism} is ignorance no matter the reason. I feel that the majority of whites are not \textbf{racist} and that while there are some that are it's driven by the fact that blacks seem to hate us for that which we did not do but that our ancestors did. It's an endless cycle that needs to be broken and I do not believe videos like this one encourage equality. It fuels the hate of both parties.\normalsize   & \cellcolor{green!5}Racism, Racist & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}2/76 & \cellcolor{green!5}2.632 \\  \hline
+  \cellcolor{green!27}\small I know what kind of message he wanted to share but it seems like he was a bit overly \textbf{racist} towards white peeps.\normalsize   & \cellcolor{green!27}Racist & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/23 & \cellcolor{green!27}4.348 \\  \hline
+  \cellcolor{green!5}\small Samuel Ngabo to be honest the sooner we stop talking about \textbf{racism} the better it's so hard to get a balance and I think he was too far the opposite way but who am I to judge\normalsize   & \cellcolor{green!5}Racism & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/37 & \cellcolor{green!5}2.703 \\  \hline
+  \cellcolor{green!27}\small Andy Chipling i think thats ignorant, just because you do not speak about it doesn't mean its not real. yes there are laws for rights. but they are laws. to but \textbf{racist} it j6st ignorant. judgment based on the color of skin is ignorant. meaning its ok to see color but not judge based on that. I am not saying kiss anyone's butt because they have a different skin tone.what i am saying people should stop assuming. if the world wants to change how some think, it's up to parents of all backgrounds to teach their kids, growing up i never once heard my parents make any sort of racial joke or speak badly useing \textbf{racist} words about any person. so its not about, not talking about it, its talking is worn out, now its about teaching kids the same i learned. teach them that regardless of color, everyone is human, until that human shows they are not trustworthy never pass judgment, and if or when any person shows they are not trustworthy, do not use that to label everyone. the \textbf{racist} issue in the USA is because of ignorance, on both sides, some humans are good, some are bad, That's what happens. but to not speak about it helps \textbf{nothing}, infact it hurts everyone like a butterfly effect. just like people useing violent protesting to get a point across.\normalsize   & \cellcolor{green!27}Nothing, Racist & \cellcolor{green!27}Age - Youngsters, Ethnicity - General & \cellcolor{green!27}4/230 & \cellcolor{green!27}1.739 \\  \hline
+  \cellcolor{green!5}\small Regarding the title, finally proof that \textbf{racism} doesn't exist. Thank you.\normalsize   & \cellcolor{green!5}Racism & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Racism definitely exists.\normalsize   & \cellcolor{green!27}Racism & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/3 & \cellcolor{green!27}33.333 \\  \hline
+  \cellcolor{green!5}\small I'd if he has it or not (I'm on 1:20 or something) but I see a \textbf{bald} wig\normalsize   & \cellcolor{green!5}Bald & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/18 & \cellcolor{green!5}5.556 \\  \hline
+  \cellcolor{green!27}\small Racism drove me to become a Bushido Ninja. Everywhere I went, people would call me "WEEABOO!" and "OTAKU!" and "NEET!"... They would laugh at my manga. They would mock me for my Anime collection. One time, my high school science teacher sent me to the principal's office because I was eating pocky in class.I have dealt with \textbf{nothing} but \textbf{racism} my entire life... Now that I am a Kendo champion in training? They will know true honor as I uphold the Bushido Code!<(   )> I am a 16 year \textbf{old} Japanese Bushido Ninja \textbf{woman} trapped in the body of a 36 year \textbf{old} white American male, and I will never allow the hateful bigots to get me down!Chiyaku Saki!\normalsize   & \cellcolor{green!27}Nothing, Old, Racism, Woman & \cellcolor{green!27}Age - Over 65s, Age - Youngsters, Ethnicity - General, Gender - General & \cellcolor{green!27}6/121 & \cellcolor{green!27}4.959 \\  \hline
+  \cellcolor{green!5}\small +Ken Sama Dude that is a crime. \textbf{Nobody} should ever be sent to the principals office for Pocky thuglife\normalsize   & \cellcolor{green!5}Nobody & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racism, Racist, Race & \cellcolor{red!27}46 & \cellcolor{red!27}46/2803& \cellcolor{red!27}1.6400000000000001 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}African, Black & \cellcolor{red!5}25 & \cellcolor{red!5}25/2803& \cellcolor{red!5}0.89 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native-American}  & \cellcolor{red!27}Indian & \cellcolor{red!27}13 & \cellcolor{red!27}13/2803& \cellcolor{red!27}0.45999999999999996 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Crazy & \cellcolor{red!5}1 & \cellcolor{red!5}1/2803& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Nation & \cellcolor{red!27}1 & \cellcolor{red!27}1/2803& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Nobody, Nothing & \cellcolor{red!5}5 & \cellcolor{red!5}5/2803& \cellcolor{red!5}0.18 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Bald & \cellcolor{red!27}1 & \cellcolor{red!27}1/2803& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Woman & \cellcolor{red!5}1 & \cellcolor{red!5}1/2803& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old & \cellcolor{red!27}1 & \cellcolor{red!27}1/2803& \cellcolor{red!27}0.04 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - General;Ethnicity - Black;Ethnicity - Native-American;Physical Identity - Physical (and Mental) Impairments;Nationality - General;Age - Youngsters;Physical Identity - Physical Features;Gender - General;Age - Over 65s;%.
+
+\item The percentage of hate speech related words is 3.3535.
+
+\item Considering that the variable \textbf{Ethnicity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 96/138 occurences of hate speech related comments.\end{itemize}\end{document}

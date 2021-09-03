@@ -1,0 +1,83 @@
+{
+ "header": {
+ "title": " Manuel Luís Goucha partilha imagem do quarto de hospital ",
+ "subtitle": " Apresentador deixou mensagem nas redes sociais. ",
+ "views": " NA ",
+ "likes": " NA ",
+ "dislikes": " NA ",
+ "shares": " NA ",
+ "datePosted": " 6 de junho 2017 ",
+ "dateExtraction": " 2020-02-19 ",
+ "language": " pt ",
+ "plataform": " Newspaper ",
+ "url": " https://sol.sapo.pt/artigo/566676/manuel-luis-goucha-partilha-imagem-do-quarto-de-hospital- ",
+ "postText": " ['O apresentador Manuel Luís Goucha foi internado, esta quinta-feira, depois de sentir uma forte dor de costas que o deixou alarmado. Na passada quinta feira, preparando-me para uma viagem de férias que teria início no dia seguinte, senti uma forte dor nas costas que, associada a alguns sintomas não habituais de cansaço que na altura fui atribuindo ao excesso de horas de trabalho, me deixou alarmado, pelo recorri às urgências do Hospital dos Lusíadas\", esclareceu o apresentador das manhãs da TVI.', 'Goucha foi diagnosticado com uma embolia pulmonar ligeira, e por questões de vigilância ficou internado no Hospital dos Lusíadas.', \"Esta terça-feira, o companheiro de Cristina Ferreira em 'Você na TV' partilhou uma imagem do quarto do hospital, com uma mensagem:\", '\"Com um dia de chuva (!!!) aqui está-se lindamente, levando umas picadas, fazendo umas TACs...\nTenham um óptimo dia que o meu ... também o será! Abraço\", escreveu na sua página oficial do Facebook.', ''] ",
+ "numberPosts": " 5 comentários",
+ "srcType": " text ",
+ "nameNewspaper": " Sol ",
+ "socioLingVar": "  ",
+ "listEvents": "  ",
+ "articleKeywords": "  ",
+ "keywords": "  ",
+ "commentsOpen": " yes "
+ },
+
+    "commentThread": [
+        {
+            "id": "3178900195",
+            "user": "macsof",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "Uma pequena pergunta, isto é notícia?<br/>Quem é o Goucha?<br/>Quem é a Rita?",
+            "likes": 1,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "3178842108",
+            "user": "vilardemacada",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "Brincadeiras de maricas contra lésbica!",
+            "likes": 1,
+            "hasReplies": true,
+            "numberOfReplies": 3,
+            "replies": [
+                {
+                    "id": "3180692760",
+                    "user": "provinciana",
+                    "date": "3 years ago",
+                    "timestamp": "NA",
+                    "commentText": "A fama da ritinha não é bem essa!",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                },
+                {
+                    "id": "3179429059",
+                    "user": "disqus_eZ8Rb1i7up",
+                    "date": "3 years ago",
+                    "timestamp": "NA",
+                    "commentText": "Te viste ao espelho?Pois, pois foi para conseguires tema, bravo.",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                },
+                {
+                    "id": "3178856063",
+                    "user": "Disqusmanuelgomes",
+                    "date": "3 years ago",
+                    "timestamp": "NA",
+                    "commentText": "É carnaval ninguém leva a mal , com Rita ou sem ela , todos por hoje podem ser matrafonas . Viva o carnaval , saia o corso . E, lá vai Manel ! ",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

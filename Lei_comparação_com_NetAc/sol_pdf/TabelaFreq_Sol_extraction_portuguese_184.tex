@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_184.json :}\newline \par\Large\textbf {Title: \large  AntÃ³nio Costa diz que manifestaÃ§Ã£o no Porto foi legÃ­tima mas condena arremesso de garrafas }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Que penem os desgraçados!!!<br/>Quando estavam de barriga cheia negavam reservas ao \textbf{tuga} para receberem estranjas... agora que chupem no dedo!!!\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small Isso mesmo.... este PS e o BE sao gentalha que nao proporcionam futuro ao \textbf{tuga}!!!\normalsize   & \cellcolor{green!5}Tuga & \cellcolor{green!5}Nationality - Portuguese & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Quem viu esta semana na TV o PSP \textbf{Negro} a pontapear o outro que estava no chão? desculpem estão-me a dizer que não era PSP , que era um PALOP, nem sei como o Morcela não foi visitar ao hospital.\normalsize   & \cellcolor{green!27}Negro & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/40 & \cellcolor{green!27}2.5 \\  \hline
+  \cellcolor{green!5}\small E diz o \textbf{m\textbf{onhé}} ... "É evidente que há muitas pessoas a sofrer muito. As pessoas que vão ter de ficar em casa vão sofrer." ... a filosofia do \textbf{m\textbf{onhé}} é pimenta no c.u. dos outros para mim é um refresco.\normalsize   & \cellcolor{green!5}Monhé & \cellcolor{green!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!5}4/41 & \cellcolor{green!5}9.756 \\  \hline
+  \cellcolor{green!27}\small este  \textbf{gajo}  parece  quase aquele  jogador  que  leva  o \textbf{v\textbf{ermelho}}  e  continua  em  jogo  .......\normalsize   & \cellcolor{green!27}Gajo, Vermelho & \cellcolor{green!27}Ethnicity - Native American, Ethnicity - White, Ideological and Political Identity - General & \cellcolor{green!27}3/15 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small "Condena arremesso de garrafas ??"... É para admirar tal palavreado vindo de um indivíduo que APERTA AS GOLAS A UM \textbf{VELHO}.....CHEGA de Hipocrisia e mentiras!!!\normalsize   & \cellcolor{green!5}Velho & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small Com as empresas fechadas, o \textbf{gordo} risonho querer obrigar as empresas a aumentar o salário minimo, e depois andar por aí a fingir que está preocupado com essas mesmas empresas, só se perdiam as garrafas que não acertassem nele.\normalsize   & \cellcolor{green!27}Gordo & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/39 & \cellcolor{green!27}2.564 \\  \hline
+  \cellcolor{green!5}\small O \textbf{c\textbf{hamuças}} até \textbf{muda} de cor quando os comunas lhe exigirem este mundo e o outro\normalsize   & \cellcolor{green!5}Chamuças, Muda & \cellcolor{green!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}3/16 & \cellcolor{green!5}18.75 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - Portuguese}  & \cellcolor{red!27}Tuga & \cellcolor{red!27}2 & \cellcolor{red!27}2/2037& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Negro & \cellcolor{red!5}1 & \cellcolor{red!5}1/2037& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh)}  & \cellcolor{red!27}Monhé, Chamuças & \cellcolor{red!27}2 & \cellcolor{red!27}2/2037& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Indian}  & \cellcolor{red!5}Monhé, Chamuças & \cellcolor{red!5}2 & \cellcolor{red!5}2/2037& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native American}  & \cellcolor{red!27}Vermelho & \cellcolor{red!27}1 & \cellcolor{red!27}1/2037& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}1 & \cellcolor{red!5}1/2037& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ideological and Political Identity - General}  & \cellcolor{red!27}Vermelho & \cellcolor{red!27}1 & \cellcolor{red!27}1/2037& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Velho & \cellcolor{red!5}1 & \cellcolor{red!5}1/2037& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Gordo & \cellcolor{red!27}1 & \cellcolor{red!27}1/2037& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Muda & \cellcolor{red!5}1 & \cellcolor{red!5}1/2037& \cellcolor{red!5}0.05 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - Portuguese;Ethnicity - Black;Ethnicity - Asian (South- India, Pakistan, Bangladesh);Nationality - Indian;Ethnicity - Native American;Ethnicity - White;Ideological and Political Identity - General;Age - Over 65s;Physical Identity - Physical Features;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 0.6382.
+
+\item Considering that the variable \textbf{Nationality - Portuguese} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 15/56 occurences of hate speech related comments.\end{itemize}\end{document}

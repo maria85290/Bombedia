@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_87.json :}\newline \par\Large\textbf {Title: \large  Rúben Amorim defende Marega: 'Está na hora de passar-se à ação e castigar' }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small O \textbf{gajo} ainda foi provocar os adeptos é bem feita tem aquilo que merece\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small Eu sugiro uma solução Salazarenta:<br/>Infiltrar uns "PIDEs" nas bancadas para agitar os adeptos e pô-los a chamar macacos aos pretos e depois filmarem o que se passa com os telemoveis, ficando assim logo provado \textbf{preto} no \textbf{branco} e cadeia com eles. Claro que nem há Tribunal, toca a punir logo conforme disse o Secretário dos Desportos.\normalsize   & \cellcolor{green!5}Branco, Preto & \cellcolor{green!5}Ethnicity - Black, Ethnicity - White & \cellcolor{green!5}2/56 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small olha-me outro , este  parece que não viu o jogador brasileiro  ( Raul Silva ) do Braga  provocar os adeptos do SLB  no fim do jogo , o \textbf{gajo} estava a pedi-las , se os adeptos do SLB  lhe respondessem aposto que era  \textbf{racismo} ..... isto anda  tudo ao contrario parece que os jogadores de futebol é que são os clubes , são a moral  e  não os adeptos, os adeptos são livres de ser aquilo que  quiserem , são eles   que pagam os bilhetes e  são eles que sustentam os clubes   , já  chega  é de novelas , o que se passou com o Marega  é futebol   ........\normalsize   & \cellcolor{green!27}Gajo, Racismo & \cellcolor{green!27}Ethnicity - General, Ethnicity - White & \cellcolor{green!27}2/109 & \cellcolor{green!27}1.835 \\  \hline
+  \cellcolor{green!5}\small ...e não só as racistas. Até porque as atitudes racistas têm por base o mesmo que as outras!<br/>Chama-se \textbf{preto} a um jogador de outra equipa... mas se for da nossa é o maior, um ídolo!!<br/>Se não for \textbf{negro}, não se chama \textbf{preto}... mas chama-se panele*ro, ou filho da \textbf{P*ta}, ou outra coisa qualquer... <br/>Na essência, não é por ser \textbf{racista}, mas na realidade, é! <br/>Deve ser punido, mas não se deve combater só pelo caso... mas pela origem!\normalsize   & \cellcolor{green!5}Negro, P*ta, Preto, Racista & \cellcolor{green!5}Ethnicity - Black, Ethnicity - General, Gender - Female sexuality & \cellcolor{green!5}5/78 & \cellcolor{green!5}6.41 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo, Branco & \cellcolor{red!27}3 & \cellcolor{red!27}3/688& \cellcolor{red!27}0.44 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Preto, Negro & \cellcolor{red!5}4 & \cellcolor{red!5}4/688& \cellcolor{red!5}0.58 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racismo, Racista & \cellcolor{red!27}2 & \cellcolor{red!27}2/688& \cellcolor{red!27}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}P*ta & \cellcolor{red!5}1 & \cellcolor{red!5}1/688& \cellcolor{red!5}0.15 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - White;Ethnicity - Black;Ethnicity - General;Gender - Female sexuality;%.
+
+\item The percentage of hate speech related words is 1.4535.
+
+\item Considering that the variable \textbf{Ethnicity - Black} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 10/13 occurences of hate speech related comments.\end{itemize}\end{document}

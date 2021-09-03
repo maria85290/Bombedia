@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_166.json :}\newline \par\Large\textbf {Title: \large  Padre acusado de burlar o Estado }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Tudo bem neste pais ,se os cds roubam, os do pds roubam os do Ps roubam hoje foi conhecido mais um o deputado Carlos Lopes ,imaginem agora ate os comunas metem a mao ao pote , a unica autarca do BE constituida arguida por desc vios de fundos da camara ,o \textbf{padreco} sentiu-se ligitimado ,até eu depois ter ter sido já bastante gamado ,se pudesse tam bem metia algum que as finaças me fanaram.....Antes os esquerditas só acusavam os da direita de roubar ,agora os da esquerda ainda roubam mais que os da direita ,poreiro ,pá...<br/>A do maestro Graça Moura esta, mesmo muito boa ,e entao tao comuna que ele era e rouba o povo ...o estado é o mpovo ,Filhos da Putha Hipocritas...\normalsize   & \cellcolor{green!27}Padreco & \cellcolor{green!27}Religious Identity - Roman Catholic & \cellcolor{green!27}1/125 & \cellcolor{green!27}0.8 \\  \hline
+  \cellcolor{green!5}\small Tudo bem neste pais ,se os cds roubam, os do pds roubam os do Ps roubam hoje foi conhecido mais um o deputado Carlos Lopes ,imaginem agora ate os comunas metem a mao ao pote , a unica autarca do BE constituida arguida por desc vios de fundos da camara ,o \textbf{padreco} sentiu-se ligitimado ,até eu depois ter ter sido já bastante gamado ,se pudesse tam bem metia algum que as finaças me fanaram.....Antes os esquerditas só acusavam os da direita de roubar ,agora os da esquerda ainda roubam mais que os da direita ,poreiro ,pá...<br/>A do maestro est\&amp;180+a mesmo muito boa ,e entao tao comuna que ele era e rouba o povo ...o estado é o mpovo ,Filhos da Putha Hipocritas...\normalsize   & \cellcolor{green!5}Padreco & \cellcolor{green!5}Religious Identity - Roman Catholic & \cellcolor{green!5}1/123 & \cellcolor{green!5}0.813 \\  \hline
+  \cellcolor{green!27}\small Entao de aquele deputado socialista Carlos Lopes 2005- 2009) roubou durantes anos a fio  bem agora foi condenadao a 11 anos de sol aos quadrados,se o maestro Miguel Graça Moura ,\textbf{comunista}( roubou forte e feio e são os "arautos da "honestidade") porque é que um padre nao pode roubar ,vejam hoje as noticias do JN e do Correio da Manha  e vejam o noticiario da Sic ,Dá vontade de Rir e de chorar no final .\normalsize   & \cellcolor{green!27}Comunista & \cellcolor{green!27}Ideological and Political Identity - General & \cellcolor{green!27}1/76 & \cellcolor{green!27}1.316 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Religious Identity - Roman Catholic}  & \cellcolor{red!27}Padreco & \cellcolor{red!27}2 & \cellcolor{red!27}2/880& \cellcolor{red!27}0.22999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ideological and Political Identity - General}  & \cellcolor{red!5}Comunista & \cellcolor{red!5}1 & \cellcolor{red!5}1/880& \cellcolor{red!5}0.11 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Religious Identity - Roman Catholic;Ideological and Political Identity - General;%.
+
+\item The percentage of hate speech related words is 0.3409.
+
+\item Considering that the variable \textbf{Religious Identity - Roman Catholic} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 3/15 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_171.json :}\newline \par\Large\textbf {Title: \large  Ex-padre casa com modelo 55 anos mais novo }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small A primeira e a mais longa? Coitado do \textbf{padreco}. Está claramente \textbf{senil}.Aquele selinho é de mais :D\normalsize   & \cellcolor{green!27}Padreco, Senil & \cellcolor{green!27}Age - Over 65s, Religious Identity - Roman Catholic & \cellcolor{green!27}2/18 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Até admira as esganiçadas não estarem já por aí a defenderem uma minoria qualquer ex padre \textbf{gay} que quer casar. <br/>Ah pois... Agora é implementar o odio \textbf{racista}... e criar problemas na saúde. <br/>Que eles vêm lá e resolvem tudo, tudo...\normalsize   & \cellcolor{green!5}Gay, Racista & \cellcolor{green!5}Ethnicity - General, Sexual Identity - General & \cellcolor{green!5}2/41 & \cellcolor{green!5}4.878 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Senil & \cellcolor{red!27}1 & \cellcolor{red!27}1/118& \cellcolor{red!27}0.8500000000000001 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Religious Identity - Roman Catholic}  & \cellcolor{red!5}Padreco & \cellcolor{red!5}1 & \cellcolor{red!5}1/118& \cellcolor{red!5}0.8500000000000001 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racista & \cellcolor{red!27}1 & \cellcolor{red!27}1/118& \cellcolor{red!27}0.8500000000000001 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay & \cellcolor{red!5}1 & \cellcolor{red!5}1/118& \cellcolor{red!5}0.8500000000000001 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Religious Identity - Roman Catholic;Ethnicity - General;Sexual Identity - General;%.
+
+\item The percentage of hate speech related words is 3.3898.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/6 occurences of hate speech related comments.\end{itemize}\end{document}

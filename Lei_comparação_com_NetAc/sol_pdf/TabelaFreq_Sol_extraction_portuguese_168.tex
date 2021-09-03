@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_168.json :}\newline \par\Large\textbf {Title: \large  Igreja: padre denuncia encontros gay em bares e ginásios }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Esta seita malígna, falsos sacerdotes, comunas, maçons, é que estão a tentar denegrir o nome da Igreja Católica, a Igreja de Cristo. Pudera, com este falso papa \textbf{Francisco} a demonstrar abertura à homossexualidade na Igreja, os fíeis não podiam esperar outra coisa. São as consequências da "revolução"... Concílio Vaticano II."<br/>Pecado dos pagãos <br/>18De facto, a ira de Deus, vinda do céu, revela-se contra toda a impiedade e injustiça dos homens que, com a injustiça, reprimem a verdade. 19Porquanto, o que de Deus se pode conhecer está à vista deles, já que Deus lho manifestou. 20Com efeito, o que é invisível nele - o seu eterno poder e divindade - tornou-se visível à inteligência, desde a criação do mundo, nas suas obras.Por isso, não se podem desculpar. 21Pois, tendo conhecido a Deus, não o glorificaram nem lhe deram graças, como a Deus é devido. Pelo contrário: tornaram-se vazios nos seus pensamentos e obscureceu-se o seu coração insensato. 22Afirmando-se como sábios, tornaram-se loucos 23e trocaram a glória do Deus incorruptível por figuras representativas do homem corruptível, de aves, de quadrúpedes e de répteis.24Por isso é que Deus, de acordo com os apetites dos seus corações, os entregou à impureza, de tal modo que os seus próprios corpos se degradaram. 25Foram esses que trocaram a verdade de Deus pela mentira, e que veneraram as criaturas e lhes prestaram culto, em vez de o fazerem ao Criador, que é bendito pelos séculos! Ámen.26Foi por isso que Deus os entregou a paixões degradantes. Assim, as suas mulheres trocaram as relações naturais por outras que são contra a natureza. 27E o mesmo acontece com os homens: deixando as relações naturais com a \textbf{mulher}, inflamaram-se em desejos de uns pelos outros, praticando, homens com homens, o que é vergonhoso, e recebendo em si mesmos a paga devida ao seu desregramento.28E como não julgaram por bem manter o conhecimento de Deus, entregou-os Deus a uma inteligência sem discernimento. E é assim que fazem o que não devem: 29estão repletos de toda a espécie de injustiça, perversidade, ambição, maldade; cheios de inveja, homicídios, discórdia, falsidade, malícia; são difamadores, 30maldizentes, inimigos de Deus, insolentes, orgulhosos, arrogantes, engenhosos para o mal, rebeldes para com os pais, 31estúpidos, desleais, inclementes, impiedosos.32Esses, muito embora conheçam o veredicto de Deus - de que são dignos de morte os que tais coisas praticam - não só as fazem, como até aprovam os que as praticam."<br/>“Eu sou a videira verdadeira, e meu Pai é o agricultor. Todo ramo em mim que não produz fruto<br/>ele o corta.” (Jo 15,2) “"Se alguém não permanecer em mim será lançado fora, como o ramo. Ele secará e hão-de ajuntá-lo e lançá-lo ao fogo, e queimar-se-á.” (Jo 15,6)“E assim como se recolhe o joio para jogá-lo no fogo, assim será no fim do mundo.” (Mt 13,40)“Assim como foi nos tempos de Noé, assim acontecerá na vinda do Filho do Homem. Nos dias<br/>que precederam o dilúvio, comiam, bebiam, casavam-se e davam-se em casamento, até ao dia em<br/>que Noé entrou na arca.” (Mt 24, 37-38)\normalsize   & \cellcolor{green!27}Francisco, Mulher & \cellcolor{green!27}Gender - General, Nationality - French & \cellcolor{green!27}2/512 & \cellcolor{green!27}0.391 \\  \hline
+  \cellcolor{green!5}\small Eu conheço pelo menos um que mora com um homem dentro da igreja, vai para a cama junto com outros homens e o "namorado" e ainda se droga muito numa boate \textbf{gay} no RJ. Fico horrorizado como que um sacerdote a frente de uma comunidade tem um comportamento desses. Não é difícil arrumar provas.\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/54 & \cellcolor{green!5}1.852 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}1 & \cellcolor{red!27}1/689& \cellcolor{red!27}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - French}  & \cellcolor{red!5}Francisco & \cellcolor{red!5}1 & \cellcolor{red!5}1/689& \cellcolor{red!5}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Gay & \cellcolor{red!27}1 & \cellcolor{red!27}1/689& \cellcolor{red!27}0.15 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Nationality - French;Sexual Identity - General;%.
+
+\item The percentage of hate speech related words is 0.4354.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 3/5 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,60 @@
+{
+    "commentThread": [
+        {
+            "id": "3178900195",
+            "user": "macsof",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "Uma pequena pergunta, isto é notícia?<br/>Quem é o Goucha?<br/>Quem é a Rita?",
+            "likes": 1,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "3178842108",
+            "user": "vilardemacada",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "Brincadeiras de maricas contra lésbica!",
+            "likes": 1,
+            "hasReplies": true,
+            "numberOfReplies": 3,
+            "replies": [
+                {
+                    "id": "3180692760",
+                    "user": "provinciana",
+                    "date": "3 years ago",
+                    "timestamp": "NA",
+                    "commentText": "A fama da ritinha não é bem essa!",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                },
+                {
+                    "id": "3179429059",
+                    "user": "disqus_eZ8Rb1i7up",
+                    "date": "3 years ago",
+                    "timestamp": "NA",
+                    "commentText": "Te viste ao espelho?Pois, pois foi para conseguires tema, bravo.",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                },
+                {
+                    "id": "3178856063",
+                    "user": "Disqusmanuelgomes",
+                    "date": "3 years ago",
+                    "timestamp": "NA",
+                    "commentText": "É carnaval ninguém leva a mal , com Rita ou sem ela , todos por hoje podem ser matrafonas . Viva o carnaval , saia o corso . E, lá vai Manel ! ",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

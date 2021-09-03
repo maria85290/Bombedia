@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_170.json :}\newline \par\Large\textbf {Title: \large  Detido no Algarve padre que abusou de mais de 20 crianças }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Podes perder o tempo todo a grunhir, a bater com as patas nos peito. Podes recorrer aos assuntos da net e fazer copy paste para te armares em pedagogo. Podes atirar-te ao ar e morder o rabo. Toda a gente te conhece aqui por estes foruns: Tudo o que dizes desagua , em vão, numa África \textbf{racista} e xenófoba, de quem tu és o expoente máximo.<br/>E se não és um \textbf{preto} asqueroso, és um \textbf{branco} que anda a ser comido por um inharro. O resto? Urros da tua grunhisse!\normalsize   & \cellcolor{green!27}Branco, Preto, Racista & \cellcolor{green!27}Ethnicity - Black, Ethnicity - General, Ethnicity - White & \cellcolor{green!27}3/89 & \cellcolor{green!27}3.371 \\  \hline
+  \cellcolor{green!5}\small Eu explico inharro filho da p u ta.<br/>Quem te ler, até pode pensar que és instruído, tal é verborreia que estampas nas tuas intervenções de mmerda.<br/>Mas o que tu fazes, todos podem fazer, que é ires copiar assuntos da net e colocares aqui.<br/>Está explicado, \textbf{preto} ranhoso (ou \textbf{branco}, que anda a ser comido pelo Luisão).<br/>De resto, dá de frosques para a selva, símio do karalho.\normalsize   & \cellcolor{green!5}Branco, Preto & \cellcolor{green!5}Ethnicity - Black, Ethnicity - White & \cellcolor{green!5}2/65 & \cellcolor{green!5}3.077 \\  \hline
+  \cellcolor{green!27}\small ENQUANTO ISSO O MILITANTE \textbf{COMUNISTA} \textbf{FRANCISCO} , DORME E SONHA NA LUXÚRIA DO VATICANO...\normalsize   & \cellcolor{green!27}Comunista, Francisco & \cellcolor{green!27}Ideological and Political Identity - General, Nationality - French & \cellcolor{green!27}2/14 & \cellcolor{green!27}14.286 \\  \hline
+  \cellcolor{green!5}\small Qual castração química qual carapuça!!! Castração como fazem aos porcos da minha terra! Um golpes com um canivete no escroto, retiram os testículos, dão uns pontos a sangue frio e depois lavam com uma água cor de rosa!! <br/>E depois os testículos desse \textbf{padreca} devasso é dar-lhos aos cães!!!\normalsize   & \cellcolor{green!5}Padreca & \cellcolor{green!5}Religious Identity - Roman Catholic & \cellcolor{green!5}1/49 & \cellcolor{green!5}2.041 \\  \hline
+  \cellcolor{green!27}\small Todo o lixo \textbf{estrangeiro} nos vem cá parar, como se já nao bastasse o que cá temos.<br/>Triste sina a do meu País!\normalsize   & \cellcolor{green!27}Estrangeiro & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/22 & \cellcolor{green!27}4.545 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racista & \cellcolor{red!27}1 & \cellcolor{red!27}1/395& \cellcolor{red!27}0.25 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Preto & \cellcolor{red!5}2 & \cellcolor{red!5}2/395& \cellcolor{red!5}0.51 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Branco & \cellcolor{red!27}2 & \cellcolor{red!27}2/395& \cellcolor{red!27}0.51 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - French}  & \cellcolor{red!5}Francisco & \cellcolor{red!5}1 & \cellcolor{red!5}1/395& \cellcolor{red!5}0.25 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ideological and Political Identity - General}  & \cellcolor{red!27}Comunista & \cellcolor{red!27}1 & \cellcolor{red!27}1/395& \cellcolor{red!27}0.25 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Religious Identity - Roman Catholic}  & \cellcolor{red!5}Padreca & \cellcolor{red!5}1 & \cellcolor{red!5}1/395& \cellcolor{red!5}0.25 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Estrangeiro & \cellcolor{red!27}1 & \cellcolor{red!27}1/395& \cellcolor{red!27}0.25 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - General;Ethnicity - Black;Ethnicity - White;Nationality - French;Ideological and Political Identity - General;Religious Identity - Roman Catholic;Nationality - General;%.
+
+\item The percentage of hate speech related words is 2.2785.
+
+\item Considering that the variable \textbf{Ethnicity - Black} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 9/13 occurences of hate speech related comments.\end{itemize}\end{document}

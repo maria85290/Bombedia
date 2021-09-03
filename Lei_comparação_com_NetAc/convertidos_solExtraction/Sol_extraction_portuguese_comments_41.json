@@ -1,0 +1,83 @@
+{
+    "commentThread": [
+        {
+            "id": "4211836623",
+            "user": "disqus_cCN608U5Li",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "baca de mherda.",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4211424686",
+            "user": "disqus_faSdukELUh",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Estou destroçado!",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4211130232",
+            "user": "disqus_9kLtUnJ56d",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Já nem vou caggar hoje, por causa desta notícia",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4211099598",
+            "user": "disqus_vxuvFIdddA",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Terá a amizade entre Teresa Guilherme e Manuel Luís Goucha chegado ao fim?<br/>Que maçada...!!",
+            "likes": 0,
+            "hasReplies": true,
+            "numberOfReplies": 2,
+            "replies": [
+                {
+                    "id": "4211136210",
+                    "user": "disqus_9kLtUnJ56d",
+                    "date": "a year ago",
+                    "timestamp": "NA",
+                    "commentText": "Vai acabar o mundo",
+                    "likes": 0,
+                    "hasReplies": true,
+                    "numberOfReplies": 1,
+                    "replies": [
+                        {
+                            "id": "4211142214",
+                            "user": "disqus_vxuvFIdddA",
+                            "date": "a year ago",
+                            "timestamp": "NA",
+                            "commentText": "...já perdi o apetite...!",
+                            "likes": 0,
+                            "hasReplies": false,
+                            "numberOfReplies": 0,
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4211099313",
+            "user": "disqus_WIVAFjUcvz",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "com a velhice a tezao perde mija nos pes",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        }
+    ]
+}

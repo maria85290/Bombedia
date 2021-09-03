@@ -1,0 +1,38 @@
+{
+    "commentThread": [
+        {
+            "id": "4508657223",
+            "user": "benficasempre",
+            "date": "8 months ago",
+            "timestamp": "NA",
+            "commentText": "f***das, f***das, f***das ... mas que mmeerdda esta ?!! o mundo está virado !!",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4508097319",
+            "user": "xupem",
+            "date": "8 months ago",
+            "timestamp": "NA",
+            "commentText": "Esta gente tem que ser internada num sanatório, não dizem coisa com coisa. Até tenho pena destas doentes mentais.",
+            "likes": 0,
+            "hasReplies": true,
+            "numberOfReplies": 1,
+            "replies": [
+                {
+                    "id": "4510841218",
+                    "user": "jordannasantoro",
+                    "date": "8 months ago",
+                    "timestamp": "NA",
+                    "commentText": "Pena eu tenho de vc",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

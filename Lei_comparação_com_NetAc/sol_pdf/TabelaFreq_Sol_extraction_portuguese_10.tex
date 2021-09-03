@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_10.json :}\newline \par\Large\textbf {Title: \large  Cláudio Ramos responde a marido de Goucha: 'Tenho 46 anos, uma filha para criar e uma carreira maior que a tua, Rui' }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Quem é este? Cláudio Ramos, o tal que se auto-rotula como o "\textbf{gay} mais hétero de Portugal"!\normalsize   & \cellcolor{green!27}Gay & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small Gente desta, ciganos, sportinguistas, burros brancos e cães de caça...é tudo a mesma \textbf{raça}!!!\normalsize   & \cellcolor{green!5}Raça & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/14 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small As BIXAS zangaram-se .. as TVs estão tomadas pelo bobi \textbf{gay}, nada contra os \textbf{LGBT}, mas daí até tomarem de assaltos todos os canais já é de mais. é só gritos e saltinhos estéricos de segunda a domingo\normalsize   & \cellcolor{green!27}Gay, LGBT & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}2/38 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small Paneleiragem...!!!\normalsize   & \cellcolor{green!5}Paneleiragem & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/1 & \cellcolor{green!5}100.0 \\  \hline
+  \cellcolor{green!27}\small A \textbf{gajo} (?) tem uma carreira! Só se é de gajos para lhe ir ao pacote!\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Gay, LGBT & \cellcolor{red!27}3 & \cellcolor{red!27}3/751& \cellcolor{red!27}0.4 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Raça & \cellcolor{red!5}1 & \cellcolor{red!5}1/751& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Paneleiragem & \cellcolor{red!27}1 & \cellcolor{red!27}1/751& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}1 & \cellcolor{red!5}1/751& \cellcolor{red!5}0.13 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Sexual Identity - General;Ethnicity - General;Sexual Identity - Male homosexuality;Ethnicity - White;%.
+
+\item The percentage of hate speech related words is 0.7989.
+
+\item Considering that the variable \textbf{Sexual Identity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 6/28 occurences of hate speech related comments.\end{itemize}\end{document}

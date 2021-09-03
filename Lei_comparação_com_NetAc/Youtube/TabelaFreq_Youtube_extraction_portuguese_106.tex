@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_106.json :}\newline \par\Large\textbf {Title: \large  Muçulmanos de segunda geração estão completamente integrados em Portugal }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Eu nunca vi tanto \textbf{racismo} nos comentarios😑\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/7 & \cellcolor{green!27}14.286 \\  \hline
+  \cellcolor{green!5}\small \@MrRodrigo Eu sei que a taxa de criminalidade subiu e tambem talvez por culpa deles mas não é só a culpa deles . Mas eu só não estou de acordo com o senhor cuando fala daquele lenço que as mulheres mettem na cabeça. Na nossa religião (se você tambem for cristão é claro) tambem é uma obrigação que as mulheres cubram a cabeça (como a virgem) e a nossa sociedade esta a evoluir então é um pouco raro de ver jovens portuguêsas cobertas. Então a mim não me importa mesmo ver uma \textbf{mulher} coberta porque afinal, é só um pedaço de tecido. Hoje em dia ha muitas muçulmanas que não usam o lenço na cabeça (como as minhas amigas por exemplo). Nós portugueses somos conhecidos pela nossa hospitalidade, e como eles, nós tambem somos vitímas de \textbf{racismo} no \textbf{estrangeiro}. E nosso dever de conviver ums com os outros porque senão nunca consegiremos viver todos em paz. Nunca poderemos ser um exemplo se continuarmos a pensar dessa maneira.Nós somos todos filhos de Deus, e não importa a religião, por que até se somos da mesma religião, nunca estamos de accordo.Como já disse, tenho difficuldades para escrever português (eu só tenho 14 anos)então perdoe-me se river difficuldade para ler.\normalsize   & \cellcolor{green!5}Estrangeiro, Mulher, Racismo & \cellcolor{green!5}Ethnicity - General, Gender - General, Nationality - General & \cellcolor{green!5}3/209 & \cellcolor{green!5}1.435 \\  \hline
+  \cellcolor{green!27}\small \@Luuusitana   primeiro não acredito em deus,  segundo eu vivo no \textbf{estrangeiro} e quando as pessoas sabem que sou português elas falam comigo muito bem.... nunca sofri qualquer racismo\normalsize   & \cellcolor{green!27}Estrangeiro, Racismo & \cellcolor{green!27}Ethnicity - General, Nationality - General & \cellcolor{green!27}2/29 & \cellcolor{green!27}6.897 \\  \hline
+  \cellcolor{green!5}\small Nós seremos os próximos a sofrer o que os francêses e alemães sofrem ninguém os \textbf{v\textbf{elha}} defender eles batem em homessexuais e outros tipos de estilo e gosto pra eles és simples ou és muçulmano ou és uma pessoa que não devia de existir\normalsize   & \cellcolor{green!5}Velha & \cellcolor{green!5}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!5}2/44 & \cellcolor{green!5}4.545 \\  \hline
+  \cellcolor{green!27}\small \@MrRodrigo é assim mesmo Rodrigo estou contigo muçulmanos cabroes do caralho filhos da \textbf{puta} Portugal é europeu e catolico e mais nada esse \textbf{analfabeto} burro nem sabe de historia\normalsize   & \cellcolor{green!27}Analfabeto, Puta & \cellcolor{green!27}Gender - Female sexuality, Social Class - Working class & \cellcolor{green!27}2/29 & \cellcolor{green!27}6.897 \\  \hline
+  \cellcolor{green!5}\small Aqui está um exemplo \textbf{acabado} do que se passa a nível global com os meios de comunicação a fazerem a sua parte para doutrinarem a sociedade. Muçulmanos não se integram nunca esta reportagem mete nojo\normalsize   & \cellcolor{green!5}Acabado & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/35 & \cellcolor{green!5}2.857 \\  \hline
+  \cellcolor{green!27}\small Joseane Bickel, responder o teu comentário não vai ser tão simples assim.Um terrorista que se explode matando dezenas de pessoas inocentes espalhando o medo e a tristeza e uma pessoa que faz um comentário espalhando o ódio e implicância, pra mim são iguais.O que me deixa triste Joseane, e que no mesmo período do teu comentário você compartilhou uma imagem no teu Facebook sobre a igualdade, ilustrando 6 esqueletos representando (\textbf{Negro}, \textbf{Branco}, \textbf{Gay}, Religioso, Ateu, Humano) que são todos iguais, eu concordo plenamente com você, e aqui no Youtube você mostrou outra cara, falando sobre aniquilação e sangue, será que não bastasse todo o que está acontecendo no mundo para tu desejar mais sangue?, espalhar o ódio e animosidade  não é favor a ninguém.A minha intenção não é entrar com você em conflito via comentários, mas sim para lhe mostrar o quanto o ódio é pernicioso.Quanto menor é o coração, mais ódio carrega (Victor Hugo)\normalsize   & \cellcolor{green!27}Branco, Gay, Negro & \cellcolor{green!27}Ethnicity - Black, Ethnicity - White, Sexual Identity - General & \cellcolor{green!27}3/159 & \cellcolor{green!27}1.887 \\  \hline
+  \cellcolor{green!5}\small Joseane Bickel Amiga, Europa vive o inferno, mulheres europeias até crianças estupradas dos muçulmanos, sou simplesmente por causa da roupa que usam, no país deles uma \textbf{mulher} se não usar burqua qualquer homem pode estuprar, e se vai denunciar o caso, quem vai presa é a \textbf{mulher}, por incentivar homens. Vamos ser obrigadas todas nos usar roupa islâmica e burqua, sou para não ser estupradas. eles estão impor as regras deles, acabar com a nossa cultura, num país que não é deles.\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}2/82 & \cellcolor{green!5}2.439 \\  \hline
+  \cellcolor{green!27}\small PrezadosA mensagem abaixo veio por dois canais. O 1º foi do ex-Comandante-Geral dos Fuzileiros Navais, que a recebeu do seu colega Marine (USA).O 2º foi de um Capitão-de-Fragata (AV) da Marinha, piloto de caça e que cursou aviação de caça nos USA por dois anos. POR FAVOR LEIAM E REFLITAM.MENSAGEM DOS FUZILEIROS NAVAIS AMERICANOS Eu sei que alguns de vocês têm sentimentos sobre o que está acontecendo, no Oriente Médio e na Europa, com os Muçulmanos ditos refugiados, mas esta mensagem chegou e me fez pensar sobre o que ela diz.  Se isto é verdade, então nós estamos entrando numa briga dos diabos para manter aquilo por que muitos companheiros morreram, talvez não no meu ou no seu tempo de vida, mas a coisa não está parecendo boa para nossos filhos e netos ! Pode um bom Muçulmano ser um bom Americano, um bom Canadense ou um bom Inglês ? Esta questão foi enviada a um amigo que trabalhou na Arábia Saudita por 20 anos.  O texto abaixo é a resposta dele: Teologicamente – não.  Porque a sua fidelidade é para com Alá, o deus lua da Arábia. Religiosamente – não.  Porque nenhuma outra religião é aceita pelo seu Alá, exceto o Islã.(Quran, 2:256) (Corão)  Com relação às Escrituras – não.  Porque a sua fidelidade é com os cinco Pilares do Islã e com o Corão. Geograficamente – não.  Porque sua fidelidade é com Meca, para a qual ele se vira cinco vezes por dia para orar. Socialmente – não.  Porque sua fidelidade ao Islã o proíbe de fazer amigos Cristãos ou Judeus. Politicamente – não.  Porque ele deve se submeter aos mulás (líderes espirituais), que pregam a aniquilação de Israel e a destruição da América, o Grande Satã Domesticamente – não.  Porque ele é instruído a casar com quatro Mulheres e bater e açoitar sua esposa quando ela o desobedece. (Corão 4:34) Intelectualmente – não.  Porque ele não pode aceitar a Declaração de Direitos Canadense, ou a Constituição Americana, uma vez que ela é baseada em princípios da Bíblia e ele acredita que a Bíblia é corrupta. Filosoficamente – não.  Porque o Islã, Maomé e o Corão não permitem liberdade de religião e expressão.  A Democracia e o Islã não podem coexistir.  Todo governo Muçulmano é, ou ditatorial, ou autocrático. Espiritualmente – não.  Porque quando nós declaramos [ser] "Uma \textbf{nação} sob Deus", o Deus Cristão é de amor e bondoso, enquanto que Alá nunca é mencionado como "Pai Celeste", nem é chamado de "amor" nos 99 excelentes nomes do Corão. Portanto, depois de muito estudo e deliberação....  Talvez nós devamos ter muita desconfiança sobre TODOS OS MUÇULMANOS neste país. Eles obviamente não podem ser "bons Muçulmanos" E "bons Americanos, bons Canadenses ou bons Ingleses". Você pode chamar isto do que quiser, mas ainda é a verdade.  E é bom que você acredite nisto.  Quanto mais pessoas acreditarem nisto, melhor será para o nosso país e para o nosso futuro. A guerra religiosa é maior do que [tudo] aquilo que nós conhecemos ou compreendemos ! Nota de Rodapé:  Os Muçulmanos têm dito que nos destruirão a partir de dentro.    PORTANTO.......    A LIBERDADE NÃO É DE GRAÇA.  Por favor não apague esta mensagem até que você a repasse.  E não pense que ignorar este problema fará com que ele desapareça !   Clique aqui para Responder ou Encaminhar 11,48 GB (76) de 15 GB utilizadosGerirTermos - Privacidade\normalsize   & \cellcolor{green!27}Nação & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/566 & \cellcolor{green!27}0.177 \\  \hline
+  \cellcolor{green!5}\small \@WAQASKING VEVO tem que \textbf{idade}?\normalsize   & \cellcolor{green!5}Idade & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racismo & \cellcolor{red!27}3 & \cellcolor{red!27}3/3462& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}3 & \cellcolor{red!5}3/3462& \cellcolor{red!5}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Estrangeiro, Nação & \cellcolor{red!27}3 & \cellcolor{red!27}3/3462& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female age and physical appearance}  & \cellcolor{red!5}Velha & \cellcolor{red!5}1 & \cellcolor{red!5}1/3462& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velha, Acabado & \cellcolor{red!27}2 & \cellcolor{red!27}2/3462& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Puta & \cellcolor{red!5}1 & \cellcolor{red!5}1/3462& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Analfabeto & \cellcolor{red!27}1 & \cellcolor{red!27}1/3462& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Negro & \cellcolor{red!5}1 & \cellcolor{red!5}1/3462& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Branco & \cellcolor{red!27}1 & \cellcolor{red!27}1/3462& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay & \cellcolor{red!5}1 & \cellcolor{red!5}1/3462& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Idade & \cellcolor{red!27}1 & \cellcolor{red!27}1/3462& \cellcolor{red!27}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - General;Gender - General;Nationality - General;Gender - Female age and physical appearance;Age - Over 65s;Gender - Female sexuality;Social Class - Working class;Ethnicity - Black;Ethnicity - White;Sexual Identity - General;Age - General;%.
+
+\item The percentage of hate speech related words is 0.5199.
+
+\item Considering that the variable \textbf{Ethnicity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 18/77 occurences of hate speech related comments.\end{itemize}\end{document}

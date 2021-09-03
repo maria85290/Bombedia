@@ -1,0 +1,131 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_148.json :}\newline \par\Large\textbf {Title: \large  Meet the Insta-Gramma Who Defies Ageism }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small This \textbf{Woman} is exciting..... Busting stereotypes...  I Love that!\normalsize   & \cellcolor{green!27}Woman & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Act your \textbf{age} you clown. !!!\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small I think she is fantastic. I love her attitude on life. I hope that I get to live to be her \textbf{age} and have a wonderful outlook on life as she does.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/32 & \cellcolor{green!27}3.125 \\  \hline
+  \cellcolor{green!5}\small Her eyes. In them I see \textbf{nothing} but an unbreakable will to live her life to its fullest.\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/18 & \cellcolor{green!5}5.556 \\  \hline
+  \cellcolor{green!27}\small Lyn has brought to life every feeling \& dream I have about fashion \& aging. We all want to live a long time but not grow \textbf{old}. How silly is that.?  Society still holds women to impossible standards. Be sexy, alluring, interesting in spite of losing the assets of youthful health; firm bodies, smooth skin, great hair, strong bones \& good eye site. Lyn shows us how to stay in the game of being attractive, wearing clothes that suit the body we've grown into \& still looking \& moving with vitality. The fashion looks she has brought to life say I am chic, still looking fine \& VERY much ALIVE \& still living my life on purpose while loving every minute of being a \textbf{woman}.\normalsize   & \cellcolor{green!27}Old, Woman & \cellcolor{green!27}Age - Over 65s, Gender - General & \cellcolor{green!27}2/125 & \cellcolor{green!27}1.6 \\  \hline
+  \cellcolor{green!5}\small My father is 81 and looks better than you. Your an ugly, \textbf{old} cunt with \textbf{weird} clothes. I can't stand seeing your face 🖕\normalsize   & \cellcolor{green!5}Old, Weird & \cellcolor{green!5}Age - Over 65s, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}2/24 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small Todays millennia is tom \textbf{elderly}.\normalsize   & \cellcolor{green!27}Elderly & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small ALL I'M GOING TO SAY IS YOU GO...What a amazing video and she one glorious woman\normalsize   & \cellcolor{green!5}Woman & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/16 & \cellcolor{green!5}6.25 \\  \hline
+  \cellcolor{green!27}\small She is \textbf{thin}. So many older women are large which makes it harder to look this good.\normalsize   & \cellcolor{green!27}Thin & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small What this says to me is if you let 2 20-somethings "style" you, you will be interesting and fashionable, which is just the opposite of fighting \textbf{ageism}, IMO.\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/28 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small it's amazing that she still looks proper for a \textbf{woman} at her \textbf{age} no matter how \textbf{crazy} the style she takes👍 Usually gramma fashion ends up to a disaster\normalsize   & \cellcolor{green!27}Age, Crazy, Woman & \cellcolor{green!27}Age - General, Gender - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}3/29 & \cellcolor{green!27}10.345 \\  \hline
+  \cellcolor{green!5}\small Be yourself grandma'! You feel good you want to look good! Rock your style no matter what \textbf{age}! I would avoid spandex at all cost it grabs rolls, etc. looks cheap. 😂Dried up blonde fake grass looking hair or \textbf{r\textbf{ed}} doesn't suit everyone. So many older women choose to go fake blonde or \textbf{r\textbf{ed}} no bueno.\normalsize   & \cellcolor{green!5}Age, Red & \cellcolor{green!5} Ideological and Political Identity - General, Age - General, Ethnicity - Native-American & \cellcolor{green!5}5/57 & \cellcolor{green!5}8.772 \\  \hline
+  \cellcolor{green!27}\small Fabulous, beautiful, intelligent \textbf{woman}. Thank you for sharing.\normalsize   & \cellcolor{green!27}Woman & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/8 & \cellcolor{green!27}12.5 \\  \hline
+  \cellcolor{green!5}\small Nothing unique about those hoops.\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small I think that is interesting, like what is \textbf{age} appropriate?\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small I love her and Maye Musk (Elon Musk's mom) another 70 year \textbf{old} model who is just fantastic!!!!!  Great thing is these women are both very slim and in great shape for their ages, which helps them to be able to wear simple, chic and stylish outfits and look great in them!\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/52 & \cellcolor{green!5}1.923 \\  \hline
+  \cellcolor{green!27}\small People are accepting that individuals should do what they want no matter the \textbf{age}, \textbf{gender}, religious beliefs, etc. For example at our church last Sunday, we could observe a male choir member wearing a long, textured skirt, and another male after dancing could be see using a beautiful hand fan to cool himself. This creative expression is the new life we have on this Earth.\normalsize   & \cellcolor{green!27}Age, Gender & \cellcolor{green!27}Age - General, Gender - General & \cellcolor{green!27}2/65 & \cellcolor{green!27}3.077 \\  \hline
+  \cellcolor{green!5}\small Age is just a number.You are fearfully and wonderfully made.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small I'm 74 and see no difference between me and my colleagues! I dress glamorous at times and other times just LEVIS. \textbf{Age} is only a number!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/26 & \cellcolor{green!27}3.846 \\  \hline
+  \cellcolor{green!5}\small This \textbf{woman} is fabulous, I just love watching her shine, but I  think  you  have her  \textbf{age} wrong,\normalsize   & \cellcolor{green!5}Age, Woman & \cellcolor{green!5}Age - General, Gender - General & \cellcolor{green!5}2/18 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small I work in forensic prison with male offenders don't wear uniform try to be stylish but balance between being too fashionable as inmates poor and also not being \textbf{sexual}  so usually use color but have to be formal. Any ideas\normalsize   & \cellcolor{green!27}Sexual & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/40 & \cellcolor{green!27}2.5 \\  \hline
+  \cellcolor{green!5}\small I love this \textbf{woman}.  You look fantastic.\normalsize   & \cellcolor{green!5}Woman & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/7 & \cellcolor{green!5}14.286 \\  \hline
+  \cellcolor{green!27}\small Great. I'm just accepting my \textbf{age}. I'm 63, will be 64 this year. I don't mind getting older as much as the fear of becoming irrelevant. Thank you for being who you are. You give me permission to be me!!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/40 & \cellcolor{green!27}2.5 \\  \hline
+  \cellcolor{green!5}\small The issue with \textbf{age} is health. Look after yourself. Once people hit 80 then health seems to deteriorate. Stay active, walk, laugh. My Mum is 87 and has been active her whole life but the body quite simply wears out.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/40 & \cellcolor{green!5}2.5 \\  \hline
+  \cellcolor{green!27}\small geo cape It takes a certain amount of energy, and \textbf{mental} clarity to do what she does, that's what's important....\normalsize   & \cellcolor{green!27}Mental & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small She's 65 she looks \textbf{old} my sister in law looks way younger and she's 65!\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small geo cape I don't think this is about \textbf{age}! It's about style, stylish clothing \& being the best you can be!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/21 & \cellcolor{green!27}4.762 \\  \hline
+  \cellcolor{green!5}\small get over it you \textbf{old} bitch\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small I had her as my graduate professor this past semester. She is AMAZING!! Not only is her style on point all the time, but she's incredibly smart and witty! I am so honored to have been in her class and learn under her wing. \textbf{Age} is limitless, as she would lecture to the class!!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/54 & \cellcolor{green!27}1.852 \\  \hline
+  \cellcolor{green!5}\small I first heard of her on Pinterest, I know I have pinned some of her looksI am 63 and love (and try to learn from) other women who possess class/styleI really do live a simple life and "excess" has never been  in any area of my lifeI am told by my female friends I don't look my \textbf{age}But I really think it's about how (I don't dress)I really just own basicsMy daughter has always been one that says, "Mom, never, ever \textbf{age} yourself."So I usually do a little research, look around, and dress in what I like and I feel "like me" inSIMPLE, \textbf{NOTHING} OVER THE TOPBUT STILL with small aspects of young/trendy(through accessories--jewelry, scarves, shoes, etc)\normalsize   & \cellcolor{green!5}Age, Nothing & \cellcolor{green!5}Age - General, Age - Youngsters & \cellcolor{green!5}3/127 & \cellcolor{green!5}2.362 \\  \hline
+  \cellcolor{green!27}\small And that's exactly how she would dress. Her style was very simple but very sleek with a hint of dimensional pieces. Two main accessories that complimented the outfits were her big hoop earrings and trendy glasses. She ALWAYS paired the two with her outfit. Every Thursday, I looked forward to her outfits. I, myself have a  passion for style and mixing pieces. She gives inspiration to not just people of older \textbf{age} but to youth individuals as well. If you truly enjoy expressing yourself through clothes, then you should, regardless of \textbf{age}! As I like to say, 'you gotta own who you are' ❤️\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}2/104 & \cellcolor{green!27}1.923 \\  \hline
+  \cellcolor{green!5}\small Nothing more pretentious than an \textbf{old} had 40 years past her prime.\normalsize   & \cellcolor{green!5}Nothing, Old & \cellcolor{green!5}Age - Over 65s, Age - Youngsters & \cellcolor{green!5}2/12 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Clearly, she's the exception. She's not the average \textbf{senior}.\normalsize   & \cellcolor{green!27}Senior & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Not a \textbf{Senior}. She's a Boomer.\normalsize   & \cellcolor{green!5}Senior & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Sorry but she does look like an \textbf{o\textbf{ld} h\textbf{ag}}. She's just got the bank roll to buy her into those roles. Gag me Seriously! Who are you kidding?!\normalsize   & \cellcolor{green!27}Hag, Old, Old hag & \cellcolor{green!27}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!27}3/28 & \cellcolor{green!27}10.714 \\  \hline
+  \cellcolor{green!5}\small Stop hating and start growing. Most college professors don't have the bank roll to do what you're imagining. If you live long enough, you will \textbf{age}. That doesn't mean you have to stop wearing what you like and fit the traditional mold of older women.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/45 & \cellcolor{green!5}2.222 \\  \hline
+  \cellcolor{green!27}\small I'm so sick of the \textbf{ageism} in fashion. Most women can't relate to a prepubescent model. Fashion magazines have died because they don't speak to us anymore. We don't buy the image that you are only beautiful if you are young, tiny, and bored.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/44 & \cellcolor{green!27}2.273 \\  \hline
+  \cellcolor{green!5}\small HO YEA I NEED YOUR HELP💐💐💐\normalsize   & \cellcolor{green!5}Ho & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Age is just a number. It's an issue of mind over matter. If you don't mind, it doesn't matter!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small You're fantastic!  I love that ur a "funky academic" . I've been told that I "have my own style" which means I dress in a way that "they" consider \textbf{weird} and I like very much LOL.   I'll be 60 in a few days and am VERY happy to have found a kindred spirit.\normalsize   & \cellcolor{green!5}Weird & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/53 & \cellcolor{green!5}1.887 \\  \hline
+  \cellcolor{green!27}\small U look Fab. I also love \textbf{black} n white. Im a New Yorker enough said. Lol\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small You are AWESOME! GORGEOUS! FABULOUS!, I'm totally inspired by your confidence,...I think it's important to feel good \& be who you are \& feel happy, no matter the \textbf{age} \& look classy! Beautiful👏👏👏👏👏👏👏👏👏👏\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/33 & \cellcolor{green!5}3.03 \\  \hline
+  \cellcolor{green!27}\small Certain people \textbf{age} faster......everyone will not \textbf{age} the same! My mom is 67 and doesn't look 50. My dad is the same way.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}2/23 & \cellcolor{green!27}8.696 \\  \hline
+  \cellcolor{green!5}\small 70 plus looks to me...new York ages u, academia can \textbf{age} u, she is quite \textbf{thin}...if she tried to be \textbf{thin} all her life, might not have gotten right nutrition.Not enough healthy fats?\normalsize   & \cellcolor{green!5}Age, Thin & \cellcolor{green!5}Age - General, Physical Identity - Physical Features & \cellcolor{green!5}3/34 & \cellcolor{green!5}8.824 \\  \hline
+  \cellcolor{green!27}\small \@Barbi Love us older ladies don't suit \textbf{thin}...makes us look older! \& heavy lipstick \& high heels are not the way to go either. I like her attitude though..spot on.\normalsize   & \cellcolor{green!27}Thin & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/30 & \cellcolor{green!27}3.333 \\  \hline
+  \cellcolor{green!5}\small Respect for her.  My Great-Grandmother stayed on slay for the majority of my life. All the way until the end of her life. I'm grateful bcuz it set the example that I can enjoy fashion at ANY \textbf{age}.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/38 & \cellcolor{green!5}2.632 \\  \hline
+  \cellcolor{green!27}\small I watch every Lynn Slater feature I can find.  She is a wonderful inspiration for women of a certain \textbf{age}.  Love her.  Great film.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/24 & \cellcolor{green!27}4.167 \\  \hline
+  \cellcolor{green!5}\small So fkn fab!!! I hope I'm as fab as her when I reach that \textbf{age}!! Way to go!!\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/18 & \cellcolor{green!5}5.556 \\  \hline
+  \cellcolor{green!27}\small I love this \textbf{woman}!\normalsize   & \cellcolor{green!27}Woman & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small She's an attractive woman\normalsize   & \cellcolor{green!5}Woman & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/4 & \cellcolor{green!5}25.0 \\  \hline
+  \cellcolor{green!27}\small I really hope I look like her at that \textbf{age} 🥰\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small Age is only a number.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small I turned "60" four month's ago and having a real hard time accepting this \textbf{age}!! Especially when they show \textbf{nothing} but 20-30 year \textbf{old} girls on commercials and not to mention "men" would rather be with them than with one my \textbf{age}!!\normalsize   & \cellcolor{green!27}Age, Nothing, Old & \cellcolor{green!27}Age - General, Age - Over 65s, Age - Youngsters & \cellcolor{green!27}4/42 & \cellcolor{green!27}9.524 \\  \hline
+  \cellcolor{green!5}\small \@Goody two shoes You're only 45 and feeling the "effects of aging" already? Damn. This definitely lets me know genetics factor into it, because 45 is way too early to be talking like that. At least in my family. Then again, we are melanated, so that figures into it too. Justin Eats is right by the way. It's in your mind. If you think "now's about the time I should be getting \textbf{old}" then you will.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/76 & \cellcolor{green!5}1.316 \\  \hline
+  \cellcolor{green!27}\small This isn't just clothes, this \textbf{woman} is creating art. She's beautiful, creative, and understands photography and style incredibly well. I immediately followed her after this video!\normalsize   & \cellcolor{green!27}Woman & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/26 & \cellcolor{green!27}3.846 \\  \hline
+  \cellcolor{green!5}\small You must be a \textbf{fag} like her. Fucking pussy\normalsize   & \cellcolor{green!5}Fag, pussy & \cellcolor{green!5}Nationality - Chinese, Sexual Identity - Male homosexuality & \cellcolor{green!5}2/9 & \cellcolor{green!5}22.222 \\  \hline
+  \cellcolor{green!27}\small Love luv love you....\textbf{nothing} but admiration for your inspiration....♥️🥰😘\normalsize   & \cellcolor{green!27}Nothing & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Cheryl R Leigh so much more refreshing to see someone like this be a star! \textbf{Ageism} IS a real problem in the USA!\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/23 & \cellcolor{green!5}4.348 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Woman, Gender, Sexual & \cellcolor{red!27}12 & \cellcolor{red!27}12/3271& \cellcolor{red!27}0.37 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Age, Ageism & \cellcolor{red!5}33 & \cellcolor{red!5}33/3271& \cellcolor{red!5}1.01 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Nothing & \cellcolor{red!27}6 & \cellcolor{red!27}6/3271& \cellcolor{red!27}0.18 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old, Elderly, Senior & \cellcolor{red!5}12 & \cellcolor{red!5}12/3271& \cellcolor{red!5}0.37 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Weird, Crazy, Mental & \cellcolor{red!27}4 & \cellcolor{red!27}4/3271& \cellcolor{red!27}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical Features}  & \cellcolor{red!5}Thin & \cellcolor{red!5}4 & \cellcolor{red!5}4/3271& \cellcolor{red!5}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native-American}  & \cellcolor{red!27}Red & \cellcolor{red!27}1 & \cellcolor{red!27}1/3271& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5} Ideological and Political Identity - General}  & \cellcolor{red!5}Red & \cellcolor{red!5}1 & \cellcolor{red!5}1/3271& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female age and physical appearance}  & \cellcolor{red!27}Old hag, Hag & \cellcolor{red!27}2 & \cellcolor{red!27}2/3271& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Ho & \cellcolor{red!5}1 & \cellcolor{red!5}1/3271& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Black & \cellcolor{red!27}1 & \cellcolor{red!27}1/3271& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Chinese}  & \cellcolor{red!5}pussy & \cellcolor{red!5}1 & \cellcolor{red!5}1/3271& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Fag & \cellcolor{red!27}1 & \cellcolor{red!27}1/3271& \cellcolor{red!27}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Age - General;Age - Youngsters;Age - Over 65s;Physical Identity - Physical (and Mental) Impairments;Physical Identity - Physical Features;Ethnicity - Native-American; Ideological and Political Identity - General;Gender - Female age and physical appearance;Gender - Female sexuality;Ethnicity - Black;Nationality - Chinese;Sexual Identity - Male homosexuality;%.
+
+\item The percentage of hate speech related words is 2.4152.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 81/217 occurences of hate speech related comments.\end{itemize}\end{document}

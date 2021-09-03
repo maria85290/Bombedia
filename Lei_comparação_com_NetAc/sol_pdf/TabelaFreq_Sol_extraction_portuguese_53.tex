@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_53.json :}\newline \par\Large\textbf {Title: \large  Marinho Pinto chama 'sirigaita' a Cristina Ferreira }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small prefiro pagar 50 mil a um euro deputado ou politico sem papas na lingua do que apresentadoras de peixeirada ou...tipo goucha que so tem fama pq 90 do publico \textbf{tuga} é uma azeiteirada que lhe audiencia.\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/36 & \cellcolor{green!27}2.778 \\  \hline
+  \cellcolor{green!5}\small Não tem televisão mas pode ver através da app, e eu vou continuar a ver o Goucha mais por causa da nova colega que ele vai ter, que é um arraso de \textbf{mulher}.\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/33 & \cellcolor{green!5}3.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - Portuguese}  & \cellcolor{red!27}Tuga & \cellcolor{red!27}1 & \cellcolor{red!27}1/286& \cellcolor{red!27}0.35000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}1 & \cellcolor{red!5}1/286& \cellcolor{red!5}0.35000000000000003 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - Portuguese;Gender - General;%.
+
+\item The percentage of hate speech related words is 0.6993.
+
+\item Considering that the variable \textbf{Nationality - Portuguese} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 2/11 occurences of hate speech related comments.\end{itemize}\end{document}

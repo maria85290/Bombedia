@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_188.json :}\newline \par\Large\textbf {Title: \large  AntÃ³nio Costa e Fernando Medina na comissÃ£o de honra de LuÃ­s Filipe Vieira }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small O Luís Filipe Vieira deve mais de 700 milhões à banca. Mais de 200 era ao Novo Banco e que deu já o dinheiro como perdido. Tudo isto aceite e aprovado pelo governo que assinou um contracto onde com os nossos impostos repõe os 200 milhões desaparecidos. Ninguém vai atrás do LFV à procura dos milhões desaparecidos e o Costa dá-lhe o braçinho e apoia-o no Benfica.<br/>Depois temos o filho do LFV que nunca fez nada na vida a gerir fundos de centenas de milhões que dinheiro de que não se sabe a origem....ninguém investiga! Quem gere o fundo do filhinho é por acaso o mesmo que está na admin do SLB um tal de Nuno Gaioso....<br/>E o Costa e o Medina dão o bracinho ao LFV....<br/>Tudo bons amigos! Os sócrates deste país continuam aí todos á solta e continuam a gamar....Isto tudo aos olhos do \textbf{imbecil} do \textbf{tuga}, olham para isto como se fosse um Benfica - Porto...qualquer pessoa de bem, qualquer benfiquista de bem teria como obrigação tirar de lá este ladrão e entregá-lo às malhas da justiça (que já lá está!)Triste sina do nosso país....PS: As ultimas são do Min do ambiente que adjudicou dezenas de contractos a um amigo....! Tb ouve-se pouco do assunto....\normalsize   & \cellcolor{green!27}Imbecil, Tuga & \cellcolor{green!27}Nationality - Portuguese, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/211 & \cellcolor{green!27}0.948 \\  \hline
+  \cellcolor{green!5}\small O POLVONão votei no Medina, é um péssimo autarca, tem descaracterizado Lisboa e  hipotecado a qualidade de vida dos Lisboetas. Enquanto pode alienou a cidade ao lobby do turismo, em lamentável vendilhão.Votei no António Costa, tenho-o apoiado enquanto primeiro-ministro, acaba de perder o meu apoio e a minha confiança.Já não tenho em muito boa conta os crentes e os adeptos, não me parecem os seres mais confiáveis, mas, obstante, concedo, agora  ver o António Costa apoiar uma candidatura  à presidência dum clube de futebol é a mais absoluta insanidade e é tanto pior quando se trata de apoiar Luis Filipe Vieira.  Não basta à \textbf{mulher}  de César ser séria...António Costa, o que diria você?\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/118 & \cellcolor{green!5}0.847 \\  \hline
+  \cellcolor{green!27}\small A descaractrização e hipoteca de Lisboa começou com o \textbf{c\textbf{hamuças}} precisamente, mas não era ele que mandava na C.M. Lisboa, e ainda hoje não é o Merdina que manda lá, quem manda lá e toda a gente tem um medinho do homem que até doí... é o Manuel Salgado, o tal primo do outro ! Agora junte-lhe um desterrado que concorreu pelo B.E. simplesmente para ganhar posição e lugar, e depois "fugiu" para o lado do \textbf{m\textbf{onhé}} e tem feito gato sapato de Lisboa... é o famoso... Zé, o tal Fernandes, irmão do outro Fernandes !! É tudo uma cambada de incompetentes que só querem é promover-se e roubar o erário público !\normalsize   & \cellcolor{green!27}Chamuças, Monhé & \cellcolor{green!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!27}4/113 & \cellcolor{green!27}3.54 \\  \hline
+  \cellcolor{green!5}\small São muitos da "tua canhota", a começar pelo \textbf{c\textbf{hamuças}} e passando pelo merdelim ! Faltou o Manuel Salgado, mas se calhar porque é mais inteligente que os dois juntos, pouco ou nada aparece, nem na internet ! Talvez até porque o Manuel não passa grande cartucho ao futebol...\normalsize   & \cellcolor{green!5}Chamuças & \cellcolor{green!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!5}2/48 & \cellcolor{green!5}4.167 \\  \hline
+  \cellcolor{green!27}\small O Medina com cara de seminarista tardio, não engana ninguém. Quando está na TV no seu comentário semanal \textbf{mudo} logo de canal. Não gosto de ouvir alarvidades!\normalsize   & \cellcolor{green!27}Mudo & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/27 & \cellcolor{green!27}3.704 \\  \hline
+  \cellcolor{green!5}\small Vergonha.Costa tu mereces levar com bosta de \textbf{vaca} nas trombas pois não percebeste qual a tua posição.Por mim prefiro ficar em casa do que ir votar em pessoas sem carater.\normalsize   & \cellcolor{green!5}Vaca & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/30 & \cellcolor{green!5}3.333 \\  \hline
+  \cellcolor{green!27}\small 03.02.2020 <br/>Benfica: Bilhetes e "futeboladas" para juízes"Esta semana dei-me conta de um caso que toda a gente aí discutiu. Um caso de um juiz que pediu escusa por ser sócio de um clube de <br/>futebol e não foi aceite essa escusa, o que é estranho. É estranho quando circula por aí, por exemplo, uma lista, que até hoje não vi ser desmentida por ninguém, de 44 juízes portugueses que recebiam bilhetes grátis do Benfica. Grátis, entre aspas", declarou Ana Gomes, no habitual espaço de comentário na SIC/Notícias.Segundo a antiga eurodeputada nessa lista consta "um membro do atual governo que até fez parte de um coletivo, que determinou a prisão preventiva de Rui Pinto" mas também terá "o próprio presidente do supremo Tribunal de justiça, que é também presidente do conselho superior da magistratura. Isto é, o órgão que promove os juízes".Ora, no primeiro caso, trata-se de Antero Luís, um dos três juízes do Tribunal da Relação de Lisboa, que manteve Rui Pinto em prisão preventiva. Actualmente, Antero Luís é secretário de Estado da Administração Interna."Dar uns chutos na \textbf{bola}"<br/>A ligação de alguns juízes ao SL Benfica passaria além dos meros convites para o futebol. Nos mesmos emails já revelados, surge também uma ligação de juízes à Comissão de Honra de uma candidatura de Luís Filipe Vieira e outro tipo de pedidos, como uma futebolada. Foi isto mesmo que o juiz Pedro Mourão - que chegou a presidir à Comissão da Carteira Profissional de Jornalista - pediu directamente a Luís Filipe Vieira a 10 de março de 2014: "Meu caro Luís, Lamento incomodar-te, mas os nossos Juízes Conselheiros do Supremo Tribunal de Justiça gostariam de dar uns chutos na \textbf{bola} aí num dos pavilhão. Seria no próximo dia 20, 5ª feira , às 16 horas, se for possível. Concretizando-se a jogatana e se estivesses disponível, a tua visita como anfitrião será sempre interessante."\normalsize   & \cellcolor{green!27}Bola & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}2/316 & \cellcolor{green!27}0.633 \\  \hline
+  \cellcolor{green!5}\small E O ENTERTENIMENTO ....OU NÃO VÊ O NOME DA CRISTINA FERREIRA LÁ .....A  \textbf{GAJA} DESDE QUE VOLTOU Á TVI COMO DONA, É  DE CARACTER DUVIDOSO .NÃO POR SAIR DA SIC, QUE A VIDA É MESMO ASSIM, DOU O MEU TRABALHO A QUEM PAGA MAIS !<br/>PORQUE O PATRÃO QUANDO EU NÃO RENDER , TAMBÉM ME DESPEDE SEM DÓ NEM PIEDADE .MAS POR,<br/>..... ANDA A DESPEDIR O PESSOAL TODO DESDE GUSTAVO SANTOS DO QUERIDO MUDEI A CASA Á SUZANA GARCIA ADVOGADA DO VOCE NA TV ....PARA LAVAR A MENTE AO PESSOAL TODO, LOGO,  DE MANHÃ .ATRAVÉS DA PALHAÇADA SALOIA .\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/101 & \cellcolor{green!5}0.99 \\  \hline
+  \cellcolor{green!27}\small AHAHAHAHHAHAHAHAHA...VOTA PS!!o 1º ministro e o presidente da cml duas das figuras politicas mais importantes do país de mãos dadas com o maior corrupto que Portugal alguma vez conheceu.<br/>Já nem vergonha na cara têm!!tudo a troco de uns miseráveis bilhetes para ver a \textbf{bola}.Depois digam que Portugal não é um dos países mais corruptos dos mundo.\normalsize   & \cellcolor{green!27}Bola & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/58 & \cellcolor{green!27}1.724 \\  \hline
+  \cellcolor{green!5}\small Bilhetes para a \textbf{bola}? 😂💶💶💶💶💶💶💶💶💶💶\normalsize   & \cellcolor{green!5}Bola & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - Portuguese}  & \cellcolor{red!27}Tuga & \cellcolor{red!27}1 & \cellcolor{red!27}1/3717& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Imbecil, Mudo & \cellcolor{red!5}2 & \cellcolor{red!5}2/3717& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher, Gaja & \cellcolor{red!27}2 & \cellcolor{red!27}2/3717& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh)}  & \cellcolor{red!5}Monhé, Chamuças & \cellcolor{red!5}3 & \cellcolor{red!5}3/3717& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Indian}  & \cellcolor{red!27}Monhé, Chamuças & \cellcolor{red!27}3 & \cellcolor{red!27}3/3717& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Vaca & \cellcolor{red!5}1 & \cellcolor{red!5}1/3717& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Bola & \cellcolor{red!27}3 & \cellcolor{red!27}3/3717& \cellcolor{red!27}0.08 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - Portuguese;Physical Identity - Physical (and Mental) Impairments;Gender - General;Ethnicity - Asian (South- India, Pakistan, Bangladesh);Nationality - Indian;Gender - Female sexuality;Physical Identity - Physical Features;%.
+
+\item The percentage of hate speech related words is 0.4036.
+
+\item Considering that the variable \textbf{Ethnicity - Asian (South- India, Pakistan, Bangladesh)} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 16/119 occurences of hate speech related comments.\end{itemize}\end{document}

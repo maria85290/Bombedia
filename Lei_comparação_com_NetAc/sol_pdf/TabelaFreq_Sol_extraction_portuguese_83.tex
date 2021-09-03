@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_83.json :}\newline \par\Large\textbf {Title: \large  Pepe e Marega alvo de processos disciplinares }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small O Tarabaat é aquele que já devia ter apanhado cartão \textbf{v\textbf{ermelho}} há alguns jogos, mas safa-se sempre porque é do Benfica e os árbitros parecem ter medo de mostrar cartões a este senhor.\normalsize   & \cellcolor{green!27}Vermelho & \cellcolor{green!27}Ethnicity - Native American, Ideological and Political Identity - General & \cellcolor{green!27}2/33 & \cellcolor{green!27}6.061 \\  \hline
+  \cellcolor{green!5}\small No mesmo jogo, falta agora abrir os processos ao Taraabt (que fez o mesmo que o Marega lhe fez a ele) e ao Ruben Dias por uma agressão sem \textbf{bola} (bem ao nível daquela do Slimani, de que tanto os benfiquistas se queixaram, durante tanto tempo!) que lhe deu \textbf{a\textbf{marelo}}...<br/>A palermice dos adeptos do Vitória, só consegue mesmo ser ultrapassada pela da direcção do benfica... Enfim!\normalsize   & \cellcolor{green!5}Amarelo, Bola & \cellcolor{green!5}Nationality - Chinese, Nationality - Japanese, Physical Identity - Physical Features & \cellcolor{green!5}3/66 & \cellcolor{green!5}4.545 \\  \hline
+  \cellcolor{green!27}\small Processo disciplinar ao Marega ? <br/>Num país onde todos são Maregas ? <br/>Isso é \textbf{racismo}.\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small Racismo, com certeza...\normalsize   & \cellcolor{green!5}Racismo & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small Racismo contra os dois uma zuka e outro da selva\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small foi \textbf{racismo} contra o marroquino. Pode lá ser, deve ter sido ao contrário.\normalsize   & \cellcolor{green!5}Racismo & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native American}  & \cellcolor{red!27}Vermelho & \cellcolor{red!27}1 & \cellcolor{red!27}1/317& \cellcolor{red!27}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ideological and Political Identity - General}  & \cellcolor{red!5}Vermelho & \cellcolor{red!5}1 & \cellcolor{red!5}1/317& \cellcolor{red!5}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Chinese}  & \cellcolor{red!27}Amarelo & \cellcolor{red!27}1 & \cellcolor{red!27}1/317& \cellcolor{red!27}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Japanese}  & \cellcolor{red!5}Amarelo & \cellcolor{red!5}1 & \cellcolor{red!5}1/317& \cellcolor{red!5}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Bola & \cellcolor{red!27}1 & \cellcolor{red!27}1/317& \cellcolor{red!27}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racismo & \cellcolor{red!5}4 & \cellcolor{red!5}4/317& \cellcolor{red!5}1.26 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Native American;Ideological and Political Identity - General;Nationality - Chinese;Nationality - Japanese;Physical Identity - Physical Features;Ethnicity - General;%.
+
+\item The percentage of hate speech related words is 2.8391.
+
+\item Considering that the variable \textbf{Ethnicity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 9/14 occurences of hate speech related comments.\end{itemize}\end{document}

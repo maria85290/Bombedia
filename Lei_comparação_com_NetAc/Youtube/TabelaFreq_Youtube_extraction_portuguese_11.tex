@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_11.json :}\newline \par\Large\textbf {Title: \large  Maria Capaz entrevista Fernanda Câncio }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Esta caixa de comentários é um nojo e a prova cabal de que o \textbf{machismo} está vivo e de boa saúde em Portugal\normalsize   & \cellcolor{green!27}Machismo & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/23 & \cellcolor{green!27}4.348 \\  \hline
+  \cellcolor{green!5}\small esta \textbf{quenga} andou a viver às custas do namorado corrupto, agora virou feminista, estas duas porcas era mesmo chuparem me na piça enquanto faziam uma sandes\normalsize   & \cellcolor{green!5}Quenga & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small vejo aqui muito menino beta..pá cortem a pila e viram maria... se forem Capazes..porque rapazes não sãoe as Ritinhas deste país, que são umas incompetentes e só se safam porque os paizinhos são outros corruptos que traficam influencias, senão nem a lavar pratos se safavam... mas há e tal o \textbf{patriarcado}.\normalsize   & \cellcolor{green!27}Patriarcado & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/52 & \cellcolor{green!27}1.923 \\  \hline
+  \cellcolor{green!5}\small Putz. Esta \textbf{gaja} é muito FEIA!\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Mulher tem os mesmos direitos que homem oh senhora Câncio eu estudei e tive aulas de história \textbf{mulher} hoje em dia tem mais regalias do que o homem a maioria dos trabalhos pesados e de risco são ocupados por homens \textbf{mulher} é só no shopping etc.. antigamente \textbf{mulher} era honrada e não discriminada hoje em dia \textbf{mulher} está no mercado de trabalho tendo os mesmos direitos do homem!!!! Essa coisa de \textbf{mulher} ganhar menos não existe porque o patrão quer é produtividade tasse a cagar se é \textbf{mulher} \textbf{preta} \textbf{negra} amarela etcc!! Que feminismo é este de hoje em dia tão desonesto que aprova a lei do aborto e é contra alguns conceitos da igreja que raio de feminismo é hoje que odeia tanto os homens que um bebé do sexo masculino seja chamada de estuprador em evolução !!! O feminismo de hoje é cruel vingativo desonesto homens e mulheres não podem competir nunca porque são úteis á sociedade\normalsize   & \cellcolor{green!27}Mulher, Negra, Preta & \cellcolor{green!27}Ethnicity - Black, Gender - General & \cellcolor{green!27}9/159 & \cellcolor{green!27}5.66 \\  \hline
+  \cellcolor{green!5}\small Oh acabei de abortar com esta conversa... Oh maldito \textbf{patriarcado}... Raios te partam Santos Silva seu \textbf{machista}!! Pôrca pah!\normalsize   & \cellcolor{green!5}Machista, Patriarcado & \cellcolor{green!5}Gender - General & \cellcolor{green!5}2/19 & \cellcolor{green!5}10.526 \\  \hline
+  \cellcolor{green!27}\small Puta vendida ao Sócrates: mamou dinheiro sujo...... a vender o corpo ao Sócrates\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small Gostei da entrevista. Só alguém muito alienado não consegue perceber que a nossa sociedade ainda é machista\normalsize   & \cellcolor{green!5}Machista & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/17 & \cellcolor{green!5}5.882 \\  \hline
+  \cellcolor{green!27}\small Puta de merda so diz bacuradas\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Os homens estão em guerra constante com as mulheres porque sabem que estão em desvantagem. E ao contrário do que o \textbf{imbecil} do Pedro Arroja alarvemente diz, as mulheres seguirão um caminho muito melhor que o dos homens.\normalsize   & \cellcolor{green!5}Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/38 & \cellcolor{green!5}2.632 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Machismo, Patriarcado, Gaja, Mulher, Machista & \cellcolor{red!27}13 & \cellcolor{red!27}13/915& \cellcolor{red!27}1.4200000000000002 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Quenga, Puta & \cellcolor{red!5}3 & \cellcolor{red!5}3/915& \cellcolor{red!5}0.33 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Preta, Negra & \cellcolor{red!27}2 & \cellcolor{red!27}2/915& \cellcolor{red!27}0.22 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Imbecil & \cellcolor{red!5}1 & \cellcolor{red!5}1/915& \cellcolor{red!5}0.11 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Gender - Female sexuality;Ethnicity - Black;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 2.0765.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 19/40 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_53.json :}\newline \par\Large\textbf {Title: \large  CMTV mostra vídeo do tiroteio em Lisboa }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small JorgeZumba Dois Não tando contente volta pá romania filho da \textbf{puta} porque aqui em Portugal só fazem merda . Portugal e um pais de paz e não de países como vocês .\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/32 & \cellcolor{green!27}3.125 \\  \hline
+  \cellcolor{green!5}\small Nao tem respeito pelos policias mais quando precisam a primeira coisa é ligar para o 112. Existe um problema as penas para esse tipo de crimes por parte de quem seja, \textbf{preto},\textbf{branco},\textbf{Cigano}, sao penas muito leves!!!  A punição tem de ser mais severa . 20 anos para frente .mas os juízes sabe se la como avaliam\normalsize   & \cellcolor{green!5}Branco, Cigano, Preto & \cellcolor{green!5}Ethnicity - Black, Ethnicity - Roma, Ethnicity - White & \cellcolor{green!5}3/56 & \cellcolor{green!5}5.357 \\  \hline
+  \cellcolor{green!27}\small Cigano só enche o saco !!!!!\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small a policia lá so tem \textbf{branco}  kkkkkk\normalsize   & \cellcolor{green!5}Branco & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/7 & \cellcolor{green!5}14.286 \\  \hline
+  \cellcolor{green!27}\small cada pessoa tem o seu mal, nao julguem as pessoas por grupos, isso para mim e um genocidio social. olhem estes ciganos portaram se mal etc ... mas ha outros que sao joias de pessoas acreditem eu nao sou \textbf{cigano} nem \textbf{branco} sou \textbf{preto} e  normalmente nos e os ciganos nunca nos demos assim la muito bem mas derivado a muitos factores que muitas pessoas nao teem alcance mental para la chegar e mais e mais e mais...\normalsize   & \cellcolor{green!27}Branco, Cigano, Preto & \cellcolor{green!27}Ethnicity - Black, Ethnicity - Roma, Ethnicity - White & \cellcolor{green!27}3/78 & \cellcolor{green!27}3.846 \\  \hline
+  \cellcolor{green!5}\small Tens a cara do caralho fala la isso na cara do \textbf{cigano} o palero\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}1/14 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small Vitor Conceição es português porque a tua \textbf{mulher} foi comida. sabes\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small aleeee filh da \textbf{Puta} os ciganos arrebentam contudo os pailhos eh k deviam ir cm o caralh\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/17 & \cellcolor{green!5}5.882 \\  \hline
+  \cellcolor{green!27}\small Vitor Conceição filho da \textbf{puta} vais morrer caimado o mundo e pequeno es um omem morto\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small Vitor Conceição tavas adizer que eras do casal da mira para ver se me metias medo fica sabendo mano sou \textbf{cigano} n tenho medo de ninguém vais te dar mal\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}1/30 & \cellcolor{green!5}3.333 \\  \hline
+  \cellcolor{green!27}\small vai mas é trabalhar preguiçoso. se és \textbf{cigano} eu sou brasileiro. muito medo de lixo como tu.\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small Vitor Conceição vela atua \textbf{mulher} vai trabalhar. deve te meter os corno eu n sai como ainda n deste por nada a tua pilinha de ficar a boiar na cona da tua mulher\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}2/33 & \cellcolor{green!5}6.061 \\  \hline
+  \cellcolor{green!27}\small Maronde Vicente cala te puta\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Maronde Vicente os teus mortos todos cara duma merda, vai come tu marrinha dum cavalo filho de ma \textbf{raça} .l.\normalsize   & \cellcolor{green!5}Raça & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/20 & \cellcolor{green!5}5.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Puta & \cellcolor{red!27}4 & \cellcolor{red!27}4/901& \cellcolor{red!27}0.44 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Preto & \cellcolor{red!5}2 & \cellcolor{red!5}2/901& \cellcolor{red!5}0.22 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Roma}  & \cellcolor{red!27}Cigano & \cellcolor{red!27}6 & \cellcolor{red!27}6/901& \cellcolor{red!27}0.67 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Branco & \cellcolor{red!5}3 & \cellcolor{red!5}3/901& \cellcolor{red!5}0.33 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}3 & \cellcolor{red!27}3/901& \cellcolor{red!27}0.33 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Raça & \cellcolor{red!5}1 & \cellcolor{red!5}1/901& \cellcolor{red!5}0.11 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - Female sexuality;Ethnicity - Black;Ethnicity - Roma;Ethnicity - White;Gender - General;Ethnicity - General;%.
+
+\item The percentage of hate speech related words is 2.1088.
+
+\item Considering that the variable \textbf{Ethnicity - Roma} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 19/48 occurences of hate speech related comments.\end{itemize}\end{document}

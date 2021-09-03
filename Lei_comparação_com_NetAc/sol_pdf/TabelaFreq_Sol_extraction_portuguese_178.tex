@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_178.json :}\newline \par\Large\textbf {Title: \large  Donald Trump e Melania testaram positivo para a covid-19 }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small 🤣🤣🤣quem deve estar a tremer é o \textbf{velho} bidé, se o \textbf{gajo} ja estava infetado na altura do debate lá se vai o \textbf{velho} com os porcos...🙄😬😬grande estratega este trump..🤣🤣\normalsize   & \cellcolor{green!27}Gajo, Velho & \cellcolor{green!27}Age - Over 65s, Ethnicity - White & \cellcolor{green!27}3/30 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small E tu? Demoras muito? Já fedes a cadáver e ainda por aqui andas? <br/>Há-de chegar a tua vez, \textbf{nazi}!\normalsize   & \cellcolor{green!5}Nazi & \cellcolor{green!5}Nationality - German & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small Ahhh🤣🤣 hoje é dia de festa para os grunhos <br/>esquerdelhos e a \textbf{carneirada} anti trump...🤪🤪ao menos podiam ser mais criativos...todos repetitivos...lixivia bla bla...morrer bla bla...🤣🤣🤫🤫 voces querem é ver os chinocas a tomar conta do planeta terra..o trump nao presta como pessoa mas como presidente nao é assim tão mau...nao vi guerras nem invasoes...devem achar que a marioneta do \textbf{velho} bidé é melhor...🤔🤔🤢🤮🥳\normalsize   & \cellcolor{green!27}Carneirada, Velho & \cellcolor{green!27}Age - Over 65s, Ideological and Political Identity - General & \cellcolor{green!27}2/63 & \cellcolor{green!27}3.175 \\  \hline
+  \cellcolor{green!5}\small És um \textbf{imbecil} de um direitralha!<br/>Se ele não usa máscara, não mantém a distância física das outras pessoas, não lava as mãos, etc, isto era inevitável, burro.\normalsize   & \cellcolor{green!5}Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/27 & \cellcolor{green!5}3.704 \\  \hline
+  \cellcolor{green!27}\small Estavas pessoalmente à espera?? A serio??!!🤣🤣que cromo ..estupido o \textbf{velho} bidé tem muitos argumentos para o trump🤣🤣\normalsize   & \cellcolor{green!27}Velho & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small Esqueceu-se de beber lixívia ... porra o \textbf{gajo} faz tudo para fugir aos debates e ver se ganha votos ... mais uma prova da democracia podre dos EUA\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/28 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small O Bolsonaro e o Boris também já apanharam o vírus chinês e estão bem.Desejo as melhoras ao Trump e à \textbf{mulher} 👍.Espero que nas eleições presidenciais, o povo americano vote no Trump,pois o outro candidato é uma múmia \textbf{paralítica} a soldo dos chineses.\normalsize   & \cellcolor{green!27}Mulher, Paralítica & \cellcolor{green!27}Gender - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/45 & \cellcolor{green!27}4.444 \\  \hline
+  \cellcolor{green!5}\small Não é virús chinês, é americano está provado!<br/>Cientistas provaram que se iniciou nos States, o TRUM \textbf{a\textbf{marelo}} é que esconde a verdade dos factos!<br/>Vlad, Vlad estás a leste do paraíso, as notícias que acompanhas são as caseiras?\normalsize   & \cellcolor{green!5}Amarelo & \cellcolor{green!5}Nationality - Chinese, Nationality - Japanese & \cellcolor{green!5}2/37 & \cellcolor{green!5}5.405 \\  \hline
+  \cellcolor{green!27}\small Não devia dizer mas lá vai:<br/>BEM FEITO SNR TRUM \textbf{A\textbf{MARELO}}!...\normalsize   & \cellcolor{green!27}Amarelo & \cellcolor{green!27}Nationality - Chinese, Nationality - Japanese & \cellcolor{green!27}2/10 & \cellcolor{green!27}20.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velho & \cellcolor{red!27}3 & \cellcolor{red!27}3/1935& \cellcolor{red!27}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}2 & \cellcolor{red!5}2/1935& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - German}  & \cellcolor{red!27}Nazi & \cellcolor{red!27}1 & \cellcolor{red!27}1/1935& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ideological and Political Identity - General}  & \cellcolor{red!5}Carneirada & \cellcolor{red!5}1 & \cellcolor{red!5}1/1935& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Imbecil, Paralítica & \cellcolor{red!27}2 & \cellcolor{red!27}2/1935& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}1 & \cellcolor{red!5}1/1935& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Chinese}  & \cellcolor{red!27}Amarelo & \cellcolor{red!27}2 & \cellcolor{red!27}2/1935& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Japanese}  & \cellcolor{red!5}Amarelo & \cellcolor{red!5}2 & \cellcolor{red!5}2/1935& \cellcolor{red!5}0.1 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Ethnicity - White;Nationality - German;Ideological and Political Identity - General;Physical Identity - Physical (and Mental) Impairments;Gender - General;Nationality - Chinese;Nationality - Japanese;%.
+
+\item The percentage of hate speech related words is 0.7235.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 15/88 occurences of hate speech related comments.\end{itemize}\end{document}

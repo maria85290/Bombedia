@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_81.json :}\newline \par\Large\textbf {Title: \large  Hoje em dia falam muito de jogadores como Mbappé, Messi ou CR7 e esquecem-se de Marega }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small O Merdega não vale a relva que pisa... O Figo deve ter andado a sacar bicos ao Merdega... Ou então está \textbf{senil}...Ou então quer ser "prasidentes" do Zémerding... AHHAHAHAH"\normalsize   & \cellcolor{green!27}Senil & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/29 & \cellcolor{green!27}3.448 \\  \hline
+  \cellcolor{green!5}\small Marega? Mas isso é algum jogador da \textbf{bola} ou é outra coisa qualquer? Enxerga-te!\normalsize   & \cellcolor{green!5}Bola & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/14 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small O Figo enlouqueceu. O Marega tem força e rapidez, tecnicamente é um cepo, completamente \textbf{cego}! Como tal não é um futebolista de topo, nem merece ser comparado!\normalsize   & \cellcolor{green!27}Cego & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/27 & \cellcolor{green!27}3.704 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Senil & \cellcolor{red!27}1 & \cellcolor{red!27}1/351& \cellcolor{red!27}0.27999999999999997 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical Features}  & \cellcolor{red!5}Bola & \cellcolor{red!5}1 & \cellcolor{red!5}1/351& \cellcolor{red!5}0.27999999999999997 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Cego & \cellcolor{red!27}1 & \cellcolor{red!27}1/351& \cellcolor{red!27}0.27999999999999997 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Physical Identity - Physical Features;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 0.8547.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 3/21 occurences of hate speech related comments.\end{itemize}\end{document}

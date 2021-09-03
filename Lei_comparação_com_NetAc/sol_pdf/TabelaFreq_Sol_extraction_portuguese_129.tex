@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_129.json :}\newline \par\Large\textbf {Title: \large  Adeptos do FC Porto detidos em Itália por agressão a agentes da autoridade }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small oh \textbf{velhote}, vai tomar um viagra para não mijares as botas e cala-te!\normalsize   & \cellcolor{green!27}Velhote & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small Não são meros ADEPTOS!<br/>São da CLAQUE dos Super Dragões ... UNS VÂNDALOS SOB A CAPA DE ASSOCIAÇÃO LEGALIZADA!<br/>É UMA VERGONHA, A FPF E O IPDJ, FECHAREM OS OLHOS AO VANDALISMO CONTINUADO DAS CLAQUES LEGALIZADAS, quando estas deveriam ter um COMPORTAMENTO EXEMPLAR RECONHECIDO PELA OPINIÃO PÚBLICA, para serem dignas do nome de ASSOCIAÇÃO e merecerem a LEGALIZAÇÃO!!!<br/>NUNCA HÁ PUNIÇÕES PARA OS CLUBES DESSES ARRUACEIROS???? PORQUÊ????<br/>PORQUE HÁ UMA JUSTIÇA NOJENTA/TENDENCIOSA/CLUBISTÍCA DA PARTE DA FPF!!<br/>Espero que um deles, SEJA O \textbf{MACACO} E QUE FIQUE MUITOS ANOS PRESO!\normalsize   & \cellcolor{green!5}Macaco & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/84 & \cellcolor{green!5}1.19 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velhote & \cellcolor{red!27}1 & \cellcolor{red!27}1/668& \cellcolor{red!27}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Macaco & \cellcolor{red!5}1 & \cellcolor{red!5}1/668& \cellcolor{red!5}0.15 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Ethnicity - Black;%.
+
+\item The percentage of hate speech related words is 0.2994.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 2/37 occurences of hate speech related comments.\end{itemize}\end{document}

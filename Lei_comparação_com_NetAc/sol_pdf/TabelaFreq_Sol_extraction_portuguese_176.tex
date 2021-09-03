@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_176.json :}\newline \par\Large\textbf {Title: \large  Costa 'despediu' presidente do TdC por telefone }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small O Costa perdeu a vergonha, perdeu medo do Marcelo, o Morcela está escagaçado em perder o apoio do \textbf{m\textbf{onhé}}, uma figura triste entre o Roque e a amiga....Simplesmente REPUGNANTE.\normalsize   & \cellcolor{green!27}Monhé & \cellcolor{green!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!27}2/29 & \cellcolor{green!27}6.897 \\  \hline
+  \cellcolor{green!5}\small Este primeiro ministro, cozinhado na secretaria,  quando deixar de o ser vai pagar ainda mais caro do que o \textbf{labrego} do socrates, tal é o ódio que está a criar tanto à direita como à própria esquerda.<br/>É só passar a covidiotice.Só se vai safar de emigrar para a Índia de outra forma, ficando por cá está feito!\normalsize   & \cellcolor{green!5}Labrego & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/58 & \cellcolor{green!5}1.724 \\  \hline
+  \cellcolor{green!27}\small Este \textbf{c\textbf{hamuças}} é um verrasco do piorio, Não tem respeito por ninguém, e como o TdC tem sido "incómodo" com as fiscalizações feitas sobre ele e seus correligionários, deu nisto !\normalsize   & \cellcolor{green!27}Chamuças & \cellcolor{green!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!27}2/31 & \cellcolor{green!27}6.452 \\  \hline
+  \cellcolor{green!5}\small Para a minha integridade física e emocional, tenho evitado comentar neste site.  <br/>Mas esta notícia, aliada à que descreve o que estes canalhas iluminados pelas estrelas pretendem fazer com a ajuda europeia destinada a este miserável país, povoado por um ainda mais miserável povinho... desculpem mas tenho que usar vernáculo:<br/>Cambada de chulos que se apoderou do que já foi uma \textbf{Nação}<br/>\textbf{Canalhada} sem escrúpulos, miserável e nojenta.<br/>Dass!\normalsize   & \cellcolor{green!5}Canalhada, Nação & \cellcolor{green!5}Age - Youngsters, Nationality - General & \cellcolor{green!5}2/66 & \cellcolor{green!5}3.03 \\  \hline
+  \cellcolor{green!27}\small Um Pretugal, e Giganal à boa treta \textbf{Tuga}, os portugueses são o povo mais tótó que existe; Muito bom trabalhador, mas adora levar no Bilro!!!\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small Vota P\$, o cancro da \textbf{Nação} dos Bananos tugas\normalsize   & \cellcolor{green!5}Nação & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/9 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small Um ajuste de contas no tribunal por conta...<br/> Vergonhoso para a democracia! Já dizia \textbf{m\textbf{onhé}}... "Nos países socialmemte atrasados os poderes instalados sobressaem-se aos órgãos ditos independentes! "\normalsize   & \cellcolor{green!27}Monhé & \cellcolor{green!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!27}2/28 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small E o que tem a var o termo retornado <br/>para aqui? <br/>So um \textbf{racista} xenófobo se lembraria de tal.<br/>Mas deve ser daqueles que anda nas manifestações pro imigrantes ilegais!<br/>E é de esquerda, de certeza!\normalsize   & \cellcolor{green!5}Racista & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/34 & \cellcolor{green!5}2.941 \\  \hline
+  \cellcolor{green!27}\small Vindo do bosta,alguem esperava comportamento mais decente e digno?????? Uma vez animalesco,sempre animalesco!!!! Na UE só Portugal é que tem um chefe de governo \textbf{preto},débil mental,ditador,que nos envergonha,enquanto país!!!!!\normalsize   & \cellcolor{green!27}Preto & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/29 & \cellcolor{green!27}3.448 \\  \hline
+  \cellcolor{green!5}\small Que comentário tão indigente e \textbf{racista}, revelador de quem é este Carlos Costa.\normalsize   & \cellcolor{green!5}Racista & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small Já se esqueceu do que o \textbf{m\textbf{onhé}} e o celinho fizeram à antiga PGR Marques Vidal? Portanto não se admire! É tudo gente corrupta! Fora com esta cambada toda!\normalsize   & \cellcolor{green!27}Monhé & \cellcolor{green!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!27}2/29 & \cellcolor{green!27}6.897 \\  \hline
+  \cellcolor{green!5}\small Tantas criticas ao \textbf{M\textbf{onhé}}....mas quantos do que estão a criticar votaram nele, QUANTOS?\normalsize   & \cellcolor{green!5}Monhé & \cellcolor{green!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Nationality - Indian & \cellcolor{green!5}2/13 & \cellcolor{green!5}15.385 \\  \hline
+  \cellcolor{green!27}\small Justiça. Religiao. Futebol e politica e tudo farinha do mesmo saco. E o saco e \textbf{gordo}. Enquanto o Ze nao der uns murros na mesa. Esta ditadura democratica nao mudara o rumo. Ze e que paga. Recompensa e\normalsize   & \cellcolor{green!27}Gordo & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/38 & \cellcolor{green!27}2.632 \\  \hline
+  \cellcolor{green!5}\small Despedir o \textbf{gajo} com um tiro de uma Glock-19 ?\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Asian (South- India, Pakistan, Bangladesh)}  & \cellcolor{red!27}Monhé, Chamuças & \cellcolor{red!27}5 & \cellcolor{red!27}5/3172& \cellcolor{red!27}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Indian}  & \cellcolor{red!5}Monhé, Chamuças & \cellcolor{red!5}5 & \cellcolor{red!5}5/3172& \cellcolor{red!5}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Labrego & \cellcolor{red!27}1 & \cellcolor{red!27}1/3172& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Canalhada & \cellcolor{red!5}1 & \cellcolor{red!5}1/3172& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Nação & \cellcolor{red!27}2 & \cellcolor{red!27}2/3172& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Portuguese}  & \cellcolor{red!5}Tuga & \cellcolor{red!5}1 & \cellcolor{red!5}1/3172& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racista & \cellcolor{red!27}2 & \cellcolor{red!27}2/3172& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Preto & \cellcolor{red!5}1 & \cellcolor{red!5}1/3172& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Gordo & \cellcolor{red!27}1 & \cellcolor{red!27}1/3172& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}1 & \cellcolor{red!5}1/3172& \cellcolor{red!5}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Asian (South- India, Pakistan, Bangladesh);Nationality - Indian;Social Class - Working class;Age - Youngsters;Nationality - General;Nationality - Portuguese;Ethnicity - General;Ethnicity - Black;Physical Identity - Physical Features;Ethnicity - White;%.
+
+\item The percentage of hate speech related words is 0.6305.
+
+\item Considering that the variable \textbf{Ethnicity - Asian (South- India, Pakistan, Bangladesh)} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 20/128 occurences of hate speech related comments.\end{itemize}\end{document}

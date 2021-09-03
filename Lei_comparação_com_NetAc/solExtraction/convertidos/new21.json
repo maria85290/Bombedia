@@ -1,0 +1,32 @@
+{{{"commentThread": [{
+"id": "017e280d-0455-4d08-3f92-08d6e2b1f878",
+"user": "3faac4fe-2a65-456c-8e7c-b036c5c8a92a",
+"date": "28.05.2019",
+"timestamp": "NA",
+"commentText": "Uma excelente iniciativa.",
+"likes": 0,
+"hasreplies": false,
+"numberOfReplies":0,
+"replies":  []},{
+"id": "8d73aed2-aacf-4628-2d2c-08d6e2ab990d",
+"user": "43993747-edb9-4cfe-b23c-c38b08096cbe",
+"date": "28.05.2019",
+"timestamp": "NA",
+"commentText": "Dividir para reinar... Fragmentar...Um crime ÃÂÃÂ© um crime, seja contra quem for... CrianÃÂÃÂ§as, idosos, de raÃÂÃÂ§a ou etnia... ",
+"likes": 0,
+"hasreplies": true,
+"numberOfReplies":2,
+"replies": [  {
+        "id": "54cad096-b753-41cf-d399-08d6e3aa8c3a",        "user": "78ab4baf-3648-471a-860a-5a9f7a84e3b8",        "date": "29.05.2019",        "timestamp": "NA",        "commentText": "Tal como uma violaÃÂÃÂ§ÃÂÃÂ£o ÃÂÃÂ© uma violaÃÂÃÂ§ÃÂÃÂ£o, seja ela contra um menor, uma mulher sem abrigo ou contra um homem adulto. As vitimas sÃÂÃÂ£o todas iguais e tÃÂÃÂªm todas o mesmo nÃÂÃÂ­vel de apoio emocional e suporte social, certo?",        "likes": 0,        "hasreplies": false,        "numberOfReplies":0,        "replies":  []},        {        "id": "cd1e6e6b-276d-48d9-b021-08d6e592bd4f",        "user": "43993747-edb9-4cfe-b23c-c38b08096cbe",        "date": "01.06.2019",        "timestamp": "NA",        "commentText": "CertÃÂÃÂ­ssimo. ",        "likes": 0,        "hasreplies": false,        "numberOfReplies":0,        "replies": []
+        } ]},{
+"id": "e7836f54-902f-4bdd-3f73-08d6e2b1f878",
+"user": "2064500e-8a01-42b5-b97a-16e9802404d4",
+"date": "28.05.2019",
+"timestamp": "NA",
+"commentText": "Em 2019 e ainda ÃÂÃÂ© preciso formaÃÂÃÂ§ÃÂÃÂ£o especial para lidar com a diversidade humana... Isto diz tudo sobre o atraso civilizacional da polÃÂÃÂ­cia portuguesa.",
+"likes": 0,
+"hasreplies": true,
+"numberOfReplies":2,
+"replies": [  {
+        "id": "1c48a959-1d46-4c25-2d16-08d6e2ab990d",        "user": "c178820f-0357-4307-bb6f-a5526d8a1f79",        "date": "28.05.2019",        "timestamp": "NA",        "commentText": "O atraso civilizacional da policia portuguesa, como vocÃÂÃÂª sentencia, ÃÂÃÂ© um aspeto da diversidade humana com que vocÃÂÃÂª nÃÂÃÂ£o sabe lidar.",        "likes": 0,        "hasreplies": false,        "numberOfReplies":0,        "replies":  []},        {        "id": "996eb0fc-0338-45d2-2d21-08d6e2ab990d",        "user": "2064500e-8a01-42b5-b97a-16e9802404d4",        "date": "28.05.2019",        "timestamp": "NA",        "commentText": "NÃÂÃÂ£o tenho por profissÃÂÃÂ£o ter de lidar com a diversidade humana mas tenho o civismo suficiente para poder dar alguns ensinamentos ÃÂÃÂ  polÃÂÃÂ­cia portuguesa de como se comportar com o seu semelhante.",        "likes": 0,        "hasreplies": false,        "numberOfReplies":0,        "replies": []
+        }  ]}]}

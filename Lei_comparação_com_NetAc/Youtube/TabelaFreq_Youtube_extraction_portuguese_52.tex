@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_52.json :}\newline \par\Large\textbf {Title: \large  Dois ciganos são executados na porta de casa no bairro Soledade - BALANÇO GERAL }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small cigano tem que morrer mesmo.\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Bando de hipócritas comentando aqui abaixo ! "Menos dois vagabundos "   ..Você quis dizer menos dois homens de bem , dois pais de família , dois inocentes ! Eles não matou ninguém! Aquela \textbf{mulher} que falou, falou tudo errado ! Mais Deus tá vendo tudo Deus e o deus dos inocentes .E a corda sempre quebra no lado mais fraco!Mataram um \textbf{cigano} em penedo , e não foi meu pai nem meu tio .Mas como a família do homem não teve CAPACIDADE CORAGEM E FORÇA, de pegar os culpados mataram os inocentes . Deixando bem claro aqui seus bandos de vermes , vamos procurar saber a moral da história para poder julgar! Confiante sempre em DEUS , que a ira do senhor vira !"Executarei neles GRANDE VINGANÇA, e os castigarei na minha ira , e quando eu me vingar deles saberão que eu sou o senhor !Deus e fiel\normalsize   & \cellcolor{green!5}Cigano, Mulher & \cellcolor{green!5}Ethnicity - Roma, Gender - General & \cellcolor{green!5}2/155 & \cellcolor{green!5}1.29 \\  \hline
+  \cellcolor{green!27}\small Cigano nem é gente\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small Teu cu filho de uma prostituta\normalsize   & \cellcolor{green!5}Prostituta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Pensaram que ia se esconder depois de tirar a vida de alguém \textbf{cigano} \textbf{vagabundo} inocente um caralho chumbo neles\normalsize   & \cellcolor{green!27}Cigano, Vagabundo & \cellcolor{green!27}Ethnicity - Roma, Social Class - Destitute & \cellcolor{green!27}2/19 & \cellcolor{green!27}10.526 \\  \hline
+  \cellcolor{green!5}\small Bem feito pra esses dois fdp! Tinha que matar o resto, inclusive essa \textbf{puta} \textbf{v\textbf{elha}}!\normalsize   & \cellcolor{green!5}Puta, Velha & \cellcolor{green!5}Age - Over 65s, Gender - Female age and physical appearance, Gender - Female sexuality & \cellcolor{green!5}3/15 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small Dois \textbf{vagabundo} a menos kkkk\normalsize   & \cellcolor{green!27}Vagabundo & \cellcolor{green!27}Social Class - Destitute & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Eu sou conhecido da família pau no cú corno e teu pai arrombado eu nem sou \textbf{cigano} pau no cú pra vc tá falando bosta filha duma puta\normalsize   & \cellcolor{green!5}Cigano, Puta & \cellcolor{green!5}Ethnicity - Roma, Gender - Female sexuality & \cellcolor{green!5}2/28 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small Era tudo  bonzinho mesmo. Se a própria moça ai do vídeo disse que eles mataram  um \textbf{cigano} em outra cidade vai se fude  o \textbf{vagabunda} defendendo bandido foi tarde esses dois traste  bolsonaro 2019 já PA faze a limpa nessa raça\normalsize   & \cellcolor{green!27}Cigano, Raça, Vagabunda & \cellcolor{green!27}Ethnicity - General, Ethnicity - Roma, Gender - Female sexuality & \cellcolor{green!27}3/42 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small Coisa boa e essa \textbf{raça} boa pra morrer tudo exilar da face da terra!\normalsize   & \cellcolor{green!5}Raça & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/14 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small Então é mentira que eles mataram alguém? A \textbf{mulher} msm fala no vídeo\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small Cigano é tudo  gente boa ,todos honestos,não andam armados ,não andam em bandos ,resolvem seus problemas sozinhos e nunca em gangs,não agiotam ,não passam a perna em ninguém,não vendem ouro,alianças,cordões e pulseiras  de latao ou metal dizendo que é  ouro ,não vendem veículos com problemas,nunca roubam ,são extremamente trabalhadores ,e pacíficos,não ficam te enchendo o saco pra fazer rolo ,com algo que vc tenha ,não dão em cima da \textbf{mulher} dos outros,,não mexem com pistolagem ,não bebem cachaça e ficam arrumando confusão ,não são agressivos ,não são miseráveis,São o melhor povo do mundo ,um exemplo de povo trabalhador ,pacífico e  honesto ,quando vc ver um \textbf{cigano} ,faça negócio com ele ,vai ser inesquecível .pode deixar que ele não vai te passar a perna não tá .\normalsize   & \cellcolor{green!5}Cigano, Mulher & \cellcolor{green!5}Ethnicity - Roma, Gender - General & \cellcolor{green!5}3/128 & \cellcolor{green!5}2.344 \\  \hline
+  \cellcolor{green!27}\small maquiavel algum comeu a sua.\textbf{mulher}?\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Pelo jeito um \textbf{cigano} comeu teu cu num foi miserável filho da puta\normalsize   & \cellcolor{green!5}Cigano, Puta & \cellcolor{green!5}Ethnicity - Roma, Gender - Female sexuality & \cellcolor{green!5}2/13 & \cellcolor{green!5}15.385 \\  \hline
+  \cellcolor{green!27}\small kkkkkkkk boa falou tudo kkkkk a pior \textbf{raça} kkkkk\normalsize   & \cellcolor{green!27}Raça & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Veja ai filho se as cadeias estão lotadas de ciganos .. se tem \textbf{cigano} estrupando se tem \textbf{cigano} praticando latrocínio.. Seu verme\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}2/22 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Cigano é o povo melhor que tem pra viver seu filho de uma jumenta\normalsize   & \cellcolor{green!27}Cigano & \cellcolor{green!27}Ethnicity - Roma & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small Cigano bando de safado deve ter oprimido ou extorquido algem aq em sp \textbf{cigano} não reina seus bande de vermes opresores\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}2/21 & \cellcolor{green!5}9.524 \\  \hline
+  \cellcolor{green!27}\small Mostra sua cara \textbf{vagabundo},safado é tu fresco desgraçado,não sabe nada sobre nossa \textbf{raça} e fica aí falando merda\normalsize   & \cellcolor{green!27}Raça, Vagabundo & \cellcolor{green!27}Ethnicity - General, Social Class - Destitute & \cellcolor{green!27}2/18 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Pra vc fala mal de \textbf{cigano} vc tem que lava sua boca com sabão em pó\normalsize   & \cellcolor{green!5}Cigano & \cellcolor{green!5}Ethnicity - Roma & \cellcolor{green!5}1/16 & \cellcolor{green!5}6.25 \\  \hline
+  \cellcolor{green!27}\small Foi tiro a tiro oque \textbf{analfabeto} , isso ai foi uma injustiça , procuram os culpados da tal morte em penedo e não acharam e vingaram no meu pai e no meu tio\normalsize   & \cellcolor{green!27}Analfabeto & \cellcolor{green!27}Social Class - Working class & \cellcolor{green!27}1/33 & \cellcolor{green!27}3.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Roma}  & \cellcolor{red!27}Cigano & \cellcolor{red!27}15 & \cellcolor{red!27}15/1413& \cellcolor{red!27}1.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}4 & \cellcolor{red!5}4/1413& \cellcolor{red!5}0.27999999999999997 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Prostituta, Puta, Vagabunda & \cellcolor{red!27}5 & \cellcolor{red!27}5/1413& \cellcolor{red!27}0.35000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Destitute}  & \cellcolor{red!5}Vagabundo & \cellcolor{red!5}3 & \cellcolor{red!5}3/1413& \cellcolor{red!5}0.21 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female age and physical appearance}  & \cellcolor{red!27}Velha & \cellcolor{red!27}1 & \cellcolor{red!27}1/1413& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Velha & \cellcolor{red!5}1 & \cellcolor{red!5}1/1413& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Raça & \cellcolor{red!27}4 & \cellcolor{red!27}4/1413& \cellcolor{red!27}0.27999999999999997 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Analfabeto & \cellcolor{red!5}1 & \cellcolor{red!5}1/1413& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Roma;Gender - General;Gender - Female sexuality;Social Class - Destitute;Gender - Female age and physical appearance;Age - Over 65s;Ethnicity - General;Social Class - Working class;%.
+
+\item The percentage of hate speech related words is 2.4062.
+
+\item Considering that the variable \textbf{Ethnicity - Roma} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 34/70 occurences of hate speech related comments.\end{itemize}\end{document}

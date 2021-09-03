@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_98.json :}\newline \par\Large\textbf {Title: \large  A questão dos refugiados na Europa }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Aposto que na rua onde ele mora não vai ter nenhum \textbf{refugiado} vendendo óculos ou relógio de contrabando.\normalsize   & \cellcolor{green!27}Refugiado & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small O multiculturalismo é o pensamento de que cada cultura é moralmente válida, e nenhuma cultura tem o direito de impor seus valores sobre as outras.Assim, se alguém escapa de seu próprio país que é um buraco do inferno, e vai ao país de outros aproveitar a liberdade deles, esse alguém não deveria ser forçado a aceitar e aprender os princípios e costumes sob os quais essas liberdades repousam. Ao invés disso, deveria ser permitido à esse \textbf{refugiado} manter seus encantadores costumes, religião e língua que transformaram o seu país num buraco do inferno.A aceitação tolerante de outras culturas se tornou um valor central do ocidente. Entretanto, outras culturas não tem esse valor de tolerância. então supostamente nós temos que "tolerar a intolerância" dessas pessoas e deixar que elas nos destruam.O multiculturalismo é baseado na filosofia "igualitária" do relativismo moral, que sustenta que nada é absolutamente errado ou certo,Ou como disse Shakespeare: "Não há coisa que seja boa ou má, mas é o pensamento o que a torna". Só que Shakespeare deu essas palavras para Hamlet, que fingia estar louco quando as disse, o que nos sugere que o relativismo moral não passa de insanidade.\normalsize   & \cellcolor{green!5}Refugiado & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/198 & \cellcolor{green!5}0.505 \\  \hline
+  \cellcolor{green!27}\small refugiado eh o kcete, sao \textbf{tudo terrorista} islamico\normalsize   & \cellcolor{green!27}Refugiado, Tudo terrorista & \cellcolor{green!27}Nationality - General, Religious Identity - General & \cellcolor{green!27}2/8 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small akirabrr. Talvez alguém que tenha um segundo nome japonês no Brasil tenha vindo de uma família \textbf{refugiada},  mas não. ..  japonês é tudo kamikaze\normalsize   & \cellcolor{green!5}Refugiada & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/24 & \cellcolor{green!5}4.167 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Refugiado, Refugiada & \cellcolor{red!27}4 & \cellcolor{red!27}4/913& \cellcolor{red!27}0.44 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Religious Identity - General}  & \cellcolor{red!5}Tudo terrorista & \cellcolor{red!5}1 & \cellcolor{red!5}1/913& \cellcolor{red!5}0.11 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - General;Religious Identity - General;%.
+
+\item The percentage of hate speech related words is 0.5476.
+
+\item Considering that the variable \textbf{Nationality - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 5/29 occurences of hate speech related comments.\end{itemize}\end{document}

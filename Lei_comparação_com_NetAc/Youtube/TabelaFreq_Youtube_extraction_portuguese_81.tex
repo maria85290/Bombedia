@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_81.json :}\newline \par\Large\textbf {Title: \large  TOY FUMA UM CHARRO NA TVI }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small tava a ser irónico,só estava a salientar a inteligência do \textbf{gajo},ou falta de cultura,como preferir.\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small \@WhyDontULetMe Lmfaoo yaa mano isso varia na pessoa A ultima vez que fumei \textbf{ganda} charro tava nas nuvens  enqunto olhava para a ponte 25 de abril kkk sdds\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/28 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small Que e isto men o Toy eh \textbf{preto} agora\normalsize   & \cellcolor{green!27}Preto & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small filho da \textbf{puta} deves te achar perito nisso oh carocho tipo a ganza que eu fumo é muito melhor de certeza que a tua só fumas rena murraça e maconha tu é que me das pena so fumas merda tipo rena ahahah\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/42 & \cellcolor{green!5}2.381 \\  \hline
+  \cellcolor{green!27}\small vesse logo pelo fumo intenso que sai e \textbf{branco} que e erva (canabis) e dps vem um puto que tem dois finexs de rena como foto de prefil que nao e! puto andas a fumar merda e pensas que sabes tudo kkkk! vai ver o noddy. so para dizes que oregaos deita fumo toxico para o teu pulmao!\normalsize   & \cellcolor{green!27}Branco & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/58 & \cellcolor{green!27}1.724 \\  \hline
+  \cellcolor{green!5}\small Eu ainda não tinha topado a foto de perfilAHAHAHAHAHAH que \textbf{gajo} peça. De certeza que é um puto.\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small tas todo ngm fuma tabaco de enrolar com talhas grandes nem filtros caseiros \textbf{idiota} xD mas concordo pode ser uma dessas ervinhas de merda k o pessoal usa pra substituir a ganza\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/32 & \cellcolor{green!27}3.125 \\  \hline
+  \cellcolor{green!5}\small ganda toy a fumar um canhao\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small cannabis num se fuma o filho e a marijuana ou a erva o \textbf{paneleiro} tas ai a falar,tou a dizer que e ganza caso n percebeste o fdp,tu e que aposto que nunca fumaste nem ganza\normalsize   & \cellcolor{green!27}Paneleiro & \cellcolor{green!27}Sexual Identity - Male homosexuality & \cellcolor{green!27}1/36 & \cellcolor{green!27}2.778 \\  \hline
+  \cellcolor{green!5}\small \@Joao Carloscannabis nao se fuma???? wtffffm puto vai tocar o bixo. marijuana e cannabis o azeiteiro, que \textbf{idade} tens criança? vai ver o noddy nem sabes oque e cannabis kkkkk\normalsize   & \cellcolor{green!5}Idade & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/31 & \cellcolor{green!5}3.226 \\  \hline
+  \cellcolor{green!27}\small canabis e a planta que da a marijuana,a marijuana e a folha e a erva e a flor o pedaco de merda,vai maze enrolar papel o paneleiro\normalsize   & \cellcolor{green!27}Paneleiro & \cellcolor{green!27}Sexual Identity - Male homosexuality & \cellcolor{green!27}1/27 & \cellcolor{green!27}3.704 \\  \hline
+  \cellcolor{green!5}\small é cada ótario ''cannabis é a planda que da a marijuana'' AHAHAHAHAHAHEste pessoal anda na street com os manos, começam a fumar charros porque é cena de bad boy. E depois mandam postas de pescada desta!!!! AHAHAHAHAH Joao Carlos, dedica-te à pesca!E manda pesquisar o \textbf{idiota}! xD Pesquisa tu nabiça!Cannabis é o nome ciêntifico.Marijuana é exactamente a mesma merda, mas é o nome que ficou popular nos Estados Unidos na guerra contra a droga.Adoro mesmo este pessoal que se arma em rei da cena.\normalsize   & \cellcolor{green!5}Idiota & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/89 & \cellcolor{green!5}1.124 \\  \hline
+  \cellcolor{green!27}\small +Che revolução eu moro ca em lisboa e posso dizer q se paga 5€ por grama a policia n leva para a esquadra a nao ser que voce seja menor de \textbf{idade} e é muito facil de arranjar..basta andar 10 min pelas ruas centrais de lisboa e eles veem perguntar se voce qer\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/53 & \cellcolor{green!27}1.887 \\  \hline
+  \cellcolor{green!5}\small fodasse tirar lhe o cacete da boca que \textbf{gaja} porca\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small deus nao a uzou recreativamente e nesse tempo nem sabiam o que isso era mas se pesquizares e estudares vais ver que encontras o que te digo, nao vou estar aqui com rudeios. se queres discutir o assunto falamos pessoalmente porque por aqui njinguem se entende e o que eu disse sobre o resto nao é certo mas uma estimativa e nao sou eu que o digo mas um povo muito mais avançado que nos, mais avançado que a \textbf{tuga} que é america.. e sim foi batizado com oleo de oliveira, oleo de mirra e oleo de cannabis\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/98 & \cellcolor{green!27}1.02 \\  \hline
+  \cellcolor{green!5}\small Nunca tive muita consideração pelo Toy mas agora o \textbf{gajo} ta no topo.\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small Ai que \textbf{puta} de maluco\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small nem mais, \textbf{ganda} musica (:\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small belo pretexto so para fumar uma. cabrao do \textbf{preto} xD\normalsize   & \cellcolor{green!27}Preto & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small Tou todo queimado, por isso es tao burro que nem percebes nada de nada da \textbf{puta} da life dó. o quê que eu  disse otario do caralho, que nao avia, agora como há queimas-te tu com essas merdas onde te leva a vires cheirar a merda dos outros e a comentares cáca que pra isso mais valia estares calado se nao tens argumentos cara de peido. vai pa escolinha estudar e aprendera ler tarita. tas bem perto de mim se realmente fores de fafe, dá a cara e logo falaremos, ou melhor acabas abatido MATHAFUCKA.\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/95 & \cellcolor{green!5}1.053 \\  \hline
+  \cellcolor{green!27}\small por assim dizendo, \textbf{GANDA} TOOOOOOOOYY\normalsize   & \cellcolor{green!27}Ganda & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Épa eu nao quero estar ha asumir nada que me venham xatear mais tarde mas a minha familia fuma tabaco e na minha escola ja tive colegas que usavam e eu sei que o tabaco nao larga fumo daquele ja para nao falar da reacçao da cristina a dizer :que isto?? que presumo seja do cheiro mas estou convencido que o toy usou um charo verdadeiro lolololol \textbf{ganda} toy pah!\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/70 & \cellcolor{green!5}1.429 \\  \hline
+  \cellcolor{green!27}\small A MAIOR HOMENAGEM AO BOB MARLEY NA TV DA \textbf{TUGA} TOY EM GRANDE o em (kingsize) KKKKKKO TABACO NAO QUEIMA ASSIM SMOKE SOME NATURE\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small era era, tao ele fica com \textbf{ganda} stone!!\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small o \textbf{gajo} desperdiçou um cigarro de maconhaa!!\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/7 & \cellcolor{green!27}14.286 \\  \hline
+  \cellcolor{green!5}\small Concordo contigo bro!, mas não te esqueças que Portugal tem todas as drogas descriminalizadas! algo que se calhar nem daqui a 10 anos existe nos EUA!!! Ás vezes é o desconhecimento da lei que põe o povo \textbf{atrasado}! Abraço!\normalsize   & \cellcolor{green!5}Atrasado & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/39 & \cellcolor{green!5}2.564 \\  \hline
+  \cellcolor{green!27}\small CA \textbf{GANDA} PARPALHÃO!!! :D LOL\normalsize   & \cellcolor{green!27}Ganda & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small este programa é a maior merda deste pais. é o \textbf{paneleiro}, é o \textbf{drogado}, so falta o castelo \textbf{branco} mostrar o seu exemplo e todos verem o video dele a levar na peida\normalsize   & \cellcolor{green!5}Branco, Drogado, Paneleiro & \cellcolor{green!5}Behavioural Addiction - Drugs, Ethnicity - White, Sexual Identity - Male homosexuality & \cellcolor{green!5}3/33 & \cellcolor{green!5}9.091 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo, Branco & \cellcolor{red!27}6 & \cellcolor{red!27}6/5871& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Ganda, Puta & \cellcolor{red!5}10 & \cellcolor{red!5}10/5871& \cellcolor{red!5}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Preto & \cellcolor{red!27}2 & \cellcolor{red!27}2/5871& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Idiota, Atrasado & \cellcolor{red!5}3 & \cellcolor{red!5}3/5871& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Paneleiro & \cellcolor{red!27}3 & \cellcolor{red!27}3/5871& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Idade & \cellcolor{red!5}2 & \cellcolor{red!5}2/5871& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Gaja & \cellcolor{red!27}1 & \cellcolor{red!27}1/5871& \cellcolor{red!27}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Portuguese}  & \cellcolor{red!5}Tuga & \cellcolor{red!5}2 & \cellcolor{red!5}2/5871& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Behavioural Addiction - Drugs}  & \cellcolor{red!27}Drogado & \cellcolor{red!27}1 & \cellcolor{red!27}1/5871& \cellcolor{red!27}0.02 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - White;Gender - Female sexuality;Ethnicity - Black;Physical Identity - Physical (and Mental) Impairments;Sexual Identity - Male homosexuality;Age - General;Gender - General;Nationality - Portuguese;Behavioural Addiction - Drugs;%.
+
+\item The percentage of hate speech related words is 0.511.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 30/217 occurences of hate speech related comments.\end{itemize}\end{document}

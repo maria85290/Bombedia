@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_67.json :}\newline \par\Large\textbf {Title: \large  O Marega foi ao Dubai ser tratado pelo Fisioterapeuta através do medicamento infiltrado Meldonium }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Parece que o pânico está instalado no \textbf{Gay} FC. Na delegação do \textbf{Gay} FC no Lumiar  então nem se fala. Até o Presidente Marquises já tira a água do capote e diz que a equipa é fraquinha (no final sobra para o Souza Cinta…)  Lá fizeram favor de ganhar ao Braga, nem sei como tal. CARREGA BENFICA!\normalsize   & \cellcolor{green!27}Gay & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}2/57 & \cellcolor{green!27}3.509 \\  \hline
+  \cellcolor{green!5}\small Volta para dentro da peida do \textbf{Velho} PPPutanheiro, que já tresanda a merddda, demente avençado do pó de vigo....\normalsize   & \cellcolor{green!5}Velho & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small “O Marega foi ao Dubai ser tratado pelo Fisioterapeuta através do medicamento infiltrado Meldonium”...<br/>Eu já começo a gostar de todos estes artistas a mandar bocas ao nível da tasca do Zé \textbf{Gordo}, porque pode ser que assim o "futebol", não o jogo, mas a nojice em que a indústria se transformou impluda de vez, e talvez alguém ponha ordem neste espectáulo miserável que temos estado a assistir...\normalsize   & \cellcolor{green!27}Gordo & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/67 & \cellcolor{green!27}1.493 \\  \hline
+  \cellcolor{green!5}\small roto\normalsize   & \cellcolor{green!5}Roto & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/1 & \cellcolor{green!5}100.0 \\  \hline
+  \cellcolor{green!27}\small Já tu és \textbf{um demente} sem presonalidade juridica...\normalsize   & \cellcolor{green!27}Um demente & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/8 & \cellcolor{green!27}12.5 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Gay & \cellcolor{red!27}1 & \cellcolor{red!27}1/706& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Velho & \cellcolor{red!5}1 & \cellcolor{red!5}1/706& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Gordo & \cellcolor{red!27}1 & \cellcolor{red!27}1/706& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Male homosexuality}  & \cellcolor{red!5}Roto & \cellcolor{red!5}1 & \cellcolor{red!5}1/706& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Um demente & \cellcolor{red!27}1 & \cellcolor{red!27}1/706& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Sexual Identity - General;Age - Over 65s;Physical Identity - Physical Features;Sexual Identity - Male homosexuality;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 0.7082.
+
+\item Considering that the variable \textbf{Sexual Identity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 6/26 occurences of hate speech related comments.\end{itemize}\end{document}

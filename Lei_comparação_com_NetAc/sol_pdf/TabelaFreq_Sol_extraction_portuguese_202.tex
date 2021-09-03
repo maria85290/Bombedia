@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_202.json :}\newline \par\Large\textbf {Title: \large  Cristina Ferreira compra 2,5 da Media Capital }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Não gosto desta \textbf{mulher},  falsa todos os dias, a guita subiu lhe ah cabeça,  mas tenho que admitir, de parva nada tem... Parvos são todos aqueles que lhe dão olhos e ouvidos!\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/32 & \cellcolor{green!27}3.125 \\  \hline
+  \cellcolor{green!5}\small Coisa mais estúpida esta \textbf{mulher}. A verdade é que isto é o país que temos. Agora esta \textbf{aberração} também vai voltar outra vez para os braços da outra \textbf{aberração} Touxa?\normalsize   & \cellcolor{green!5}Aberração, Mulher & \cellcolor{green!5}Gender - General, Sexual Identity - Male homosexuality & \cellcolor{green!5}3/30 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small Quando se põe uma \textbf{vaca} a mandar na manada , normalmente, sai iogurte...\normalsize   & \cellcolor{green!27}Vaca & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}2 & \cellcolor{red!27}2/745& \cellcolor{red!27}0.27 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Male homosexuality}  & \cellcolor{red!5}Aberração & \cellcolor{red!5}1 & \cellcolor{red!5}1/745& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Vaca & \cellcolor{red!27}1 & \cellcolor{red!27}1/745& \cellcolor{red!27}0.13 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Sexual Identity - Male homosexuality;Gender - Female sexuality;%.
+
+\item The percentage of hate speech related words is 0.5369.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 5/32 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_61.json :}\newline \par\Large\textbf {Title: \large  Maria Leal hoje aqui só para ti- Você na TV }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small ganda pombo\normalsize   & \cellcolor{green!27}Ganda & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/2 & \cellcolor{green!27}50.0 \\  \hline
+  \cellcolor{green!5}\small Cantas mal sua \textbf{v\textbf{elha}} porca vai levar na cona\normalsize   & \cellcolor{green!5}Velha & \cellcolor{green!5}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!5}2/9 & \cellcolor{green!5}22.222 \\  \hline
+  \cellcolor{green!27}\small \@\textbf{Branco} eu enganei-me a escrever\normalsize   & \cellcolor{green!27}Branco & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small A cena brutal sao as crianças nos comentários a darem \textbf{ganda} roast a maria xD\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Como a tv ainda chama esta otaria quer  dizer nao sei qual deles e o mais otario o dj o \textbf{gajo} do teclado oh a dancarina parecem uns atrasadinhos coitados dos portugeses\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/32 & \cellcolor{green!27}3.125 \\  \hline
+  \cellcolor{green!5}\small Tu és uma \textbf{v\textbf{elha}}  e és ridicula toda a gente do meu colégio fala mal de ti também tens os dentes amarelos\normalsize   & \cellcolor{green!5}Velha & \cellcolor{green!5}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!5}2/22 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small 😂😂😂  right ON you are 😅😅 manda a \textbf{v\textbf{elha}} para casa lavar a loiça que isto e o cúmulo do ridículo indeed WTF 😂😂\normalsize   & \cellcolor{green!27}Velha & \cellcolor{green!27}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!27}2/24 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small puta que esta merda de trampa de bosta cagalhao cagalheira de musica ate da vomitos ate suja o bom nome do cantor Roberto Leal e o filho Rodrigo Leal ainda por cima es \textbf{vaca} e ladra feia ate assustas o medo mal empregado tempo que os teus pais estiveram em cima um do outro mais valia fazerem um queijo e darem de comer a quem tem fome foda se \textbf{puta} que pariu aldrabona ladra \textbf{puta} aberracao da natureza acho que nem bebado te comia fofda se perfia tovcar ao bicho\normalsize   & \cellcolor{green!5}Puta, Vaca & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}4/90 & \cellcolor{green!5}4.444 \\  \hline
+  \cellcolor{green!27}\small Vai pá escola \textbf{PUTA} DO CARALHO aprende a escrever sFF e vai po CRL PUTAS QUE TE FODAM\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small mesmo \textbf{ganda} merda\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small Fodassssseeeeee  como perdi tempo a ver esta \textbf{aberração}.  Neste país qualquer merda canta.....vai Trabalhar.......tristeza......não canta nada.......que palhaçada\normalsize   & \cellcolor{green!27}Aberração & \cellcolor{green!27}Sexual Identity - Male homosexuality & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small Ganda merda\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/2 & \cellcolor{green!5}50.0 \\  \hline
+  \cellcolor{green!27}\small QUE FIGURA MAIS ASQUEROSA. ESTA \textbf{PUTA} TINHA QUE ROUBAR,  POIS COM CORPO DELA  NEM UM CÊNTIMO CONSEGUE GANHAR! O QUE SE VÊ AQUI TAMBÉM O MAU GOSTO DA TVI!\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/29 & \cellcolor{green!27}3.448 \\  \hline
+  \cellcolor{green!5}\small Es uma \textbf{vaca} mal parida. Acabei de ver o documentario do teu marido. Alem de seres uma aberracao da natureza e ainda andaste a gastar o dinheiro do rapaz.coitado aproveitaste te dele nao estar bem e sofrer de esquizofrenia e gostaste o dinheiro do rapaz contigo e com os teus amantes sua casa es horrivel ja agora faz tambem uma plastica a esse corpo.pareces um gafanhoto mas deves achar te muito boazona ate andaste a dizer que eras modelo.os portugueses deram te dinheiro a ganhar para verem a tua figura triste nos concertos. Entao em Elvas dizias que tinhas 28 anos.ahahah\normalsize   & \cellcolor{green!5}Vaca & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/101 & \cellcolor{green!5}0.99 \\  \hline
+  \cellcolor{green!27}\small Adelaide Goncalves kkkk o corretor te f** em algumas palavras.   Ela agora pareçe uma africana\normalsize   & \cellcolor{green!27}Africana & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small pareces uma \textbf{puta} quando te sentas no colo do goucha e ns se sabes mas ele é diferente olha que roupa é essa eu adoro moda mas vestido \textbf{preto} curto pra uma \textbf{mulher} de 50 anos com cano alto fica HORRIVEL peço desculpa se estou a ofender que a vestiu mas pensem ela tem 50 anos yha pff ganhem consiencia na cabeça\normalsize   & \cellcolor{green!5}Mulher, Preto, Puta & \cellcolor{green!5}Ethnicity - Black, Gender - Female sexuality, Gender - General & \cellcolor{green!5}3/62 & \cellcolor{green!5}4.839 \\  \hline
+  \cellcolor{green!27}\small Claro ate pq nos fones do \textbf{gajo} ta a dar o Eminem\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small iris \textbf{branco} vou só responder pq tem foto da Momo\normalsize   & \cellcolor{green!5}Branco & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Ganda, Puta, Vaca & \cellcolor{red!27}12 & \cellcolor{red!27}12/2296& \cellcolor{red!27}0.52 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female age and physical appearance}  & \cellcolor{red!5}Velha & \cellcolor{red!5}3 & \cellcolor{red!5}3/2296& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velha & \cellcolor{red!27}3 & \cellcolor{red!27}3/2296& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Branco, Gajo & \cellcolor{red!5}4 & \cellcolor{red!5}4/2296& \cellcolor{red!5}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Aberração & \cellcolor{red!27}1 & \cellcolor{red!27}1/2296& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Africana, Preto & \cellcolor{red!5}2 & \cellcolor{red!5}2/2296& \cellcolor{red!5}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}1 & \cellcolor{red!27}1/2296& \cellcolor{red!27}0.04 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - Female sexuality;Gender - Female age and physical appearance;Age - Over 65s;Ethnicity - White;Sexual Identity - Male homosexuality;Ethnicity - Black;Gender - General;%.
+
+\item The percentage of hate speech related words is 1.1324.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 26/220 occurences of hate speech related comments.\end{itemize}\end{document}

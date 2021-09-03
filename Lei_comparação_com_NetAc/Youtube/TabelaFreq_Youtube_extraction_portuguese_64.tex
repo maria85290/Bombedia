@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_64.json :}\newline \par\Large\textbf {Title: \large  Maria Leal acusada de roubo Responde e é Arrasada }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Francisco é um luxo q essa  coisa nao merece como é possivel um homem desse gabarito se mete com esse lixo maria leal ? Jesus é o inferno na terra\normalsize   & \cellcolor{green!27}Francisco & \cellcolor{green!27}Nationality - French & \cellcolor{green!27}1/30 & \cellcolor{green!27}3.333 \\  \hline
+  \cellcolor{green!5}\small Oh \textbf{mulher} tu vsi mas é cuidar dos netos tu vai mais essa outra junto com esse dois   catar macacos foda se tenho vergonha dessa parte de portugal tv   passou de tv a   canbalacho     metam se na sua vida caralhos vaiam arranjar trabalho a serio por exemplo lavar roupa á mao como as mulheres    a serio fazem\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/57 & \cellcolor{green!5}1.754 \\  \hline
+  \cellcolor{green!27}\small Ho tv do caralho  parem de por merda na tv  essa maria leal é uma \textbf{cabra}  q merecia era emigrar pra a  fim do mundo esse   essa \textbf{cabra} so envergonha portugal e quem da credito a ela é igual cambada de merdas\normalsize   & \cellcolor{green!27}Cabra & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}2/42 & \cellcolor{green!27}4.762 \\  \hline
+  \cellcolor{green!5}\small Oh Maia metes nojo não vez k  a \textbf{mulher} é uma vigarista que podia ser mãe dele tem juízo \textbf{bruxa} tu metes nojo\normalsize   & \cellcolor{green!5}Bruxa, Mulher & \cellcolor{green!5}Gender - Female age and physical appearance, Gender - General & \cellcolor{green!5}2/23 & \cellcolor{green!5}8.696 \\  \hline
+  \cellcolor{green!27}\small A Maia podia jogar às cartas para ver se a outra é inocente. Quanto ao \textbf{careca}, se eu não conhecesse outros carecas, diria que todos são uns idiotas como ele.\normalsize   & \cellcolor{green!27}Careca & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/30 & \cellcolor{green!27}3.333 \\  \hline
+  \cellcolor{green!5}\small Comentário  de uma ignorante  que só  sabe exprimir-se com merda.Se não  sabe definir que o rapaz foi roubadoPor uma \textbf{mulher} sem escrúpulos. E ele um inocente.sem currículo  para \textbf{mulher} sabida.a reduzir 20A na \textbf{idade} 5 filhos.e  que enchia a casa de campo ourique de matula conforme confirnam os vizinhos. E o património  valioso deixado  pelo progenitor não  sabe o que aconteceu  isto é rouboDeclarado..Po\normalsize   & \cellcolor{green!5}Idade, Mulher & \cellcolor{green!5}Age - General, Gender - General & \cellcolor{green!5}3/68 & \cellcolor{green!5}4.412 \\  \hline
+  \cellcolor{green!27}\small GANDA MARIA LEAL.... CANTAS MESMO VEM.. ADORO. TE... NUNCA BI UM TRANNY TAM BONITO COMO TU. FORSSA MARIA TOU CONTIGO..\normalsize   & \cellcolor{green!27}Ganda & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small um desses comentadores é um esterco, o rapaz tinha um problema físico e embora a doença psicologia fosse tratada existem sempre crises e as pessoas isolam-sem muito do mundo fora de casa, não estavam casados com comunhão de bens, ela apenas estava como segundo titular da conta por confiança! esse \textbf{careca} é um verme! que grandes escrúpulos que anda na TV sim senhor! mas sempre podemos registar estas pessoas ;)\normalsize   & \cellcolor{green!5}Careca & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/70 & \cellcolor{green!5}1.429 \\  \hline
+  \cellcolor{green!27}\small Sempre achei que ela tinha \textbf{cara de p\textbf{uta}} afinal não me enganei\normalsize   & \cellcolor{green!27}Cara de puta, Puta & \cellcolor{green!27}Gender - Female age and physical appearance, Gender - Female sexuality & \cellcolor{green!27}2/12 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Mas aquele \textbf{careca} cabeça de pixa só pode estar a querer ser depenado!!! Grande caberão!! Alguma vez este merdas pode ser um comentador?? Fodasse!!! Que nervos!!! A PRÓPRIA FAMÍLIA DISSE QUE A FILHA É UMA ASSASSINA E ESTE MONTE DE MERDA VEM AQUI FALAR COMO SE FOSSE COM ELE E NÃO ESTÁ A METER SE NA PELE DE UM JOVEM COMPLETAMENTE DESLIGADO DE BENS E MATERIAIS TANTO QUE COMPROU APENAS UMA GUITARRA. Filho da \textbf{puta}!!! Também sou livre de expressar me e dar o meu comentário!! \textbf{Careca} do caralho, avias de falar assim junto de mais de um milhão de portugueses mais enfurecidos que touros por causa desta grande \textbf{puta} nojenta!!!! Tudo escrito..\normalsize   & \cellcolor{green!5}Careca, Puta & \cellcolor{green!5}Gender - Female sexuality, Physical Identity - Physical Features & \cellcolor{green!5}4/113 & \cellcolor{green!5}3.54 \\  \hline
+  \cellcolor{green!27}\small Esta \textbf{mulher} deveria ir para a cadeia e comer merda às colheradas...\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small Grande \textbf{ordinária},porca,nem consideração  teve pelo marido,que tinha problemas de saúde,e tem.É as lojas que disseram que ela gastava Montes de dinheiro.\normalsize   & \cellcolor{green!5}Ordinária & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/21 & \cellcolor{green!5}4.762 \\  \hline
+  \cellcolor{green!27}\small Grande VACA\normalsize   & \cellcolor{green!27}Vaca & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/2 & \cellcolor{green!27}50.0 \\  \hline
+  \cellcolor{green!5}\small Aquele \textbf{careca} é mesmo burro, estas desculpado pà, és burro, a gente compreende.  vê-se que és moderno, que sabes utilisar télémoveis e computadores, que nunca tiveste dentro de um amor \textbf{cego}, com medo de perder a pessoa, e que nunca nenhum perverso narcisista como a Maria Leal cruzou a tua vida.  Seu enorme. Devias era estar calado. De longe vê-se logo. Estas a dizer que é a palavra dela contra a dele, é ... pois... basta ouvir falar todas as testemunhas para saber que estas a dizer merda. Essa \textbf{gaja} é uma grande \textbf{puta}, e mais nada.  O pior, são vôces, os médias,  a dar corda a essa \textbf{mulher} controversa, porque vôcés adoram isso.  São tão culpados como essa \textbf{vaca}. Deixem essa \textbf{gaja} ser esqueçida. Parem de a chamar em entrevistas e seja o que for.  Deixem a justiça fazer o seu trabalho.  Não à nada a esclareçer que vos diga respeito, nem a vós, nem a ninguém. O marido dela, fez a reportagem porque foi a unica maneira de a atingir, e atingir o vosso publico doente por sensaçoes de merda. Estupidos.\normalsize   & \cellcolor{green!5}Careca, Cego, Gaja, Mulher, Puta, Vaca & \cellcolor{green!5}Gender - Female sexuality, Gender - General, Physical Identity - Physical (and Mental) Impairments, Physical Identity - Physical Features & \cellcolor{green!5}7/183 & \cellcolor{green!5}3.825 \\  \hline
+  \cellcolor{green!27}\small O \textbf{careca} deve ser o único \textbf{gajo} que tenta ver as coisas do lado da nossa lei e não da justiça moral. A Maria Desafinada Leal é asquerosa e não tenho dúvidas que se apoderou do facto do marido ser rico e tótó para viver à grande. Tem toda a culpa moral porque gastou dinheiro que não era dela, mas não sei como é que eles casaram, porque em certos casos, o património pode passar a ser metade dela aquando do casamento. Tal como disse o "\textbf{careca}" a doença não é incapacitante ao ponto dele não poder gerir o dinheiro e tomar uma posição menos passiva. O marido é, claramente, uma pessoa frágil e submissa mas a responsabilidade é toda dele. Também acho curioso que ele e a mãe não se falavam, que a mãe achava a Maria Desafinada e Torta uma pessoa que gostava do filho dela, mas que, de repente, viu a nota a fugir e passou a ficar do lado do filho... Resumindo, o \textbf{gajo} foi um tótó e ela esperta e a culpa é toda dele, embora pessoalmente gostava de ver a asquerosa da Desafinada a pagar todos os cêntimos ao pobre homem porque ela é apenas mais uma gold digger! Abram o olho caralho...\normalsize   & \cellcolor{green!27}Careca, Gajo & \cellcolor{green!27}Ethnicity - White, Physical Identity - Physical Features & \cellcolor{green!27}4/209 & \cellcolor{green!27}1.914 \\  \hline
+  \cellcolor{green!5}\small Sera que foi o amor que o fez \textbf{cego}? fuck love...\normalsize   & \cellcolor{green!5}Cego & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - French}  & \cellcolor{red!27}Francisco & \cellcolor{red!27}1 & \cellcolor{red!27}1/1570& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher, Gaja & \cellcolor{red!5}8 & \cellcolor{red!5}8/1570& \cellcolor{red!5}0.51 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Cabra, Ganda, Puta, Ordinária, Vaca & \cellcolor{red!27}9 & \cellcolor{red!27}9/1570& \cellcolor{red!27}0.5700000000000001 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female age and physical appearance}  & \cellcolor{red!5}Bruxa, Cara de puta & \cellcolor{red!5}2 & \cellcolor{red!5}2/1570& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Careca & \cellcolor{red!27}7 & \cellcolor{red!27}7/1570& \cellcolor{red!27}0.44999999999999996 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Idade & \cellcolor{red!5}1 & \cellcolor{red!5}1/1570& \cellcolor{red!5}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Cego & \cellcolor{red!27}2 & \cellcolor{red!27}2/1570& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}1 & \cellcolor{red!5}1/1570& \cellcolor{red!5}0.06 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - French;Gender - General;Gender - Female sexuality;Gender - Female age and physical appearance;Physical Identity - Physical Features;Age - General;Physical Identity - Physical (and Mental) Impairments;Ethnicity - White;%.
+
+\item The percentage of hate speech related words is 1.9745.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 33/59 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_27.json :}\newline \par\Large\textbf {Title: \large  'Eu não quero ditadores no meu país', diz Manuel Luís Goucha }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Este miserável gouchas é assim um palerma movido pela imagem de \textbf{imbecil} que carrega em substituição de uma personalidade.Tudo vale para este asqueroso apresentadeiro desde que sirva o grandioso objectivo da audiência. Dos tiques amaneirados às farpelas janotas, dos temas de caca à conversa fiada, das polémicas fúteis e artificiais ao teatrinho côr-de-rosa, tudo entre sorrisos e trejeitos patéticos. Um hino permanente à imbecilização colectiva.Uma existência nula elevada à categoria de coisa apenas possível porque vivemos os tempos mais superficiais e hedonistas desde o declínio do império romano. Estes tempos produzem e promovem estas aventesmas, lamentavelmente. Diz muito do Mundo em que vivemos.\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/105 & \cellcolor{green!27}0.952 \\  \hline
+  \cellcolor{green!5}\small O homem entrevistado foi condenado por homicídio sendo que o acto que praticou foi motivado por \textbf{racismo}. O homem não se mostra arrependido dos seus actos e, pelo contrário, quer formar um partido baseado nas suas motivações racistas. Em democracia, tudo tem que se fazer respeitando a legalidade, matar e ostracizar seres humanos não fazem parte da democracia. Goucha quer defender o indefensável, o outro que convidou o criminoso lá terá as suas motivações, mas o canal se quer ter programas destes tem que passar à clandestinidade.\normalsize   & \cellcolor{green!5}Racismo & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/87 & \cellcolor{green!5}1.149 \\  \hline
+  \cellcolor{green!27}\small Entretanto a TVI já meteu o rabinho entre as pernas e retirou o vídeo do programa….!!!! Cada vez mais apenas sintonizo esta estação \textbf{pimba} quando dá futebol Europeu com o meu FCP!!!!!\normalsize   & \cellcolor{green!27}Pimba & \cellcolor{green!27}Social Class - Working class & \cellcolor{green!27}1/32 & \cellcolor{green!27}3.125 \\  \hline
+  \cellcolor{green!5}\small Toda a gente sabe que muita boa gente enriqueceu no Estado Novo de Salazar, muita Imprensa da altura vivia bem na Ditadura, a igreja sempre viveu muito bem nas ditaduras, salvo muito raras exceções (até fez Acordos com Hitler e Mussolini, mas também muita gente sabe que o partido \textbf{Comunista} só enche as fileiras e respira oxigénio em Ditaduras, em países democratas e com salários condignos o Partido \textbf{Comunista} passa ao estado de coma induzido....Salazar foi um Ditador, não foi um Ditador sanguinário mas foi um Ditador que embruteceu um Povo com obscurantismo, miséria, falta de saúde, sem Ensino obrigatório, um país do terceiro Mundo...Esta arraia \textbf{miúda} que pensa que por ter formação académica sabe tudo não viveu naquele tempo, e desconhece a história contemporânea e só diz disparates porque confundem o PSD ou CDS que são partidos de Direita com Ditaduras, mas também é verdade que muita boa gente do PSD e do CDS ainda viva, viveu e deu-se bem no Parlamento da Ditadura recente em Portugal...\normalsize   & \cellcolor{green!5}Comunista, Miúda & \cellcolor{green!5}Gender - General, Ideological and Political Identity - General & \cellcolor{green!5}3/170 & \cellcolor{green!5}1.765 \\  \hline
+  \cellcolor{green!27}\small Salazar nunca foi nenhum ditador, grande ignorante \textbf{imbecil}! Esquerdalha nojenta!\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small Às vezes chegas a atingir as raias da cretinice e rarefação mental. Trata-te …..e ao menos não sejas \textbf{ridícula}!!!!!\normalsize   & \cellcolor{green!5}Ridícula & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small De facto é!!! Mas, de cada vez que o povo vota, nas legislativas, 3,10€ do bolso do CONTRIBUINTE, independentemente seja parttidário ou não, vão para esses PARTIDOS consoante o seus números de votos!<br/>Esta demo(nio)cracia em Portugal, tem um custo. Em relação ao "outro assunto", Sr.Mesquita, espero que tenha ficado elucidado."pobre do mexilhão que está \textbf{agarrado} às rochas!!!\normalsize   & \cellcolor{green!27}Agarrado & \cellcolor{green!27}Behavioural Addiction - Drugs & \cellcolor{green!27}1/58 & \cellcolor{green!27}1.724 \\  \hline
+  \cellcolor{green!5}\small HUM !!!!....O CEBOLADA...sentiu o toque !!!!....O \textbf{gajo} era bufo !!!...Será que ainda o é ???<br/>Pessoal...cuidado com o CEBOLADA !!!\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Imbecil & \cellcolor{red!27}2 & \cellcolor{red!27}2/2124& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racismo & \cellcolor{red!5}1 & \cellcolor{red!5}1/2124& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Pimba & \cellcolor{red!27}1 & \cellcolor{red!27}1/2124& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Miúda & \cellcolor{red!5}1 & \cellcolor{red!5}1/2124& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ideological and Political Identity - General}  & \cellcolor{red!27}Comunista & \cellcolor{red!27}1 & \cellcolor{red!27}1/2124& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Ridícula & \cellcolor{red!5}1 & \cellcolor{red!5}1/2124& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Behavioural Addiction - Drugs}  & \cellcolor{red!27}Agarrado & \cellcolor{red!27}1 & \cellcolor{red!27}1/2124& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}1 & \cellcolor{red!5}1/2124& \cellcolor{red!5}0.05 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Ethnicity - General;Social Class - Working class;Gender - General;Ideological and Political Identity - General;Gender - Female sexuality;Behavioural Addiction - Drugs;Ethnicity - White;%.
+
+\item The percentage of hate speech related words is 0.4237.
+
+\item Considering that the variable \textbf{Physical Identity - Physical (and Mental) Impairments} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 10/52 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_175.json :}\newline \par\Large\textbf {Title: \large  Tens uma relaÃ§Ã£o amorosa com a Cristina Ferreira? Ruben Rua responde }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small O \textbf{Conguito} é \textbf{preto}?😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂\normalsize   & \cellcolor{green!27}Conguito, Preto & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}2/4 & \cellcolor{green!27}50.0 \\  \hline
+  \cellcolor{green!5}\small enquanto tu esgalhas o pessegueiro ele vai comendo \textbf{bife}<br/>😂😂😂😂😂😂😂😂😂😂\normalsize   & \cellcolor{green!5}Bife & \cellcolor{green!5}Nationality - British & \cellcolor{green!5}1/9 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small É sim senhor.<br/>A Mega Hits é muito \textbf{racista}. ehehe\normalsize   & \cellcolor{green!27}Racista & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Muito importante!...<br/>Enquanto o país e o mundo morrem de covid e de alterações climáticas estes fantoches gozam aos namorados patéticos, sem nível, sem cultura, à cata de um protagonismo \textbf{parolo}!<br/>Tristes para quem os sentimentos são diversões nocturnas e afins!...<br/>Crescer nas mentalidades era preciso!...\normalsize   & \cellcolor{green!5}Parolo & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/43 & \cellcolor{green!5}2.326 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Preto, Conguito & \cellcolor{red!27}2 & \cellcolor{red!27}2/190& \cellcolor{red!27}1.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - British}  & \cellcolor{red!5}Bife & \cellcolor{red!5}1 & \cellcolor{red!5}1/190& \cellcolor{red!5}0.53 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racista & \cellcolor{red!27}1 & \cellcolor{red!27}1/190& \cellcolor{red!27}0.53 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Parolo & \cellcolor{red!5}1 & \cellcolor{red!5}1/190& \cellcolor{red!5}0.53 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Black;Nationality - British;Ethnicity - General;Social Class - Working class;%.
+
+\item The percentage of hate speech related words is 2.6316.
+
+\item Considering that the variable \textbf{Ethnicity - Black} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 5/13 occurences of hate speech related comments.\end{itemize}\end{document}

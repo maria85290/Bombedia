@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for a in $*
+do
+   limpauser < $a | limpaComment | limpa > /var/www/CORPORA/PT/$a
+done
+

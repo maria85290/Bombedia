@@ -1,0 +1,49 @@
+{
+    "commentThread": [
+        {
+            "id": "4909645484",
+            "user": "disqus_3wyD6Yvmpl",
+            "date": "14 days ago",
+            "timestamp": "NA",
+            "commentText": "Mal empregados os sete testes! Com tanta gente por aí, como é possível  fazerem tantos testes para uma abécula destas? O ideal era fecha-lo em casa logo após o segundo teste e fazer o terceiro um mês depois, já no Instituto de Medicina Legal.",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4909585972",
+            "user": "Brilhantina",
+            "date": "14 days ago",
+            "timestamp": "NA",
+            "commentText": "Este gajo é um dos tais que guarda o covid19 nos tomates... Com uma boa martelada estaria curado há mais tempo.",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4909572673",
+            "user": "espanadorvileda",
+            "date": "14 days ago",
+            "timestamp": "NA",
+            "commentText": "Chamar de comediante é um insulto a comediantes",
+            "likes": 2,
+            "hasReplies": true,
+            "numberOfReplies": 1,
+            "replies": [
+                {
+                    "id": "4909597586",
+                    "user": "disqus_D1QkCg2wwK",
+                    "date": "14 days ago",
+                    "timestamp": "NA",
+                    "commentText": "contador de anedotas é por definição parte do que engloba a comédia. Ele tem um nicho de mercado dentro da comédia e aproveita-o bem.",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

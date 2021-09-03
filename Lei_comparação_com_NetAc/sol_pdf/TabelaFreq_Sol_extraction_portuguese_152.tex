@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_152.json :}\newline \par\Large\textbf {Title: \large  Bolsonaro diz que não é uma gripezinha que o vai derrubar }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Mais um folhetim do \textbf{imbecil} brasileiro.\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Este \textbf{brasuca} de trazer por casa não valoriza o covid-19, contudo não deixa de fazer análises e usar máscara de cor chamativa, um azul forte!<br/>Mais um palermóide direitalho, ditadorzeco porquenho a armar-se aos cágados, ele há cada um na porca da vida!<br/>O engraçado é que lá nos brasis  e cá na portugalândia há gente que não aprendeu nada de nada ao longo dos anos e dá os votos conforme as "fronhas", mas o homem até é feio, rezingão, mau carácter, capitão fracassado, enfim um Hitler made in Basiu!\normalsize   & \cellcolor{green!5}Brasuca & \cellcolor{green!5}Nationality - Brazilian & \cellcolor{green!5}1/88 & \cellcolor{green!5}1.136 \\  \hline
+  \cellcolor{green!27}\small UM \textbf{IMBECIL}...VÁ PARA A CHINA LAVAR O CHÃO DO SEU PATRÃO.OTÁRIO.\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small IRMÃOS PORTUGUESES !!!ALERTAM O BRASIL, COMUNICAÇÃO SOCIAL BRASILEIRA, AVISE A SUA POPULAÇÃO.O PRESIDENTE BOLSONARO, COMO SEMPRE, ESTÁ \textbf{ATRASADO}, EM RELAÇÃO AO MUNDO, ESTA PANDEMIA, E MAIS GRAVE, DO QUE SE PENSA.ONDE ESTA, A TV RECCORD INTERNACIONAL QUE, NÃO AVISA, O BRASIL????\normalsize   & \cellcolor{green!5}Atrasado & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/44 & \cellcolor{green!5}2.273 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Imbecil, Atrasado & \cellcolor{red!27}3 & \cellcolor{red!27}3/1478& \cellcolor{red!27}0.2 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Brazilian}  & \cellcolor{red!5}Brasuca & \cellcolor{red!5}1 & \cellcolor{red!5}1/1478& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Nationality - Brazilian;%.
+
+\item The percentage of hate speech related words is 0.2706.
+
+\item Considering that the variable \textbf{Physical Identity - Physical (and Mental) Impairments} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/60 occurences of hate speech related comments.\end{itemize}\end{document}

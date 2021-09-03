@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_54.json :}\newline \par\Large\textbf {Title: \large  Mais uma criança retirada a família de etnia cigana }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small racismo é muito triste\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small Neo \textbf{nazi} é o cu da tua mãe, aquela \textbf{vaca}.\normalsize   & \cellcolor{green!5}Nazi, Vaca & \cellcolor{green!5}Gender - Female sexuality, Nationality - German & \cellcolor{green!5}2/10 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small Racista é o cu da tua mamaezinha. E se você ainda não sabe, fizemos um acordo unificando a lingua portuguesa no mundo inteiro, logo é você o \textbf{analfabeto} aqui. Trouxa, arrombado.\normalsize   & \cellcolor{green!27}Analfabeto, Racista & \cellcolor{green!27}Ethnicity - General, Social Class - Working class & \cellcolor{green!27}2/31 & \cellcolor{green!27}6.452 \\  \hline
+  \cellcolor{green!5}\small , olha pha sou cigana e cm ORGULHO, METE SE NA TUA VIDA, TA Mal mudasse... E olha o respeito, cada um tem a sua \textbf{raça},\normalsize   & \cellcolor{green!5}Raça & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small que palhaco filho da \textbf{puta} \textbf{racista}...nao iziste raças otario nao somos caens somos humanos os humanos nao teem \textbf{raça}...sou \textbf{cigano} com orgulho....filho da \textbf{puta} nunca vais ter sorte na vida cabrao\normalsize   & \cellcolor{green!27}Cigano, Puta, Racista, Raça & \cellcolor{green!27}Ethnicity - General, Ethnicity - Roma, Gender - Female sexuality & \cellcolor{green!27}5/31 & \cellcolor{green!27}16.129 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racismo, Racista, Raça & \cellcolor{red!27}5 & \cellcolor{red!27}5/390& \cellcolor{red!27}1.28 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Vaca, Puta & \cellcolor{red!5}3 & \cellcolor{red!5}3/390& \cellcolor{red!5}0.77 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - German}  & \cellcolor{red!27}Nazi & \cellcolor{red!27}1 & \cellcolor{red!27}1/390& \cellcolor{red!27}0.26 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Analfabeto & \cellcolor{red!5}1 & \cellcolor{red!5}1/390& \cellcolor{red!5}0.26 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Roma}  & \cellcolor{red!27}Cigano & \cellcolor{red!27}1 & \cellcolor{red!27}1/390& \cellcolor{red!27}0.26 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - General;Gender - Female sexuality;Nationality - German;Social Class - Working class;Ethnicity - Roma;%.
+
+\item The percentage of hate speech related words is 2.8205.
+
+\item Considering that the variable \textbf{Ethnicity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 11/16 occurences of hate speech related comments.\end{itemize}\end{document}

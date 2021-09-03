@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_154.json :}\newline \par\Large\textbf {Title: \large  Toda a gente morre um dia. Foi assim que Bolsonaro reagiu às 20 mil mortes por covid-19 no país }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small A ideia de Bolsonaro é acabar com as favelas, as chamadas "comunidades". É ali que a mortandade vai ser maior. Tal como o Trump que sabe que a comunidade \textbf{negra} americana é a mais fustigada pois é a mais pobre e desprotegida, têm no vírus uma oportunidade de se "desfazerem" de gente indesejável para eles.\normalsize   & \cellcolor{green!27}Negra & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/55 & \cellcolor{green!27}1.818 \\  \hline
+  \cellcolor{green!5}\small Quando é que prendem o \textbf{imbecil}?. Só imbecis como ele é que o defendem.\normalsize   & \cellcolor{green!5}Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/14 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small Talvez fosse chegado o momento de passar menos importância do ponto de vista jornalístico a este \textbf{imbecil} e a seus desmandos de sociopata.\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/23 & \cellcolor{green!27}4.348 \\  \hline
+  \cellcolor{green!5}\small O Bostanaro está "feito ao \textbf{bife}" !!!<br/>O Bostanaro foi eleito à custa dos evangélicos !!!...Mas caiu em desgraça junto deles !!!...E a prova é que 30 organizaçõe evangélicas assinaram o manifesto..." Um governante sem discernimento - Um clamor de fé pelo Brasil" !!!....Neste manifesto... os evangélicos pedem ao Tribunal Superior Eleitoral a cassação do mandato do Bostanaro e do seu vice... o general Mourão !!!....Depois disto....a queda do Bostanaro está para breve !!!\normalsize   & \cellcolor{green!5}Bife & \cellcolor{green!5}Nationality - British & \cellcolor{green!5}1/73 & \cellcolor{green!5}1.37 \\  \hline
+  \cellcolor{green!27}\small Este \textbf{gajo} é louco !!!<br/>O amigo dele...o Trampa...disse que toma cloroquina todos os dias !!!...Os cientistas disseram que o cloroquina pode causar a morte !!!...A ser verdade desejo que o Trampa e o Bostanaro bebam litros de cloroquina !!!\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/39 & \cellcolor{green!27}2.564 \\  \hline
+  \cellcolor{green!5}\small EDUARDO...este \textbf{gajo} só ama o dinheiro !!!...Ele e os filhos são o protótipo dos corruptos !!!\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/16 & \cellcolor{green!5}6.25 \\  \hline
+  \cellcolor{green!27}\small Não. O Brasil têm um povo maravilhoso que passou por muita provação. A desigualdade e o \textbf{racismo} mantidos pelos "Senhores da Casa Grande", arrasta parte desse povo criativo e inteligente para a marginalidade. O Brasil e o povo brasileiro não merecem um \textbf{psicopata} na presidência.\normalsize   & \cellcolor{green!27}Psicopata, Racismo & \cellcolor{green!27}Ethnicity - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/45 & \cellcolor{green!27}4.444 \\  \hline
+  \cellcolor{green!5}\small Se admira tanto o regime venezuelano porque não se \textbf{muda} pra lá?\normalsize   & \cellcolor{green!5}Muda & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/12 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small JOKER...o \textbf{gajo} vai estar pouco tempo no poder !!!..E depois espera-o a prisão !!!\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small Lula para além de ser um \textbf{viciado} em álcool é um dos maiores gatunos do Brasil\normalsize   & \cellcolor{green!5}Viciado & \cellcolor{green!5}Behavioural Addiction - General & \cellcolor{green!5}1/16 & \cellcolor{green!5}6.25 \\  \hline
+  \cellcolor{green!27}\small Essa esquerda não diz nada sobre as execuções pela Cheka de Lenine (Terror \textbf{V\textbf{ermelho}}) que chegou a 2 milhões\normalsize   & \cellcolor{green!27}Vermelho & \cellcolor{green!27}Ethnicity - Native American, Ideological and Political Identity - General & \cellcolor{green!27}2/19 & \cellcolor{green!27}10.526 \\  \hline
+  \cellcolor{green!5}\small INSTRUA-SE DE UMA VEZ, A ESQUERDA TEM TANTO DE \textbf{COMUNISTA} QUANTO A DIREITA DE NAZISTA!<br/>E MESMO O COMUNISMO DE PORTUGAL NÃO É, NUNCA FOI E JAMAIS SERÁ, UM COMUNISMO ESTALINISTA!!!<br/>APRENDA, SE TIVER CAPACIDADE AINDA PARA O FAZER!!\normalsize   & \cellcolor{green!5}Comunista & \cellcolor{green!5}Ideological and Political Identity - General & \cellcolor{green!5}1/37 & \cellcolor{green!5}2.703 \\  \hline
+  \cellcolor{green!27}\small "O dirigente garantiu à VISÃO que a demissão será em breve formalizada <br/>por escrito e, não obstante a gravidade das ameaças recebidas, recusa <br/>fazer queixa à polícia. “Chamaram-me fascista, \textbf{racista} e ameaçaram <br/>também a minha filha. Não posso provar, mas também recebi ameaças que <br/>virão dos setores mais extremistas do partido, pelo menos é a minha <br/>sensação.  Sei quem são algumas pessoas e, se as denunciasse, a minha <br/>vida num meio pequeno como Santarém seria um inferno. E não posso dizer <br/>mais do que isto, peço desculpa”, justifica Gerardo Pedro. “A minha <br/>família é toda do PSD. Talvez seja um bocado ingénuo nisto, mas não sou <br/>\textbf{racista}, nem fascista, tenho amigos ciganos, nunca persegui ninguém nem <br/>entro em discursos desse tipo. Aderi ao Chega por convicção, mas não <br/>quero ser associado a coisas que nunca fiz e reprovo. Limito-me a criar <br/>conteúdos sobre a atividade e as mensagens do partido. O que fazem com <br/>isso, como divulgam, nunca foi da minha responsabilidade. A partir deste<br/> momento, estou fora. Quero trabalhar e ter uma vida tranquila”, <br/>conclui."Visão 22-05-2020\normalsize   & \cellcolor{green!27}Racista & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}2/178 & \cellcolor{green!27}1.124 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Negra & \cellcolor{red!27}1 & \cellcolor{red!27}1/2932& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Imbecil, Psicopata, Muda & \cellcolor{red!5}4 & \cellcolor{red!5}4/2932& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - British}  & \cellcolor{red!27}Bife & \cellcolor{red!27}1 & \cellcolor{red!27}1/2932& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}3 & \cellcolor{red!5}3/2932& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racismo, Racista & \cellcolor{red!27}3 & \cellcolor{red!27}3/2932& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Behavioural Addiction - General}  & \cellcolor{red!5}Viciado & \cellcolor{red!5}1 & \cellcolor{red!5}1/2932& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native American}  & \cellcolor{red!27}Vermelho & \cellcolor{red!27}1 & \cellcolor{red!27}1/2932& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ideological and Political Identity - General}  & \cellcolor{red!5}Vermelho, Comunista & \cellcolor{red!5}2 & \cellcolor{red!5}2/2932& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Black;Physical Identity - Physical (and Mental) Impairments;Nationality - British;Ethnicity - White;Ethnicity - General;Behavioural Addiction - General;Ethnicity - Native American;Ideological and Political Identity - General;%.
+
+\item The percentage of hate speech related words is 0.5457.
+
+\item Considering that the variable \textbf{Physical Identity - Physical (and Mental) Impairments} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 16/87 occurences of hate speech related comments.\end{itemize}\end{document}

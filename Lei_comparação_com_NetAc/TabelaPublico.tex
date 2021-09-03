@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[pdftex]{hyperref}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=1in]{geometry}
+\newcommand{\MinNumber}{0}\begin{document}
+
+\textbf {\huge Jornal Publico:}\newline\newline\newline
+
+\centering\textbf{\large Table  1: Sintese dos resultados por ficheiro 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{||C{.40\mylength}||C{.20\mylength}||C{.20\mylength}||C{.30\mylength}||C{.20\mylength}||}
+\hline
+\textbf{Titulo}   &  \textbf{Nº de comentarios}   &  \textbf{Hate Speech(\%) NetAc}  &  \textbf{Resultado Bombedia}  &  \textbf{Controverso?} \\
+\hline\cellcolor{green!17} Supremo Tribunal Federal do Brasil proibe censura de BD com beijo gay  & \cellcolor{green!17}10 & \cellcolor{green!17}0,3067 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} O PiS tem tudo para ganhar na Polonia, mas a corrida esta mais disputada do que parece  & \cellcolor{green!27}9 & \cellcolor{green!27}1,1682 & \cellcolor{green!27}Positive & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Como Tancos salva a direita de si propria  & \cellcolor{green!17}85 & \cellcolor{green!17}0,1044 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Casal sofre agressao homofobica no Terreiro do Paco  & \cellcolor{green!27}53 & \cellcolor{green!27}0,981 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Arabia Saudita abre-se ao turismo. Ha vistos turisticos pela primeira vez  & \cellcolor{green!17}9 & \cellcolor{green!17}0,0 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Eles puseram-se Na Pele Dela em nome da igualdade de genero  & \cellcolor{green!27}9 & \cellcolor{green!27}1,105 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Vamos meter medo no coracao do homem branco e outras citacoes de Robert Mugabe  & \cellcolor{green!17}12 & \cellcolor{green!17}1,3129 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Anti-gender, uma sombra que cobre a Europa  & \cellcolor{green!27}88 & \cellcolor{green!27}0,5397 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} A diversidade deve comecar na escola? Sim. Caso contrario, vamos continuar a reproduzir estereotipos  & \cellcolor{green!17}15 & \cellcolor{green!17}0,3979 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Identidade de genero: Estao em causa criancas e jovens que se sentem alvo de chacota & \cellcolor{green!27}8 & \cellcolor{green!27}0,2053 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Medicos vao ter guia para atender utentes transgenero e intersexo  & \cellcolor{green!17}13 & \cellcolor{green!17}0,0 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{red!20} Parabens insultuosos  & \cellcolor{red!20}16 & \cellcolor{red!20}0,1451 & \cellcolor{red!20}Negative & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{red!30} Esta e a 20a marcha LGBTI+ em Lisboa. Lei mudou, falta a pratica social  & \cellcolor{red!30}42 & \cellcolor{red!30}1,735 & \cellcolor{red!30}Neutral & \cellcolor{red!30}nao \\  \hline
+  \cellcolor{green!17} Milhares levam arco-iris pelas ruas de Lisboa em marcha de orgulho LGBTI+  & \cellcolor{green!17}43 & \cellcolor{green!17}0,3701 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Investigadoras desmontam conjunto de mentiras  sobre  ideologia de genero   & \cellcolor{green!27}31 & \cellcolor{green!27}0,6524 & \cellcolor{green!27}Positive & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Numa escola em Taiwan, os rapazes vao poder optar pela saia como uniforme  & \cellcolor{green!17}6 & \cellcolor{green!17}1,3636 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Casamentos de Santo Antonio ainda nao incluem matrimonios gay  & \cellcolor{green!27}15 & \cellcolor{green!27}0,6547 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Nem sexo, nem morte. Bruno Maia, o medico sem tabus a caminho da AR  & \cellcolor{green!17}5 & \cellcolor{green!17}1,6949 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} EUA proibe embaixadas de hastear bandeiras LGBT  & \cellcolor{green!27}9 & \cellcolor{green!27}1,6667 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Policias recebem formacao para dar resposta a crimes de odio contra pessoas LGBTI  & \cellcolor{green!17}7 & \cellcolor{green!17}1,4388 & \cellcolor{green!17}Positive & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} De norte a sul do pais, o orgulho LGBTI+ volta a sair a rua  & \cellcolor{green!27}3 & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Taiwan legaliza casamento entre pessoas do mesmo sexo, uma estreia na Asia  & \cellcolor{green!17}6 & \cellcolor{green!17}0,0 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Clima social em Portugal ainda e homofobico e transfobico, denuncia ILGA  & \cellcolor{green!27}6 & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Ser gay e genetico ou deve-se a  conjunturas externas ? Colegio retira publicacao de iniciativa do secundario  & \cellcolor{green!17}52 & \cellcolor{green!17}0,458 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Brunei pede  tolerancia  com a decisao de punir sexo homossexual com apedrejamento ate a morte  & \cellcolor{green!27}18 & \cellcolor{green!27}0,4695 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Como o Brasil esta a contracenar com Bolsonaro  & \cellcolor{green!17}7 & \cellcolor{green!17}1,7143 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Fado Bicha:  Isto e fado , mesmo que fale do Namorico do Andre e do Chico  & \cellcolor{green!27}23 & \cellcolor{green!27}1,4019 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{red!20} Uma resposta a Pacheco Pereira: o #MeToo e uma revolucao demasiado necessaria e ja vem tarde  & \cellcolor{red!20}15 & \cellcolor{red!20}0,4921 & \cellcolor{red!20}Positive & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17} Lisboa recebe agora a missa Beyonce   a pensar na Igreja e nas mulheres negras  & \cellcolor{green!17}6 & \cellcolor{green!17}0,0 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} No Vaticano  quanto mais homofobico alguem e, mais hipoteses havera de ser gay   & \cellcolor{green!27}22 & \cellcolor{green!27}1,0989 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{red!20} LGBTI nas escolas? Quem esta no terreno dispensa discursos apaixonados  & \cellcolor{red!20}4 & \cellcolor{red!20}0,6116 & \cellcolor{red!20}Negative & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17} Associacoes LGBTI em escolas? Depende muito  & \cellcolor{green!17}86 & \cellcolor{green!17}0,7956 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Jean Wyllys:  O que deu a vitoria a Bolsonaro foi a homofobia   & \cellcolor{green!27}126 & \cellcolor{green!27}0,5071 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} PSP identificou dois homens que tentaram atirar ovos contra Jean Wyllys em Coimbra  & \cellcolor{green!17}26 & \cellcolor{green!17}0,1953 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Primeiro projecto no novo Congresso do Brasil e de "ex-gay" que quer que Biblia seja patrimonio cultural  & \cellcolor{green!27}11 & \cellcolor{green!27}0,5013 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Homem, mulher ou x? Os passageiros podem escolher a opcao nas companhias aereas  & \cellcolor{green!17}3 & \cellcolor{green!17}2,8986 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27}  Nunca havera um tempo sem Deus ou religiao   & \cellcolor{green!27}29 & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Transicao social de genero em ambiente escolar   atenuar o sofrimento de criancas e jovens  & \cellcolor{green!17}12 & \cellcolor{green!17}0,0 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Maioria da esquerda reduz poderes de Marcelo, dramatiza Cristas  & \cellcolor{green!27}4 & \cellcolor{green!27}2,4096 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{red!20} A crise da Direita  & \cellcolor{red!20}5 & \cellcolor{red!20}0,2611 & \cellcolor{red!20}Positive & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17} O genero foi a casa de banho  & \cellcolor{green!17}5 & \cellcolor{green!17}0,0 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Actor Angelo Rodrigues tera injectado testosterona e foi hospitalizado. Quais os riscos desta hormona?  & \cellcolor{green!27}29 & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Alerta para cidadaos confusos  & \cellcolor{green!17}23 & \cellcolor{green!17}0,2562 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{red!20} Victoria s Secret cancela o desfile anual dos  anjos   & \cellcolor{red!20}9 & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17}  E se o seu filho namorasse uma pessoa do mesmo sexo?  42% dos portugueses assumem desconforto  & \cellcolor{green!17}31 & \cellcolor{green!17}0,6595 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} O CDS e um partido transgenero  & \cellcolor{green!27}19 & \cellcolor{green!27}0,1854 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Alunos transgenero nao serao mais de 200, adianta secretario de Estado  & \cellcolor{green!17}18 & \cellcolor{green!17}0,6593 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Inventar uma casa de emergencia para vitimas de violencia domestica LGBTI  & \cellcolor{green!27}5 & \cellcolor{green!27}1,4423 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} A culpa e a reparacao  & \cellcolor{green!17}22 & \cellcolor{green!17}0,5305 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Primeiro projecto no novo Congresso do Brasil e de 'ex-gay' que quer que Biblia seja patrimonio cultural  & \cellcolor{green!27}11 & \cellcolor{green!27}0,5013 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Cristina Ferreira a Presidente? Apresentadora nao descarta candidatar-se a Belem  & \cellcolor{green!17}45 & \cellcolor{green!17}0,4902 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Credito Agricola vendeu imovel a mae de gestor da equipa de Licinio Pina  & \cellcolor{green!27}20 & \cellcolor{green!27}0,2545 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Cristina Ferreira troca TVI pela SIC e vai ocupar as manhas  & \cellcolor{green!17}23 & \cellcolor{green!17}0,9098 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} E o fim de uma era. SIC ultrapassa TVI nas audiencias mensais pela primeira vez em mais de 12 anos  & \cellcolor{green!27}45 & \cellcolor{green!27}0,3008 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{red!20} Joacine Katar Moreira recusa  paternalismo  dos deputados  & \cellcolor{red!20}25 & \cellcolor{red!20}0,6639 & \cellcolor{red!20}Positive & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17} Joacine Katar Moreira exige 'respeito' por parte dos jornalistas  & \cellcolor{green!17}22 & \cellcolor{green!17}0,5859 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Joacine Katar Moreira: 'Fui eu que ganhei as eleicoes sozinha'  & \cellcolor{green!27}67 & \cellcolor{green!27}0,6008 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} 'Irei manter todas as minhas funcoes, a mensagem ira ser compreendida', diz Joacine Katar Moreira  & \cellcolor{green!17}39 & \cellcolor{green!17}0,7386 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Joacine Katar Moreira vs. Daniel Oliveira: polemica acesa nas redes sociais  & \cellcolor{green!27}72 & \cellcolor{green!27}0,5908 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Joacine Katar Moreira: 'Sem igualdade nao ha liberdade nenhuma'  & \cellcolor{green!17}164 & \cellcolor{green!17}0,6828 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Livre elege Joacine Katar Moreira, uma activista negra  & \cellcolor{green!27}44 & \cellcolor{green!27}0,9528 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Joacine Katar Moreira: uma activista negra a caminho do Parlamento?  & \cellcolor{green!17}27 & \cellcolor{green!17}1,625 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Confronto sobe de tom: direccao do Livre desmente deputada Joacine Moreira  & \cellcolor{green!27}18 & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Os gritos de 'mentira' de Joacine: 'Senti a vergonha alheia'  & \cellcolor{green!17}18 & \cellcolor{green!17}0,4323 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Livre  preocupado  com a sua deputada. Joacine Moreira diz-se apanhada de surpresa  & \cellcolor{green!27}99 & \cellcolor{green!27}0,4457 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Joacine admite fazer 'cedencias necessarias'. Direccao do Livre diz que sera preciso 'milagre'  & \cellcolor{green!17}35 & \cellcolor{green!17}0,7225 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Nova direccao do Livre   sem Joacine   eleita com 95 votos a favor e 15 brancos  & \cellcolor{green!27}17 & \cellcolor{green!27}0,8565 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} O direito de resposta (mais moderado) que Joacine entregou ao congresso  & \cellcolor{green!17}5 & \cellcolor{green!17}1,9481 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Congresso adia decisao sobre retirada da confianca politica a Joacine  & \cellcolor{green!27}39 & \cellcolor{green!27}0,0 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Joacine:  Elegeram uma mulher negra que gagueja e deu jeito para a subvencao   & \cellcolor{green!17}137 & \cellcolor{green!17}1,2164 & \cellcolor{green!17}Positive & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{red!20} Renunciar ao mandato de deputada? Joacine diz que 'esta fora de questao'  & \cellcolor{red!20}17 & \cellcolor{red!20}0,3513 & \cellcolor{red!20}Positive & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{red!30} O que acontece a Joacine se o Livre aprovar retirada de confianca politica?  & \cellcolor{red!30}21 & \cellcolor{red!30}0,2088 & \cellcolor{red!30}Positive & \cellcolor{red!30}sim \\  \hline
+  \cellcolor{green!17} Orcamento foi a gota de agua que levou Livre a propor retirada de confianca a Joacine  & \cellcolor{green!17}88 & \cellcolor{green!17}0,0872 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Peco desculpa: Joacine e o Livre discordam em que?  & \cellcolor{green!27}59 & \cellcolor{green!27}0,8722 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Escolta a Joacine na AR: GNR so pode intervir se estiver em causa a 'seguranca fisica' de deputados  & \cellcolor{green!17}29 & \cellcolor{green!17}0,1907 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Joacine perdeu a graca  & \cellcolor{green!27}25 & \cellcolor{green!27}0,4008 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Assessor de Joacine queixa-se de interrupcoes permanentes, cerco e mercantilizacao da informacao  & \cellcolor{green!17}31 & \cellcolor{green!17}0,189 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Joacine garante que tensoes nao sao por divergencias programaticas  & \cellcolor{green!27}29 & \cellcolor{green!27}0,578 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} O erro da escolha de Joacine pelo Livre  & \cellcolor{green!17}43 & \cellcolor{green!17}0,5729 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Joacine diz que votou 'contra ela propria' e devolve responsabilidades da abstencao a direccao do Livre  & \cellcolor{green!27}51 & \cellcolor{green!27}0,5141 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Polemica entre Joacine e Livre nao acaba aqui. Caso segue para conselho de jurisdicao  & \cellcolor{green!17}54 & \cellcolor{green!17}0,9667 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{red!20} Joacine e direccao do Livre trocam acusacoes. Fundador Rui Tavares critica deputada  & \cellcolor{red!20}28 & \cellcolor{red!20}0,2364 & \cellcolor{red!20}Negative & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{red!30} Queixa ou carta aberta: Mulheres Socialistas repudiam programas da SIC e TVI  & \cellcolor{red!30}15 & \cellcolor{red!30}0,2525 & \cellcolor{red!30}Negative & \cellcolor{red!30}sim \\  \hline
+  \cellcolor{green!17} Estao os concursos da SIC e da TVI a reproduzir estereotipos femininos?  & \cellcolor{green!17}21 & \cellcolor{green!17}0,6526 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Rui Pinto assume ser o denunciante do Luanda Leaks  & \cellcolor{green!27}71 & \cellcolor{green!27}0,1076 & \cellcolor{green!27}Positive & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{red!20} BE quer Isabel dos Santos impedida de vender participacoes compradas com  dinheiro roubado   & \cellcolor{red!20}28 & \cellcolor{red!20}0,1938 & \cellcolor{red!20}Negative & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{red!30} Miguel Relvas rejeita ter ligacoes a Isabel dos Santos. BE corrige acusacao, mas mantem suspeita  & \cellcolor{red!30}10 & \cellcolor{red!30}0,2326 & \cellcolor{red!30}Negative & \cellcolor{red!30}sim \\  \hline
+  \cellcolor{green!17} Isabel dos Santos constituida arguida em Angola  & \cellcolor{green!17}48 & \cellcolor{green!17}0,3806 & \cellcolor{green!17}Positive & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{red!20} Isabel dos Santos muda de estrategia e negoceia devolucao de dinheiro a Angola, noticia o Expresso  & \cellcolor{red!20}21 & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17} Advogado de Isabel dos Santos continua inscrito na Ordem, apesar de ter anunciado suspensao  & \cellcolor{green!17}9 & \cellcolor{green!17}0,0 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Advogados portugueses cobram a offshore de Isabel dos Santos decreto presidencial do pai  & \cellcolor{green!27}25 & \cellcolor{green!27}0,4334 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Isabel dos Santos: como e que ela construiu um imperio  & \cellcolor{green!17}35 & \cellcolor{green!17}0,2259 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Isabel dos Santos tera transferido 115 milhoes da Sonangol para o Dubai  & \cellcolor{green!27}46 & \cellcolor{green!27}0,249 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Isabel dos Santos admite candidatar-se a presidencia de Angola  & \cellcolor{green!17}35 & \cellcolor{green!17}0,4092 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Isabel dos Santos Presidente de Angola?  Que em 2027 possa ser candidata e uma ideia   & \cellcolor{green!27}5 & \cellcolor{green!27}1,2121 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17}  Lava que se farta! : Isabel dos Santos perde processo contra Ana Gomes  & \cellcolor{green!17}52 & \cellcolor{green!17}0,365 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{red!20} Conan Osiris ja ganhou o Festival da Cancao?  & \cellcolor{red!20}19 & \cellcolor{red!20}0,3947 & \cellcolor{red!20}Negative & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17} Parem de pedir ao Conan para nao ir a Telavive  & \cellcolor{green!17}50 & \cellcolor{green!17}0,2051 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Conan Osiris vence Festival da Cancao  & \cellcolor{green!27}15 & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Isabel dos Santos: a empresaria, a princesa, o imperio e 'os pes de barro do pai'  & \cellcolor{green!17}19 & \cellcolor{green!17}0,2732 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{red!20} Isabel dos Santos diz que servicos de seguranca angolanos lhe entraram nos computadores em Portugal  & \cellcolor{red!20}8 & \cellcolor{red!20}0,0 & \cellcolor{red!20}Positive & \cellcolor{red!20}sim \\  \hline
+  \cellcolor{green!17} Divididos, Joacine e Livre ja estao de olhos postos no futuro  & \cellcolor{green!17}19 & \cellcolor{green!17}0,6908 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Joacine Katar Moreira:  Vamos continuar a trabalhar com a confianca de uns e sem a confianca de outros   & \cellcolor{green!27}93 & \cellcolor{green!27}0,9954 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Livre convocou Joacine para reuniao, mas deputada diz que nao recebeu nada  & \cellcolor{green!17}27 & \cellcolor{green!17}0,7625 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} PS condena  declaracoes xenofobas  de Andre Ventura sobre Joacine Katar Moreira  & \cellcolor{green!27}18 & \cellcolor{green!27}0,6631 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Andre Ventura  propoe  que Joacine  seja devolvida ao seu pais de origem . Livre acusa-o de racismo  & \cellcolor{green!17}240 & \cellcolor{green!17}0,9147 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Ventura levado ao colo  & \cellcolor{green!27}142 & \cellcolor{green!27}0,3693 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Assessor de Joacine retira  confianca politica  ao Livre  & \cellcolor{green!17}9 & \cellcolor{green!17}1,2121 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Livre aprova retirada de confianca politica a Joacine por maioria  & \cellcolor{green!27}147 & \cellcolor{green!27}0,5434 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{red!20} Joacine deixa de representar o Livre e passa a deputada nao-inscrita a partir de hoje  & \cellcolor{red!20}50 & \cellcolor{red!20}1,0436 & \cellcolor{red!20}Neutral & \cellcolor{red!20}nao \\  \hline
+  \cellcolor{red!30} As duas pestes de 2020: coronavirus e racismo  & \cellcolor{red!30}27 & \cellcolor{red!30}0,7448 & \cellcolor{red!30}Positive & \cellcolor{red!30}sim \\  \hline
+  \cellcolor{green!17} Partidos nao vao condenar racismo de Ventura no plenario para nao prolongar polemica   basta-lhes as palavras de Ferro  & \cellcolor{green!17}31 & \cellcolor{green!17}0,6524 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Anti-racismo. Antifascismo. Anticomunismo  & \cellcolor{green!27}35 & \cellcolor{green!27}1,6488 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Novo director da PSP diz que ha  tanto racismo  na policia  como ha na sociedade portuguesa   & \cellcolor{green!17}40 & \cellcolor{green!17}0,9877 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Centenas marcham em Lisboa contra o racismo e a violencia policial  & \cellcolor{green!27}15 & \cellcolor{green!27}1,4286 & \cellcolor{green!27}Negative & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Lider das Mulheres Socialistas acusa deputado do Chega de  racismo  e  sexismo   & \cellcolor{green!17}26 & \cellcolor{green!17}1,4472 & \cellcolor{green!17}Negative & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Portugal instado a enfrentar racismo contra os ciganos  & \cellcolor{green!27}9 & \cellcolor{green!27}1,8307 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Ate quando havera racismo contra as mulheres negras em Portugal?  & \cellcolor{green!17}21 & \cellcolor{green!17}1,7488 & \cellcolor{green!17}Positive & \cellcolor{green!17}sim \\  \hline
+  \cellcolor{green!27} Mulher acusa policia de agressao e racismo. PSP chamou bombeiros e disse que era  uma queda   & \cellcolor{green!27}171 & \cellcolor{green!27}0,9481 & \cellcolor{green!27}Positive & \cellcolor{green!27}sim \\  \hline
+  \cellcolor{green!17} Presidente dos conselheiros das comunidades portuguesas demite-se por causa de Andre Ventura  & \cellcolor{green!17}60 & \cellcolor{green!17}0,2612 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  \cellcolor{green!27} Secretaria de Estado diz que  ciganofobia  esta no dia-a-dia da sociedade portuguesa  & \cellcolor{green!27}6 & \cellcolor{green!27}0,3289 & \cellcolor{green!27}Neutral & \cellcolor{green!27}nao \\  \hline
+  \cellcolor{green!17} Contas de Isabel dos Santos em Portugal arrestadas a pedido de Angola  & \cellcolor{green!17}24 & \cellcolor{green!17}0,197 & \cellcolor{green!17}Neutral & \cellcolor{green!17}nao \\  \hline
+  
+\end{longtable}
+\end{center}
+\end{document}

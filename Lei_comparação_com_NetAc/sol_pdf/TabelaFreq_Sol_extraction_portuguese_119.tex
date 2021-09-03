@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_119.json :}\newline \par\Large\textbf {Title: \large  'Eu era gay antes de me curar' }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small - Olha lá + Amigo virtual , estou a pensar propor + te um desafio , a partir da - minha realidade ...pode ser ?🤔+ Venha ele ! 😆- Olha lá + pá ..TENTA lá , virtualmente , traduzir esta expressão :  " Eu (Pr. Rodrigo Duterte ) também já me senti “um pouco gay” enquanto estava casado com a minha ex-mulher, Elizabeth Zimmerman..| .+ Eis a tradução : | Eu (Pr. Rodrigo Duterte ) também já me senti “um pouco gay” enquanto estava "Um POUCO" casado com a minha "Um POUCO " ex-mulher , Elizabeth Zimmerman..| .- Desculpa + Amigo virtual , mas isso quer traduzir , exactamente , o quê ?+ Que o \textbf{gajo} é "SÓ um POUCO" parvo é ..😏- ÁH ÁH ÁH ÁH ÁH ÁH !!😂😂😂😂+ eh eh .. pois..mas " só um pouco "...🙄\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/146 & \cellcolor{green!27}0.685 \\  \hline
+  \cellcolor{green!5}\small Se  houver  \textbf{mulher} bonitas sou hetero senão sou \textbf{gay}.Grande Duterte. Um dia as Filipinas talvez venham a ser um Estado.\normalsize   & \cellcolor{green!5}Gay, Mulher & \cellcolor{green!5}Gender - General, Sexual Identity - General & \cellcolor{green!5}2/21 & \cellcolor{green!5}9.524 \\  \hline
+  \cellcolor{green!27}\small Não será amulher dele uma \textbf{travesti}, ehehheheh\normalsize   & \cellcolor{green!27}Travesti & \cellcolor{green!27}Sexual Identity - Transexuality & \cellcolor{green!27}1/7 & \cellcolor{green!27}14.286 \\  \hline
+  \cellcolor{green!5}\small Pá ...o tal da Filipinas não gosta disso !!!...Tens que mudar de fornecedor e de produto !!!...Aí o \textbf{gajo} já será um grande consumidor !!!\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/25 & \cellcolor{green!5}4.0 \\  \hline
+  \cellcolor{green!27}\small Eu também era hetero mas depois curei-me e virei \textbf{gay}, vi a parvalheira que a minha vida seria se não me começasse a aceitar tal como sou, que é o passo mais difícil... Temos que levar com cada anormal no comando dos destinos das nações e suas gentes... Ó minha santa aquerupita, ele é com cada asno, enfim...\normalsize   & \cellcolor{green!27}Gay & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}1/58 & \cellcolor{green!27}1.724 \\  \hline
+  \cellcolor{green!5}\small «virei \textbf{gay}, vi a parvalheira que a minha vida seria se não me começasse a aceitar tal como sou»<br/>então nunca foste hetero...quanto ao "curei-me"... bem, quem anda a chuva molha-se...depois não grites "aqui d'El Rei" ...\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/36 & \cellcolor{green!5}2.778 \\  \hline
+  \cellcolor{green!27}\small É  ler os comentários do artista correntemente.  Disse que a cura foi encontrada quando se juntou com a nova \textbf{mulher}. O menino pode ser 1 besta mas acabou com os traficantes de droga\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/33 & \cellcolor{green!27}3.03 \\  \hline
+  \cellcolor{green!5}\small Bravo... Como só era um pouco \textbf{gay} isso significa que só lhe metiam a cabecinha? Ou a era a cabecinha e o pescoço? Mais um panascalho \textbf{imbecil}...\normalsize   & \cellcolor{green!5}Gay, Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments, Sexual Identity - General & \cellcolor{green!5}2/27 & \cellcolor{green!5}7.407 \\  \hline
+  \cellcolor{green!27}\small O Duterte Lima é um \textbf{negro} vestido num corpo asiático...é tão indefinido no gênero que, nem camaleão na côr!\normalsize   & \cellcolor{green!27}Negro & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small é uma especie de Marcelo mas mais \textbf{idiota}...\normalsize   & \cellcolor{green!5}Idiota & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo & \cellcolor{red!27}2 & \cellcolor{red!27}2/577& \cellcolor{red!27}0.35000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}2 & \cellcolor{red!5}2/577& \cellcolor{red!5}0.35000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Gay & \cellcolor{red!27}4 & \cellcolor{red!27}4/577& \cellcolor{red!27}0.69 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Transexuality}  & \cellcolor{red!5}Travesti & \cellcolor{red!5}1 & \cellcolor{red!5}1/577& \cellcolor{red!5}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Imbecil, Idiota & \cellcolor{red!27}2 & \cellcolor{red!27}2/577& \cellcolor{red!27}0.35000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Negro & \cellcolor{red!5}1 & \cellcolor{red!5}1/577& \cellcolor{red!5}0.16999999999999998 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - White;Gender - General;Sexual Identity - General;Sexual Identity - Transexuality;Physical Identity - Physical (and Mental) Impairments;Ethnicity - Black;%.
+
+\item The percentage of hate speech related words is 2.0797.
+
+\item Considering that the variable \textbf{Sexual Identity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 12/25 occurences of hate speech related comments.\end{itemize}\end{document}

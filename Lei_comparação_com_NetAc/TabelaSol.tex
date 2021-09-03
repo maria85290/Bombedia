@@ -1,0 +1,223 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[pdftex]{hyperref}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=1in]{geometry}
+\newcommand{\MinNumber}{0}\begin{document}
+
+\textbf {\huge Jornal Sol:}\newline\newline\newline
+
+\centering\textbf{\large Table  1: Sintese dos resultados por ficheiro 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{||C{.40\mylength}||C{.20\mylength}||C{.20\mylength}||C{.30\mylength}||C{.20\mylength}||}
+\hline
+\textbf{Titulo}   &  \textbf{N de comentarios}  &  \textbf{Controverso}  &  \textbf{Hate Speech(\%)}  &  \textbf{Resultado Bombedia} \\
+\hline\cellcolor{green!27} Esta solteira? Multimilionario britanico procura mulher para construir familia e passar ferias de luxo  & \cellcolor{green!27}12 & \cellcolor{green!27}nao & \cellcolor{green!27}1,4433 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Manuel Luis Goucha escreve carta aberta ao pai  & \cellcolor{green!7}8 & \cellcolor{green!7}nao & \cellcolor{green!7}2,1672 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Marido de Goucha deixa provocacao a Joacine Katar Moreira: 'Sera que e xenofobia?'  & \cellcolor{green!27}24 & \cellcolor{green!27}nao & \cellcolor{green!27}1,5421 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Ele nao esta na TVI e nao estara mais. Marido de Goucha expulso da estacao de Queluz de Baixo  & \cellcolor{green!7}22 & \cellcolor{green!7}nao & \cellcolor{green!7}1,6746 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Marido de Goucha indignado com alojamento de migrantes em Lisboa: "Portugueses sem-abrigo vagueiam ao frio"  & \cellcolor{green!27}40 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5739 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{red!20} Manuel Luis Goucha defende Judite Sousa: 'Tenho vergonha de seres humanos assim' & \cellcolor{red!20}20 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Goucha comenta piada do marido: 'Nem eu resisto a um arroz de pato ou a uma canja de pombo'  & \cellcolor{green!27}10 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Manuel Luis Goucha brinca com telefonema de Marcelo a Cristina Ferreira  & \cellcolor{green!7}3 & \cellcolor{green!7}nao & \cellcolor{green!7}0,0 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Claudio Ramos responde a marido de Goucha: 'Tenho 46 anos, uma filha para criar e uma carreira maior que a tua, Rui'  & \cellcolor{green!27}28 & \cellcolor{green!27}nao & \cellcolor{green!27}0,7989 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Manuel Luis Goucha passa fim de semana na Holanda para assistir a provas de equitacao  & \cellcolor{green!7}16 & \cellcolor{green!7}sim & \cellcolor{green!7}1,9608 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Telespetador decidiu dizer a Goucha que estava farto dele e o apresentador respondeu a letra  & \cellcolor{green!27}26 & \cellcolor{green!27}sim & \cellcolor{green!27}1,1881 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Marido de Goucha partilha caricatura para 'atacar' Claudio Ramos: 'Que me desculpem os canideos de que gosto tanto & \cellcolor{green!7}4 & \cellcolor{green!7}nao & \cellcolor{green!7}3,8462 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Manuel Luis Goucha e Maria Cerqueira Gomes apresentam Voce na TV... nus  & \cellcolor{red!20}12 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Goucha. 'Dizem que Bruno Caetano foi afastado do 'Voce na TV'! Obrigado por me avisarem' & \cellcolor{green!27}3 & \cellcolor{green!27}nao & \cellcolor{green!27}4,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Ja o deram como morto. Goucha 'responde' a Cristina Ferreira com convidado surpresa  & \cellcolor{green!7}14 & \cellcolor{green!7}nao & \cellcolor{green!7}0,3311 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} A proxima temporada do Voce na TV pode nao contar com Manuel Luis Goucha  & \cellcolor{green!27}6 & \cellcolor{green!27}sim & \cellcolor{green!27}2,027 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Nunca digas adeus, diz Goucha a Cristina Ferreira  & \cellcolor{green!7}10 & \cellcolor{green!7}nao & \cellcolor{green!7}0,0 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} 'O publico continua com as pessoas em quem acredita', diz Goucha  & \cellcolor{green!27}2 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} 'Para mim, o Deus da televisao e o Manuel Luis Goucha'  & \cellcolor{red!20}6 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Ferias de Cristina Ferreira quase deram vitoria a Manuel Luis Goucha  & \cellcolor{green!27}8 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Manuel Luis Goucha conta como assumiu homossexualidade perante a mae  & \cellcolor{green!7}16 & \cellcolor{green!7}nao & \cellcolor{green!7}0,6006 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Cristina Ferreira e Manuel Luis Goucha reencontram-se em almoco: 'Nao se falou de televisao' & \cellcolor{green!27}7 & \cellcolor{green!27}nao & \cellcolor{green!27}1,0204 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Maria Cerqueira Gomes assumiu programa sem Goucha e aproximou-se de Cristina Ferreira  & \cellcolor{green!7}21 & \cellcolor{green!7}nao & \cellcolor{green!7}1,0526 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} 'Este ano envelheci 10 anos'. Goucha nao esquece saida de Cristina  & \cellcolor{green!27}5 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Goucha revela que fa se mudou dos EUA para o Alentejo por sua causa  & \cellcolor{green!7}6 & \cellcolor{green!7}sim & \cellcolor{green!7}1,8182 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} 'Eu nao quero ditadores no meu pais', diz Manuel Luis Goucha  & \cellcolor{green!27}52 & \cellcolor{green!27}sim & \cellcolor{green!27}0,4237 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Cristina Ferreira derrota Manuel Luis Goucha na estreia do seu programa na SIC  & \cellcolor{green!7}28 & \cellcolor{green!7}nao & \cellcolor{green!7}0,2033 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Manuel Luis Goucha confirma 'traicao' de Cristina Ferreira em direto  & \cellcolor{green!27}6 & \cellcolor{green!27}nao & \cellcolor{green!27}0,8696 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Manuel Luis Goucha nao acredita nas Aparicoes de Fatima  & \cellcolor{red!20}8 & \cellcolor{red!20}sim & \cellcolor{red!20}0,7692 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Goucha confessa: 'quis suicidar-me ha muitos anos'  & \cellcolor{green!27}6 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Voce na TV. 'Nunca mais vai ser como era'? Goucha responde a seguidora | FOTO  & \cellcolor{red!20}4 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Manuel Luis Goucha e Cristina Ferreira iniciam programas de forma semelhante  & \cellcolor{green!27}5 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Goucha recorre ao Facebook para criticar revista  & \cellcolor{red!20}5 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Manuel Luis Goucha nao foi discriminado pelos tribunais  & \cellcolor{green!27}9 & \cellcolor{green!27}sim & \cellcolor{green!27}2,2124 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} 'A Cristina Ferreira ganha tanto ou mais que eu', diz Goucha  & \cellcolor{green!7}5 & \cellcolor{green!7}nao & \cellcolor{green!7}0,0 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Manuel Luis Goucha 'ataca' novo ministro no Facebook  & \cellcolor{green!27}31 & \cellcolor{green!27}sim & \cellcolor{green!27}0,3633 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Goucha defende concorrente do Masterchef Junior no Facebook  & \cellcolor{green!7}12 & \cellcolor{green!7}nao & \cellcolor{green!7}0,5076 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Tera a amizade entre Teresa Guilherme e Manuel Luis Goucha chegado ao fim?  & \cellcolor{green!27}6 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Cristina Ferreira quis roubar marido de Manuel Luis Goucha  & \cellcolor{green!7}24 & \cellcolor{green!7}nao & \cellcolor{green!7}1,129 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Goucha reage a acusacoes de agressao no Masterchef Junior  & \cellcolor{red!20}7 & \cellcolor{red!20}sim & \cellcolor{red!20}0,2747 & \cellcolor{red!20}Positive \\  \hline
+  \cellcolor{green!27} Goucha fala sobre novo programa. Nao vou andar la no fornicanco  & \cellcolor{green!27}8 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} 'E muito claro na minha vida que eu ja nao quero fazer programas diarios'  & \cellcolor{green!7}26 & \cellcolor{green!7}sim & \cellcolor{green!7}1,0116 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Manuel Luis Goucha da 1500 a jovem sobrevivente de cancro  & \cellcolor{green!27}10 & \cellcolor{green!27}nao & \cellcolor{green!27}1,4493 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Daniel Oliveira recorda momento em que Mario Machado o ameacou de morte | VIDEO  & \cellcolor{green!7}38 & \cellcolor{green!7}sim & \cellcolor{green!7}0,2412 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Cristina Ferreira poe fim a duvidas sobre a sua amizade com Manuel Luis Goucha  & \cellcolor{green!27}7 & \cellcolor{green!27}nao & \cellcolor{green!27}1,1111 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} 'Odeio touradas e vivo ha 20 anos com um homem que vai ver todas'  & \cellcolor{green!7}13 & \cellcolor{green!7}nao & \cellcolor{green!7}0,4673 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Goucha. 'Bruno de Carvalho e um homem perturbado?' & \cellcolor{red!20}6 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Confissoes de Verao de Manuel Luis Goucha: 'Nao sou dado a praia'  & \cellcolor{green!27}5 & \cellcolor{green!27}sim & \cellcolor{green!27}1,0526 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} 'E tudo a 7!'. A reposta de Goucha a Cristina Ferreira no Instagram  & \cellcolor{green!7}5 & \cellcolor{green!7}nao & \cellcolor{green!7}0,5102 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Marinho Pinto chama 'sirigaita' a Cristina Ferreira  & \cellcolor{green!27}11 & \cellcolor{green!27}nao & \cellcolor{green!27}0,6993 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Manuel Luis Goucha revela quem e o seu 'sucessor'  & \cellcolor{green!7}12 & \cellcolor{green!7}nao & \cellcolor{green!7}1,6471 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Manuel Luis Goucha partilha imagem do quarto de hospital  & \cellcolor{green!27}5 & \cellcolor{green!27}sim & \cellcolor{green!27}1,4925 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Manuel Luis Goucha ja reagiu a saida de Cristina Ferreira da TVI  & \cellcolor{green!7}22 & \cellcolor{green!7}nao & \cellcolor{green!7}0,8333 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Lesao condiciona presenca de Manuel Luis Goucha  & \cellcolor{red!20}4 & \cellcolor{red!20}sim & \cellcolor{red!20}0,7576 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Cristina Ferreira e Goucha atacados em direto  & \cellcolor{green!27}7 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3802 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} 'Nao esta contente, va para a SIC'. As 'bocas' de Manuel Luis Goucha  & \cellcolor{green!7}13 & \cellcolor{green!7}nao & \cellcolor{green!7}0,8403 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Suzana Garcia volta a comentar polemica: 'A minha avo e negra e a minha mae e mulata'  & \cellcolor{green!27}24 & \cellcolor{green!27}sim & \cellcolor{green!27}3,4351 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} 'O senhores deixem-se de mariquices ridiculas'  & \cellcolor{green!7}6 & \cellcolor{green!7}sim & \cellcolor{green!7}2,0134 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} 'Esta e uma fase em que eu e o Manel precisamos deste silencio'  & \cellcolor{red!20}5 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Andre Ventura critica mensagem de solidariedade de Costa para Marega: 'Era a esta hipocrisia que me referia'  & \cellcolor{green!27}86 & \cellcolor{green!27}sim & \cellcolor{green!27}1,7503 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Marega e o racismo em Portugal  & \cellcolor{green!7}19 & \cellcolor{green!7}sim & \cellcolor{green!7}1,3767 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} Atitude de Bento Rodrigues no Primeiro Jornal esta a tornar-se viral nas redes sociais  & \cellcolor{red!20}40 & \cellcolor{red!20}nao & \cellcolor{red!20}1,2317 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{red!30} O Marega foi ao Dubai ser tratado pelo Fisioterapeuta atraves do medicamento infiltrado Meldonium  & \cellcolor{red!30}26 & \cellcolor{red!30}sim & \cellcolor{red!30}0,7082 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{green!27} Andre Ventura da a entender que nao ha racismo nos ataques a Marega  & \cellcolor{green!27}81 & \cellcolor{green!27}sim & \cellcolor{green!27}1,9399 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} FCP. Marega abandona campo depois de insultos racistas  & \cellcolor{green!7}35 & \cellcolor{green!7}sim & \cellcolor{green!7}1,5184 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Marega reage nas redes sociais e ataca o arbitro  & \cellcolor{green!27}26 & \cellcolor{green!27}sim & \cellcolor{green!27}1,5816 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} A fantochada do racismo  & \cellcolor{green!7}104 & \cellcolor{green!7}sim & \cellcolor{green!7}1,9879 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Moussa Marega. O jogador que fez historia por dizer 'Basta!'' ao racismo  & \cellcolor{green!27}24 & \cellcolor{green!27}nao & \cellcolor{green!27}3,4413 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Catarina Martins: 'Adepta de Marega me confesso. Racismo nao e opiniao. E crime  & \cellcolor{green!7}33 & \cellcolor{green!7}sim & \cellcolor{green!7}2,8679 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{red!20} PSP diz ja ter identificado dez pessoas no caso Marega  & \cellcolor{red!20}71 & \cellcolor{red!20}nao & \cellcolor{red!20}1,3315 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} Marcelo condena insultos racistas a Marega  & \cellcolor{green!27}73 & \cellcolor{green!27}sim & \cellcolor{green!27}2,2989 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} PSP ja identificou adeptos que dirigiram insultos racistas a Marega  & \cellcolor{green!7}49 & \cellcolor{green!7}sim & \cellcolor{green!7}1,4146 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Comportamento dos jogadores do FC Porto 'foi nojento'  & \cellcolor{green!27}34 & \cellcolor{green!27}nao & \cellcolor{green!27}0,8705 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Joao Mario sobre o caso Marega: 'Fala-se muito e nao se faz nada'  & \cellcolor{green!7}21 & \cellcolor{green!7}nao & \cellcolor{green!7}2,2417 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Caso Marega. Conselho de Disciplina abre processo ao Vitoria de Guimaraes  & \cellcolor{green!27}15 & \cellcolor{green!27}sim & \cellcolor{green!27}1,5385 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Ministro e responsaveis do futebol vao ao Parlamento falar sobre Caso Marega  & \cellcolor{green!7}17 & \cellcolor{green!7}nao & \cellcolor{green!7}1,8987 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Hoje em dia falam muito de jogadores como Mbappe, Messi ou CR7 e esquecem-se de Marega  & \cellcolor{green!27}21 & \cellcolor{green!27}nao & \cellcolor{green!27}0,8547 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} 'Mais do que racismo, foi uma prova de estupidez', diz Pinto da Costa sobre caso Marega  & \cellcolor{red!20}38 & \cellcolor{red!20}nao & \cellcolor{red!20}1,2903 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} Pepe e Marega alvo de processos disciplinares  & \cellcolor{green!27}14 & \cellcolor{green!27}nao & \cellcolor{green!27}2,8391 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} APCVD abre processo sobre caso Marega para 'averiguar responsabilidades'  & \cellcolor{red!20}10 & \cellcolor{red!20}sim & \cellcolor{red!20}0,5917 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} FC Porto. Marega recupera de lesao na China  & \cellcolor{red!30}6 & \cellcolor{red!30}sim & \cellcolor{red!30}0,0 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{green!27} Ruben Amorim defende Marega: 'Esta na hora de passar-se a acao e castigar'  & \cellcolor{green!27}13 & \cellcolor{green!27}nao & \cellcolor{green!27}1,4535 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Vitoria SC reage a caso Marega e diz que nao ira 'vestir a pele do lobo' por um problema 'de dimensao nacional'  & \cellcolor{green!7}16 & \cellcolor{green!7}sim & \cellcolor{green!7}1,5942 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Jose Carlos Malato sobre a eutanasia: 'Espero  que as pessoas possam decidir' & \cellcolor{green!27}20 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3356 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} No nono aniversario da legalizacao do casamento LGBT em Portugal, Malato deixa sugestao a Camara de Lisboa  & \cellcolor{green!7}6 & \cellcolor{green!7}sim & \cellcolor{green!7}3,0 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} Eutanasia. Malato foi ao Parlamento e partilhou a sua opiniao  & \cellcolor{red!20}13 & \cellcolor{red!20}sim & \cellcolor{red!20}0,9709 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Jose Carlos Malato: 'Devia ter morrido no ano passado. Nao gosto nada do presente'  & \cellcolor{green!27}18 & \cellcolor{green!27}nao & \cellcolor{green!27}1,6949 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Apresentador Jose Carlos Malato operado de urgencia  & \cellcolor{red!20}10 & \cellcolor{red!20}sim & \cellcolor{red!20}0,5376 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Redes sociais. Nuno Markl segue conselho de Jose Carlos Malato  & \cellcolor{green!27}4 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Jose Carlos Malato deixa mensagem sobre homossexualidade nas redes sociais | Foto  & \cellcolor{green!7}31 & \cellcolor{green!7}nao & \cellcolor{green!7}0,8782 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Liliana Campos pede desculpa a Jose Carlos Malato apos insinuar que este queria chamar a atencao  & \cellcolor{red!20}8 & \cellcolor{red!20}sim & \cellcolor{red!20}0,4762 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} Malato sofre problema cardAaco  & \cellcolor{red!30}8 & \cellcolor{red!30}sim & \cellcolor{red!30}0,8032 & \cellcolor{red!30}Positive \\  \hline
+  \cellcolor{red!20} Uniao gay ainda nao e permitida nos Casamentos de Santo Antonio  & \cellcolor{red!20}90 & \cellcolor{red!20}nao & \cellcolor{red!20}1,1825 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{red!30} 'A minha mae foi proibida de privar comigo porque sou gay'  & \cellcolor{red!30}22 & \cellcolor{red!30}sim & \cellcolor{red!30}0,3187 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{red!20} Cara Delevingne assume relacao no mes do orgulho LGBT  & \cellcolor{red!20}3 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Vaticano reconhece comunidade LGBT pela primeira vez  & \cellcolor{green!27}8 & \cellcolor{green!27}nao & \cellcolor{green!27}1,3393 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Bandeira LGBT hasteada na Camara Municipal de Lisboa  & \cellcolor{red!20}23 & \cellcolor{red!20}sim & \cellcolor{red!20}0,4093 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Associacoes de defesa dos direitos LGBT francesas criticam palavras do papa sobre homossexualidade  & \cellcolor{green!27}18 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3527 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Estas sao as melhores cidades LGBT do mundo  & \cellcolor{green!7}11 & \cellcolor{green!7}nao & \cellcolor{green!7}4,3243 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Uma bandeira LGBT 'original' em Moscovo | FOTOS  & \cellcolor{green!27}6 & \cellcolor{green!27}sim & \cellcolor{green!27}1,3699 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Turquia: manifestacao LGBT acaba em confrontos com a policia  & \cellcolor{green!7}10 & \cellcolor{green!7}sim & \cellcolor{green!7}2,0362 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Marcha do Orgulho Gay nos Acores mobiliza pouco mais de dez pessoas  & \cellcolor{green!27}37 & \cellcolor{green!27}nao & \cellcolor{green!27}0,8574 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Marcha LGBT. Centenas de pessoas desfilaram em Lisboa contra a discriminacao  & \cellcolor{red!20}5 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Escola crista expulsa aluna por usar camisola com arco-iris nas redes sociais  & \cellcolor{green!27}38 & \cellcolor{green!27}nao & \cellcolor{green!27}0,9371 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Gay pride.  Todo o orgulho em ser o que se e  & \cellcolor{green!7}18 & \cellcolor{green!7}nao & \cellcolor{green!7}1,7405 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Por que razao Julianne Moore e um icone gay?  & \cellcolor{green!27}6 & \cellcolor{green!27}nao & \cellcolor{green!27}2,381 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Editor de revista LGBT do Bangladesh agredido ate a morte  & \cellcolor{green!7}6 & \cellcolor{green!7}sim & \cellcolor{green!7}3,7975 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Associacao LGBT pede que insultos homofobicos feitos a Ronaldo sejam investigados  & \cellcolor{green!27}6 & \cellcolor{green!27}nao & \cellcolor{green!27}3,7975 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Milhares na marcha LGBT no Porto  & \cellcolor{red!20}3 & \cellcolor{red!20}sim & \cellcolor{red!20}0,8721 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Seja a familia como for, o importante e haver amor  & \cellcolor{green!27}19 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3578 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Activistas querem abrir a primeira escola 'gay' do Reino Unido  & \cellcolor{green!7}8 & \cellcolor{green!7}nao & \cellcolor{green!7}3,0822 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Primeira serie LGBT portuguesa comeca a ser filmada quinta-feira  & \cellcolor{green!27}6 & \cellcolor{green!27}sim & \cellcolor{green!27}1,9737 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} 'Eu era gay antes de me curar'  & \cellcolor{green!7}25 & \cellcolor{green!7}nao & \cellcolor{green!7}2,0797 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Casal homossexual agredido por grupo no Terreiro do Paco  & \cellcolor{green!27}25 & \cellcolor{green!27}sim & \cellcolor{green!27}1,9093 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Marcha do Orgulho Gay defende direitos de LGBT  & \cellcolor{green!7}13 & \cellcolor{green!7}nao & \cellcolor{green!7}0,0 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Futura ministra de Bolsonaro defende que a mulher 'nasceu para ser mae'  & \cellcolor{red!20}39 & \cellcolor{red!20}nao & \cellcolor{red!20}1,0668 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} Campolide ja tem duas passadeiras com as cores do arco-iris  & \cellcolor{green!27}22 & \cellcolor{green!27}sim & \cellcolor{green!27}1,1905 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Brasil nao pode ficar conhecido como paraiso do mundo gay  & \cellcolor{green!7}64 & \cellcolor{green!7}nao & \cellcolor{green!7}0,8211 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Barreiro. Deputadas do Bloco apresentam queixa contra deputado do PSD  & \cellcolor{red!20}25 & \cellcolor{red!20}sim & \cellcolor{red!20}0,5708 & \cellcolor{red!20}Positive \\  \hline
+  \cellcolor{green!27} Lisboa vai ter passadeiras com cores da bandeira LGBTI contra a homofobia  & \cellcolor{green!27}64 & \cellcolor{green!27}sim & \cellcolor{green!27}1,0645 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20} Ricardo Araujo Pereira criticado por declaracoes feitas ao i [video]  & \cellcolor{red!20}12 & \cellcolor{red!20}sim & \cellcolor{red!20}0,8696 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Malta introduziu o divorcio ha seis anos. Agora prepara-se para o casamento gay  & \cellcolor{green!27}6 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Adeptos do FC Porto detidos em Italia por agressao a agentes da autoridade  & \cellcolor{green!7}37 & \cellcolor{green!7}sim & \cellcolor{green!7}0,2994 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Greta Thunberg podera estar a caminho de Portugal  & \cellcolor{green!27}50 & \cellcolor{green!27}sim & \cellcolor{green!27}0,3028 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Irma mais nova de Greta Thunberg chama-se Beata e luta pelo feminismo e contra o bullying  & \cellcolor{green!7}15 & \cellcolor{green!7}sim & \cellcolor{green!7}2,4735 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Mau tempo impede Greta de discursar no Parlamento  & \cellcolor{green!27}71 & \cellcolor{green!27}sim & \cellcolor{green!27}0,2328 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Greta A(c) louca e perigosa. Acho que ela tem de voltar A  escola e calar-se  & \cellcolor{green!7}83 & \cellcolor{green!7}sim & \cellcolor{green!7}0,5747 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Erro de atriz leva Greta Thunberg a mudar de nome nas redes sociais  & \cellcolor{green!27}13 & \cellcolor{green!27}sim & \cellcolor{green!27}1,1696 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Depois de ataque de Trump, Michelle Obama deixa mensagem a Greta  & \cellcolor{green!7}63 & \cellcolor{green!7}sim & \cellcolor{green!7}1,4247 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{red!20} Greta Thunberg envolvida em polemica com empresa de comboios  & \cellcolor{red!20}14 & \cellcolor{red!20}sim & \cellcolor{red!20}0,738 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} Greta Thunberg esta cada vez mais proxima de Portugal. Agora, em direcao aos Acores  & \cellcolor{red!30}16 & \cellcolor{red!30}sim & \cellcolor{red!30}0,5848 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{red!20} Fernando Rocha testa positivo a covid-19 pela sexta vez  & \cellcolor{red!20}21 & \cellcolor{red!20}sim & \cellcolor{red!20}0,566 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Apos teste negativo, Fernando Rocha volta a testar positivo para covid-19  & \cellcolor{green!27}12 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Fernando Rocha revela que esta infetado com covid-19  & \cellcolor{green!7}30 & \cellcolor{green!7}nao & \cellcolor{green!7}0,2829 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Apos dois meses em casa, Fernando Rocha revela qual foi a primeira coisa que fez  & \cellcolor{green!27}4 & \cellcolor{green!27}nao & \cellcolor{green!27}1,0309 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Ja morreram mais pessoas infetadas com covid-19 no Brasil do que na China  & \cellcolor{green!7}57 & \cellcolor{green!7}sim & \cellcolor{green!7}0,107 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Bolsonaro visitou padaria e abracou e tirou fotografias com funcionarios  | Video  & \cellcolor{green!27}36 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5932 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Bolsonaro ameaca ministro da Saude por defender isolamento: Nenhum ministro e indemissivel  & \cellcolor{green!7}23 & \cellcolor{green!7}nao & \cellcolor{green!7}0,4747 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} 17% dos eleitores que votaram em Bolsonaro estao arrependidos  & \cellcolor{green!27}105 & \cellcolor{green!27}sim & \cellcolor{green!27}0,7361 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Sou Messias, mas nao faco milagres. Bolsonaro sobre recorde de mortes no Brasil  & \cellcolor{green!7}76 & \cellcolor{green!7}sim & \cellcolor{green!7}0,467 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{red!20} Brasil volta a registar recorde de novos casos de infecao por covid-19  & \cellcolor{red!20}14 & \cellcolor{red!20}sim & \cellcolor{red!20}0,4747 & \cellcolor{red!20}Positive \\  \hline
+  \cellcolor{green!27} Bolsonaro protagoniza mais um momento insolito ao ser questionado sobre mortes: Nao sou coveiro & \cellcolor{green!27}40 & \cellcolor{green!27}sim & \cellcolor{green!27}0,2681 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} O dia mais negro do Brasil  & \cellcolor{green!7}48 & \cellcolor{green!7}sim & \cellcolor{green!7}0,1741 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} O Brasil e dirigido por um fantoche que e absolutamente ignorante, inimputavel, incompetente e cruel  & \cellcolor{green!27}36 & \cellcolor{green!27}sim & \cellcolor{green!27}0,6923 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{red!20} Bolsonaro Messias nao faz milagres, nem os seus discipulos o seguem  & \cellcolor{red!20}13 & \cellcolor{red!20}sim & \cellcolor{red!20}0,7273 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Bolsonaro diz que nao e uma gripezinha que o vai derrubar  & \cellcolor{green!27}60 & \cellcolor{green!27}sim & \cellcolor{green!27}0,2706 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Brasil. A longa descida ao inferno do Governo  de Jair Bolsonaro  & \cellcolor{green!7}33 & \cellcolor{green!7}nao & \cellcolor{green!7}0,2662 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Toda a gente morre um dia. Foi assim que Bolsonaro reagiu as 20 mil mortes por covid-19 no pais  & \cellcolor{green!27}87 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5457 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Fieis de Caminha manifestam-se contra saida de padre motard e sex symbol & \cellcolor{green!7}38 & \cellcolor{green!7}sim & \cellcolor{green!7}0,2817 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} Padre e falsas freiras escravizavam raparigas em Braga  & \cellcolor{red!20}17 & \cellcolor{red!20}sim & \cellcolor{red!20}0,7937 & \cellcolor{red!20}Positive \\  \hline
+  \cellcolor{red!30} Padre de Pedrogao diz ser um maroto sem maldade  & \cellcolor{red!30}18 & \cellcolor{red!30}sim & \cellcolor{red!30}0,5272 & \cellcolor{red!30}Positive \\  \hline
+  \cellcolor{green!27} Foi um descuido afirma padre apos publicar fotografia em cuecas nas redes sociais  & \cellcolor{green!27}7 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Padre encontrado morto na praia de Sao Pedro de Moel  & \cellcolor{green!7}39 & \cellcolor{green!7}sim & \cellcolor{green!7}0,7194 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} Vaticano expulsa padre que revelou homossexualidade  & \cellcolor{red!20}8 & \cellcolor{red!20}sim & \cellcolor{red!20}0,2551 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} Convidada deixa Fatima Lopes estupefacta: A primeira vez que me prostitui foi com um padre  & \cellcolor{red!30}26 & \cellcolor{red!30}sim & \cellcolor{red!30}0,7547 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{red!20} Igreja encobriu padre que abusou sexualmente dos filhos  & \cellcolor{red!20}6 & \cellcolor{red!20}sim & \cellcolor{red!20}0,565 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} Criancas forcadas a puxar Porsche do padre | Video  & \cellcolor{red!30}15 & \cellcolor{red!30}sim & \cellcolor{red!30}0,8351 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{red!20} Padre expulsa maestro do coro por ser homossexual  & \cellcolor{red!20}21 & \cellcolor{red!20}sim & \cellcolor{red!20}0,5545 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} Padre culpa gays pelos sismos de Italia  & \cellcolor{red!30}10 & \cellcolor{red!30}sim & \cellcolor{red!30}0,6135 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{red!20} Padre acusado de burlar o Estado  & \cellcolor{red!20}15 & \cellcolor{red!20}sim & \cellcolor{red!20}0,3409 & \cellcolor{red!20}Positive \\  \hline
+  \cellcolor{green!27} Padre assume homossexualidade no final da missa  & \cellcolor{green!27}28 & \cellcolor{green!27}sim & \cellcolor{green!27}2,0408 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Igreja: padre denuncia encontros gay em bares e ginasios  & \cellcolor{green!7}5 & \cellcolor{green!7}nao & \cellcolor{green!7}0,4354 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} Padre gera polemica ao dizer que pedofilia nao mata ninguem ao contrario do aborto  & \cellcolor{red!20}29 & \cellcolor{red!20}sim & \cellcolor{red!20}0,5231 & \cellcolor{red!20}Positive \\  \hline
+  \cellcolor{green!27} Detido no Algarve padre que abusou de mais de 20 criancas  & \cellcolor{green!27}13 & \cellcolor{green!27}sim & \cellcolor{green!27}2,2785 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Ex-padre casa com modelo 55 anos mais novo  & \cellcolor{green!7}6 & \cellcolor{green!7}nao & \cellcolor{green!7}3,3898 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Padre de Pedrogao Grande fotografado em roupa interior muda de religiao  & \cellcolor{green!27}14 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3937 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Cristina Ferreira mostra mais do que queria em fotografia  & \cellcolor{green!7}16 & \cellcolor{green!7}nao & \cellcolor{green!7}0,0 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Cristina Ferreira lanASSa livro com nome chocante. Saiba qual  & \cellcolor{green!27}56 & \cellcolor{green!27}nao & \cellcolor{green!27}0,4115 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Tens uma relaASSAPSo amorosa com a Cristina Ferreira? Ruben Rua responde  & \cellcolor{green!7}13 & \cellcolor{green!7}nao & \cellcolor{green!7}2,6316 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Costa 'despediu' presidente do TdC por telefone  & \cellcolor{green!27}128 & \cellcolor{green!27}nao & \cellcolor{green!27}0,6305 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} AntA3nio Costa deseja as melhoras a Trump  & \cellcolor{green!7}14 & \cellcolor{green!7}sim & \cellcolor{green!7}2,0243 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Donald Trump e Melania testaram positivo para a covid-19  & \cellcolor{green!27}88 & \cellcolor{green!27}sim & \cellcolor{green!27}0,7235 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} AntA3nio Costa reage a entrevista de Ana Leal ao SOL: aA mentiraa  & \cellcolor{green!7}99 & \cellcolor{green!7}sim & \cellcolor{green!7}0,4216 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Antonio Costa admite adotar medidas ainda mais restritivas nas proximas semanas  & \cellcolor{green!27}47 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3435 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Bazuca de pA3lvora seca desespera UE  & \cellcolor{green!7}32 & \cellcolor{green!7}sim & \cellcolor{green!7}0,0677 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} AntA3nio Costa diz que manifestaASSAPSo no Porto foi legAtima mas condena arremesso de garrafas  & \cellcolor{green!27}56 & \cellcolor{green!27}sim & \cellcolor{green!27}0,6382 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} AntA3nio Costa garante que Portugal nAPSo vai usar emprA(c)stimos europeus enquanto situaASSAPSo financeira do paAs nAPSo o permitir  & \cellcolor{green!7}59 & \cellcolor{green!7}nao & \cellcolor{green!7}0,8277 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} AntA3nio Costa pede aos portugueses que comprem mA!scaras nacionais  & \cellcolor{green!27}20 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3311 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} AntA3nio Costa afirma que o paAs enfrenta gigantesca responsabilidade  & \cellcolor{green!7}27 & \cellcolor{green!7}nao & \cellcolor{green!7}0,2336 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} AntA3nio Costa e Fernando Medina na comissAPSo de honra de LuAs Filipe Vieira  & \cellcolor{green!27}119 & \cellcolor{green!27}nao & \cellcolor{green!27}0,4036 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Marcelo marca as presidenciais para dia 24 de janeiro  & \cellcolor{red!20}30 & \cellcolor{red!20}sim & \cellcolor{red!20}0,3929 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Costa elogia comportamento exemplar dos portugueses no fim de semana  & \cellcolor{green!27}44 & \cellcolor{green!27}sim & \cellcolor{green!27}0,0747 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Comunistas recusam adiar congresso  & \cellcolor{green!7}58 & \cellcolor{green!7}sim & \cellcolor{green!7}0,8661 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} ClA!udio Ramos revela: aOdiei trabalhar com a Joana Latino & \cellcolor{green!27}22 & \cellcolor{green!27}nao & \cellcolor{green!27}1,0309 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Claudio Ramos confessa a Cristina que lhe custou ficar sem o Big Brother  & \cellcolor{green!7}7 & \cellcolor{green!7}nao & \cellcolor{green!7}1,4493 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{red!20} ClA!udio Ramos para Carolina Deslandes: EntAPSo burra e quem nAPSo lAa A(c)s tu  & \cellcolor{red!20}15 & \cellcolor{red!20}sim & \cellcolor{red!20}0,6515 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} Emocionado, Goucha revela em que momento se sentiu magoado com Cristina Ferreira  & \cellcolor{green!27}9 & \cellcolor{green!27}nao & \cellcolor{green!27}1,3699 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Acusado de discriminaASSAPSo, Manuel LuAs Goucha responde a seguidora  & \cellcolor{green!7}17 & \cellcolor{green!7}sim & \cellcolor{green!7}2,3891 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Goucha arrasa pessoas que nAPSo cumpriram normas de seguranASSa na NazarA(c): Imbecis e criminosos  & \cellcolor{green!27}33 & \cellcolor{green!27}sim & \cellcolor{green!27}1,6706 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Rita Blanco dA! que falar apA3s 'indiretas' a Cristina Ferreira: PAue lA! no canal da outra  & \cellcolor{green!7}9 & \cellcolor{green!7}nao & \cellcolor{green!7}0,5051 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Cristina Ferreira compra 2,5% da Media Capital  & \cellcolor{green!27}32 & \cellcolor{green!27}nao & \cellcolor{green!27}0,5369 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} Marta Temido considera que votar contra OE A(c) desistir de melhorar os serviASSos pAoblicos de saAode  & \cellcolor{red!20}10 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  
+\end{longtable}
+\end{center}
+\end{document}

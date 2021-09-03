@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_66.json :}\newline \par\Large\textbf {Title: \large  MARIA LEAL | O AMOR É CEGO...SURDO E DESDENTADO }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Forte corta-palha... porém agora que mexeu na cramalheira como vamos saber a sua \textbf{idade}?\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small Esta \textbf{gaja} nao canta nada.louca\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small a \textbf{gaja} nao vale nada mas cada um é como nasce   , mas não sei o que é que os dentes tem a ver com isso, há n de pessoas que aos 40 anos  já tem os dentes bastante degradados  .....\normalsize   & \cellcolor{green!27}Gaja & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/41 & \cellcolor{green!27}2.439 \\  \hline
+  \cellcolor{green!5}\small Eeladiz qui e mt reliogiosa que grande \textbf{vaca} e mesmoputa de merda\normalsize   & \cellcolor{green!5}Vaca & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/12 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small Parece o que é uma \textbf{Puta} e cantar ???onde ,,,,,,,,,,,,,,,,,,,,,,,,não conhece o dentista só maluqueira\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small que \textbf{cadela} feia parece um cadaver\normalsize   & \cellcolor{green!5}Cadela & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Que \textbf{vadia} que essa maria é. Devolve o dinheiro sua ladra\normalsize   & \cellcolor{green!27}Vadia & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small A \textbf{gaja} é tão mal feita. Cruzes credo!\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small Como é que estas pessoas ainda aplaudem esta ladra quem é que no seu prefeito juízo paga para ir ver esta \textbf{gaja} só se for para gozar com ela\normalsize   & \cellcolor{green!27}Gaja & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/29 & \cellcolor{green!27}3.448 \\  \hline
+  \cellcolor{green!5}\small ladra porquê,  ótario foi o marido  dela ? no que  toca ao dinheiro  do ex Marido  todas as senhoras o fazem,  vem para aqui com  hipocrisias armadas em serias, as senhoras querem convencer o pessoal  que se estivessem casadas com um marido rico não usufruiriam da riqueza , nem queriam a vossa parte se houvesse divorcio, quem quer conhecer a \textbf{mulher} que tem ao lado que se divorcie dela em 99 dos casos  os ex maridos ricos  vão ter surpresas    ......\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/81 & \cellcolor{green!5}1.235 \\  \hline
+  \cellcolor{green!27}\small Vadia não vales nada estançia e cala te não sabes cantar és alvo de gozo pra todos\normalsize   & \cellcolor{green!27}Vadia & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small Eu acho que anda para ali uma grande confusão. Nem a Elisabete Rodrigues nem o \textbf{miúdo} se deram conta do valente disparate que estavam a fazer. Depois a corda parte para o elo mais fraco. É sempre assim:(\normalsize   & \cellcolor{green!5}Miúdo & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/38 & \cellcolor{green!5}2.632 \\  \hline
+  \cellcolor{green!27}\small GOSTO MUITO DA TUA MUSICA.. E TAMEM A MUSICA DO ZE \textbf{CABRA}. CONTINUA ACIM TA? FORCA\normalsize   & \cellcolor{green!27}Cabra & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small GANDA MARIA LEAL QULHASTE VEM O MORCOM. ELE QUE NAO FOCE VURRO\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/12 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small O problema nao e a Maria, o problema e a merda da sociedade de que ela faz parte....O que todos nos mais temos e familia \textbf{v\textbf{elha}}, feia, doente e \textbf{atrasada}, e nao fiquem agora ademirados e ofendidos com isto, olhem bem a vossa volta ou ao espelho...sim e lindo...Let us out of here...Over infinite time, Physics and Chemistry created biology.. biology created us, after 4 000 000 000 years of evolution...We are the victims, and victimizers of that UNINTELLIGENT process, as we were created IMPERFECT,  in an IMPERFECT environment for us...  We are the prisoners, rapists, orphans,  murderers, blind, drunk, retarded, homeless, losers, sick, of this reality that we do not control nor understand totally...We are IMPERFECT, because our design is so, not because we want to be IMPERFECT...We are a problem to ourselves...as we create all our sickness and misery!...by PROCREATING...is that not idiotic, ridiculous?There is PERFECTION before we are born!.. Please understand this:There is PERFECTION before we are born!.. Do not impose this stupid life on others, be kind, intelligent merciful...End imperfection...create perfection.... Let's be The Savior......Let's be perfect...If you liked this message, pass it on, show others what life is really about, copy, then paste this message, make your own, post them on YouTube comments section....Became a fighter for the ultimate cause...PERFECTION....Welcome......Learn the facts, watch the playlist... [LINK] \normalsize   & \cellcolor{green!27}Atrasada, Velha & \cellcolor{green!27}Age - Over 65s, Gender - Female age and physical appearance, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}3/235 & \cellcolor{green!27}1.277 \\  \hline
+  \cellcolor{green!5}\small Eu por acaso até acho que os dentes , são de quem os pagou .... Do \textbf{Francisco} , portanto .\normalsize   & \cellcolor{green!5}Francisco & \cellcolor{green!5}Nationality - French & \cellcolor{green!5}1/20 & \cellcolor{green!5}5.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Idade & \cellcolor{red!27}1 & \cellcolor{red!27}1/1288& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Gaja, Mulher & \cellcolor{red!5}5 & \cellcolor{red!5}5/1288& \cellcolor{red!5}0.38999999999999996 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Vaca, Puta, Cadela, Vadia, Cabra, Ganda & \cellcolor{red!27}7 & \cellcolor{red!27}7/1288& \cellcolor{red!27}0.54 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Miúdo & \cellcolor{red!5}1 & \cellcolor{red!5}1/1288& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female age and physical appearance}  & \cellcolor{red!27}Velha & \cellcolor{red!27}1 & \cellcolor{red!27}1/1288& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Velha & \cellcolor{red!5}1 & \cellcolor{red!5}1/1288& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Atrasada & \cellcolor{red!27}1 & \cellcolor{red!27}1/1288& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - French}  & \cellcolor{red!5}Francisco & \cellcolor{red!5}1 & \cellcolor{red!5}1/1288& \cellcolor{red!5}0.08 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Gender - General;Gender - Female sexuality;Age - Youngsters;Gender - Female age and physical appearance;Age - Over 65s;Physical Identity - Physical (and Mental) Impairments;Nationality - French;%.
+
+\item The percentage of hate speech related words is 1.3975.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 18/67 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_193.json :}\newline \par\Large\textbf {Title: \large  Comunistas recusam adiar congresso }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Ele há os lares da terceira \textbf{idade} e os partidos da terceira \textbf{idade}.<br/>E, como se sabe, os velhos são teimosos quem nem asnos...!\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}2/23 & \cellcolor{green!27}8.696 \\  \hline
+  \cellcolor{green!5}\small Hoje em Portugal,comunismo é tudo gente \textbf{ordinária}!!!!!! Espero que o kamarada bagaçovsky fique mais meia dúzia de anos á frente do partido,para acabar de vez,com os comunas em Portugal!!!!!! Já falta pouco!!!\normalsize   & \cellcolor{green!5}Ordinária & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/32 & \cellcolor{green!5}3.125 \\  \hline
+  \cellcolor{green!27}\small Aqui está o posso, quero e mando! Tiques dictatoriais bem relevantes. Um partido pragmático que defende ditaduras como a Venezuela e Coreia do Norte e que lutou, abominou e recorda como terríveis os tempos da \textbf{v\textbf{elha}} senhora... é completamente incrível e distorcido. Diatdura de esquerda AVANTE! Ditadura de direita nunca!\normalsize   & \cellcolor{green!27}Velha & \cellcolor{green!27}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!27}2/50 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small Oh meu grande \textbf{labrego} do c.  A tua mãe deve ter tido enquanto apanhava na peida. Nunca te enganaste a votar aqui? Já tive UPs do Merdonça por engano por exemplo. Um tipo que eu detesto e vice versa.\normalsize   & \cellcolor{green!5}Labrego & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/39 & \cellcolor{green!5}2.564 \\  \hline
+  \cellcolor{green!27}\small O SI.NDICALISTA DEVIA CALAR-SE, RESPEITAR A LEI E O  <br/>POVO.<br/>JÁ DEVIA ESTAR A VER AS TELENOVELAS NO SOFÁ.<br/>MAS VAI CONSEGUIR POR O Sr.COSTA DE JOELHOS E DEPOIS ELE VAI TER DE REZAR.<br/> DEFACTO ESCOLHEU O NOME  IDEAL, PCP SÓ PENSA EM COMER.<br/>Sr. JERÓNIMO, DEIXE-SE DE SER \textbf{IDIOTA}, RESPEITE O PAÍS, A LEI E O POVO.<br/>O PAÍS NÃO QUER RADICAIS  DA EXTREMA ESQUERDA, APÓS O 25 AVRIL NUNCA SE VIU UM PARTIDO SÉRIO, MAS SIM COMEDORES E MENTIROSOS.  <br/>PELO MEIO HOUVE UM QUE FOI OBRIGADO A SACRIFICAR O POVO.<br/>APENAS DIGO AS LEIS  SÃO IGUAIS  PARA TODOS , POLÍTICOS E NÃO POLÍTICOS.<br/>E PARA OS PARTIDOS TAMBEM.OS PARTIDOS NÃO SÃO INDFERENTES\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/109 & \cellcolor{green!27}0.917 \\  \hline
+  \cellcolor{green!5}\small Correto, está na hora da "elite" \textbf{comunista} provar que são mais inteligentes que a média da população. Para isso, não poderão haver contágios devido ao congresso.\normalsize   & \cellcolor{green!5}Comunista & \cellcolor{green!5}Ideological and Political Identity - General & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small Se o Costa falso (o do ON) diz que os médicos não têm nada que saber o que se passa nos lares,  e depois em OFF os chama de gajos covardes, nesta da festa do PCP, ao dizer em ON que o PCP tem todo o direito de realizar as suas actividades politicas, o Costa autêntico (o do OFF) deve ter partido o nariz no primeiro \textbf{velho} que encontrou.\normalsize   & \cellcolor{green!27}Velho & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/69 & \cellcolor{green!27}1.449 \\  \hline
+  \cellcolor{green!5}\small Comunista no séc. XXI = ignorante\normalsize   & \cellcolor{green!5}Comunista & \cellcolor{green!5}Ideological and Political Identity - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small E, o governo confina fins de semana como ao ganhar dimensão pode confinar natal e ano novo e o Pcp abusa e não tem respeito pelo<br/>Todo pessoal médico e cidades confinadas ?Merecem eleitoralmente um grande cartão vermelho\normalsize   & \cellcolor{green!27}Vermelho & \cellcolor{green!27}Ethnicity - Native American, Ideological and Political Identity - General & \cellcolor{green!27}2/38 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small A Força de Intervenção da PSP, que aproveite o momento e faça um exercício não simulado na arena \textbf{comunista}...\normalsize   & \cellcolor{green!5}Comunista & \cellcolor{green!5}Ideological and Political Identity - General & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small O universo responde sempre  através dos procedimentos das pessoas cada um recebe e terá aquilo que semear se levam camaradas para infecção pela \textbf{idade} menos votos terão ...\normalsize   & \cellcolor{green!27}Idade & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/28 & \cellcolor{green!27}3.571 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Idade & \cellcolor{red!27}2 & \cellcolor{red!27}2/1501& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Ordinária & \cellcolor{red!5}1 & \cellcolor{red!5}1/1501& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female age and physical appearance}  & \cellcolor{red!27}Velha & \cellcolor{red!27}1 & \cellcolor{red!27}1/1501& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Velha, Velho & \cellcolor{red!5}2 & \cellcolor{red!5}2/1501& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Labrego & \cellcolor{red!27}1 & \cellcolor{red!27}1/1501& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Idiota & \cellcolor{red!5}1 & \cellcolor{red!5}1/1501& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ideological and Political Identity - General}  & \cellcolor{red!27}Comunista, Vermelho & \cellcolor{red!27}4 & \cellcolor{red!27}4/1501& \cellcolor{red!27}0.27 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Native American}  & \cellcolor{red!5}Vermelho & \cellcolor{red!5}1 & \cellcolor{red!5}1/1501& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Gender - Female sexuality;Gender - Female age and physical appearance;Age - Over 65s;Social Class - Working class;Physical Identity - Physical (and Mental) Impairments;Ideological and Political Identity - General;Ethnicity - Native American;%.
+
+\item The percentage of hate speech related words is 0.8661.
+
+\item Considering that the variable \textbf{Ideological and Political Identity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 14/58 occurences of hate speech related comments.\end{itemize}\end{document}

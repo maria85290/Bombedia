@@ -1,0 +1,154 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[pdftex]{hyperref}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=1in]{geometry}
+\newcommand{\MinNumber}{0}\begin{document}
+
+\textbf {\huge Jornal publico:}\newline\newline\newline
+
+\centering\textbf{\large Table  1: Sintese dos resultados por ficheiro 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{||C{.40\mylength}||C{.30\mylength}||C{.30\mylength}||C{.30\mylength}||}
+\hline
+\textbf{Nome} & \textbf{Nº de Comentarios}  & \textbf{Nº de ocorrencias de hate Speech} & \textbf{Percentagem de hate Speech(\%)} \\
+\hline\cellcolor{green!27}Publico-extraction-portuguese-1.pdf & \cellcolor{green!27}10 & \cellcolor{green!27}1 & \cellcolor{green!27}0,3067 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-3.pdf & \cellcolor{green!5}9 & \cellcolor{green!5}5 & \cellcolor{green!5}1,1682 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-4.pdf & \cellcolor{green!27}85 & \cellcolor{green!27}4 & \cellcolor{green!27}0,1044 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-5.pdf & \cellcolor{green!5}53 & \cellcolor{green!5}33 & \cellcolor{green!5}0,981 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-6.pdf & \cellcolor{green!27}9 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-7.pdf & \cellcolor{green!5}9 & \cellcolor{green!5}2 & \cellcolor{green!5}1,105 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-8.pdf & \cellcolor{green!27}12 & \cellcolor{green!27}7 & \cellcolor{green!27}1,3129 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-9.pdf & \cellcolor{green!5}88 & \cellcolor{green!5}25 & \cellcolor{green!5}0,5397 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-10.pdf & \cellcolor{green!27}15 & \cellcolor{green!27}3 & \cellcolor{green!27}0,3979 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-11.pdf & \cellcolor{green!5}8 & \cellcolor{green!5}1 & \cellcolor{green!5}0,2053 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-12.pdf & \cellcolor{green!27}13 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-13.pdf & \cellcolor{green!5}16 & \cellcolor{green!5}1 & \cellcolor{green!5}0,1451 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-14.pdf & \cellcolor{green!27}42 & \cellcolor{green!27}22 & \cellcolor{green!27}1,735 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-15.pdf & \cellcolor{green!5}43 & \cellcolor{green!5}5 & \cellcolor{green!5}0,3701 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-16.pdf & \cellcolor{green!27}31 & \cellcolor{green!27}14 & \cellcolor{green!27}0,6524 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-17.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}3 & \cellcolor{green!5}1,3636 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-18.pdf & \cellcolor{green!27}15 & \cellcolor{green!27}5 & \cellcolor{green!27}0,6547 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-19.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}2 & \cellcolor{green!5}1,6949 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-20.pdf & \cellcolor{green!27}9 & \cellcolor{green!27}3 & \cellcolor{green!27}1,6667 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-21.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}2 & \cellcolor{green!5}1,4388 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-22.pdf & \cellcolor{green!27}3 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-23.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-24.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-25.pdf & \cellcolor{green!5}52 & \cellcolor{green!5}14 & \cellcolor{green!5}0,458 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-26.pdf & \cellcolor{green!27}18 & \cellcolor{green!27}2 & \cellcolor{green!27}0,4695 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-27.pdf & \cellcolor{green!5}7 & \cellcolor{green!5}4 & \cellcolor{green!5}1,7143 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-28.pdf & \cellcolor{green!27}23 & \cellcolor{green!27}7 & \cellcolor{green!27}1,4019 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-29.pdf & \cellcolor{green!5}15 & \cellcolor{green!5}6 & \cellcolor{green!5}0,4921 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-30.pdf & \cellcolor{green!27}6 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-31.pdf & \cellcolor{green!5}22 & \cellcolor{green!5}7 & \cellcolor{green!5}1,0989 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-32.pdf & \cellcolor{green!27}4 & \cellcolor{green!27}3 & \cellcolor{green!27}0,6116 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-33.pdf & \cellcolor{green!5}86 & \cellcolor{green!5}43 & \cellcolor{green!5}0,7956 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-34.pdf & \cellcolor{green!27}126 & \cellcolor{green!27}23 & \cellcolor{green!27}0,5071 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-35.pdf & \cellcolor{green!5}26 & \cellcolor{green!5}2 & \cellcolor{green!5}0,1953 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-36.pdf & \cellcolor{green!27}11 & \cellcolor{green!27}3 & \cellcolor{green!27}0,5013 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-37.pdf & \cellcolor{green!5}3 & \cellcolor{green!5}2 & \cellcolor{green!5}2,8986 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-38.pdf & \cellcolor{green!27}29 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-39.pdf & \cellcolor{green!5}12 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-40.pdf & \cellcolor{green!27}4 & \cellcolor{green!27}2 & \cellcolor{green!27}2,4096 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-41.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}1 & \cellcolor{green!5}0,2611 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-42.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-43.pdf & \cellcolor{green!5}88 & \cellcolor{green!5}25 & \cellcolor{green!5}0,5397 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-44.pdf & \cellcolor{green!27}29 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-45.pdf & \cellcolor{green!5}23 & \cellcolor{green!5}3 & \cellcolor{green!5}0,2562 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-46.pdf & \cellcolor{green!27}9 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-47.pdf & \cellcolor{green!5}31 & \cellcolor{green!5}8 & \cellcolor{green!5}0,6595 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-48.pdf & \cellcolor{green!27}19 & \cellcolor{green!27}3 & \cellcolor{green!27}0,1854 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-49.pdf & \cellcolor{green!5}18 & \cellcolor{green!5}3 & \cellcolor{green!5}0,6593 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-50.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}3 & \cellcolor{green!27}1,4423 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-51.pdf & \cellcolor{green!5}22 & \cellcolor{green!5}6 & \cellcolor{green!5}0,5305 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-52.pdf & \cellcolor{green!27}11 & \cellcolor{green!27}3 & \cellcolor{green!27}0,5013 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-53.pdf & \cellcolor{green!5}45 & \cellcolor{green!5}4 & \cellcolor{green!5}0,4902 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-54.pdf & \cellcolor{green!27}20 & \cellcolor{green!27}2 & \cellcolor{green!27}0,2545 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-55.pdf & \cellcolor{green!5}23 & \cellcolor{green!5}11 & \cellcolor{green!5}0,9098 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-56.pdf & \cellcolor{green!27}45 & \cellcolor{green!27}7 & \cellcolor{green!27}0,3008 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-57.pdf & \cellcolor{green!5}25 & \cellcolor{green!5}9 & \cellcolor{green!5}0,6639 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-58.pdf & \cellcolor{green!27}22 & \cellcolor{green!27}8 & \cellcolor{green!27}0,5859 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-59.pdf & \cellcolor{green!5}67 & \cellcolor{green!5}17 & \cellcolor{green!5}0,6008 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-60.pdf & \cellcolor{green!27}39 & \cellcolor{green!27}13 & \cellcolor{green!27}0,7386 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-61.pdf & \cellcolor{green!5}72 & \cellcolor{green!5}16 & \cellcolor{green!5}0,5908 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-62.pdf & \cellcolor{green!27}164 & \cellcolor{green!27}46 & \cellcolor{green!27}0,6828 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-63.pdf & \cellcolor{green!5}44 & \cellcolor{green!5}21 & \cellcolor{green!5}0,9528 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-64.pdf & \cellcolor{green!27}27 & \cellcolor{green!27}13 & \cellcolor{green!27}1,625 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-65.pdf & \cellcolor{green!5}18 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-66.pdf & \cellcolor{green!27}18 & \cellcolor{green!27}3 & \cellcolor{green!27}0,4323 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-67.pdf & \cellcolor{green!5}99 & \cellcolor{green!5}20 & \cellcolor{green!5}0,4457 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-68.pdf & \cellcolor{green!27}35 & \cellcolor{green!27}12 & \cellcolor{green!27}0,7225 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-69.pdf & \cellcolor{green!5}17 & \cellcolor{green!5}4 & \cellcolor{green!5}0,8565 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-70.pdf & \cellcolor{green!27}5 & \cellcolor{green!27}6 & \cellcolor{green!27}1,9481 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-71.pdf & \cellcolor{green!5}39 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-72.pdf & \cellcolor{green!27}137 & \cellcolor{green!27}61 & \cellcolor{green!27}1,2164 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-73.pdf & \cellcolor{green!5}17 & \cellcolor{green!5}3 & \cellcolor{green!5}0,3513 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-74.pdf & \cellcolor{green!27}21 & \cellcolor{green!27}1 & \cellcolor{green!27}0,2088 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-75.pdf & \cellcolor{green!5}88 & \cellcolor{green!5}4 & \cellcolor{green!5}0,0872 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-76.pdf & \cellcolor{green!27}59 & \cellcolor{green!27}24 & \cellcolor{green!27}0,8722 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-77.pdf & \cellcolor{green!5}29 & \cellcolor{green!5}2 & \cellcolor{green!5}0,1907 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-78.pdf & \cellcolor{green!27}25 & \cellcolor{green!27}4 & \cellcolor{green!27}0,4008 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-79.pdf & \cellcolor{green!5}31 & \cellcolor{green!5}2 & \cellcolor{green!5}0,189 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-80.pdf & \cellcolor{green!27}29 & \cellcolor{green!27}4 & \cellcolor{green!27}0,578 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-81.pdf & \cellcolor{green!5}43 & \cellcolor{green!5}12 & \cellcolor{green!5}0,5729 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-82.pdf & \cellcolor{green!27}51 & \cellcolor{green!27}8 & \cellcolor{green!27}0,5141 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-83.pdf & \cellcolor{green!5}54 & \cellcolor{green!5}20 & \cellcolor{green!5}0,9667 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-84.pdf & \cellcolor{green!27}28 & \cellcolor{green!27}3 & \cellcolor{green!27}0,2364 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-85.pdf & \cellcolor{green!5}15 & \cellcolor{green!5}2 & \cellcolor{green!5}0,2525 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-86.pdf & \cellcolor{green!27}21 & \cellcolor{green!27}9 & \cellcolor{green!27}0,6526 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-87.pdf & \cellcolor{green!5}71 & \cellcolor{green!5}3 & \cellcolor{green!5}0,1076 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-88.pdf & \cellcolor{green!27}28 & \cellcolor{green!27}2 & \cellcolor{green!27}0,1938 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-89.pdf & \cellcolor{green!5}10 & \cellcolor{green!5}1 & \cellcolor{green!5}0,2326 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-90.pdf & \cellcolor{green!27}48 & \cellcolor{green!27}7 & \cellcolor{green!27}0,3806 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-91.pdf & \cellcolor{green!5}21 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-92.pdf & \cellcolor{green!27}9 & \cellcolor{green!27}0 & \cellcolor{green!27}0,0 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-93.pdf & \cellcolor{green!5}25 & \cellcolor{green!5}4 & \cellcolor{green!5}0,4334 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-94.pdf & \cellcolor{green!27}35 & \cellcolor{green!27}4 & \cellcolor{green!27}0,2259 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-95.pdf & \cellcolor{green!5}46 & \cellcolor{green!5}5 & \cellcolor{green!5}0,249 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-96.pdf & \cellcolor{green!27}35 & \cellcolor{green!27}5 & \cellcolor{green!27}0,4092 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-97.pdf & \cellcolor{green!5}5 & \cellcolor{green!5}2 & \cellcolor{green!5}1,2121 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-98.pdf & \cellcolor{green!27}52 & \cellcolor{green!27}8 & \cellcolor{green!27}0,365 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-99.pdf & \cellcolor{green!5}19 & \cellcolor{green!5}3 & \cellcolor{green!5}0,3947 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-102.pdf & \cellcolor{green!27}50 & \cellcolor{green!27}8 & \cellcolor{green!27}0,2051 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-103.pdf & \cellcolor{green!5}15 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-104.pdf & \cellcolor{green!27}19 & \cellcolor{green!27}2 & \cellcolor{green!27}0,2732 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-105.pdf & \cellcolor{green!5}8 & \cellcolor{green!5}0 & \cellcolor{green!5}0,0 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-106.pdf & \cellcolor{green!27}19 & \cellcolor{green!27}4 & \cellcolor{green!27}0,6908 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-107.pdf & \cellcolor{green!5}93 & \cellcolor{green!5}39 & \cellcolor{green!5}0,9954 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-108.pdf & \cellcolor{green!27}27 & \cellcolor{green!27}7 & \cellcolor{green!27}0,7625 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-109.pdf & \cellcolor{green!5}18 & \cellcolor{green!5}5 & \cellcolor{green!5}0,6631 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-110.pdf & \cellcolor{green!27}240 & \cellcolor{green!27}92 & \cellcolor{green!27}0,9147 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-111.pdf & \cellcolor{green!5}142 & \cellcolor{green!5}23 & \cellcolor{green!5}0,3693 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-112.pdf & \cellcolor{green!27}9 & \cellcolor{green!27}2 & \cellcolor{green!27}1,2121 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-113.pdf & \cellcolor{green!5}147 & \cellcolor{green!5}32 & \cellcolor{green!5}0,5434 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-114.pdf & \cellcolor{green!27}50 & \cellcolor{green!27}23 & \cellcolor{green!27}1,0436 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-115.pdf & \cellcolor{green!5}27 & \cellcolor{green!5}11 & \cellcolor{green!5}0,7448 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-116.pdf & \cellcolor{green!27}31 & \cellcolor{green!27}14 & \cellcolor{green!27}0,6524 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-117.pdf & \cellcolor{green!5}35 & \cellcolor{green!5}42 & \cellcolor{green!5}1,6488 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-118.pdf & \cellcolor{green!27}40 & \cellcolor{green!27}22 & \cellcolor{green!27}0,9877 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-119.pdf & \cellcolor{green!5}15 & \cellcolor{green!5}5 & \cellcolor{green!5}1,4286 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-120.pdf & \cellcolor{green!27}26 & \cellcolor{green!27}20 & \cellcolor{green!27}1,4472 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-121.pdf & \cellcolor{green!5}9 & \cellcolor{green!5}8 & \cellcolor{green!5}1,8307 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-122.pdf & \cellcolor{green!27}21 & \cellcolor{green!27}22 & \cellcolor{green!27}1,7488 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-123.pdf & \cellcolor{green!5}171 & \cellcolor{green!5}70 & \cellcolor{green!5}0,9481 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-124.pdf & \cellcolor{green!27}60 & \cellcolor{green!27}5 & \cellcolor{green!27}0,2612 \\  \hline
+  \cellcolor{green!5}Publico-extraction-portuguese-125.pdf & \cellcolor{green!5}6 & \cellcolor{green!5}1 & \cellcolor{green!5}0,3289 \\  \hline
+  \cellcolor{green!27}Publico-extraction-portuguese-126.pdf & \cellcolor{green!27}24 & \cellcolor{green!27}2 & \cellcolor{green!27}0,197 \\  \hline
+  
+\end{longtable}
+\end{center}
+\end{document}

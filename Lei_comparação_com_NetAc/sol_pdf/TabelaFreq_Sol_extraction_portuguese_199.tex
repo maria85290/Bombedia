@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_199.json :}\newline \par\Large\textbf {Title: \large  Acusado de discriminaÃ§Ã£o, Manuel LuÃ­s Goucha responde a seguidora }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small EU MANDAVA A \textbf{PRETA} PARA A TERRA DELA E EM CAMINHO PERGUNTAVA-LHE ONDE NASCEU, SO PARA SABER O PAÍS ONDE FOI FEITA TAL MERDA\normalsize   & \cellcolor{green!27}Preta & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/24 & \cellcolor{green!27}4.167 \\  \hline
+  \cellcolor{green!5}\small Enfim, já se não pode perguntar a um \textbf{negro} onde nasceu.\normalsize   & \cellcolor{green!5}Negro & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Não sou fã do Goucha mas agora acusá-lo de discriminação só porque perguntou onde o rapaz nasceu, ao ponto a que se chegou para encontrar justificação para acusar alguém...de \textbf{racismo} (que é a intenção óbvia da acusadora).\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/37 & \cellcolor{green!27}2.703 \\  \hline
+  \cellcolor{green!5}\small A mim toda a gente me pode acusar de \textbf{racismo}. Só me deito com pretas.\normalsize   & \cellcolor{green!5}Racismo & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small nada se pode dizer a um \textbf{preto}  é  logo \textbf{racismo}  agora só falta  mamadum  aparecer  a berrar\normalsize   & \cellcolor{green!27}Preto, Racismo & \cellcolor{green!27}Ethnicity - Black, Ethnicity - General & \cellcolor{green!27}2/17 & \cellcolor{green!27}11.765 \\  \hline
+  \cellcolor{green!5}\small Uma \textbf{bicha} doida...\normalsize   & \cellcolor{green!5}Bicha & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Preta, Negro, Preto & \cellcolor{red!27}3 & \cellcolor{red!27}3/293& \cellcolor{red!27}1.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racismo & \cellcolor{red!5}3 & \cellcolor{red!5}3/293& \cellcolor{red!5}1.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Bicha & \cellcolor{red!27}1 & \cellcolor{red!27}1/293& \cellcolor{red!27}0.33999999999999997 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Black;Ethnicity - General;Sexual Identity - Male homosexuality;%.
+
+\item The percentage of hate speech related words is 2.3891.
+
+\item Considering that the variable \textbf{Ethnicity - Black} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 7/17 occurences of hate speech related comments.\end{itemize}\end{document}

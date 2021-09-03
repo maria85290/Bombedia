@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_73.json :}\newline \par\Large\textbf {Title: \large  SIC - Bairros Sociais e violência em Portugal }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small eu sou \textbf{emigrante} e quando vou de ferias a portugal o meu carro e dos mais fracos na A1, e a crise em portugal lololol\normalsize   & \cellcolor{green!27}Emigrante & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small \@oparepa ...pq grande parte dos crimes são sistematicamente cometidos pelos mesmos grupos, e tu sabes q é verdade. Isso alimenta alguns ideiais, e por vezes com razao. Inevitavelmente criam-se estereotipos percebes? e isto torna-se numa \textbf{bola} de neve que nunca mais para. nem vale a pena debater isto, sao dois lados que dificilmente se entendem. isto n se resolve de hoje pa amanha, tem d ser gradual\normalsize   & \cellcolor{green!5}Bola & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/67 & \cellcolor{green!5}1.493 \\  \hline
+  \cellcolor{green!27}\small oh sim CRIME! lol esses trocos que tu falas sao os trocos que sustetam familias ya eh feio roubAR mas sei la as vezes tbm exageram metem logo uma má imagem nas pessoas nem dao a oportunidade de dialogo repara falaste  na revolta eu farto me de ver filhos da \textbf{puta} du PNR a falar da revolta,, i eh so estupidez. mas pronto...ya mas há uns que sao mesmo profundos a nivel de crime e etc.. mas as pessoas agem de maneira difrente em problemas difrentes se os meus problemas forem piores que os teus.logo\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/95 & \cellcolor{green!27}1.053 \\  \hline
+  \cellcolor{green!5}\small filhos da \textbf{puta} so sabem matar e roubar o pouco k temos os ciganos tem boms carros e temem o rendimemto minimo nos bairros ate os taquecistas tem medo de la ir ja agora amdamos todos assaltar so os falhados e k roubao nsao uma merda nao sabem faser mais nada a baixo de nada\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/55 & \cellcolor{green!5}1.818 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Emigrante & \cellcolor{red!27}1 & \cellcolor{red!27}1/1426& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical Features}  & \cellcolor{red!5}Bola & \cellcolor{red!5}1 & \cellcolor{red!5}1/1426& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Puta & \cellcolor{red!27}2 & \cellcolor{red!27}2/1426& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - General;Physical Identity - Physical Features;Gender - Female sexuality;%.
+
+\item The percentage of hate speech related words is 0.2805.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/33 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_56.json :}\newline \par\Large\textbf {Title: \large  José Berardo mudou estatutos da associação à revelia dos credores para defender interesses pessoais }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Qem tem vergonha anda \textbf{magro},como dizem os Espanhóis viva a Democrácia\normalsize   & \cellcolor{green!27}Magro & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small isto só prova que isto tudo é uma grande \textbf{bola} de neve...\normalsize   & \cellcolor{green!5}Bola & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/12 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small O homem não sabe responder a nada está \textbf{senil} ,e a senhora deputada   parece aqueles advogados novinhos sem nenhuma experiência ,isto não serve para nada ,os bancos também queriam comer e muito mas deu para torto .\normalsize   & \cellcolor{green!27}Senil & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/37 & \cellcolor{green!27}2.703 \\  \hline
+  \cellcolor{green!5}\small EU estou parvo como um \textbf{gajo} que nao sabe sequer ler e falar conseguiu (enganar) essa cambada de drs. dos bancos em mlhoes e agora ri-se de tudo e de todos e o zé que pague ou será que nao enganou e comem todos da mesma gamela....\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/47 & \cellcolor{green!5}2.128 \\  \hline
+  \cellcolor{green!27}\small vamos trocar os reality shows pelos diretos no parlamento!!  vamos apurar a realidade, por partes, por governos...   venham mais videos daí pá,  queremos é discursos com 0 coerência e comédia \textbf{negra} deste nível, só faltam ai umas imagens do backstage para o pessoal tirar o resto das duvidas\normalsize   & \cellcolor{green!27}Negra & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/48 & \cellcolor{green!27}2.083 \\  \hline
+  \cellcolor{green!5}\small Até dá pena , este homem tá \textbf{velho}, \textbf{senil} ,  dá entender que anda muito por detrás dele. O advogado a que responde a tudo , para quê que ele lá está,  que juízes têm este caso na mão? Uma anedota. Pobre país  o nosso ,minado de pessoas assim.\normalsize   & \cellcolor{green!5}Senil, Velho & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}2/49 & \cellcolor{green!5}4.082 \\  \hline
+  \cellcolor{green!27}\small oh \textbf{velho} você  gagouuuu se pa\normalsize   & \cellcolor{green!27}Velho & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Raio do homem parece que está \textbf{bêbado}... 🙈\normalsize   & \cellcolor{green!5}Bêbado & \cellcolor{green!5}Behavioural Addiction - Alcohol & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small Está é a rir-se, afinal é o ze povinho que vai pagar as gatunices desse velho\normalsize   & \cellcolor{green!27}Velho & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small Desse \textbf{velho} ordinario e nojento, para que quer esse \textbf{velho} asqueroso tamanha fortuna, mais valia lembra-se de milhares de criancinhas que nem comem uma refeição por dia.\normalsize   & \cellcolor{green!5}Velho & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}2/27 & \cellcolor{green!5}7.407 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Magro, Bola & \cellcolor{red!27}2 & \cellcolor{red!27}2/2398& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Senil, Velho & \cellcolor{red!5}7 & \cellcolor{red!5}7/2398& \cellcolor{red!5}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo & \cellcolor{red!27}1 & \cellcolor{red!27}1/2398& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Negra & \cellcolor{red!5}1 & \cellcolor{red!5}1/2398& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Behavioural Addiction - Alcohol}  & \cellcolor{red!27}Bêbado & \cellcolor{red!27}1 & \cellcolor{red!27}1/2398& \cellcolor{red!27}0.04 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical Features;Age - Over 65s;Ethnicity - White;Ethnicity - Black;Behavioural Addiction - Alcohol;%.
+
+\item The percentage of hate speech related words is 0.5004.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 12/97 occurences of hate speech related comments.\end{itemize}\end{document}

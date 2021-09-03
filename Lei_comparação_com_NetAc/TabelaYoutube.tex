@@ -1,0 +1,130 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[pdftex]{hyperref}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=1in]{geometry}
+\newcommand{\MinNumber}{0}\begin{document}
+
+\textbf {\huge Youtube:}\newline\newline\newline
+
+\centering\textbf{\large Table  1: Sintese dos resultados por ficheiro 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{||C{.40\mylength}||C{.20\mylength}||C{.20\mylength}||C{.30\mylength}||C{.20\mylength}||}
+\hline
+\textbf{Titulo}   &  \textbf{N de comentarios}  &  \textbf{Controverso}  &  \textbf{Hate Speech(\%)}  &  \textbf{Resultado Bombedia} \\
+\hline\cellcolor{green!27}  O Interrogatorio a Fernanda Cancio Ex Namorada de Jose Socrates - Especial CMTV - 22 Abril 2018  & \cellcolor{green!27}59 & \cellcolor{green!27}nao & \cellcolor{green!27}0,9921 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} A seguir aos ciganos, Brasileiros sao o maior alvo de descriminacao em Portugal  & \cellcolor{green!7}155 & \cellcolor{green!7}sim & \cellcolor{green!7}1,4893 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Andre Ventura visita Quinta da Fonte e ignora os ciganos...  & \cellcolor{green!27}319 & \cellcolor{green!27}sim & \cellcolor{green!27}1,8509 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20} FAMILIA CIGANA IMPEDIDA DE JANTAR NUM RESTAURANTE  & \cellcolor{red!20}139 & \cellcolor{red!20}nao & \cellcolor{red!20}1,667 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} Almeirim - Este concelho nao e para ciganos  & \cellcolor{green!27}77 & \cellcolor{green!27}sim & \cellcolor{green!27}2,4209 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Racismo em Portugal  & \cellcolor{green!7}426 & \cellcolor{green!7}sim & \cellcolor{green!7}1,9299 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Os Pretos Todos Daqui Para Fora!  & \cellcolor{green!27}451 & \cellcolor{green!27}sim & \cellcolor{green!27}1,8257 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20} Tabu Brasil: Mudanca de Sexo (Dublado) - Documentario National Geographic  & \cellcolor{red!20}277 & \cellcolor{red!20}nao & \cellcolor{red!20}1,3985 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} Mulher faz cirurgia para virar homem  & \cellcolor{green!27}310 & \cellcolor{green!27}sim & \cellcolor{green!27}1,4461 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7}  Mesquita Nunes desmascarou as mentiras do Bloco e Mariana Mortagua entrou em desespero  & \cellcolor{green!7}108 & \cellcolor{green!7}sim & \cellcolor{green!7}1,2544 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Maria Capaz entrevista Fernanda Cancio  & \cellcolor{green!27}40 & \cellcolor{green!27}sim & \cellcolor{green!27}2,0765 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7}Fernanda Cancio TVI Jornal das 8 12-05-16  & \cellcolor{green!7}7 & \cellcolor{green!7}sim & \cellcolor{green!7}3,4653 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27}Mariana Mortagua perde as estribeiras quando Mesquita Nunes compara o Bloco a Marine Le Pen  & \cellcolor{green!27}382 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5618 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7}ARABE PORCO E COVARDE BATENDO NA NOIVA & \cellcolor{green!7}429 & \cellcolor{green!7}sim & \cellcolor{green!7}1,5164 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27}Criancas Transgenero DE SUA OPINIAO & \cellcolor{green!27}333 & \cellcolor{green!27}sim & \cellcolor{green!27}0,8992 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7}Voce decidiu ser menina? - Transgenero na infancia (OFICIAL) & \cellcolor{green!7}10442 & \cellcolor{green!7}nao & \cellcolor{green!7}0,9384 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27}SOU TRANS, MAS A CIRURGIA NAO ME FEZ MAIS MULHER | PAPO KABELO COM KAROL PINHEIRO | Salon Line & \cellcolor{green!27}1312 & \cellcolor{green!27}sim & \cellcolor{green!27}1,4085 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20}O casal transgenero em que o pai deu a luz um menino & \cellcolor{red!20}211 & \cellcolor{red!20}nao & \cellcolor{red!20}3,2193 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27}A saga de ter um filho transgenero & \cellcolor{green!27}54 & \cellcolor{green!27}sim & \cellcolor{green!27}0,793 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20}Ex-gay que tirou o penis explica por que foi facil se tornar 'homem hetero' & \cellcolor{red!20}5391 & \cellcolor{red!20}nao & \cellcolor{red!20}1,6146 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{red!30}Domingo Espetacular conta o drama de quem se arrependeu de mudar de sexo & \cellcolor{red!30}4655 & \cellcolor{red!30}nao & \cellcolor{red!30}1,0523 & \cellcolor{red!30}Neutral \\  \hline
+  \cellcolor{green!27}Menino que mudara de genero e nome faz planos: 'Quero ter marido e 3 filhas' & \cellcolor{green!27}314 & \cellcolor{green!27}nao & \cellcolor{green!27}0,7344 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7}Profissao Reporter - Transgeneros - 01 08 2018 & \cellcolor{green!7}114 & \cellcolor{green!7}sim & \cellcolor{green!7}1,385 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Miguel Neto no bairro da Jamaica, Portugal [Webnivel 95]  & \cellcolor{green!27}357 & \cellcolor{green!27}nao & \cellcolor{green!27}0,7711 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Em Portugal nao ha racismo, ha racismozinho :: Inferno T4 Ep.5  & \cellcolor{green!7}1125 & \cellcolor{green!7}sim & \cellcolor{green!7}2,0671 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Racista fala que homem nenhum gosta de Negra.  & \cellcolor{green!27}1367 & \cellcolor{green!27}sim & \cellcolor{green!27}3,2168 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Mulher e presa em flagrante por racismo.  & \cellcolor{green!7}1572 & \cellcolor{green!7}sim & \cellcolor{green!7}3,9361 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} BALANCO GERAL - Racismo e prisao! PM negro e chamado de macaco  & \cellcolor{green!27}543 & \cellcolor{green!27}sim & \cellcolor{green!27}4,3715 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Mulher racista pratica atos de racismo contra os Africanos durante a manifestacao  & \cellcolor{green!7}39 & \cellcolor{green!7}sim & \cellcolor{green!7}2,6114 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Racismo cigano no voce na TV  quintino Aires rassita cristina ferreira racista  & \cellcolor{green!27}158 & \cellcolor{green!27}sim & \cellcolor{green!27}1,9827 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Racismo de ciganos no Lumiar  & \cellcolor{green!7}69 & \cellcolor{green!7}sim & \cellcolor{green!7}1,8484 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Negra vai em protesto Neonazista e se encontra com membro da Klu Klux Klan [Legendado Portugues]  & \cellcolor{green!27}899 & \cellcolor{green!27}sim & \cellcolor{green!27}1,9975 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} 'Se for negro, nao entra': Policia italiana impede refugiados de embarcar em trem para Alemanha  & \cellcolor{green!7}574 & \cellcolor{green!7}sim & \cellcolor{green!7}1,2255 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Adolf Hitler fala sobre os Judeus e os Aliados.  & \cellcolor{green!27}1163 & \cellcolor{green!27}sim & \cellcolor{green!27}0,667 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} 5 Frases de Adolf Hitler  & \cellcolor{green!7}2511 & \cellcolor{green!7}sim & \cellcolor{green!7}0,5226 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Mulher e presa em flagrante apos usar termos racistas contra gerente de supermercado  & \cellcolor{green!27}3861 & \cellcolor{green!27}sim & \cellcolor{green!27}4,1268 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} O anti-Papa: Governo Bolsonaro quer espionar igrejas catolicas  & \cellcolor{green!7}228 & \cellcolor{green!7}sim & \cellcolor{green!7}0,9688 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} A apresentadora de radio Katie Hopkins humilha protestantes anti-Trump  & \cellcolor{green!27}62 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5324 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Preconceito contra Pobre!!! Absurdo dos absurdos!!!  & \cellcolor{green!7}147 & \cellcolor{green!7}sim & \cellcolor{green!7}0,7468 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Comentario RACISTA de Lula.  & \cellcolor{green!27}216 & \cellcolor{green!27}sim & \cellcolor{green!27}4,2659 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Ciganos portugueses no Brasil  & \cellcolor{green!7}32 & \cellcolor{green!7}sim & \cellcolor{green!7}1,6293 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} bairro sao joao de deus...tarrafal  & \cellcolor{green!27}99 & \cellcolor{green!27}nao & \cellcolor{green!27}0,8828 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Desacatos entre CIGANOS e PRETOS 2010 08 28  & \cellcolor{green!7}20 & \cellcolor{green!7}sim & \cellcolor{green!7}1,0753 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} Dois ciganos sao executados na porta de casa no bairro Soledade - BALANCO GERAL  & \cellcolor{red!20}70 & \cellcolor{red!20}nao & \cellcolor{red!20}2,4062 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} CMTV mostra video do tiroteio em Lisboa  & \cellcolor{green!27}48 & \cellcolor{green!27}sim & \cellcolor{green!27}2,1088 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Mais uma crianca retirada a familia de etnia cigana  & \cellcolor{green!7}16 & \cellcolor{green!7}sim & \cellcolor{green!7}2,8205 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Zezinho so estava a fazer uma ganza, levou na boca (Ameixoeira)  & \cellcolor{green!27}1016 & \cellcolor{green!27}sim & \cellcolor{green!27}1,6603 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Jose Berardo mudou estatutos da associacao a revelia dos credores para defender interesses pessoais  & \cellcolor{green!7}97 & \cellcolor{green!7}nao & \cellcolor{green!7}0,5004 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Mariana Mortagua mais uma vez humilhada por Leitao Amaro  & \cellcolor{green!27}51 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5249 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Claudio Ramos PASSA-SE DA CABECA COM COLEGAS EM DIRETO - Junho 2018  & \cellcolor{green!7}104 & \cellcolor{green!7}nao & \cellcolor{green!7}0,8543 & \cellcolor{green!7}Neutral \\  \hline
+  \cellcolor{green!27} Claudio Ramos Arrasa famosos que defenderam Julia Palha  & \cellcolor{green!27}67 & \cellcolor{green!27}sim & \cellcolor{green!27}0,6757 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Maria Leal hoje aqui so para ti- Voce na TV  & \cellcolor{green!7}220 & \cellcolor{green!7}sim & \cellcolor{green!7}1,1324 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Maria Leal e o desafio de cultura geral - 5 Para a Meia Noite  & \cellcolor{green!27}300 & \cellcolor{green!27}sim & \cellcolor{green!27}0,6114 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} DENTISTA DROGADA, BEBADA, RACISTA E HOMOFOBICA  & \cellcolor{green!7}12 & \cellcolor{green!7}sim & \cellcolor{green!7}3,3473 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Maria Leal acusada de roubo Responde e e Arrasada  & \cellcolor{green!27}59 & \cellcolor{green!27}sim & \cellcolor{green!27}1,9745 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} Sergio Henriques Responde a Acusacoes de Maria Leal (Ex Namorada) no Manha CMTV 04.01.2017  & \cellcolor{green!7}70 & \cellcolor{green!7}sim & \cellcolor{green!7}2,2046 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} MARIA LEAL | O AMOR E CEGO...SURDO E DESDENTADO  & \cellcolor{red!20}67 & \cellcolor{red!20}nao & \cellcolor{red!20}1,3975 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} Briga no autocarro em Portugal com um velho racista  & \cellcolor{green!27}65 & \cellcolor{green!27}sim & \cellcolor{green!27}3,9568 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{red!20}Portuguese fights /police fights/ range Portuguese compilation  & \cellcolor{red!20}105 & \cellcolor{red!20}Reati  vo & \cellcolor{red!20}1,6958 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} TOUR PELO MEU CORPO TRANS + antes e depois  & \cellcolor{green!27}1831 & \cellcolor{green!27}sim & \cellcolor{green!27}0,9323 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20} Mudancas de sexo que ficaram INCRIVEIS  & \cellcolor{red!20}3167 & \cellcolor{red!20}nao & \cellcolor{red!20}1,9726 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} Racismo entre Portugal e Angola,a 3a guerra mundial vai comecar  & \cellcolor{green!27}658 & \cellcolor{green!27}sim & \cellcolor{green!27}1,7485 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} SIC - Bairros Sociais e violencia em Portugal  & \cellcolor{green!7}33 & \cellcolor{green!7}sim & \cellcolor{green!7}0,2805 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} PORTUGAL FUNDADOR MUNDIAL DO RACISMO E COMERCIO DE ESCRAVO -ANGOLANOS DAM RESPOSTA A PORTUGAL  & \cellcolor{red!20}296 & \cellcolor{red!20}nao & \cellcolor{red!20}1,3373 & \cellcolor{red!20}Neutral \\  \hline
+  \cellcolor{green!27} 'Somos negros. Portugal ainda nao da valor como gente'  & \cellcolor{green!27}256 & \cellcolor{green!27}sim & \cellcolor{green!27}1,0941 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} O Racismo em Portugal existe? Como enfrenta lo?  & \cellcolor{green!7}51 & \cellcolor{green!7}sim & \cellcolor{green!7}0,9989 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Racismo ao vivo em plena televisao portuguesa SIC  & \cellcolor{green!27}14 & \cellcolor{green!27}nao & \cellcolor{green!27}2,0548 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Ataque racista dentro de aviao gera criticas a companhia aerea  & \cellcolor{green!7}140 & \cellcolor{green!7}sim & \cellcolor{green!7}3,7453 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Piruka: 'Nao acho as ganzas o lado negro! Mas nunca dei um risco de coca!'  & \cellcolor{green!27}89 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5691 & \cellcolor{green!27}Positive \\  \hline
+  \cellcolor{green!7} TOY FUMA UM CHARRO NA TVI  & \cellcolor{green!7}217 & \cellcolor{green!7}sim & \cellcolor{green!7}0,511 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} travesti e abusado e deixado na mao  & \cellcolor{green!27}5280 & \cellcolor{green!27}sim & \cellcolor{green!27}1,0535 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Sensivelmente Idiota - Concorda com o acolhimento de refugiados em Portugal?  & \cellcolor{green!7}379 & \cellcolor{green!7}sim & \cellcolor{green!7}0,584 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Imigrante brasileiro e contra a vinda de refugiados para Portugal  & \cellcolor{green!27}294 & \cellcolor{green!27}sim & \cellcolor{green!27}0,6618 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} A feia verdade sobre os Refugiados em Portugal  & \cellcolor{green!7}171 & \cellcolor{green!7}sim & \cellcolor{green!7}0,5094 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Refugiados venezuelanos deixam Roraima e chegam a Sao Paulo  & \cellcolor{green!27}1971 & \cellcolor{green!27}nao & \cellcolor{green!27}0,4789 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Refugiados em Portugal  & \cellcolor{green!7}5 & \cellcolor{green!7}sim & \cellcolor{green!7}3,6036 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Refugiado$ ganham mai$ que os Portugueses  & \cellcolor{green!27}7 & \cellcolor{green!27}nao & \cellcolor{green!27}0,3846 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{red!20} 'refugiados' fogem de Portugal  & \cellcolor{red!20}18 & \cellcolor{red!20}sim & \cellcolor{red!20}0,4975 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{green!27} PNR - CONTRA CHEGADA DE REFUGIADOS A PORTUGAL  & \cellcolor{green!27}152 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5234 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20}Refugiados em Portugal & \cellcolor{red!20}4 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} REFUGIADO EM PORTUGAL  & \cellcolor{red!30}7 & \cellcolor{red!30}sim & \cellcolor{red!30}0,8333 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{red!20} 'Refugiados' Vs Portugueses (reformados, sem-abrigo, etc)  & \cellcolor{red!20}29 & \cellcolor{red!20}sim & \cellcolor{red!20}0,3727 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} 'refugiados' fogem, mas os Portugueses PAGAM regresso  & \cellcolor{red!30}13 & \cellcolor{red!30}sim & \cellcolor{red!30}0,6006 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{green!27} refugiado viola Portuguesa  & \cellcolor{green!27}23 & \cellcolor{green!27}sim & \cellcolor{green!27}1,1096 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{red!20} Refugiados reconstroem a vida em Portugal  & \cellcolor{red!20}22 & \cellcolor{red!20}sim & \cellcolor{red!20}0,0 & \cellcolor{red!20}Negative \\  \hline
+  \cellcolor{red!30} A questao dos refugiados na Europa  & \cellcolor{red!30}29 & \cellcolor{red!30}sim & \cellcolor{red!30}0,5476 & \cellcolor{red!30}Negative \\  \hline
+  \cellcolor{green!27} O drama dos refugiados sirios e africanos que chegam a Calais, Franca  & \cellcolor{green!27}6 & \cellcolor{green!27}nao & \cellcolor{green!27}0,0 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Refugiados em Portugal - Muculmanos, Informacoes, Arabes, Abandono e nova vida  & \cellcolor{green!7}245 & \cellcolor{green!7}sim & \cellcolor{green!7}0,442 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{red!20} A crise de refugiados: Amnistia Portugal @RTP1  & \cellcolor{red!20}26 & \cellcolor{red!20}sim & \cellcolor{red!20}0,2352 & \cellcolor{red!20}Positive \\  \hline
+  \cellcolor{green!27} Portugal refugiados a chegar  & \cellcolor{green!27}7 & \cellcolor{green!27}nao & \cellcolor{green!27}0,7812 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} Em Portugal: 'refugiado' eritreu violou uma mulher sem-abrigo de 67 anos  & \cellcolor{green!7}38 & \cellcolor{green!7}sim & \cellcolor{green!7}0,6897 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Na Europa, Jean Wyllys esta dizendo que e Refugiado do Brasil.  & \cellcolor{green!27}488 & \cellcolor{green!27}sim & \cellcolor{green!27}1,1894 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Estes sao os 'refugiados' que a Europa recebe diariamente  & \cellcolor{green!7}193 & \cellcolor{green!7}sim & \cellcolor{green!7}0,4984 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Muculmanos de segunda geracao estao completamente integrados em Portugal  & \cellcolor{green!27}77 & \cellcolor{green!27}sim & \cellcolor{green!27}0,5199 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} Pedidos de asilo aumentam em Portugal  & \cellcolor{green!7}54 & \cellcolor{green!7}sim & \cellcolor{green!7}0,927 & \cellcolor{green!7}Negative \\  \hline
+  \cellcolor{green!27} Portugueses em Angola vivem bem mas nao gostam dos pretos no pais deles  & \cellcolor{green!27}2928 & \cellcolor{green!27}nao & \cellcolor{green!27}0,9834 & \cellcolor{green!27}Neutral \\  \hline
+  \cellcolor{green!7} NA SOMBRA DO PECADO - As Testemunhas de Jeova no documentario da TV de Portugal  & \cellcolor{green!7}51 & \cellcolor{green!7}sim & \cellcolor{green!7}0,2237 & \cellcolor{green!7}Positive \\  \hline
+  \cellcolor{green!27} Os portugueses sao racista? (xenofobo) (Brazucas em Portugal)  & \cellcolor{green!27}67 & \cellcolor{green!27}sim & \cellcolor{green!27}0,9893 & \cellcolor{green!27}Negative \\  \hline
+  \cellcolor{green!7} COMO AS MULHERES BRASILEIRAS SAO VISTAS EM PORTUGAL?  & \cellcolor{green!7}493 & \cellcolor{green!7}sim & \cellcolor{green!7}1,0802 & \cellcolor{green!7}Negative \\  \hline
+  
+\end{longtable}
+\end{center}
+\end{document}

@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_240.json :}\newline \par\Large\textbf {Title: \large  British Bangladeshi pupils from London miss the UK }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Yellow shirt boy is skkkresssed\normalsize   & \cellcolor{green!27}Yellow & \cellcolor{green!27}Ethnicity - Asian (East- China, Japan, Korea, Philippines, Vietnam), Nationality - Chinese, Nationality - Japanese & \cellcolor{green!27}3/5 & \cellcolor{green!27}60.0 \\  \hline
+  \cellcolor{green!5}\small To prove it's me the \textbf{bald} kid watch this video  [LINK]  and check on all the comments that I have made or replied to cheers 🍻 life's great back in the uk 🇬🇧 I love every minute fuck \textbf{brexit} Fuck Bangladesh 🇧🇩 for education 🖕\normalsize   & \cellcolor{green!5}Bald, Brexit & \cellcolor{green!5}Nationality - European or anti-Europeans, Physical Identity - Physical Features & \cellcolor{green!5}2/45 & \cellcolor{green!5}4.444 \\  \hline
+  \cellcolor{green!27}\small Labiba Firooz lol 😂 if u don't like the West don't visit it and make sure none of your folks are from uk 🇬🇧 or 🇺🇸 stick to the Middle East go to Saudi Arabia 🇸🇦 or Dubai  u will have a better life there. I was raised in a posh area my parents where from Bangladesh and my dad was bought up in Birmingham , he saved up p and he managed to raise us in Dorset Bournemouth. Plus I wasn't spoilt if I was spoilt I would of called child services back then , my dada and nana died while I was there for 3 years I said to both my parents mom and dad 'both of your dads have passed away now what are guys still waiting for in Bangladesh '' . Let me tell u after what my mom did to me abandoned me and my big bro and lil sister i said to her 'il make sure il put you in the cheapest nursing 🤱 home 🏡 when your \textbf{old} and Il look after my dad as he's the one going backwards and forwards to Bangladesh🇧🇩 because of work '. So that's culture for you right there il look after one of my parents but not both . It's said that u have to look after your parents when there \textbf{old} and the lady's move out of home to their husbands so I'm technically doing the right thing . Karmas a bitch nigga\normalsize   & \cellcolor{green!27}Nigga, Old & \cellcolor{green!27}Age - Over 65s, Ethnicity - Black & \cellcolor{green!27}3/248 & \cellcolor{green!27}1.21 \\  \hline
+  \cellcolor{green!5}\small Loool we got a \textbf{r\textbf{ed}} passport, y'all dont\normalsize   & \cellcolor{green!5}Red & \cellcolor{green!5} Ideological and Political Identity - General, Ethnicity - Native-American & \cellcolor{green!5}2/8 & \cellcolor{green!5}25.0 \\  \hline
+  \cellcolor{green!27}\small Mr \textbf{Crazy} Chicken Gaming racist\normalsize   & \cellcolor{green!27}Crazy, Racist & \cellcolor{green!27}Ethnicity - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/5 & \cellcolor{green!27}40.0 \\  \hline
+  \cellcolor{green!5}\small Lol 😂 Fuck off 🖕 my dad owns bare yards and property's he didn't claim benefit a day in his life. This is \textbf{bald} kid talking here, so you are wrong about your statement u made selling drugs and milk British benefits . I am paying for your benefits welfare intact I am your boss 💯\normalsize   & \cellcolor{green!5}Bald & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/56 & \cellcolor{green!5}1.786 \\  \hline
+  \cellcolor{green!27}\small "Foga" doesn't necessarily means u r \textbf{dumb}, it means u r from moulovibazar lol\normalsize   & \cellcolor{green!27}Dumb & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small The \textbf{bald} kid is a legend\normalsize   & \cellcolor{green!5}Bald & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Well can I ask you this have u ever been to a school in uk 🇬🇧 or USA 🇺🇸. ?If you haven't then u won't understand what us 3 have missed . Try teaching them freashys how to use a condom and explain to them the consequences of rape is like in a western country. I don't regret saying anything on that 20 min interview I talked about political stuff a lot even tho I never voted 🗳 in my life or support a party 🎉 . I spoke out the truth and \textbf{nothing} but the truth so help god /Allah...\normalsize   & \cellcolor{green!27}Nothing & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/101 & \cellcolor{green!27}0.99 \\  \hline
+  \cellcolor{green!5}\small F20 Huss the \textbf{bald} one he is my friend nd his older bro is my friend too it effected there education\normalsize   & \cellcolor{green!5}Bald & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/21 & \cellcolor{green!5}4.762 \\  \hline
+  \cellcolor{green!27}\small \@Fountain of Knowledge I think he's the \textbf{bald} one.\normalsize   & \cellcolor{green!27}Bald & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small CORRIGEEN71 Get a job you \textbf{racist} idiot\normalsize   & \cellcolor{green!5}Racist & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/7 & \cellcolor{green!5}14.286 \\  \hline
+  \cellcolor{green!27}\small \@Ibrahim Goob loooool on my life this guy is so tapped no wonder why he got sent back some weirdo\normalsize   & \cellcolor{green!27}Weirdo & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small Anyway final thing, Bangali parents love chatting shit to you , about stuff, i gave EVERY1 FACTS, so dont be pissed or upset ESPECIALLY FRESHY'S also if u still are a hater, then there is \textbf{nothing} much i can do, except tell you to go and stay at a Hostel for a year , then u will know what i mean. if you still hate then theres something wrong with or u have a vendetta against me. conclusion : this is a heads up for young bangalis who are about to go this country, u might be at risk.also APERECIATE\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/100 & \cellcolor{green!5}1.0 \\  \hline
+  \cellcolor{green!27}\small But still im getting death threats at BD, i do not do any drugs Allah has been watching me. you will see at Judgement day. \textbf{nothing} on that video is False Accounts, so still alot of banglai's a punching me, but i tried to hide my identity but people know me at my area .\normalsize   & \cellcolor{green!27}Nothing & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/55 & \cellcolor{green!27}1.818 \\  \hline
+  \cellcolor{green!5}\small Also Foga Dosent mean \textbf{dumb} , it also means foriegner, a GAI-GENE (outsider), the people who seen fast and furious 3 will understand better, anyway, i got sick and tired of people chatting shit behind my back. last but not least i have reacieved a few death threats from alot of bangalis at BD. well it dosent matter to me if you dont understand why i have said those 2 words, i had a shave head on that video and i didnt shave facial hair. i knew there would be a big problem about these 2 words.\normalsize   & \cellcolor{green!5}Dumb & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/97 & \cellcolor{green!5}1.031 \\  \hline
+  \cellcolor{green!27}\small Krazykaaki Kkk foga doesn't mean foreigner Bro . Foga is similar to \textbf{dumb}.  I'm his close friend I know he suffered many difficulties.\normalsize   & \cellcolor{green!27}Dumb & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/23 & \cellcolor{green!27}4.348 \\  \hline
+  \cellcolor{green!5}\small Hello everyone world wide, if your reading this you will want to know that i had to expose that bangladeshi boarding school. Heres why i said these two ridiculous words \textbf{SEX} EDUCATION \& FOGA. ''I have been to that Hostel for a long time maximum 2 years. Boys spanked my ass so much over there and had a few scuffle with them especially freshys. Anyway i Said \textbf{Sex} education because  none of these people dont understand about rape, touching other peoples body's and the risks. READ NEXT MESSAGE.\normalsize   & \cellcolor{green!5}Sex & \cellcolor{green!5}Gender - General & \cellcolor{green!5}2/88 & \cellcolor{green!5}2.273 \\  \hline
+  \cellcolor{green!27}\small Stfu you lil bitch \textbf{nigga} you not gonna do shit you fucking pussy\normalsize   & \cellcolor{green!27}Nigga, pussy & \cellcolor{green!27}Ethnicity - Black, Nationality - Chinese & \cellcolor{green!27}2/13 & \cellcolor{green!27}15.385 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Asian (East- China, Japan, Korea, Philippines, Vietnam)}  & \cellcolor{red!27}Yellow & \cellcolor{red!27}1 & \cellcolor{red!27}1/3992& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Chinese}  & \cellcolor{red!5}Yellow, pussy & \cellcolor{red!5}2 & \cellcolor{red!5}2/3992& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Japanese}  & \cellcolor{red!27}Yellow & \cellcolor{red!27}1 & \cellcolor{red!27}1/3992& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - European or anti-Europeans}  & \cellcolor{red!5}Brexit & \cellcolor{red!5}1 & \cellcolor{red!5}1/3992& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Bald & \cellcolor{red!27}5 & \cellcolor{red!27}5/3992& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}1 & \cellcolor{red!5}1/3992& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Nigga & \cellcolor{red!27}2 & \cellcolor{red!27}2/3992& \cellcolor{red!27}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Native-American}  & \cellcolor{red!5}Red & \cellcolor{red!5}1 & \cellcolor{red!5}1/3992& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27} Ideological and Political Identity - General}  & \cellcolor{red!27}Red & \cellcolor{red!27}1 & \cellcolor{red!27}1/3992& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racist & \cellcolor{red!5}2 & \cellcolor{red!5}2/3992& \cellcolor{red!5}0.05 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Crazy, Dumb, Weirdo & \cellcolor{red!27}5 & \cellcolor{red!27}5/3992& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Nothing & \cellcolor{red!5}3 & \cellcolor{red!5}3/3992& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Sex & \cellcolor{red!27}1 & \cellcolor{red!27}1/3992& \cellcolor{red!27}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Asian (East- China, Japan, Korea, Philippines, Vietnam);Nationality - Chinese;Nationality - Japanese;Nationality - European or anti-Europeans;Physical Identity - Physical Features;Age - Over 65s;Ethnicity - Black;Ethnicity - Native-American; Ideological and Political Identity - General;Ethnicity - General;Physical Identity - Physical (and Mental) Impairments;Age - Youngsters;Gender - General;%.
+
+\item The percentage of hate speech related words is 0.6513.
+
+\item Considering that the variable \textbf{Physical Identity - Physical Features} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 28/158 occurences of hate speech related comments.\end{itemize}\end{document}

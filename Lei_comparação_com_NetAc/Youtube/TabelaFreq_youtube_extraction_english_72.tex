@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_72.json :}\newline \par\Large\textbf {Title: \large  Sexism and data: When statistics hurt women | Crunched }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small \@Alek Mitev So, unsubscribe. I want this kind of content, millions want it. And is not propaganda, it is an open debate. If you want to lock yourself up into a cage or a bubble or become \textbf{deaf} instead of facing reality, this is not your place.\normalsize   & \cellcolor{green!27}Deaf & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/47 & \cellcolor{green!27}2.128 \\  \hline
+  \cellcolor{green!5}\small \@Naci Rema Oh yes when the dislike to like ratio is more than double in favour of the negative you know that "millions want this content". No, when people watch the news they want the truth being told in an unbiased manner. This is neither the truth, nor is it told in any sort of unbiased manner. I don't want to become \textbf{deaf}, I simply want to discourage ignorant content like this to be created which in turn creates ignorant and stupid people like you.\normalsize   & \cellcolor{green!5}Deaf & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/85 & \cellcolor{green!5}1.176 \\  \hline
+  \cellcolor{green!27}\small \@Alek Mitev 1.- Statistics show human priorities. Saying "statistics are sexists" is a thumbnail to hook your interest and rage (they got you, you clicked, you generate traffic through polemic... they monetize that... they won) That's what you can't understand (low IQ). They don't care about "likes rate". That's for inferior beings like you. 2.- Humans gathered in groups (corporations), have a \textbf{common} agenda, \textbf{common} interests and goals. You have your own with your people. We all are biased because we all see, seek and know just a portion of the reality spectrum which is complemented by other humans with opposite approaches and experiences. So, actually, you are enriching Financial Times news feed with your statements. 3.- News is what you see and report... but what you see and report is always a fraction of what others would see and report also. Facts are about actions (there is a fire in woods), information is about a subjective approach (there is a fire in woods and the information we've gattered tells us that...). You are dealing with humans with different brain capacities and cultural horizons... not with standardized pre-fabricated robotic models. 4.- Now you have a short-circuit. Go with mom, get some milk and cookies. Go to sleep. Grow up. The world is much more complex than your simple mind-logic.\normalsize   & \cellcolor{green!27}Common & \cellcolor{green!27}Social Class - Working class & \cellcolor{green!27}2/219 & \cellcolor{green!27}0.913 \\  \hline
+  \cellcolor{green!5}\small As much as I support equality, this isn't an informative video, nor does it do anything to promote any of the issues it seems to be attempting to supporting. It's just some bloke barraging a \textbf{woman} with a series of false equivalences and other logical fallacies. "This variable influenced X so X must be Y. If Y is the case then it must be due to <negative bias>." While the concept might have been worth a look, the actual argument falls apart, quite literally, in about two minutes. Which is impressive.\normalsize   & \cellcolor{green!5}Woman & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/91 & \cellcolor{green!5}1.099 \\  \hline
+  \cellcolor{green!27}\small A lot of the comments are strawmanning the presenters here. All they are trying to say is "sometimes there are disproportionate \textbf{gender} splits in aggregate statistics that often get ignored", and then offering some examples showing how this crops up even in places you might not expect.They're not really saying "therefore changes to transport funding are sexist"; nor are they doing any detailed analysis or making any conclusions. Of course the real issues and the decisions that need to be made are complex and need to consider lots of other factors - all this is saying is "lets try to make sure this factor is considered".\normalsize   & \cellcolor{green!27}Gender & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/107 & \cellcolor{green!27}0.935 \\  \hline
+  \cellcolor{green!5}\small I think you need a \textbf{gender} studies degree to make sense of anything they're saying.\normalsize   & \cellcolor{green!5}Gender & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Feminist grabs some statistics and starts interpreting....Guys, \textbf{gender} ratio using cars or public transport can vary but fact is investment into infrastructure like roads has a different economic value than investment into buses and sidewalks.One attracts foreign investment and the other attracts real estate gamblers making houses in affected area more expensive.\normalsize   & \cellcolor{green!27}Gender & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/57 & \cellcolor{green!27}1.754 \\  \hline
+  \cellcolor{green!5}\small Does not matter if the man or \textbf{woman} drives. A driver takes children to schools, wives or husband's to their jobs. It is only more \textbf{common} for men to drive in a historically predominantly patriarchic society. 59 vs 49 needs interpretation. Data is complex whereas your brain seems not to be.Also buses use roads. And road infrastructure attract investment, public transport only leads to real estate price exploding. \textbf{Sexism} and Feminism can not be copy pasted on all topics.\normalsize   & \cellcolor{green!5}Common, Sexism, Woman & \cellcolor{green!5}Gender - General, Social Class - Working class & \cellcolor{green!5}3/80 & \cellcolor{green!5}3.75 \\  \hline
+  \cellcolor{green!27}\small Its not the data/statics that are sexists... its the failure of the data collector or the limits of the collected data that restrict the usefulness of the conclusions derived from the current data set. Bias such as "\textbf{sexism}" is something that should be able to be mitigated through a thoughtful study and thorough discovery (data collection). There are loads of reasons why limitations might arise: limited access to availible data, lack of historic records, resistance to data collection (such as privacy concerns)... Then there are limits on the data analysis: data say \textbf{nothing}, sets are always interpreted. Numbers are numbers... data is data: without knowing how the data was collected and under what criteria it was gathered, we can't use that data correctly. Data are often abused by "showing" conclusions that the methods of collecting and the range sought can never justify.\normalsize   & \cellcolor{green!27}Nothing, Sexism & \cellcolor{green!27}Age - Youngsters, Gender - General & \cellcolor{green!27}2/142 & \cellcolor{green!27}1.408 \\  \hline
+  \cellcolor{green!5}\small Is it possible that cars are prioritized over public transport because car owners contribute more to the GDP (and I'm saying this as a public transport user)? Also, making a title something like "Unpacking \textbf{gender} disparities in statistics" would have saved you from most of the dislikes.\normalsize   & \cellcolor{green!5}Gender & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/47 & \cellcolor{green!5}2.128 \\  \hline
+  \cellcolor{green!27}\small how on earth can you conclude it is \textbf{gender} bias when there can be numerous other factors at play that you haven't ruled out?\normalsize   & \cellcolor{green!27}Gender & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/24 & \cellcolor{green!27}4.167 \\  \hline
+  \cellcolor{green!5}\small Geographical distribution and \textbf{age} being key. On tube in london, on trains to and from london and on bus out of london traveling at peak time I don't see a female majority (quite the opposite) which suggests time of travel is a factor as well. Funny I would assume journalists focused on data would understand that, espesially if making an argument criticising using hifh level statistics.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/66 & \cellcolor{green!5}1.515 \\  \hline
+  \cellcolor{green!27}\small road transport is male dominated 'so' all money to build roads is benefiting men 'so' because its men its \textbf{sexism}. Flawless logic, I've cracked it. If men are involved, it is sexist 100 that's a statistical fact.\normalsize   & \cellcolor{green!27}Sexism & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/37 & \cellcolor{green!27}2.703 \\  \hline
+  \cellcolor{green!5}\small typical \textbf{woman} had to write men and women next to each category rather than just once on the left....\normalsize   & \cellcolor{green!5}Woman & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small Cuts in funding to bus services affects bus users who are disproportionately female.. and (for example) cuts to the Crown Prosecution Service affects accused criminals who are diprotionately male. Of all the interesting statistics to attempt to correlate with these trends (e.g. carbon emissions, quality of life metrics, urbanisation rates, \textbf{mental} health stats, crime rates etc) the \textbf{gender} angle is remarkably boring.\normalsize   & \cellcolor{green!27}Gender, Mental & \cellcolor{green!27}Gender - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/62 & \cellcolor{green!27}3.226 \\  \hline
+  \cellcolor{green!5}\small The most \textbf{common} form of travel for both men and women is cars, but funding roads for cars is somehow a problem?\normalsize   & \cellcolor{green!5}Common & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/22 & \cellcolor{green!5}4.545 \\  \hline
+  \cellcolor{green!27}\small This is some serious nitpicking. You do realise that busses use roads as well right? There are also statistics that favour women over men. One concerning one is the rate of suicide amongst men or drug and \textbf{alcohol} abuse. These statistics aren't helping get more funding for mens services. As a matter of fact they are non-existent compared to the amount that women have access to.Statistics being sexist is not mens fault. Don't pull out data examples that only prove how \textbf{gender} biased data is towards men and then say that it's \textbf{sexism}. I'm sure there's plenty of data in other areas to balance out the notion of who is perpetrating the \textbf{sexism}. There's plenty of female statisticians.\normalsize   & \cellcolor{green!27}Gender, Sexism, alcohol & \cellcolor{green!27}Behavioural Addiction - Alcohol, Gender - General & \cellcolor{green!27}4/119 & \cellcolor{green!27}3.361 \\  \hline
+  \cellcolor{green!5}\small The issue here is more around data collection, processes to ensure good quality data and the breakdown of the sample rather than the data itself being sexist. Also, in society you aren't likely to have equal numbers of men and women participating in all areas of life, so certain policies might slightly impact one \textbf{gender} more than the other, but no one is preventing more women from driving rather than commuting via buses. Perhaps there are also other reasons why there are differences, such as men working further from home than women. Ultimately the data shines light on these differences.\normalsize   & \cellcolor{green!5}Gender & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/100 & \cellcolor{green!5}1.0 \\  \hline
+  \cellcolor{green!27}\small Oh I am sorry. Statistics and facts are sexist. Don't worry. Just be careful when you go to sleep as this \textbf{patriarchy} you fear so much is probably hiding under your bed.\normalsize   & \cellcolor{green!27}Patriarchy & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/32 & \cellcolor{green!27}3.125 \\  \hline
+  \cellcolor{green!5}\small man feminists are so lame\normalsize   & \cellcolor{green!5}Lame & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small and \textbf{nothing} about when big data company culture hurts men.\normalsize   & \cellcolor{green!27}Nothing & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small Let me Mansplain to you why Statistics are actually part of the \textbf{patriarchy}!\normalsize   & \cellcolor{green!5}Patriarchy & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small No you have not proofen anything, except that you don't have a clue of how statistics work, with all due respect.Most examples are not a sign of bias, but simple facts. Spending is NOT by \textbf{gender}. It's by NEED. Travelling by car is not a priviledge it's a hassle. Also if spend is on something that a majority of men use, it is still not by \textbf{sex} (a minority of women still use the same so its to their benefits too). Also most people live in families and contribute back to those families. So any spend to benefit one familiy member benfits all other members. The whole video is premissed on hogwash.\normalsize   & \cellcolor{green!27}Gender, Sex & \cellcolor{green!27}Gender - General & \cellcolor{green!27}2/113 & \cellcolor{green!27}1.77 \\  \hline
+  \cellcolor{green!5}\small Sexism is sexist. Statistics are not.\normalsize   & \cellcolor{green!5}Sexism & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Deaf, Mental, Lame & \cellcolor{red!27}4 & \cellcolor{red!27}4/3590& \cellcolor{red!27}0.11 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Common & \cellcolor{red!5}3 & \cellcolor{red!5}3/3590& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Woman, Gender, Sexism, Patriarchy, Sex & \cellcolor{red!27}21 & \cellcolor{red!27}21/3590& \cellcolor{red!27}0.58 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Nothing & \cellcolor{red!5}2 & \cellcolor{red!5}2/3590& \cellcolor{red!5}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age & \cellcolor{red!27}1 & \cellcolor{red!27}1/3590& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Behavioural Addiction - Alcohol}  & \cellcolor{red!5}alcohol & \cellcolor{red!5}1 & \cellcolor{red!5}1/3590& \cellcolor{red!5}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Social Class - Working class;Gender - General;Age - Youngsters;Age - General;Behavioural Addiction - Alcohol;%.
+
+\item The percentage of hate speech related words is 0.8914.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 33/90 occurences of hate speech related comments.\end{itemize}\end{document}

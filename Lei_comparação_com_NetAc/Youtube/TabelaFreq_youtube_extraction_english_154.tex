@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_154.json :}\newline \par\Large\textbf {Title: \large  The Weird Thing About Ageism }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Nah Rom you are not \textbf{old}. You look like a young soul in an older body. You are how you feel.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/21 & \cellcolor{green!27}4.762 \\  \hline
+  \cellcolor{green!5}\small Hey Rom. Since you brought up the subject of \textbf{age}, can you address the topic, "hitting the wall" in relation to women and men aging. I hate to hear men dogging women for becoming something inevitable, older, as if their mothers and grandmother's didn't \textbf{age}. That's \textbf{lame}! \textbf{Black} women are some of the most beautiful, aging creations on earth! The mantra, "\textbf{Black} don't crack" is REAL!\normalsize   & \cellcolor{green!5}Age, Black, Lame & \cellcolor{green!5}Age - General, Ethnicity - Black, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}5/66 & \cellcolor{green!5}7.576 \\  \hline
+  \cellcolor{green!27}\small I was blocked from a prominent male Youtubers page because I disagreed with his idea that \textbf{woman} reach middle \textbf{age} at 30. This unmarried man is over 50 and claimed that he wouldn't consider dating a \textbf{woman} over 33 lol. I think that \textbf{ageism} is a weak minded person's way of a put down because \textbf{age} is something that is \textbf{black} and white and can't be argued. Only a man of poor character who doesn't appeal to women in their \textbf{age} bracket down women for their \textbf{age}.\normalsize   & \cellcolor{green!27}Age, Ageism, Black, Woman & \cellcolor{green!27}Age - General, Ethnicity - Black, Gender - General & \cellcolor{green!27}8/87 & \cellcolor{green!27}9.195 \\  \hline
+  \cellcolor{green!5}\small Shit at least we made it at their rate maybe not. I don't talk to young people about \textbf{nothing}. No advice and i absolutely mean \textbf{nothing}. find out bitch on your own. Even my Damn family.  It's not my generation and I don't five a fuck.\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}2/46 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small Forget the wise \textbf{old} owl, wiseromwills\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Ageism. \textbf{Racism}, whatever isms. We cant just openly exclude people but America is finding more subtle ways to do this. It's just another way to remove ppl out of the conversation and ultimately exterminate them. The second leading cause of death in the us is  now is suicide. Anyway stay strong folks, show some humanity for each other and acknowledge each other. Peace\normalsize   & \cellcolor{green!5}Ageism, Racism & \cellcolor{green!5}Age - General, Ethnicity - General & \cellcolor{green!5}2/63 & \cellcolor{green!5}3.175 \\  \hline
+  \cellcolor{green!27}\small I did like the \textbf{old} Cats told me to do as a kid growing up in the ATL, 'kept waking up'. Next thing I know I was the older Cat, 50. I found out that everything they told me pretty much was right. Glad I listened to their game. Younger dude need to pull out coats to learn this \textbf{Black} man game like we did. It'll save em a lot of mistakes, time and money.\normalsize   & \cellcolor{green!27}Black, Old & \cellcolor{green!27}Age - Over 65s, Ethnicity - Black & \cellcolor{green!27}2/75 & \cellcolor{green!27}2.667 \\  \hline
+  \cellcolor{green!5}\small The new generation that listen to all this mumble rap bs are the ones that started really disrespecting they elders. It's cool, they're going to look 60 at the \textbf{age} 30.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/31 & \cellcolor{green!5}3.226 \\  \hline
+  \cellcolor{green!27}\small 💯💯💯 My response is the same when someone says something about being \textbf{old}, washed up, hit the wall or whatever. I'm like what was the other alternative to hitting the wall?? Death is the only way to forever preserve your youth. I'll take growing \textbf{old}. For me it's an opportunity to be here and watch any descendants I may have navigate life!! I can help to steer them down a better path than the one I took. I can help them when they need help. All four of my grandparents are still alive and they are 90+. I hope to be here for even longer than that! Here's to growing \textbf{old} 🥂🍾🍸\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}3/112 & \cellcolor{green!27}2.679 \\  \hline
+  \cellcolor{green!5}\small lmao exactly.  Everyone gets \textbf{old} so what's the big deal exactly?  Better \textbf{old} than dead I say.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}2/17 & \cellcolor{green!5}11.765 \\  \hline
+  \cellcolor{green!27}\small That's is so \textbf{common} nowadays with young people, calling mature men - \textbf{OLD} HEAD... RFLMAO - The Flow.....I'm glad you addressed this - The \textbf{disabled} group is forgot (Great point)\normalsize   & \cellcolor{green!27}Common, Disabled, Old & \cellcolor{green!27}Age - Over 65s, Physical Identity - Physical (and Mental) Impairments, Social Class - Working class & \cellcolor{green!27}3/30 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small I fully agree with you Uncle Rom.  I hope I live a long life and continue to look young for my \textbf{age} at 36. Mixed \textbf{race} relationships have been happening since the dawn of time.\normalsize   & \cellcolor{green!5}Age, Race & \cellcolor{green!5}Age - General, Ethnicity - General & \cellcolor{green!5}2/35 & \cellcolor{green!5}5.714 \\  \hline
+  \cellcolor{green!27}\small Great point!! I've noticed that being older is more of a negative thing amongst us \textbf{black} people!! Young \textbf{black} people are quick to call you \textbf{old} to make it seem like your not important!! Seems like we have gotten away from respecting our elders!!\normalsize   & \cellcolor{green!27}Black, Old & \cellcolor{green!27}Age - Over 65s, Ethnicity - Black & \cellcolor{green!27}3/44 & \cellcolor{green!27}6.818 \\  \hline
+  \cellcolor{green!5}\small It's unfortunate.   Elders, especially \textbf{Black} ones, have shown they had what it takes to survive.  They are a resource.\normalsize   & \cellcolor{green!5}Black & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small Today's youths only think about what is " instant" and now...  Most young adults don't respect their elders... They cuss, talk nasty and are down right just ugly acting.. They tape and post " Everything".. If you tell them there's a monster at the end of the road.. They will respond, how big is it and does it have a name?  With \textbf{age} comes wisdom.. Is a saying you really don't understand until you have lived 40+ years.." Keep on trucking" to the 50+, still doing it and doing it well... There are a large number of adults < 50 with serious illness and laying up in a Hospital bed.. Excellent Topic! Mr.Rom..\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/113 & \cellcolor{green!27}0.885 \\  \hline
+  \cellcolor{green!5}\small Unfortunately most don't realize that we all \textbf{age} until after 30, for some even 40. Delusion lacks foresight and many young Americans fail to plan beyond their upcoming weekend party. Times are certainly changing and aging is that truth that exemplifies our vulnerability as mortals. Aging in the past was seen as an honorable process but then commerce became one of the highest honors and corporations created anti aging creams, Botox and other illusions. The saying goes everyone wants to get to heaven but no one wants to die.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/89 & \cellcolor{green!5}1.124 \\  \hline
+  \cellcolor{green!27}\small Well said. This is why I laugh when people mention women hitting the wall. We ALL will hit the wall. It's called aging! The only way to escape it is to die. Take care of your health (\textbf{mental}, physical, emotional, spiritual and financial) when you're young and you'll \textbf{age} gracefully.\normalsize   & \cellcolor{green!27}Age, Mental & \cellcolor{green!27}Age - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/50 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small Well be older. Wisdom ought to come with \textbf{age}. Older is better than DEAD any day.😕 I still wanna be young forever like 50 year olds who out work the "young uns". 😊.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/33 & \cellcolor{green!5}3.03 \\  \hline
+  \cellcolor{green!27}\small The older I get , the better I look , I'm 36 and I date tons of 18 years \textbf{old} girls that the younger guys will never have , I'm  NPC BODYBUILDER COMPITTITOR and fitness model and as long as you take care of yourself mentally,  physically,  emotionally and spiritually,  \textbf{age} will be just a number .\normalsize   & \cellcolor{green!27}Age, Old & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}2/57 & \cellcolor{green!27}3.509 \\  \hline
+  \cellcolor{green!5}\small The best talk yet bruh, They say it like it's a bad thing to have \textbf{age} and platinum hair lmao\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/20 & \cellcolor{green!5}5.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old & \cellcolor{red!27}11 & \cellcolor{red!27}11/1483& \cellcolor{red!27}0.74 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Age, Ageism & \cellcolor{red!5}15 & \cellcolor{red!5}15/1483& \cellcolor{red!5}1.01 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Black & \cellcolor{red!27}6 & \cellcolor{red!27}6/1483& \cellcolor{red!27}0.4 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Lame, Disabled, Mental & \cellcolor{red!5}3 & \cellcolor{red!5}3/1483& \cellcolor{red!5}0.2 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Woman & \cellcolor{red!27}1 & \cellcolor{red!27}1/1483& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Nothing & \cellcolor{red!5}1 & \cellcolor{red!5}1/1483& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racism, Race & \cellcolor{red!27}2 & \cellcolor{red!27}2/1483& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Common & \cellcolor{red!5}1 & \cellcolor{red!5}1/1483& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Age - General;Ethnicity - Black;Physical Identity - Physical (and Mental) Impairments;Gender - General;Age - Youngsters;Ethnicity - General;Social Class - Working class;%.
+
+\item The percentage of hate speech related words is 2.6972.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 44/48 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_124.json :}\newline \par\Large\textbf {Title: \large  Ageism in the Workplace }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small I wrote this song. It is about \textbf{age} and employment. evolvewithme  [LINK] \normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small What the f..ck is \textbf{old}, anyway? I'm 47 and in better shape than 90 of the human population. American people have lost their minds.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/24 & \cellcolor{green!5}4.167 \\  \hline
+  \cellcolor{green!27}\small (0:21) Typical Canadian \textbf{woman}?\normalsize   & \cellcolor{green!27}Woman & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small Retirement \& pensions are a carrot used to keep you motivated when you are younger. What if people do not want to retire?...I don't! But I do want employers to see the 30 years of very wide experience I can bring to a company. Sure, my qualifications are \textbf{old} but these are only the things you use to get a job in your first 5 years anyway...after that the study subject is out of date so it is experience which should be able to drive you along.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/87 & \cellcolor{green!5}1.149 \\  \hline
+  \cellcolor{green!27}\small Isn't that sweet? First, you can't get a job because you have no experience. Now, you can't get a job because you are fucking \textbf{old}. Why would anyone want to hold a traditional job or if you do, why would you trust your employer? I see a  labor versus management situation cropping up for Western society all over again. I think this time around the government WILL not be able to do shit. It'll be a world of strikes over anything...anything.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/81 & \cellcolor{green!27}1.235 \\  \hline
+  \cellcolor{green!5}\small Changing career at 50 is insane. At such \textbf{age} one should be focused on his own business.  [LINK] I'm against \textbf{age} discrimination but I will surely not want someone that's 50 and above to work for me, except if he or she has been in the business for a long time.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}2/51 & \cellcolor{green!5}3.922 \\  \hline
+  \cellcolor{green!27}\small 30 years ago all the supervisor and bosses were 35 to 40 and up and stayed for life. The older people were respected and had more knowledge and experience than any 24 year \textbf{old} would. It just makes sense.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/39 & \cellcolor{green!27}2.564 \\  \hline
+  \cellcolor{green!5}\small \@Rosy McGee I dont see any 50 yr \textbf{old} women in retail in ottawa\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/14 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small Are there jobs for everyone ? Young and \textbf{old}. No one talks about that.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small I find the people speaking to be very biased about older people. I mean.. older people are just older people they already had their chance and lived it. Employers avoid older people not because they hate older people but because there are YOUNGER people who are ready to work and start their lives. And thats the thing about retirement. It gives the chance for younger people to get in the market. I know in jobs like engineering when a \textbf{senior} engineer retires the intermediate engineer becomes the \textbf{senior} and takes his/er place and then the company hires a junior and starts training him.\normalsize   & \cellcolor{green!5}Senior & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}2/103 & \cellcolor{green!5}1.942 \\  \hline
+  \cellcolor{green!27}\small To expect an older person to step aside and let the young one's have opportunities is blatantly \textbf{ageist}. Our narcissistic society hates older people. Period.\normalsize   & \cellcolor{green!27}Ageist & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small SilvanaDil, expecting and older person to step aside is \textbf{ageist}. And entitled. By working, perhaps he is keeping your friends employed by spending money on his children, grandchildren, Starbucks, Target,  etc. His supporting his family is helping tbe economy. You're going to be \textbf{old}. If you're lucky.\normalsize   & \cellcolor{green!5}Ageist, Old & \cellcolor{green!5}Age - General, Age - Over 65s & \cellcolor{green!5}2/47 & \cellcolor{green!5}4.255 \\  \hline
+  \cellcolor{green!27}\small \@L D some cultures think 40 is \textbf{old}. I am over 45 and cannot find a stitch of work for 5 years now.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/23 & \cellcolor{green!27}4.348 \\  \hline
+  \cellcolor{green!5}\small I wanna make a caramel \textbf{coloured} baby with you\normalsize   & \cellcolor{green!5}coloured & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/9 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small Your name is "stop \textbf{racism} and PREJUDICE" lol\normalsize   & \cellcolor{green!27}Racism & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/8 & \cellcolor{green!27}12.5 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age, Ageist & \cellcolor{red!27}5 & \cellcolor{red!27}5/1040& \cellcolor{red!27}0.48 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old, Senior & \cellcolor{red!5}10 & \cellcolor{red!5}10/1040& \cellcolor{red!5}0.96 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Woman & \cellcolor{red!27}1 & \cellcolor{red!27}1/1040& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}coloured & \cellcolor{red!5}1 & \cellcolor{red!5}1/1040& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racism & \cellcolor{red!27}1 & \cellcolor{red!27}1/1040& \cellcolor{red!27}0.1 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Gender - General;Ethnicity - Black;Ethnicity - General;%.
+
+\item The percentage of hate speech related words is 1.7308.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 18/39 occurences of hate speech related comments.\end{itemize}\end{document}

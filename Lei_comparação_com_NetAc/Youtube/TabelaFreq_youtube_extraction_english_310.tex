@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_310.json :}\newline \par\Large\textbf {Title: \large  Facebook Bans White Nationalism On Its Platform }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Global world population.65 Asian(growing).17 \textbf{Black}(growing rapidly).10 White(in decline). 8 other.\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small Sounds like white people should stop being the only \textbf{race} trying to start a war among races\normalsize   & \cellcolor{green!5}Race & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/17 & \cellcolor{green!5}5.882 \\  \hline
+  \cellcolor{green!27}\small If you say it's okay to be a \textbf{racist}, I say it's okay to jail you for domestic terrorism.\normalsize   & \cellcolor{green!27}Racist & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small Trump supporters suck, they are the Lowest people in the \textbf{nation}.\normalsize   & \cellcolor{green!5}Nation & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Black & \cellcolor{red!27}1 & \cellcolor{red!27}1/271& \cellcolor{red!27}0.37 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Race, Racist & \cellcolor{red!5}2 & \cellcolor{red!5}2/271& \cellcolor{red!5}0.74 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Nation & \cellcolor{red!27}1 & \cellcolor{red!27}1/271& \cellcolor{red!27}0.37 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Black;Ethnicity - General;Nationality - General;%.
+
+\item The percentage of hate speech related words is 1.476.
+
+\item Considering that the variable \textbf{Ethnicity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/16 occurences of hate speech related comments.\end{itemize}\end{document}

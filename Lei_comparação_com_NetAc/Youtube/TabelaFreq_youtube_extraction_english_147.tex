@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_147.json :}\newline \par\Large\textbf {Title: \large  Millennials Facing Ageism in the Workplace }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small This reminds me of white people who complain about being discriminated against. Millennials, in my experience, are incredibly \textbf{ageist}, so I'd say, "Look in the mirror first before judging."\normalsize   & \cellcolor{green!27}Ageist & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/29 & \cellcolor{green!27}3.448 \\  \hline
+  \cellcolor{green!5}\small I think as a society in general we need to address \textbf{ageism}. These are all great examples. Agism is most prevalent in the work place. However for some it's also a part of day to day life. Personally in my section of Georgia your ideas and opinions aren't worth anything until your twenty five at least. "Your a child" is something I still hear at eighteen\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/66 & \cellcolor{green!5}1.515 \\  \hline
+  \cellcolor{green!27}\small Ageism?? Millennials?? Thought it was a Gen X and Baby Boomers problem for being over 40.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small Yeah, this is ridiculous. Young people are given many more opportunities in my workplace, while anyone over forty is left out. And, I have many times heard younger workers saying that older people need to "hurry up and retire" to get out of the way of their desires for advancement. Millenials, in my experience, are VERY \textbf{ageist}, so it seems ridiculous to paint them as victims of it.\normalsize   & \cellcolor{green!5}Ageist & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/68 & \cellcolor{green!5}1.471 \\  \hline
+  \cellcolor{green!27}\small \@Nicole Dean I believe this depends on what field you're in. Im an early intervention speech therapist and I get discriminated against a LOT. I have random teachers disrupt my therapy bsessions, ask me multiple times whether I have a master's degree (which in fact I do) and others who just treat me badly and later ask how \textbf{old} I am so they can laugh in my face. So I would have to disagree with you.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/76 & \cellcolor{green!27}1.316 \\  \hline
+  \cellcolor{green!5}\small \@BeautifullyMade 0627 So you think it's terrible that you get treated that way, but it's perfectly okay when older people are teased, put down (as they are constantly in our culture), and told to "hurry up and retire"? That's called a double standard. Basically, it is only a problem if it effects you, right? Yes, you can be assumed incompetent if you are young, which is wrong, but that is \textbf{nothing} compared to how we marginalize older people. Getting older is almost always seen as undesirable in our culture, while being and looking young forever is the eternally illusive (and pathetic) goal for many. Young people trying to make \textbf{ageism} all about them is asinine and completely self-centered.\normalsize   & \cellcolor{green!5}Ageism, Nothing & \cellcolor{green!5}Age - General, Age - Youngsters & \cellcolor{green!5}2/118 & \cellcolor{green!5}1.695 \\  \hline
+  \cellcolor{green!27}\small \@Nicole Dean huh? What are you talking about. I NEVER SAID that it was okay. You tried to downplay reverse \textbf{ageism} saying that we (as young people) don't go through anything and they were given better privileges. All I was saying is that that's not the case for every profession. I suggest reading and thinking before blindly replying.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/58 & \cellcolor{green!27}1.724 \\  \hline
+  \cellcolor{green!5}\small \@BeautifullyMade 0627 Lol. I didn't say anything if the sort. I said right in my response that it was wrong.A simple summation for you: The \textbf{ageism} that young people experience is minor and inconsequential compared to what older people face. Please educate yourself:   [LINK] \normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/44 & \cellcolor{green!5}2.273 \\  \hline
+  \cellcolor{green!27}\small Ageism only effects Millennials, and is never talked about.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small such a helpful video! I'm presenting on \textbf{ageism} in the workplace, particularly young professionals, for my graduate school program. This is truly a great start as I begin researching. Thank you! Well done\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/33 & \cellcolor{green!5}3.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Ageist, Ageism & \cellcolor{red!27}9 & \cellcolor{red!27}9/604& \cellcolor{red!27}1.49 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}1 & \cellcolor{red!5}1/604& \cellcolor{red!5}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Nothing & \cellcolor{red!27}1 & \cellcolor{red!27}1/604& \cellcolor{red!27}0.16999999999999998 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Age - Youngsters;%.
+
+\item The percentage of hate speech related words is 1.8212.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 11/17 occurences of hate speech related comments.\end{itemize}\end{document}

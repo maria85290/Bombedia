@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_270.json :}\newline \par\Large\textbf {Title: \large  Is Europe failing to counter anti-Semitism? | DW News }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Nobody is forcing it's ideology on you. Do you know how force works?\normalsize   & \cellcolor{green!27}Nobody & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small not original enough to come up with a cool name You are an American.You will never have one percent idea how the \textbf{old} world works!😊😊😊\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small \@aditya nawani1. I'm German, not American  and 2. why would you have more of an Idea of how the \textbf{old} world works than me? What \textbf{old} world are you even talking about?\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}2/32 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small \@aditya nawani Thinking knowledge is limited to a \textbf{nationality} is ignorant.\normalsize   & \cellcolor{green!5}Nationality & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Right, it's straight \textbf{xenophobia}...\normalsize   & \cellcolor{green!27}Xenophobia & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small I can tell you are a white weirdo\normalsize   & \cellcolor{green!5}Weirdo & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small What? The \textbf{Y\textbf{e\textbf{llow}}} vest movement litterly protested against the government. There is alot of debate and discourse.\normalsize   & \cellcolor{green!27}Yellow & \cellcolor{green!27}Ethnicity - Asian (East- China, Japan, Korea, Philippines, Vietnam), Nationality - Chinese, Nationality - Japanese & \cellcolor{green!27}3/17 & \cellcolor{green!27}17.647 \\  \hline
+  \cellcolor{green!5}\small They're all muslims and Europe has done \textbf{nothing} to stop them.\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Depends. Do you feel that all homogeneous religious states should be dissolved? If not then yes it's \textbf{racist}.\normalsize   & \cellcolor{green!27}Racist & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small This isn't about anti-Zionism, this is about \textbf{racism}. What do Jews born and living in France have to do with Israel?\normalsize   & \cellcolor{green!5}Racism & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/21 & \cellcolor{green!5}4.762 \\  \hline
+  \cellcolor{green!27}\small \@Chris Koay we stand by and watch Israel slaughter Palestinians and commit war crimes and do \textbf{nothing}. So I seriously doubt that we will drop them. I wish they just treated on equal par with other countries. Not as a little brother\normalsize   & \cellcolor{green!27}Nothing & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/42 & \cellcolor{green!27}2.381 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Nobody, Nothing & \cellcolor{red!27}3 & \cellcolor{red!27}3/1802& \cellcolor{red!27}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}3 & \cellcolor{red!5}3/1802& \cellcolor{red!5}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Nationality, Xenophobia & \cellcolor{red!27}2 & \cellcolor{red!27}2/1802& \cellcolor{red!27}0.11 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Weirdo & \cellcolor{red!5}1 & \cellcolor{red!5}1/1802& \cellcolor{red!5}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Asian (East- China, Japan, Korea, Philippines, Vietnam)}  & \cellcolor{red!27}Yellow & \cellcolor{red!27}1 & \cellcolor{red!27}1/1802& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Chinese}  & \cellcolor{red!5}Yellow & \cellcolor{red!5}1 & \cellcolor{red!5}1/1802& \cellcolor{red!5}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Japanese}  & \cellcolor{red!27}Yellow & \cellcolor{red!27}1 & \cellcolor{red!27}1/1802& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racist, Racism & \cellcolor{red!5}2 & \cellcolor{red!5}2/1802& \cellcolor{red!5}0.11 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Youngsters;Age - Over 65s;Nationality - General;Physical Identity - Physical (and Mental) Impairments;Ethnicity - Asian (East- China, Japan, Korea, Philippines, Vietnam);Nationality - Chinese;Nationality - Japanese;Ethnicity - General;%.
+
+\item The percentage of hate speech related words is 0.7769.
+
+\item Considering that the variable \textbf{Age - Youngsters} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 14/116 occurences of hate speech related comments.\end{itemize}\end{document}

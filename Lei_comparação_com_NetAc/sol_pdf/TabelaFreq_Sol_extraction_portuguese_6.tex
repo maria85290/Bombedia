@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_6.json :}\newline \par\Large\textbf {Title: \large  Marido de Goucha indignado com alojamento de migrantes em Lisboa: "Portugueses sem-abrigo vagueiam ao frio" }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Eu não fico indignado...temos que perceber uma coisa, a maior parte dos sem abrigo não querem sair dessa vida, estão sem abrigo por opção! E, já agora, que os meta na quinta deles...eu acho que a indignação deste sujeito é mais a de um \textbf{racista}.\normalsize   & \cellcolor{green!27}Racista & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/45 & \cellcolor{green!27}2.222 \\  \hline
+  \cellcolor{green!5}\small a orientação \textbf{sexual} desta personagem não condiz com a orientação fascista e chegófila!!!\normalsize   & \cellcolor{green!5}Sexual & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small o que é que tem a ver a bota com a perdigota  .... não será porque  em Marrocos se matar  os  que tem a orientação \textbf{sexual}  igual a do senhor ....\normalsize   & \cellcolor{green!27}Sexual & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/31 & \cellcolor{green!27}3.226 \\  \hline
+  \cellcolor{green!5}\small Os sem abrigo se quiserem melhores condições devem pedir \textbf{nacionalidade} marroquina.<br/>O Estado trata melhor os outros do que os nossos.💩💩\normalsize   & \cellcolor{green!5}Nacionalidade & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/20 & \cellcolor{green!5}5.0 \\  \hline
+  \cellcolor{green!27}\small Não acredito nessa treta. São esses mesmos que promovem os blocos, livres e PCP...tudo comunistas. O Goucha disfarça um pouco, faz de conta...mas a maneira como trata os partidos anti-brancos e anti-polícias...diz tudo. Quando convidou O Ventura, parecia um interrogatório. Com a Joaquina perdeu o pio, não metia nada em dúvida. É óbvio que promovem as políticas comunistas...que desjam esta invasão. Aínda por cima, dão-lhes a \textbf{nacionalidade}. Imaginem em quem irão votar!!\normalsize   & \cellcolor{green!27}Nacionalidade & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/72 & \cellcolor{green!27}1.389 \\  \hline
+  \cellcolor{green!5}\small Depois dessa conversa vais para a igreja como uma boa hipócrita católica pregar a igualdade. És uma \textbf{v\textbf{elha}} azeda.\normalsize   & \cellcolor{green!5}Velha & \cellcolor{green!5}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!5}2/19 & \cellcolor{green!5}10.526 \\  \hline
+  \cellcolor{green!27}\small É fácil, os sem abrigo portugueses vão até marrocos ou a um qualquer sítio da "selva" corrupta \textbf{africana}, metem-se num bote e entram em Portugal, terão logo acolhimento de 1ª, hotel 5 estrelas, selfies com os "papagaios-mor", fama...o mundo ao contrário...\normalsize   & \cellcolor{green!27}Africana & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/41 & \cellcolor{green!27}2.439 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racista & \cellcolor{red!27}1 & \cellcolor{red!27}1/1394& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Sexual & \cellcolor{red!5}2 & \cellcolor{red!5}2/1394& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Nacionalidade & \cellcolor{red!27}2 & \cellcolor{red!27}2/1394& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female age and physical appearance}  & \cellcolor{red!5}Velha & \cellcolor{red!5}1 & \cellcolor{red!5}1/1394& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velha & \cellcolor{red!27}1 & \cellcolor{red!27}1/1394& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Africana & \cellcolor{red!5}1 & \cellcolor{red!5}1/1394& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - General;Gender - General;Nationality - General;Gender - Female age and physical appearance;Age - Over 65s;Ethnicity - Black;%.
+
+\item The percentage of hate speech related words is 0.5739.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 8/40 occurences of hate speech related comments.\end{itemize}\end{document}

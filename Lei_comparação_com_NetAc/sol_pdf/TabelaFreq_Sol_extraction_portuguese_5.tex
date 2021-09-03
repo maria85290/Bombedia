@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_5.json :}\newline \par\Large\textbf {Title: \large  Ele não está na TVI e não estará mais. Marido de Goucha expulso da estação de Queluz de Baixo }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Lixo e sempre lixo, quer seja colocado no saco \textbf{a\textbf{marelo}}, azul ou \textbf{preto}.Presumo que na TVI existam caixotes suficientes.\normalsize   & \cellcolor{green!27}Amarelo, Preto & \cellcolor{green!27}Ethnicity - Black, Nationality - Chinese, Nationality - Japanese & \cellcolor{green!27}3/19 & \cellcolor{green!27}15.789 \\  \hline
+  \cellcolor{green!5}\small O substantivo masculino "marido" é para ser usado entre um "casal" e que difere entre um ser o masculino (marido) e o outro o feminino (\textbf{mulher}), com a modernice da igualdade dos géneros , gostava de saber se o Rui Oliveira é o marido , então o Goucha é a "\textbf{mulher}" ?!\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}2/52 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small São mariquices: nem é marido, nem é \textbf{mulher}. Serão parceiros, amantes, talvez namorados. São gays em dueto, parelha ou outra coisa qualquer.À força de tanto quererem fazer igual o que de facto é diferente, caem nestas patetices absurdas.\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/39 & \cellcolor{green!27}2.564 \\  \hline
+  \cellcolor{green!5}\small O \textbf{javardo} que engana os idosos a vender coisas que deviam ser proibidas.<br/>\textbf{Veado} \textbf{javardo} nojento.\normalsize   & \cellcolor{green!5}Javardo, Veado & \cellcolor{green!5}Age - Youngsters, Sexual Identity - Male homosexuality & \cellcolor{green!5}3/15 & \cellcolor{green!5}20.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Preto & \cellcolor{red!27}1 & \cellcolor{red!27}1/418& \cellcolor{red!27}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Chinese}  & \cellcolor{red!5}Amarelo & \cellcolor{red!5}1 & \cellcolor{red!5}1/418& \cellcolor{red!5}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Japanese}  & \cellcolor{red!27}Amarelo & \cellcolor{red!27}1 & \cellcolor{red!27}1/418& \cellcolor{red!27}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}2 & \cellcolor{red!5}2/418& \cellcolor{red!5}0.48 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Javardo & \cellcolor{red!27}1 & \cellcolor{red!27}1/418& \cellcolor{red!27}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Male homosexuality}  & \cellcolor{red!5}Veado & \cellcolor{red!5}1 & \cellcolor{red!5}1/418& \cellcolor{red!5}0.24 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - Black;Nationality - Chinese;Nationality - Japanese;Gender - General;Age - Youngsters;Sexual Identity - Male homosexuality;%.
+
+\item The percentage of hate speech related words is 1.6746.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 9/22 occurences of hate speech related comments.\end{itemize}\end{document}

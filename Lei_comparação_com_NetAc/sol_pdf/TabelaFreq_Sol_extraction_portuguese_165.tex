@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_165.json :}\newline \par\Large\textbf {Title: \large  Padre culpa gays pelos sismos de Itália }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Padre culpa outros padres de igual , semelhantes só com apetencias religiosamente diferentes , mas não muito diferentes do que critica que pela condição humana e fisiológica natural , nunca percebi o celibato e o que fazem com a vontade da coisa . Talvez este padre deve ser outro hipocritica na sua vivência \textbf{sexual} , até os animais querem . <br/>Haja juízo para o padre que  critica  aquele é parecido consigo e pelo celibato , indicia que faz outras coisas no ocultismo e não assume a sua condição obscurantista e contra a criação . <br/>O celibato é contra a criação , se fossemos todos celibatários ? <br/>É contra-natura também . \normalsize   & \cellcolor{green!27}Sexual & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/110 & \cellcolor{green!27}0.909 \\  \hline
+  \cellcolor{green!5}\small Mais um " \textbf{totó} " religioso se aproveitando das circunstâncias , se assim fosse a igreja instituição já não estava de pé pelo ocultismo á muitos anos . PARVOÍCES ! \normalsize   & \cellcolor{green!5}Totó & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/30 & \cellcolor{green!5}3.333 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Sexual & \cellcolor{red!27}1 & \cellcolor{red!27}1/326& \cellcolor{red!27}0.31 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Totó & \cellcolor{red!5}1 & \cellcolor{red!5}1/326& \cellcolor{red!5}0.31 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Age - Youngsters;%.
+
+\item The percentage of hate speech related words is 0.6135.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 2/10 occurences of hate speech related comments.\end{itemize}\end{document}

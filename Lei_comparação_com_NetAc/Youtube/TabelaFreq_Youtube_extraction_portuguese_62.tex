@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_62.json :}\newline \par\Large\textbf {Title: \large  Maria Leal e o desafio de cultura geral - 5 Para a Meia Noite }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Maria Leal quase \textbf{aberração}, ela é conhecida mais pelo o circo que faz e acho que devia de ir para o circo sem duvida\normalsize   & \cellcolor{green!27}Aberração & \cellcolor{green!27}Sexual Identity - Male homosexuality & \cellcolor{green!27}1/24 & \cellcolor{green!27}4.167 \\  \hline
+  \cellcolor{green!5}\small A Maria Leal é feia, xunga, burra e pirosa….\textbf{ganda} merda de mulher\normalsize   & \cellcolor{green!5}Ganda, Mulher & \cellcolor{green!5}Gender - Female sexuality, Gender - General & \cellcolor{green!5}2/12 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Ze  cabra\normalsize   & \cellcolor{green!27}Cabra & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/2 & \cellcolor{green!27}50.0 \\  \hline
+  \cellcolor{green!5}\small Ze cabra\normalsize   & \cellcolor{green!5}Cabra & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/2 & \cellcolor{green!5}50.0 \\  \hline
+  \cellcolor{green!27}\small Canta mal?? Ridicularizar?? Acham que sim seus seguidores de Big Brothers , Loves on...(onde vocês quiserem) ,Leitores do Crim...desculpem Correio de onde sabem. E assim que o "\textbf{Tuga}"  tá.... Só se vê Marias e Zé`s destes na rua\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/39 & \cellcolor{green!27}2.564 \\  \hline
+  \cellcolor{green!5}\small Esta " \textbf{gaja} " alem de inculta é uma " \textbf{mula} "........\normalsize   & \cellcolor{green!5}Gaja, Mula & \cellcolor{green!5}Gender - Female sexuality, Gender - General & \cellcolor{green!5}2/12 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small ELA e o Castello \textbf{Branco} juntos Sao os cromos de Portugal ( entre outros). Mas isto so em Portugal tambem\normalsize   & \cellcolor{green!27}Branco & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small COMO É POSSÍVEL QUE ESSA \textbf{PAROLA} SEJA CONVIDADA PARA QUALQUER PROGRAMA QUE SEJA !??????\normalsize   & \cellcolor{green!5}Parola & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/14 & \cellcolor{green!5}7.143 \\  \hline
+  \cellcolor{green!27}\small Esta dita cantora não tem vergonha na cara nem caracter... Para além de não saber cantar também andou a enganar e a extorquir dinheiro a um coitado \textbf{miúdo} esquizofrênico. Mais de um milhão de euros! Até tem a lata de usar o nome Leal como se fosse o apelido dela..... Que haja alguma justiça.. [LINK] POR FAVOR quem tenha um pouco de bom senso que passe e copie a hiperligacao acima\normalsize   & \cellcolor{green!27}Miúdo & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/71 & \cellcolor{green!27}1.408 \\  \hline
+  \cellcolor{green!5}\small 2:11 \textbf{gajo} do auricular diz " engole me essa merda" 😂😂😂😂😂😂\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Sou extremamente \textbf{homossexual} .\normalsize   & \cellcolor{green!27}Homossexual & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small ridícula a senhora coitada\normalsize   & \cellcolor{green!5}Ridícula & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/4 & \cellcolor{green!5}25.0 \\  \hline
+  \cellcolor{green!27}\small Cultura geral? Que gente idiota\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small acho uma pouca vergonha fazerem televisão a gozar nitidamente outra pessoa.. ja se sabe que esta rapariguinha não sabe nada de nada, mas ela não é a unica, ponham as que são denominadas de "atrizes" e "celebridades" cá em Portugal a fazer algo deste \textbf{género}, sem aviso prévio das perguntas ou respostas a ver se elas ou eles sabem, ponham aí a cristina ferreira, ou a claudia vieria, rita pereira, ou um atorzeco das novelas, ponham aí a responder a perguntas a ver se eles sabem alguma coisa, não sabem nada, é tudo uma cambada de básicos. Não acho bem que gozem com outros quando quase todas as "celebridades" são uma autêntica pedra.. Nem falar sabem\normalsize   & \cellcolor{green!5}Género & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/116 & \cellcolor{green!5}0.862 \\  \hline
+  \cellcolor{green!27}\small Liliana Cambra elas sao todas "brancas" logo n ha \textbf{racismo} so gozo mesmo\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/13 & \cellcolor{green!27}7.692 \\  \hline
+  \cellcolor{green!5}\small este programa já foi tão bom.......ha uma coisa muito boa que se chama...saber quando parar e este programa ja devia ter \textbf{acabado}, já não tem conteúdo nenhum e pior de tudo, está a denegrir a imagem do formato anterior.\normalsize   & \cellcolor{green!5}Acabado & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/39 & \cellcolor{green!5}2.564 \\  \hline
+  \cellcolor{green!27}\small eh \textbf{burra loira} qeres oke\normalsize   & \cellcolor{green!27}Burra loira & \cellcolor{green!27}Gender - Female intelligence & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small A Cautela tem na mania que é boa , com aquela voz de bagaço e o nariz de \textbf{bola} , olhem me para este naco  [LINK] \normalsize   & \cellcolor{green!5}Bola & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small Apoiado !!! Assino por baixo!! deu me pena da \textbf{mulher}.. Apesar de tudo é boa pessoa, e notasse ela não tem noção do que faz e acredita mesmo que as pessoas não falam assim com ela com maldade e tom de gozo e sim por mera brincadeira.. enfim pode ter uma musica super nada haver daquilo que podemos chamar de música .e até nos rirmos um pouco com isso . Mas dai humilhar alguém a ponte de ter audiências? opá poupem me ,mas isso não me dá vontade nenhuma de ver o programa e muito menos vontade de rir!!!\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/99 & \cellcolor{green!27}1.01 \\  \hline
+  \cellcolor{green!5}\small Bedtime Paradox ela ja sabe que vai lá  e que isso vai acontecer ela simplesmente aceita, nao venham com lições  de moral, ESTA \textbf{MULHER} SABE QUE VAI PARA LÁ  PARA SER GOZADA! por isso parem lá  de a defenderem porque ela propria humilha a sua pessoa, nao precisa de ninguém  para fazer por ela ☺ e ja agora é uma boa estrategia de marketing, assim toda a gente fala nela\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/70 & \cellcolor{green!5}1.429 \\  \hline
+  \cellcolor{green!27}\small Bedtime Paradox necrofago  é uma pessoa com atração \textbf{sexual} a cadáveres, n fez sentido nenhum\normalsize   & \cellcolor{green!27}Sexual & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small É para ver se ela entende que é ridícula\normalsize   & \cellcolor{green!5}Ridícula & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/9 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small Quem vai sabe ao que se expoe!! E essa filha da \textbf{puta} merece isso e mais\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small Ela já sabe antes de ir para o vai!! Só tem de aceitar ou não e é paga para isso!! Só por isso não deixa de ser \textbf{ridícula}!!👎👎👎👎\normalsize   & \cellcolor{green!5}Ridícula & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/28 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small Foi uma ofensa para mim, e para todos os homens portugueses que viram aquelas gelatinas a saírem do vestido. Foi simplesmente nojento, se calhar como és rapariga não te faz tanta impressão. E para arrematar aqui o assunto, tenho um humor um bocado \textbf{negro} e agressivo, não é toda a gente que gosta e compreende.\normalsize   & \cellcolor{green!27}Negro & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/55 & \cellcolor{green!27}1.818 \\  \hline
+  \cellcolor{green!5}\small \@Bárbara Fonseca SE...se...fosses? TODOS lamentamos isso...Relaxa \textbf{mulher}...respira... Credo! que emocional........\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Aberração & \cellcolor{red!27}1 & \cellcolor{red!27}1/4580& \cellcolor{red!27}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher, Gaja, Género, Sexual & \cellcolor{red!5}7 & \cellcolor{red!5}7/4580& \cellcolor{red!5}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Ganda, Cabra, Mula, Ridícula, Puta & \cellcolor{red!27}8 & \cellcolor{red!27}8/4580& \cellcolor{red!27}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Portuguese}  & \cellcolor{red!5}Tuga & \cellcolor{red!5}1 & \cellcolor{red!5}1/4580& \cellcolor{red!5}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Branco, Gajo & \cellcolor{red!27}2 & \cellcolor{red!27}2/4580& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Parola & \cellcolor{red!5}1 & \cellcolor{red!5}1/4580& \cellcolor{red!5}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Miúdo & \cellcolor{red!27}1 & \cellcolor{red!27}1/4580& \cellcolor{red!27}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Homossexual & \cellcolor{red!5}1 & \cellcolor{red!5}1/4580& \cellcolor{red!5}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Idiota & \cellcolor{red!27}1 & \cellcolor{red!27}1/4580& \cellcolor{red!27}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racismo & \cellcolor{red!5}1 & \cellcolor{red!5}1/4580& \cellcolor{red!5}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Acabado & \cellcolor{red!27}1 & \cellcolor{red!27}1/4580& \cellcolor{red!27}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female intelligence}  & \cellcolor{red!5}Burra loira & \cellcolor{red!5}1 & \cellcolor{red!5}1/4580& \cellcolor{red!5}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical Features}  & \cellcolor{red!27}Bola & \cellcolor{red!27}1 & \cellcolor{red!27}1/4580& \cellcolor{red!27}0.02 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Negro & \cellcolor{red!5}1 & \cellcolor{red!5}1/4580& \cellcolor{red!5}0.02 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Sexual Identity - Male homosexuality;Gender - General;Gender - Female sexuality;Nationality - Portuguese;Ethnicity - White;Social Class - Working class;Age - Youngsters;Sexual Identity - General;Physical Identity - Physical (and Mental) Impairments;Ethnicity - General;Age - Over 65s;Gender - Female intelligence;Physical Identity - Physical Features;Ethnicity - Black;%.
+
+\item The percentage of hate speech related words is 0.6114.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 28/300 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_111.json :}\newline \par\Large\textbf {Title: \large  Gay pride.  Todo o orgulho em ser o que se é }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small E qualquer dia vão exigir que a igreja (qualquer delas) os case em santo matrimónio. E depois vêm as acusações de \textbf{homofobia}.\normalsize   & \cellcolor{green!27}Homofobia & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}1/22 & \cellcolor{green!27}4.545 \\  \hline
+  \cellcolor{green!5}\small Um conhecido actor de teatro, e recatado \textbf{homossexual}, diz que esse circo arco-íris, nada tem que ver com homossexualidade...\normalsize   & \cellcolor{green!5}Homossexual & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small Conversa da treta. Para um hetero, em nada interessa que dois homens tenham relações! Mas  para quem não se consegue assumir, combate-los é uma maneira de viverem melhor consigo mesmo. Lembra-se do tipo que matou dezenas de pessoas num bar \textbf{gay}? Veja lá que o \textbf{gajo}  tinha tendencias homossexuais!!! Sobre a sua moral e familia: Se dois ou duas têm relações sexuais, não são obrigados a ir a correr para o Cartorio oficializar a relação!!! Tal como nos heteros,há muito homo que foge das responsabilidades familiares como o diabo foge da cruz. Quanto a mim, deixo-os com as suas escolhas. Eles que se entendam, embora ache que o lesbianismo seja um enorme desperdicio .Quando muito elas podiam ser bi.! LOL\normalsize   & \cellcolor{green!27}Gajo, Gay & \cellcolor{green!27}Ethnicity - White, Sexual Identity - General & \cellcolor{green!27}2/120 & \cellcolor{green!27}1.667 \\  \hline
+  \cellcolor{green!5}\small Em certos casos poderá acontecer como diz !Um facto verídico , um quando apareciam por ex. coisas relacionadas como está marcha , ele perante sua esposa , era uma gritaria dizem coisas e outras mais como " se os apanho OH , filhos desta ou daquela " .Conclusão da história verídica , a \textbf{mulher} passou andar desconfiada pensando e vigiando encontrar uma amante .Espanto dela , era um outro é esse marido perante certas imagens parecia o " terror " contra ! <br/>A tal falta de assumir sua condição social ...Mas sei muitos outros casos , nem vale a pena descrever , chegam aos ouvidos factos reais ....conheço muito bem a sociedade mesmo dentro dos seus lares ...bem haja\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/123 & \cellcolor{green!5}0.813 \\  \hline
+  \cellcolor{green!27}\small Sem duvida que esta \textbf{etnia} é perseguida e marginalizada em muitas partes do Mundo.<br/>Graças a Deus em Portugal estão protegidos.\normalsize   & \cellcolor{green!27}Etnia & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/20 & \cellcolor{green!27}5.0 \\  \hline
+  \cellcolor{green!5}\small A que \textbf{etnia} se refere?\normalsize   & \cellcolor{green!5}Etnia & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small a \textbf{paneleiragem} devia toda ser exportada para a Russia, pois lá dâo-lhes  coisas boas...porrada \textbf{v\textbf{elha}}.\normalsize   & \cellcolor{green!27}Paneleiragem, Velha & \cellcolor{green!27}Age - Over 65s, Gender - Female age and physical appearance, Sexual Identity - Male homosexuality & \cellcolor{green!27}3/15 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small E cá para mim, pelos teus comentários sempre a falar de rabos, tambem la devias estar a manifestar o teu orgulho \textbf{Gay}.\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/22 & \cellcolor{green!5}4.545 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Homofobia, Homossexual, Gay & \cellcolor{red!27}4 & \cellcolor{red!27}4/632& \cellcolor{red!27}0.63 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - White}  & \cellcolor{red!5}Gajo & \cellcolor{red!5}1 & \cellcolor{red!5}1/632& \cellcolor{red!5}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}1 & \cellcolor{red!27}1/632& \cellcolor{red!27}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Etnia & \cellcolor{red!5}2 & \cellcolor{red!5}2/632& \cellcolor{red!5}0.32 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - Female age and physical appearance}  & \cellcolor{red!27}Velha & \cellcolor{red!27}1 & \cellcolor{red!27}1/632& \cellcolor{red!27}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Velha & \cellcolor{red!5}1 & \cellcolor{red!5}1/632& \cellcolor{red!5}0.16 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Male homosexuality}  & \cellcolor{red!27}Paneleiragem & \cellcolor{red!27}1 & \cellcolor{red!27}1/632& \cellcolor{red!27}0.16 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Sexual Identity - General;Ethnicity - White;Gender - General;Ethnicity - General;Gender - Female age and physical appearance;Age - Over 65s;Sexual Identity - Male homosexuality;%.
+
+\item The percentage of hate speech related words is 1.7405.
+
+\item Considering that the variable \textbf{Sexual Identity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 11/18 occurences of hate speech related comments.\end{itemize}\end{document}

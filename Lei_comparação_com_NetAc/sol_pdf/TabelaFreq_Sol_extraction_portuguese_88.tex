@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_88.json :}\newline \par\Large\textbf {Title: \large  Vitória SC reage a caso Marega e diz que não irá 'vestir a pele do lobo' por um problema 'de dimensão nacional' }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Faz bem o Vitoria. O \textbf{gajo} ainda foi provocar os adeptos é bem feita tem aquilo que merece\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small tanta coisa... mas afinal o que é que o tal marega diz que ouviu para que em seguida tivesse insultado as bancadas sem apelo e nem agravo??? o insultado pode insultar??? e o que é que podemos considerar de \textbf{racismo}?? chamar um \textbf{preto} de \textbf{preto} e um \textbf{branco} de \textbf{branco}??? um \textbf{preto} de \textbf{macaco} e um \textbf{branco} de urso??..há quem confunda \textbf{racismo} com bocas foleiras... \textbf{racismo} foi o que se viveu com o apartheid, isso sim ou nos EUA ....não façam confusões só porque alguem anda a arranjar motivos para se por na alheta do clube que representa...\normalsize   & \cellcolor{green!5}Branco, Macaco, Preto, Racismo & \cellcolor{green!5}Ethnicity - Black, Ethnicity - General, Ethnicity - White & \cellcolor{green!5}10/98 & \cellcolor{green!5}10.204 \\  \hline
+  \cellcolor{green!27}\small À falta de ordem e respeito, num Estado esquerdonço laxista no respeito e na educação do seu povo, vão cada vez mais acumulando-se os casos de uma sociedade refèm da bandidagem. O desrespeito está institucionalizado no muito giro e na estupidez e na facilidade  onde se ofende, se agride, sejam com asneiras proferidas de modo gratuito, ou na violência das atitudes. A polícia olha para o lado, porque tornou-se o bode espiatório desta sociedade podre. Não é só \textbf{racismo}, é a ofensa não dirigida, em que os nossos ouvidos se tornaram o caixote do lixo do palavreado ignorante e abjecto de gente inculta, amoral e ofensiva.\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/106 & \cellcolor{green!27}0.943 \\  \hline
+  \cellcolor{green!5}\small Ò \textbf{Imbecil}... Estado esquerdoso?? Mas vives onde? Até hoje tivemos 21 governos em 46 anos de “democracia” dos quais foram passados em governos PSD ou PSD-CDS e vens culpar os xuxas? É por republicanos imbecis como tu que Portugal está como está! Deves ser comuna…\normalsize   & \cellcolor{green!5}Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/45 & \cellcolor{green!5}2.222 \\  \hline
+  \cellcolor{green!27}\small Que haja a coragem de combater também o \textbf{racismo} e o preconceito das minorias que insistem em não se integrar nem respeitar a maioria da sociedade. A bem da coerência e do bom senso. Todos iguais!\normalsize   & \cellcolor{green!27}Racismo & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/36 & \cellcolor{green!27}2.778 \\  \hline
+  \cellcolor{green!5}\small não digas isso que isso é \textbf{racismo}  .....\normalsize   & \cellcolor{green!5}Racismo & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo, Branco & \cellcolor{red!27}4 & \cellcolor{red!27}4/690& \cellcolor{red!27}0.58 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racismo & \cellcolor{red!5}4 & \cellcolor{red!5}4/690& \cellcolor{red!5}0.58 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Preto, Macaco & \cellcolor{red!27}2 & \cellcolor{red!27}2/690& \cellcolor{red!27}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Imbecil & \cellcolor{red!5}1 & \cellcolor{red!5}1/690& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - White;Ethnicity - General;Ethnicity - Black;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 1.5942.
+
+\item Considering that the variable \textbf{Ethnicity - White} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 15/16 occurences of hate speech related comments.\end{itemize}\end{document}

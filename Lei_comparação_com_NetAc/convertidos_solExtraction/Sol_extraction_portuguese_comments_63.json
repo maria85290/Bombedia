@@ -1,0 +1,60 @@
+{
+    "commentThread": [
+        {
+            "id": "4287144551",
+            "user": "sednas",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Alguém lhe ensine a dizer Manuel.",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4286151607",
+            "user": "kika_1900",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "O Sr. Presidente da república já a beijou ou ainda não ? <br/>Tudo isto a propósito do silêncio .<br/>( o Bruno De Carvalho desapareceu das notícias tinham que arranjar <br/> outra personagem e esta até com o patrocínio do chefe do estado...<br/>Notável este silêncio ) .",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4286119326",
+            "user": "disqus_qO85OOVgGx",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "TÁ BEM ABELHA!",
+            "likes": 1,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4286107800",
+            "user": "xupem",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Fascista!!!! eheheheh",
+            "likes": 0,
+            "hasReplies": true,
+            "numberOfReplies": 1,
+            "replies": [
+                {
+                    "id": "4286113090",
+                    "user": "disqus_0rTGFuXZcK",
+                    "date": "a year ago",
+                    "timestamp": "NA",
+                    "commentText": "Coitada da lourinha parece ser tão boa rapariguinha ..",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

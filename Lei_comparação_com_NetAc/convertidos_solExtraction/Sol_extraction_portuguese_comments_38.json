@@ -1,0 +1,60 @@
+{
+    "commentThread": [
+        {
+            "id": "4409124470",
+            "user": "raulsoares",
+            "date": "10 months ago",
+            "timestamp": "NA",
+            "commentText": "Sem duvida alguma,o 25 de Abril limpou o cérebro ao povo.Como podemos aguentar tanta palhaçada desta ''coisa?''",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4407856227",
+            "user": "mariaportuguesa",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Estou farta desta figura retorcida e mal-formada. Antes a Tininha a gritar do que este palerma grosseiro e despeitado. Tomara ele ser a Tininha!",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4407819780",
+            "user": "xupem",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Mas neste caso são ambas fêmeas.",
+            "likes": 1,
+            "hasReplies": true,
+            "numberOfReplies": 2,
+            "replies": [
+                {
+                    "id": "4407854266",
+                    "user": "mariaportuguesa",
+                    "date": "a year ago",
+                    "timestamp": "NA",
+                    "commentText": "LOL !",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                },
+                {
+                    "id": "4407853350",
+                    "user": "coniuratio_adversum_omnia",
+                    "date": "a year ago",
+                    "timestamp": "NA",
+                    "commentText": "E cada uma mais ppputa que a outra...",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_96.json :}\newline \par\Large\textbf {Title: \large  refugiado viola Portuguesa }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Esta filha da \textbf{puta} porca da tvi24 uma merda de media portuguesa vao pro caralho filhos da puta\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}2/18 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Africano filho da \textbf{puta} cabrao do caralho deporta-lo ja fora de Portugal\normalsize   & \cellcolor{green!5}Africano, Puta & \cellcolor{green!5}Ethnicity - Black, Gender - Female sexuality & \cellcolor{green!5}2/12 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small GRANDE \textbf{CABRA} LEVOS PARA  TUA CASA PARA ELES TE COMER\normalsize   & \cellcolor{green!27}Cabra & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small políticas da esquerdalha de merda ,que asco querem meter todo o lixo no país filhos da \textbf{puta}, o país ainda nao saiu duma grande crise  nao estam a ver como esta a europa so violaçoes a mulheres e homicidios roubos nao tenhem que reçeber  ninguem a europa tem e que começar  a deportar esses vermes todos estamos a ser governados por um cancro que vai destruir  portugal  isto e gozar com os nossos impostos é um atentado a segurança dos portugueses.\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/81 & \cellcolor{green!5}1.235 \\  \hline
+  \cellcolor{green!27}\small Quando um \textbf{refugiado} mata um  portugues e recebe passaporte portugues e tudo o que tem direito dado pelo presidente da republica ja agora gostava de saber porke tirarao a entrevista  do youtube eu sei porke teve mais de 30mil comentarias a tratar mal o primeiro menistro   vergonha\normalsize   & \cellcolor{green!27}Refugiado & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/47 & \cellcolor{green!27}2.128 \\  \hline
+  \cellcolor{green!5}\small puta de merda de jornalista esta controlada  pelo esquerdismo podre devia de ser violada como tenhem sido centenas de mulheres por estes vermes.\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/23 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small Verdadeiro nojo esta \textbf{gaja}..\normalsize   & \cellcolor{green!27}Gaja & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Puta, Cabra & \cellcolor{red!27}5 & \cellcolor{red!27}5/721& \cellcolor{red!27}0.69 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Africano & \cellcolor{red!5}1 & \cellcolor{red!5}1/721& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Refugiado & \cellcolor{red!27}1 & \cellcolor{red!27}1/721& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Gaja & \cellcolor{red!5}1 & \cellcolor{red!5}1/721& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - Female sexuality;Ethnicity - Black;Nationality - General;Gender - General;%.
+
+\item The percentage of hate speech related words is 1.1096.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 9/23 occurences of hate speech related comments.\end{itemize}\end{document}

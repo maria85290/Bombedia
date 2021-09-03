@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_65.json :}\newline \par\Large\textbf {Title: \large  Sérgio Henriques Responde a Acusações de Maria Leal (Ex Namorada) no Manhã CMTV 04.01.2017 }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small A Maia devia tarde a vender farturas na feira. \textbf{Bruxa} fofoqueira.\normalsize   & \cellcolor{green!27}Bruxa & \cellcolor{green!27}Gender - Female age and physical appearance & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small Duas cenas o \textbf{gajo} é um panilhas do cacete. Segundo a Marial Leal é uma \textbf{cota} toda escafiada. 3º Adeus\normalsize   & \cellcolor{green!5}Cota, Gajo & \cellcolor{green!5}Age - Over 65s, Ethnicity - White & \cellcolor{green!5}2/20 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small O \textbf{gajo} teve uma vida lixada..\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small O \textbf{gajo} é \textbf{paneleiro} ..? simplesmente se aproveitou dela...e ainda bem\normalsize   & \cellcolor{green!5}Gajo, Paneleiro & \cellcolor{green!5}Ethnicity - White, Sexual Identity - Male homosexuality & \cellcolor{green!5}2/11 & \cellcolor{green!5}18.182 \\  \hline
+  \cellcolor{green!27}\small Para comecar este \textbf{gajo} é rabêta...ainda bem que ela tem 4 filhos pois se estivesse à tua espera ia secar o útero kkkkk\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/23 & \cellcolor{green!27}4.348 \\  \hline
+  \cellcolor{green!5}\small A Maria Leal só se relaciona com pessoas que são como ela. Tudo farinha do mesmo saco. Por isso este \textbf{gajo} "criança" não é melhor que ela. Por isso deve estar calado e meter a cabeça num saco. Enfim.\normalsize   & \cellcolor{green!5}Gajo & \cellcolor{green!5}Ethnicity - White & \cellcolor{green!5}1/39 & \cellcolor{green!5}2.564 \\  \hline
+  \cellcolor{green!27}\small Um Cavalão daqueles um \textbf{gajo} perde a cabeça 🤭\normalsize   & \cellcolor{green!27}Gajo & \cellcolor{green!27}Ethnicity - White & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Este \textbf{gajo} é retardado!A não ser que a \textbf{gaja} lhe pagasse!...Dass!!!\normalsize   & \cellcolor{green!5}Gaja, Gajo & \cellcolor{green!5}Ethnicity - White, Gender - General & \cellcolor{green!5}2/11 & \cellcolor{green!5}18.182 \\  \hline
+  \cellcolor{green!27}\small Filhos da \textbf{puta} do caralho , espera que morras engasgado com um caralhao na boca que merda de perguntas que cabroes aproveitarem se do puto fds por amor de Deus chegamos a este ponto.\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/34 & \cellcolor{green!27}2.941 \\  \hline
+  \cellcolor{green!5}\small GANDA PALHAÇO, FDS e \textbf{ganda} TÓTÓ...\normalsize   & \cellcolor{green!5}Ganda & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}2/6 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small maia es mesmo feia \textbf{puta} de merda\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/7 & \cellcolor{green!27}14.286 \\  \hline
+  \cellcolor{green!5}\small Esta  \textbf{mulher} é simplesmente uma vigarista ,manipuladora e mentirosa compulsiva....Anda em busca de fortuna através de alguém, e enquanto isso, faz figuras degradantes onde  passa para dançar e cantar....Ainda vais acabar a pedir esmolas e um prato de comida....É preciso ser muito doente para ter tanta astúcia....lolEnfim, tanta figura triste....\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/52 & \cellcolor{green!5}1.923 \\  \hline
+  \cellcolor{green!27}\small Ela é mentirosa, é feia, canta como uma \textbf{vaca} espanhola, ok ! E tu és um morcão e tão bom quanto ela, és o testo dela sendo ela a panela como é óbvio. Como dizemos nos aqui no norte, tudo gado bravo!! E como se não bastasse " eu estou fora do pais há já alguns anos e esta senhora, a apresentadora fazia taro com a Fátima Lopes, esta visto, qualquer \textbf{analfabeto} (a) é apresentador hoje em dia! A televisão Portuguesa esta uma bosta onde só passa lixo, novelas, comentadores de coisa alguma e football, os portugueses de Portugal estão bem servidos, não volto tão cedo!!\normalsize   & \cellcolor{green!27}Analfabeto, Vaca & \cellcolor{green!27}Gender - Female sexuality, Social Class - Working class & \cellcolor{green!27}2/106 & \cellcolor{green!27}1.887 \\  \hline
+  \cellcolor{green!5}\small Acabou a relação porque ele é panisgas aí \textbf{lelo} sou \textbf{larilas} gosto de picha sim mesmo de picha mas é a do Fábio Martins 😂😂😂\normalsize   & \cellcolor{green!5}Larilas, Lelo & \cellcolor{green!5}Ethnicity - Roma, Sexual Identity - Male homosexuality & \cellcolor{green!5}2/25 & \cellcolor{green!5}8.0 \\  \hline
+  \cellcolor{green!27}\small És um nojento duarte!!! Morre filho da \textbf{puta} horrível nojento de merda odeio te\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/14 & \cellcolor{green!27}7.143 \\  \hline
+  \cellcolor{green!5}\small E o teu pais qual e meu grande \textbf{parolo}?\normalsize   & \cellcolor{green!5}Parolo & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/9 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small Como o boi e a \textbf{vaca} dos teus pais vitelputa\normalsize   & \cellcolor{green!27}Vaca & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small Porque tu... No fundo.... és \textbf{gay}. Pronto!\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/7 & \cellcolor{green!5}14.286 \\  \hline
+  \cellcolor{green!27}\small O mesmo fodasse... Eu só vejo musica da boa e vim parar a esta putaria de merda fodasse \textbf{puta} que pariu\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/21 & \cellcolor{green!27}4.762 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - Female age and physical appearance}  & \cellcolor{red!27}Bruxa & \cellcolor{red!27}1 & \cellcolor{red!27}1/1134& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Cota & \cellcolor{red!5}1 & \cellcolor{red!5}1/1134& \cellcolor{red!5}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo & \cellcolor{red!27}7 & \cellcolor{red!27}7/1134& \cellcolor{red!27}0.62 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Male homosexuality}  & \cellcolor{red!5}Paneleiro, Larilas & \cellcolor{red!5}2 & \cellcolor{red!5}2/1134& \cellcolor{red!5}0.18 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Gaja, Mulher & \cellcolor{red!27}2 & \cellcolor{red!27}2/1134& \cellcolor{red!27}0.18 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Puta, Ganda, Vaca & \cellcolor{red!5}8 & \cellcolor{red!5}8/1134& \cellcolor{red!5}0.7100000000000001 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Analfabeto, Parolo & \cellcolor{red!27}2 & \cellcolor{red!27}2/1134& \cellcolor{red!27}0.18 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Roma}  & \cellcolor{red!5}Lelo & \cellcolor{red!5}1 & \cellcolor{red!5}1/1134& \cellcolor{red!5}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Gay & \cellcolor{red!27}1 & \cellcolor{red!27}1/1134& \cellcolor{red!27}0.09 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - Female age and physical appearance;Age - Over 65s;Ethnicity - White;Sexual Identity - Male homosexuality;Gender - General;Gender - Female sexuality;Social Class - Working class;Ethnicity - Roma;Sexual Identity - General;%.
+
+\item The percentage of hate speech related words is 2.2046.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 25/70 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_135.json :}\newline \par\Large\textbf {Title: \large  Depois de ataque de Trump, Michelle Obama deixa mensagem a Greta }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Quando começarem a ir milhares de pessoas para o desemprego por causa desta criança \textbf{idiota} e quem a apoia, depois vamos ver se é assim….  é importante afastarem esta criança, ela é perigosa e irresponsável.\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/35 & \cellcolor{green!27}2.857 \\  \hline
+  \cellcolor{green!5}\small O senhor é que é ignorante, asno, \textbf{cego} e um anormal! Como é possível que alguém com dois dedos de testa ainda ache que esta porcaria está bem! A greta só está a dar a vós a milhões de pessoas que estão a sofrer por causa dos Trump s deste mundo! Acorde para o futuro que tem que sem sem petróleo, carvão e com esperança!\normalsize   & \cellcolor{green!5}Cego & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/65 & \cellcolor{green!5}1.538 \\  \hline
+  \cellcolor{green!27}\small Conclusao dos comentarios: <br/>o aquecimento global nao existe porque a Michelle Obama é \textbf{preta} e é um homem... ah que orgulho tenho em ser portugues!!\normalsize   & \cellcolor{green!27}Preta & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small Qual é o seu problema? Não sabe que aos olhos de um alemão aristocrata neonazi você não passa de um \textbf{macaco} do sul da Europa, um \textbf{tuga} \textbf{rasca} de \textbf{raça} inferior.\normalsize   & \cellcolor{green!5}Macaco, Rasca, Raça, Tuga & \cellcolor{green!5}Ethnicity - Black, Ethnicity - General, Nationality - Portuguese, Social Class - Working class & \cellcolor{green!5}4/31 & \cellcolor{green!5}12.903 \\  \hline
+  \cellcolor{green!27}\small Não sabes o que dizes \textbf{macaco} ... Pela tua conversinha de merda\@ deves vir de algum shithole \textbf{africano}. O Português é dos povos com mais qualidades e é tão bom ou melhor que qualquer outro povo do mundo. Eu até nem vivo em Portugal mas reconheço sem dúvida que o meu país é um dos melhores países do mundo para viver. Portugal é um país de 1º mundo e todas as estatísticas de qualidade de vida põem Portugal no topo. Portugal tem o problema dos baixos salários comparativamente com os países mais ricos, e falta de mais organização, mas de resto é excelente.\normalsize   & \cellcolor{green!27}Africano, Macaco & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}2/103 & \cellcolor{green!27}1.942 \\  \hline
+  \cellcolor{green!5}\small A \textbf{escarumba} vai-se meter numa canoa e vai atrás da greta...assim ganha currículo para receberem o nobel do oportunismo, sem esforço!\normalsize   & \cellcolor{green!5}Escarumba & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/21 & \cellcolor{green!5}4.762 \\  \hline
+  \cellcolor{green!27}\small Quando e' que este monstro responde ha' pergunta que lhe fizeram ha; mais de 5 anos ???? es' homem ou \textbf{mulher} ???\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/22 & \cellcolor{green!27}4.545 \\  \hline
+  \cellcolor{green!5}\small E tu, és homem ou \textbf{mulher}?!\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Só cá faltava mais esta \textbf{preta}!!!!!!\normalsize   & \cellcolor{green!27}Preta & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Só servem para fazer a vida \textbf{negra} aos outros...\normalsize   & \cellcolor{green!5}Negra & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/9 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small Esta \textbf{Mulher} tem tudo para ser presidenta dos states!<br/>Basta ela querer!<br/>Força Michele!\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small A \textbf{escarumba} a quer protagonismo...já não basta a propaganda da treta que fizeram a esses Ubamas, mais uns oportunistas medíocres...mande lá mensagens para os tiranos corruptos que saqueiam e desgovernam em áfrica...\normalsize   & \cellcolor{green!5}Escarumba & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/32 & \cellcolor{green!5}3.125 \\  \hline
+  \cellcolor{green!27}\small Imbecil\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/1 & \cellcolor{green!27}100.0 \\  \hline
+  \cellcolor{green!5}\small Se não fosses \textbf{racista} e \textbf{a\textbf{trasado} mental}, o que gostarias de ser? Pois fica sabendo que eles têm mais classe e educação do que a merda do Trump e outros como ele.... e se calhar do que tu!\normalsize   & \cellcolor{green!5}Atrasado, Atrasado mental, Racista & \cellcolor{green!5}Ethnicity - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}3/38 & \cellcolor{green!5}7.895 \\  \hline
+  \cellcolor{green!27}\small Venha o diabo e escolha entre essas duas porcarias...um louco perigoso e uma \textbf{escarumba} desqualificada...\normalsize   & \cellcolor{green!27}Escarumba & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Idiota, Cego, Imbecil, Atrasado, Atrasado mental & \cellcolor{red!27}5 & \cellcolor{red!27}5/1474& \cellcolor{red!27}0.33999999999999997 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Preta, Macaco, Africano, Escarumba, Negra & \cellcolor{red!5}9 & \cellcolor{red!5}9/1474& \cellcolor{red!5}0.61 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Raça, Racista & \cellcolor{red!27}2 & \cellcolor{red!27}2/1474& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Portuguese}  & \cellcolor{red!5}Tuga & \cellcolor{red!5}1 & \cellcolor{red!5}1/1474& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Rasca & \cellcolor{red!27}1 & \cellcolor{red!27}1/1474& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}3 & \cellcolor{red!5}3/1474& \cellcolor{red!5}0.2 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Ethnicity - Black;Ethnicity - General;Nationality - Portuguese;Social Class - Working class;Gender - General;%.
+
+\item The percentage of hate speech related words is 1.4247.
+
+\item Considering that the variable \textbf{Ethnicity - Black} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 21/63 occurences of hate speech related comments.\end{itemize}\end{document}

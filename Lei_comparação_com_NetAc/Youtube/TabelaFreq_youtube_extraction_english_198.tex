@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_198.json :}\newline \par\Large\textbf {Title: \large  Whoopi Goldberg Calls New Progressive Legislators Sexist and Ageist }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Whoopi is a sell out for money and real psychopath. Has sold herself to money and the devil period!  How much do you  make promoting this BS? Wow, Justice Democrats are \textbf{crazy}? She is totally stupid!\normalsize   & \cellcolor{green!27}Crazy & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/36 & \cellcolor{green!27}2.778 \\  \hline
+  \cellcolor{green!5}\small Whoopie sounds like Cosby telling young \textbf{black} men to pull up their pants!\normalsize   & \cellcolor{green!5}Black & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small The lady doth protest too much! In raising these false and inaccurate claims and complaints SHE is being sexist and \textbf{ageist}! 'NEW' leadership doesn't mean against older folks! And Pelosi isn't the only qualified women for the job!\normalsize   & \cellcolor{green!27}Ageist & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/38 & \cellcolor{green!27}2.632 \\  \hline
+  \cellcolor{green!5}\small Whoopi needs to stick to comedy \& acting. She's become the rich elitist she used to protest against. \textbf{Fat} \textbf{o\textbf{ld} h\textbf{ag}} - is that sexist \& \textbf{ageist} enough for you, Whoopi?\normalsize   & \cellcolor{green!5}Ageist, Fat, Hag, Old, Old hag & \cellcolor{green!5}Age - General, Age - Over 65s, Gender - Female age and physical appearance, Physical Identity - Physical Features & \cellcolor{green!5}5/31 & \cellcolor{green!5}16.129 \\  \hline
+  \cellcolor{green!27}\small I used to like Whoopi, that was a long time ago when she was only the actress.Now, when rich \& famous... not so much. She became a bully, detached from the reality of \textbf{black} ppl living in America. Like she forgets, where she would've been (in life) if not for the Hollywood fame. Don't like her outlook, she sides w/riches and turns a \textbf{blind} eye on corruption, injustice, discrimination and poverty. On top of that her demeanor is aggressive, bully-like. F**k her.\normalsize   & \cellcolor{green!27}Black, Blind & \cellcolor{green!27}Ethnicity - Black, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/83 & \cellcolor{green!27}2.41 \\  \hline
+  \cellcolor{green!5}\small Where have we heard this \textbf{ageist} and sexist crap before? Oh yeah. Hillary Clinton used it to gaslight progressives. Look how well it worked out for her!\normalsize   & \cellcolor{green!5}Ageist & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/27 & \cellcolor{green!5}3.704 \\  \hline
+  \cellcolor{green!27}\small Nancy Pelosi isn't being rejected because of her \textbf{age} or her \textbf{gender}.. she's being objective to and rejected because of her crappy neo liberal policies positions. which lead the Democratic party to defeat over and over.. stop with the false claims Whoopie..\normalsize   & \cellcolor{green!27}Age, Gender & \cellcolor{green!27}Age - General, Gender - General & \cellcolor{green!27}2/42 & \cellcolor{green!27}4.762 \\  \hline
+  \cellcolor{green!5}\small I've never in my life heard someone say that Pelosi is too \textbf{old}.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small So people don't know Whoopi is literally mentally \textbf{handicapped}? People should have woken up to her BS when she defends her ex BF and herself doing blackface for "comedy" and fun few years ago, but now calls everyone \textbf{racist} she don't like politically.  Or when she literally defended a convicted pedophile in Director Roman Polanksi, because he is part of her Hollywood liberal elites, but criticizes Kavanaugh or Trump every other sentence. She is literally an idiot.\normalsize   & \cellcolor{green!27}Handicapped, Racist & \cellcolor{green!27}Ethnicity - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/77 & \cellcolor{green!27}2.597 \\  \hline
+  \cellcolor{green!5}\small And I'm so \textbf{ageist}, sexist, and \textbf{racist} that I too will vote for Bernie, also voted for Jill, and want Nina Turner for Bernie's VP in 2020 and POTUS in 2024.\normalsize   & \cellcolor{green!5}Ageist, Racist & \cellcolor{green!5}Age - General, Ethnicity - General & \cellcolor{green!5}2/31 & \cellcolor{green!5}6.452 \\  \hline
+  \cellcolor{green!27}\small \@commentor Yes, I see some people squealing over the idea of Richard Ojeda debating Trump onstage, but can you imagine Nina Turner debating Trump? That'd be a whole different ball game. I just wish she had more name recognition to do a 2020 run. I kinda think that's necessary when up against Trump's universal recognition.Too bad she didn't win her last \textbf{race} for office, but neither did Ojeda. I can't see why anyone would be more excited over Ojeda, a total newbie, than Nina Turner - except thst he's white, male, and a Marine.\normalsize   & \cellcolor{green!27}Race & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/95 & \cellcolor{green!27}1.053 \\  \hline
+  \cellcolor{green!5}\small Does anyone watch that TV show with those \textbf{old} biddies?\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small \@epockismet Speak for yourself! I'm Whoopi's \textbf{age} and take "\textbf{zero} credit" for the shit you talk about! Furthermore, I'm FROM LA!!! I have worked my entire life FOR others----young, old----doesn't matter to me. I speak 4+ languages fluently, have a doc in psych. What have YOU done in your very short life? I am CURRENTLY living (retired) on the border STRUGGLING to help others who are very important to me!! WTF are you doing? You need to THINK and STUDY a lot more!\normalsize   & \cellcolor{green!27}Age, Zero & \cellcolor{green!27}Age - General, Age - Youngsters & \cellcolor{green!27}2/83 & \cellcolor{green!27}2.41 \\  \hline
+  \cellcolor{green!5}\small I don't object to Nancy because she's \textbf{old}, I object to her, among other reasons, because she's senile. " Let's hear it for more pre-existing medical conditions! "  "Yay!"  The senile leading the stupid. If she ever steps foot in our district we aren't aware of it. She doesn't even say she's a San Franciscan anymore. The ACA money came with strings that are unraveling our relatively excellent public health system. She's a monster.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/74 & \cellcolor{green!5}1.351 \\  \hline
+  \cellcolor{green!27}\small well said ...Niko ..well said not enough .......it is about all this \textbf{OLD} elite millionaire \textbf{black} white brown men and women and in between hags go away and leave the world to the youth to decide how they want to run it .......afterall they will walk the this earth long after they are gone.....Nancy has to worry about her coffin days that are going to come in soon......sorry ??? no not even sorry...\textbf{Ageist}??? fuck  ..I am tired about the future for our children and that means all the children in this world ...rich and poor ...without a voice ..........when some young people come out and speak the truth ...you want to through the \textbf{Ageist} card>>??rot in hell ..rot in hell...Woopie you neo liberal millionaire  cunt ...you pretend you speak for us ....no you do not....\normalsize   & \cellcolor{green!27}Ageist, Black, Old & \cellcolor{green!27}Age - General, Age - Over 65s, Ethnicity - Black & \cellcolor{green!27}4/135 & \cellcolor{green!27}2.963 \\  \hline
+  \cellcolor{green!5}\small The truly sad thing is that for the past forty years, the democrats were the less \textbf{racist} party. That lead to everyone voting for the lesser evil supposedly. By the smallest margin.\normalsize   & \cellcolor{green!5}Racist & \cellcolor{green!5}Ethnicity - General & \cellcolor{green!5}1/32 & \cellcolor{green!5}3.125 \\  \hline
+  \cellcolor{green!27}\small "Whoopi you're dreds are wrapped too tight". Ha! Great Commentary, Niko.  Nancy Pelosi has been rubber-stamping the \$6 Trillion dollar immoral "War on Terror" for 2 Decades now.  Whoopi is a \textbf{ABC} post 9/11-Coup Government CIA Project Mockingbird Stooge. We did used to call them "Sell-Outs", back in the day. Just another Rich member of  the Olde School Establishment. The \textbf{Black} Womyn Bill Maher.  Same generation, same allegiance.\normalsize   & \cellcolor{green!27}ABC, Black & \cellcolor{green!27}Ethnicity - Black, Nationality - Chinese & \cellcolor{green!27}2/68 & \cellcolor{green!27}2.941 \\  \hline
+  \cellcolor{green!5}\small You are far to respectful to Whoopi.  She lost all credibility with this incoherent rant.  I wonder who payed her to whore herself out like that?  \textbf{ABC}? It's hard to believe she is that stupid all on her lonesome.\normalsize   & \cellcolor{green!5}ABC & \cellcolor{green!5}Nationality - Chinese & \cellcolor{green!5}1/39 & \cellcolor{green!5}2.564 \\  \hline
+  \cellcolor{green!27}\small \@Zanga Zeit1776 Really???  It's unfortunate that anytime one suggests anything around here, it is considered as defective.  Bye; who wants to argue over \textbf{dumb} sh*t.\normalsize   & \cellcolor{green!27}Dumb & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  \cellcolor{green!5}\small She's \textbf{elderly} and wealthy. I would expect her to be politically conservative just like the average \textbf{elderly} multimillionaire.\normalsize   & \cellcolor{green!5}Elderly & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}2/18 & \cellcolor{green!5}11.111 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Crazy, Blind, Handicapped, Dumb & \cellcolor{red!27}4 & \cellcolor{red!27}4/2731& \cellcolor{red!27}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Black & \cellcolor{red!5}4 & \cellcolor{red!5}4/2731& \cellcolor{red!5}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Ageist, Age & \cellcolor{red!27}8 & \cellcolor{red!27}8/2731& \cellcolor{red!27}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female age and physical appearance}  & \cellcolor{red!5}Old hag, Hag & \cellcolor{red!5}2 & \cellcolor{red!5}2/2731& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old, Elderly & \cellcolor{red!27}7 & \cellcolor{red!27}7/2731& \cellcolor{red!27}0.26 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical Features}  & \cellcolor{red!5}Fat & \cellcolor{red!5}1 & \cellcolor{red!5}1/2731& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Gender & \cellcolor{red!27}1 & \cellcolor{red!27}1/2731& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Racist, Race & \cellcolor{red!5}4 & \cellcolor{red!5}4/2731& \cellcolor{red!5}0.15 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Zero & \cellcolor{red!27}1 & \cellcolor{red!27}1/2731& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - Chinese}  & \cellcolor{red!5}ABC & \cellcolor{red!5}2 & \cellcolor{red!5}2/2731& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Ethnicity - Black;Age - General;Gender - Female age and physical appearance;Age - Over 65s;Physical Identity - Physical Features;Gender - General;Ethnicity - General;Age - Youngsters;Nationality - Chinese;%.
+
+\item The percentage of hate speech related words is 1.245.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 34/86 occurences of hate speech related comments.\end{itemize}\end{document}

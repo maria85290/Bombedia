@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_94.json :}\newline \par\Large\textbf {Title: \large  'Refugiados' Vs Portugueses (reformados, sem-abrigo, etc) }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small \@Chico O Patriota Seria bom se a Itália saísse da bunda da União Européia, porém, assim como qualquer outro membro da UE não tem recursos para se manterem sozinhos então afundam juntos infelizmente, seria muito ruim ver as artes, e patrimônios de vocês sendo destruídos para colocar Mesquitas no lugar, a é já está acontecendo né? Fico \textbf{puta} da vida que a Europa chegou a esse ponto. O Salvini não tem poder suficiente para colocar ordem  na Casa.\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/78 & \cellcolor{green!27}1.282 \\  \hline
+  \cellcolor{green!5}\small Absurdo \textbf{refugiado} e ciganos gritam mais alto aqui . Incrível até quando ?????\normalsize   & \cellcolor{green!5}Refugiado & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small ​\@Chico O Patriota é verdade, no entanto isto é um resultado de uma \textbf{nação} adormecida que só sai às ruas para receber a seleção e depois fica em casa a queixar-se.\normalsize   & \cellcolor{green!27}Nação & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/31 & \cellcolor{green!27}3.226 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Puta & \cellcolor{red!27}1 & \cellcolor{red!27}1/805& \cellcolor{red!27}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - General}  & \cellcolor{red!5}Refugiado, Nação & \cellcolor{red!5}2 & \cellcolor{red!5}2/805& \cellcolor{red!5}0.25 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - Female sexuality;Nationality - General;%.
+
+\item The percentage of hate speech related words is 0.3727.
+
+\item Considering that the variable \textbf{Nationality - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 3/29 occurences of hate speech related comments.\end{itemize}\end{document}

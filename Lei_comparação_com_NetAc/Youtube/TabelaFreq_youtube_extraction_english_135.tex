@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_135.json :}\newline \par\Large\textbf {Title: \large  Ageism is all around us - hear how it affects older people around the world }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small  [LINK]   > Our campaign is currently raising money and awareness for \textbf{ageism}! Please feel free to donate\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small This isn't a 1 way street... \textbf{old} people are rude as fuck\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/12 & \cellcolor{green!5}8.333 \\  \hline
+  \cellcolor{green!27}\small As well are \textbf{old} people. Not a 1 way street\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small You think kids are rude? They don't have the knowledge to be better but at least they are understanding not like \textbf{old} people who are waaay more \textbf{racist}, \textbf{homophobic} and discriminating\normalsize   & \cellcolor{green!5}Homophobic, Old, Racist & \cellcolor{green!5}Age - Over 65s, Ethnicity - General, Sexual Identity - General & \cellcolor{green!5}3/31 & \cellcolor{green!5}9.677 \\  \hline
+  \cellcolor{green!27}\small I am not an \textbf{ageist}, but if they got alzheimers they deserve to be executed by fire squad.\normalsize   & \cellcolor{green!27}Ageist & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small That's like me saying you're \textbf{old} so you have a walking stick and are forgetful\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Um you realize that the over 65 crowd doesn't include gen x, millennials, or gen z? All of us are responsible for perpetuating \textbf{ageism} and you pointing fingers isn't doing anything towards reducing stigma for the \textbf{elderly}.\normalsize   & \cellcolor{green!27}Ageism, Elderly & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}2/37 & \cellcolor{green!27}5.405 \\  \hline
+  \cellcolor{green!5}\small Why are \textbf{old} people stereotyping teens. It's bullshit\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small This video is so damn true. Society doesn't give a SHIT about you the older you get. They only care about the people under 18, a socially constructed \textbf{age} line to determine adulthood. FUCK everybody who believes that dumbass children deserve special privilege and treatment.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/45 & \cellcolor{green!27}2.222 \\  \hline
+  \cellcolor{green!5}\small this is ridiculous. \textbf{old} people are in the way. they deserve to live just like me, but they don't have a right to clog up the work force by refusing to retire at the \textbf{age} of 70. they don't deserve to be able to tell me i'm lazy and that's why i can't afford a car/house when 5 dollars back in 1958 was worth 40 dollars today. you can look that up too, this isn't a hyperbole i looked this up myself and it stuck with me. they ruined our economy for us. and the "\textbf{age} is experience" thing was true back when technology didn't advance by the day. back when people were using the same technology to get a job done every day for 40 years. now technology is constantly becoming obsolete and what you knew yesterday isn't valuable today.\normalsize   & \cellcolor{green!5}Age, Old & \cellcolor{green!5}Age - General, Age - Over 65s & \cellcolor{green!5}3/141 & \cellcolor{green!5}2.128 \\  \hline
+  \cellcolor{green!27}\small this is a joke right because young people go through it too so thumbs down you \textbf{ageist} shit\normalsize   & \cellcolor{green!27}Ageist & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small Affects just \textbf{old} people ?? NO I am afraid it affects even younger people, for example in my case young people who are 5 or more years younger than me avoid having anything to do with me.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/37 & \cellcolor{green!5}2.703 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Ageism, Ageist, Age & \cellcolor{red!27}7 & \cellcolor{red!27}7/568& \cellcolor{red!27}1.23 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old, Elderly & \cellcolor{red!5}8 & \cellcolor{red!5}8/568& \cellcolor{red!5}1.41 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racist & \cellcolor{red!27}1 & \cellcolor{red!27}1/568& \cellcolor{red!27}0.18 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Homophobic & \cellcolor{red!5}1 & \cellcolor{red!5}1/568& \cellcolor{red!5}0.18 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Ethnicity - General;Sexual Identity - General;%.
+
+\item The percentage of hate speech related words is 2.993.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 17/27 occurences of hate speech related comments.\end{itemize}\end{document}

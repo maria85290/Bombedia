@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_57.json :}\newline \par\Large\textbf {Title: \large  Mariana Mortágua mais uma vez humilhada por Leitão Amaro }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Badalhoca,fuinha,\textbf{ordinária} ,cinica ,mentirosa,chula,larápia,feia ,raparigo, e muito mais ,mas agora não tenho vagar\normalsize   & \cellcolor{green!27}Badalhoca, Ordinária & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}2/12 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Ele não soube falar.Focou-se só em descredibilizar o governo.Era de pegar na dica dela...  de instituições que recebem dinheiros publicos devem ter transparência,o que concordo óbvio, para apontar que o Governo só trabalha de dinheiros publicos e portanto devia ter a mesma transparência ;)ainda começou bem.mas depois perdeu-se...contratos ganhos e contratações de gestores, directores, cargos por nomeações, negocios privados envolvidos... Era legislar e penalizar severamente o acto de roubar uma \textbf{Nação} inteira. Assim nem esquerda, nem direita roubava... LOL\normalsize   & \cellcolor{green!5}Nação & \cellcolor{green!5}Nationality - General & \cellcolor{green!5}1/83 & \cellcolor{green!5}1.205 \\  \hline
+  \cellcolor{green!27}\small Antes fascista que comuna nojento como tu! Vai pá Venezuela que lá é que se está bem ó filho de uma grande \textbf{puta}!\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/23 & \cellcolor{green!27}4.348 \\  \hline
+  \cellcolor{green!5}\small Bem dito, mas só se identifica com esta \textbf{gaja} quem realmente é igual.\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small Mas que título \textbf{idiota} !\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Esta \textbf{gaja} nunca deixa um \textbf{gajo} acabar o seu raciocínio.  Sabe perfeitamente que só assim engana alguns.\normalsize   & \cellcolor{green!5}Gaja, Gajo & \cellcolor{green!5}Ethnicity - White, Gender - General & \cellcolor{green!5}2/17 & \cellcolor{green!5}11.765 \\  \hline
+  \cellcolor{green!27}\small E tu um anormal que para além de ignorante rotulas as pessoas por falta de argumentos. E mais, \textbf{nazi}  é um comentário de ignorante limitado com umas palas, que,  pobre dos burros usam-nas obrigatoriamente mas  tu,  fazes gala de as teres. Educa-te, informa-te e cala-te.\normalsize   & \cellcolor{green!27}Nazi & \cellcolor{green!27}Nationality - German & \cellcolor{green!27}1/45 & \cellcolor{green!27}2.222 \\  \hline
+  \cellcolor{green!5}\small Esta \textbf{gaja} dá-me nojo.\normalsize   & \cellcolor{green!5}Gaja & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/4 & \cellcolor{green!5}25.0 \\  \hline
+  \cellcolor{green!27}\small Grande \textbf{cabra}! Nem a um \textbf{parolo}, conseguiria enganar! Grande porca!!!\normalsize   & \cellcolor{green!27}Cabra, Parolo & \cellcolor{green!27}Gender - Female sexuality, Social Class - Working class & \cellcolor{green!27}2/10 & \cellcolor{green!27}20.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - Female sexuality}  & \cellcolor{red!27}Badalhoca, Ordinária, Puta, Cabra & \cellcolor{red!27}4 & \cellcolor{red!27}4/2286& \cellcolor{red!27}0.16999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - General}  & \cellcolor{red!5}Nação & \cellcolor{red!5}1 & \cellcolor{red!5}1/2286& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Gaja & \cellcolor{red!27}3 & \cellcolor{red!27}3/2286& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Idiota & \cellcolor{red!5}1 & \cellcolor{red!5}1/2286& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Gajo & \cellcolor{red!27}1 & \cellcolor{red!27}1/2286& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - German}  & \cellcolor{red!5}Nazi & \cellcolor{red!5}1 & \cellcolor{red!5}1/2286& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Parolo & \cellcolor{red!27}1 & \cellcolor{red!27}1/2286& \cellcolor{red!27}0.04 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - Female sexuality;Nationality - General;Gender - General;Physical Identity - Physical (and Mental) Impairments;Ethnicity - White;Nationality - German;Social Class - Working class;%.
+
+\item The percentage of hate speech related words is 0.5249.
+
+\item Considering that the variable \textbf{Gender - Female sexuality} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 12/51 occurences of hate speech related comments.\end{itemize}\end{document}

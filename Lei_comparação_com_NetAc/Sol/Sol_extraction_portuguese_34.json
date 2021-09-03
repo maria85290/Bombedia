@@ -1,0 +1,82 @@
+{
+ "header": {
+ "title": " Goucha recorre ao Facebook para criticar revista ",
+ "subtitle": " O apresentador fez uma publicação no seu Facebook afirmando que nunca falou com a revista sobre qualquer assunto ",
+ "views": " NA ",
+ "likes": " NA ",
+ "dislikes": " NA ",
+ "shares": " NA ",
+ "datePosted": " 21 de julho 2017 ",
+ "dateExtraction": " 2020-02-19 ",
+ "language": " pt ",
+ "plataform": " Newspaper ",
+ "url": " https://sol.sapo.pt/artigo/573244/goucha-recorre-ao-facebook-para-criticar-revista- ",
+ "postText": " ['Manuel Luís Goucha partilhou no seu Facebook a capa de uma revista a desmentir e a criticar a atitude da mesma.', 'Esta polémica surge duas semanas depois de Cristina Ferreira ter criticado e desmentido um artigo que a mesma revista fez acerca da apresentadora.', 'Na descrição da imagem de Goucha pode ler-se: Não me vou dar ao trabalho de ler, já que não falei para esta revista sobre coisa alguma, mas que estamos bem na foto, estamos, apesar de ser uma montagem.', ''] ",
+ "numberPosts": " 5 comentários",
+ "srcType": " text ",
+ "nameNewspaper": " Sol ",
+ "socioLingVar": "  ",
+ "listEvents": "  ",
+ "articleKeywords": "  ",
+ "keywords": "  ",
+ "commentsOpen": " yes "
+ },
+
+    "commentThread": [
+        {
+            "id": "3432545971",
+            "user": "estrela_silva",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "dão valor ao que não devem ..que é que interessam essas vidas de \"\"\"\"\"",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "3431818053",
+            "user": "provinciana",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "Também não vou ler esta e outras revistas nem para as capas olho que até me dão nojo.",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "3430068036",
+            "user": "vilardemacada",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "Nojentos!",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "3428548463",
+            "user": "Flordelamar",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "São como as carraças. Agarram-se, infectam e não descolam até terem sugado tudo. <br/>Panascas malditos. Menos mal que não procriam. São híbridos de humanos.<br/>Nem o Prof. Gentil Martins disse isto! Mas é verdade. Foram os antibióticos.",
+            "likes": 2,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "3428422525",
+            "user": "disqus_faSdukELUh",
+            "date": "3 years ago",
+            "timestamp": "NA",
+            "commentText": "Mas estas coisas, não têm nada de mais útil para fazer, do que andarem a chatear as pessoas com assuntos que não interessam a ninguém? São piores que pastilhas elásticas abandonadas no passeio.",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        }
+    ]
+}

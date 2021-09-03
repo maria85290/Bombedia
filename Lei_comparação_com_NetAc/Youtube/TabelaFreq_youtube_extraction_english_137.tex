@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_137.json :}\newline \par\Large\textbf {Title: \large  Ageism in Comedy is No Joke }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small I  think \textbf{age} has to do with your confidence if you have confidence and you believe in yourself you still can do and learn lots of things🥰 eg, COMEDY😅\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/29 & \cellcolor{green!27}3.448 \\  \hline
+  \cellcolor{green!5}\small Is \textbf{ageism} something new in comedy?...Nah.  It's \textbf{old}.\normalsize   & \cellcolor{green!5}Ageism, Old & \cellcolor{green!5}Age - General, Age - Over 65s & \cellcolor{green!5}2/12 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small After raising my 2 daughters I want to accomplish my dreams of an actress comedian. I am 54, \textbf{immigrant}, Hispanic, thick accent,  4.5 tall (almost a \textbf{midget}) from 1 to 10 being 10 beautiful I am at 0😂😂😂😂minus 1\normalsize   & \cellcolor{green!27}Immigrant, Midget & \cellcolor{green!27}Nationality - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/39 & \cellcolor{green!27}5.128 \\  \hline
+  \cellcolor{green!5}\small It`s an advantage to be different , I mean hispanic or your thick accent, You have to start and work hard as \textbf{Jerry} says .\normalsize   & \cellcolor{green!5}Jerry & \cellcolor{green!5}Nationality - German & \cellcolor{green!5}1/25 & \cellcolor{green!5}4.0 \\  \hline
+  \cellcolor{green!27}\small The brand loyalty argument makes sense.But if you think about it, who are the media outlets that would be putting on the comedians?Are 18-34 year olds, or people in general brand loyalty to the media outlets in this day and \textbf{age}? Hardly. Anything you see on public transportation, even cable, will make it onto YouTube.I don't think media outlets capture much brand loyalty. If Carlin or game of thrones or \textbf{sex} and the coty switched networks, just about 100 of their watchers would move to the other media outlet imo. (Ok maybe 90). If any brand loyalty was built, it would be for the comedian themselves. I'm not so sure media outlets would be so heavily invested into that, unless they signed some exclusivity agreement or major production agreement with that comedian for many years.\normalsize   & \cellcolor{green!27}Age, Sex & \cellcolor{green!27}Age - General, Gender - General & \cellcolor{green!27}2/138 & \cellcolor{green!27}1.449 \\  \hline
+  \cellcolor{green!5}\small You also don't need people to pay you directly.Advertisements may want the 18-34 year \textbf{old} males. And the media network sells to those advertisers ad spots.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/27 & \cellcolor{green!5}3.704 \\  \hline
+  \cellcolor{green!27}\small 2:24 Wow, you are \textbf{old}. Two lines on the dollar sign. ;)I keed! I keed! I'm \textbf{old}, too. lol.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}2/20 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small \@\textbf{Jerry} Corley Is \textbf{age} 15 too early to start on my comedic writing ability?\normalsize   & \cellcolor{green!5}Age, Jerry & \cellcolor{green!5}Age - General, Nationality - German & \cellcolor{green!5}2/14 & \cellcolor{green!5}14.286 \\  \hline
+  \cellcolor{green!27}\small Nothing is late bro\normalsize   & \cellcolor{green!27}Nothing & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/4 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small Yup, not too \textbf{old}. Even on your deathbed, there can be jokes to be made.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Sorry, but you're all skewed on this. "In the demo" varies according to the programming. Some programs and channels have a very narrow demo while others are broader. It also depends on the level of sophistication in the humor. Is it "college-level" or is it for more "mature" audiences? Some acts work well on college campi while others are lounge acts in Las Vegas. Right now humor is very restricted at university venues. \textbf{Jerry} Seinfeld goes off his nut talking about this. Why perform in front of an audience that's primed to be offended rather than laugh? And of course all the good comedians are dead. Just like actors and musicians. Gone. All of them.\normalsize   & \cellcolor{green!27}Jerry & \cellcolor{green!27}Nationality - German & \cellcolor{green!27}1/115 & \cellcolor{green!27}0.87 \\  \hline
+  \cellcolor{green!5}\small This is such a good video and the title doesn't do it justice. I think everyone who wants to make it in comedy should watch it. I'm in my 20s and watched this purely out of curiosity, and I'm glad I did. It's about so much more than \textbf{ageism} and the advice of developing  multiple skillsets and having many projects at the same time is spot on - kind of what Ari Shaffir recommends in his 4-hour recording that can be found on YouTube - bottom line, practice makes you better and doing comedy in more than one way prepares you for whatever opportunity might come your way in the future.  Definitely going to take this advice. Thanks \textbf{Jerry}!\normalsize   & \cellcolor{green!5}Ageism, Jerry & \cellcolor{green!5}Age - General, Nationality - German & \cellcolor{green!5}2/119 & \cellcolor{green!5}1.681 \\  \hline
+  \cellcolor{green!27}\small If you're \textbf{old}, simply do young comedy, if you're young, do \textbf{old} comedy. I'm middle aged so  I'll just do your mom... Ohhhhh! Gotcha!\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}2/24 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small So what? This is the advantage of maturity. Young people have been so indoctrinated in victimization that they even create victim situations by looking for them. I don't care if they make it illegal for people over 40 to even do comedy, I will still do it and not complain. Life is not about fairness, it is about living YOUR life on YOUR terms... Why would \textbf{Jerry} even need to find someone to pick up his idea???? He has the money to produce anything he wants! BTW young comics today are totally unwatchable imo. T. Noah is the perfect example.\normalsize   & \cellcolor{green!5}Jerry & \cellcolor{green!5}Nationality - German & \cellcolor{green!5}1/100 & \cellcolor{green!5}1.0 \\  \hline
+  \cellcolor{green!27}\small George Carlin and Jon Stewart are political comics. Political comedians have to be older in order for anyone to respect them. So the \textbf{ageism} issue is reversed in that regard.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/30 & \cellcolor{green!27}3.333 \\  \hline
+  \cellcolor{green!5}\small Vivian Gray Trevor Noah took over the Daily Show in 2015. He was 32. Not \textbf{old}.\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/16 & \cellcolor{green!5}6.25 \\  \hline
+  \cellcolor{green!27}\small \@\textbf{Jerry} Corley no one likes trevor noah though.\normalsize   & \cellcolor{green!27}Jerry & \cellcolor{green!27}Nationality - German & \cellcolor{green!27}1/8 & \cellcolor{green!27}12.5 \\  \hline
+  \cellcolor{green!5}\small Jerry another great video!! As a brand new comic who is also \textbf{old} that is very insightful for us older guys\normalsize   & \cellcolor{green!5}Jerry, Old & \cellcolor{green!5}Age - Over 65s, Nationality - German & \cellcolor{green!5}2/21 & \cellcolor{green!5}9.524 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age, Ageism & \cellcolor{red!27}6 & \cellcolor{red!27}6/1370& \cellcolor{red!27}0.44 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}9 & \cellcolor{red!5}9/1370& \cellcolor{red!5}0.66 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Immigrant & \cellcolor{red!27}1 & \cellcolor{red!27}1/1370& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Midget & \cellcolor{red!5}1 & \cellcolor{red!5}1/1370& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - German}  & \cellcolor{red!27}Jerry & \cellcolor{red!27}7 & \cellcolor{red!27}7/1370& \cellcolor{red!27}0.51 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Sex & \cellcolor{red!5}1 & \cellcolor{red!5}1/1370& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Nothing & \cellcolor{red!27}1 & \cellcolor{red!27}1/1370& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Nationality - General;Physical Identity - Physical (and Mental) Impairments;Nationality - German;Gender - General;Age - Youngsters;%.
+
+\item The percentage of hate speech related words is 1.8978.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 26/53 occurences of hate speech related comments.\end{itemize}\end{document}

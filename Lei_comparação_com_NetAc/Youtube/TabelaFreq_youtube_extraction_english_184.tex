@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_184.json :}\newline \par\Large\textbf {Title: \large  Teens experience ageism too | Amelia Conway | TEDxManhattanBeach }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small John Dubay because \textbf{age} doesn't matter\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small The thing is \textbf{ageism} against teens and younger is kind of justified. This is coming from a 14-year-old. The definition of any of the "ism's" is the belief that one group is superior to the other. Adults and the \textbf{elderly} are superior to teens, because for one the teens don't have the intelligence and sharpness of the adults and they also don't have the wisdom of the elderly\normalsize   & \cellcolor{green!5}Ageism, Elderly & \cellcolor{green!5}Age - General, Age - Over 65s & \cellcolor{green!5}3/68 & \cellcolor{green!5}4.412 \\  \hline
+  \cellcolor{green!27}\small not going to lie the education system is much better now, therefore the younger generation is more aware and in most cases smarter and sharper than adults. Another problem is that the \textbf{elderly} stick to what they like and are not open for much to change and therefore most despise the younger generation due to a change in culture. Which in my opinion is the main reason. I dont believe any group is more superior because theres many elements that need outweighing. However it is more present that \textbf{ageism} occurs more to teens, like i said due to the change in culture and even technology.this is coming from a 16-year-old.\normalsize   & \cellcolor{green!27}Ageism, Elderly & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}2/111 & \cellcolor{green!27}1.802 \\  \hline
+  \cellcolor{green!5}\small this girl is very smart, she just needs to take the "I'm a female " down a notch, you are more than your gender\normalsize   & \cellcolor{green!5}Gender & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/24 & \cellcolor{green!5}4.167 \\  \hline
+  \cellcolor{green!27}\small I clicked on this video just to hear the sheer stupidity. You have absolutely \textbf{nothing} to worry about in regards to \textbf{ageism}. Its easier to 'grow' into something as opposed to growing out of something.\normalsize   & \cellcolor{green!27}Ageism, Nothing & \cellcolor{green!27}Age - General, Age - Youngsters & \cellcolor{green!27}2/35 & \cellcolor{green!27}5.714 \\  \hline
+  \cellcolor{green!5}\small And kids get even more ageism\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/6 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small I love her,  \textbf{r\textbf{ed}} head twins\normalsize   & \cellcolor{green!27}Red & \cellcolor{green!27} Ideological and Political Identity - General, Ethnicity - Native-American & \cellcolor{green!27}2/6 & \cellcolor{green!27}33.333 \\  \hline
+  \cellcolor{green!5}\small Hey \textbf{hun}, my name is Amelia Conway too and I'm an actress... I'm pretty sure I should be in one of your films!!\normalsize   & \cellcolor{green!5}Hun & \cellcolor{green!5}Nationality - German & \cellcolor{green!5}1/23 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small Wonderful job!  Lots of confidence and, yes, \textbf{age} should not stop you from anything.Love, Andre\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small Amelia thank you for making my day. The last time I saw you you were only 3 years \textbf{old}. You have grown into a lovely young \textbf{woman}. I'm so proud of you. Tara's mom.\normalsize   & \cellcolor{green!5}Old, Woman & \cellcolor{green!5}Age - Over 65s, Gender - General & \cellcolor{green!5}2/34 & \cellcolor{green!5}5.882 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age, Ageism & \cellcolor{red!27}6 & \cellcolor{red!27}6/472& \cellcolor{red!27}1.27 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Elderly, Old & \cellcolor{red!5}3 & \cellcolor{red!5}3/472& \cellcolor{red!5}0.64 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Gender, Woman & \cellcolor{red!27}2 & \cellcolor{red!27}2/472& \cellcolor{red!27}0.42 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Nothing & \cellcolor{red!5}1 & \cellcolor{red!5}1/472& \cellcolor{red!5}0.21 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native-American}  & \cellcolor{red!27}Red & \cellcolor{red!27}1 & \cellcolor{red!27}1/472& \cellcolor{red!27}0.21 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5} Ideological and Political Identity - General}  & \cellcolor{red!5}Red & \cellcolor{red!5}1 & \cellcolor{red!5}1/472& \cellcolor{red!5}0.21 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - German}  & \cellcolor{red!27}Hun & \cellcolor{red!27}1 & \cellcolor{red!27}1/472& \cellcolor{red!27}0.21 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Gender - General;Age - Youngsters;Ethnicity - Native-American; Ideological and Political Identity - General;Nationality - German;%.
+
+\item The percentage of hate speech related words is 3.178.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 16/27 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_123.json :}\newline \par\Large\textbf {Title: \large  Campolide já tem duas passadeiras com as cores do arco-íris }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small QUEM É ESSA GENTE PARA ALERAR O CÓDIGO DA ESTRADA PASSEM DE PEÕES DE COR ARCO IRIS!!! <br/>NÃO INVENTEM PALHAÇOS AS PASSAGEM PARA PEÕES SÃO SÓ BRANCAS E QUANDO AMARELAS É PARA TRABALHOS NA ESTRADA TEMPORÁRIOS ÚNICAMENTE. <br/>PARA QUÊ MUDAR AS CORES DA PASSGEM PARA PEÕES ??? TENHAM JUIZO, QUAL FOI \textbf{IDIOTA} QUE ASSIM MANDOU PINTAR UMA PASSAGEM DE PEÕES ISTO É UMA OFENSA. POR AI VEJO QUE A EXTREMA DIREITA DE FOSSE GOVERNO TUDO ALTERAVA...É NO MINIMO IDIOTICE E VERGONHOSO. VERGONHOSOOOOOOOOOOOOOOOOOOO....<br/>Instrutor de Condução<br/>Jaime Jorge Pereira\normalsize   & \cellcolor{green!27}Idiota & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/86 & \cellcolor{green!27}1.163 \\  \hline
+  \cellcolor{green!5}\small pelo que se le aqui ha pessoas que veem o mundo a \textbf{preto} e \textbf{branco}, compreende-se! a evolução da espécie não é igual para todos, sempre foi assim e será... uns com pensamento mais evolutivo  outros.. tacanhos, atrasados mentalmente, se não fosse o odio que expelem até era de ter pena de tais seres.....\normalsize   & \cellcolor{green!5}Branco, Preto & \cellcolor{green!5}Ethnicity - Black, Ethnicity - White & \cellcolor{green!5}2/54 & \cellcolor{green!5}3.704 \\  \hline
+  \cellcolor{green!27}\small Quando o BENFICA for campeão, vou pintar todas as passadeiras de \textbf{V\textbf{ERMELHO}}!!!! Menos as listas brancas, é claro!\normalsize   & \cellcolor{green!27}Vermelho & \cellcolor{green!27}Ethnicity - Native American, Ideological and Political Identity - General & \cellcolor{green!27}2/18 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Por uma questão de tonalidade o \textbf{m\textbf{onhé}} prefere a \textbf{Preto} e \textbf{Branco}!\normalsize   & \cellcolor{green!5}Branco, Monhé, Preto & \cellcolor{green!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh), Ethnicity - Black, Ethnicity - White, Nationality - Indian & \cellcolor{green!5}4/12 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small Em principio e se o Codigo da Estrada não o proibe , não tenho nada contra ...mas agora temos todos  que pensar como iremos pintar as passadeiras para Março 2020 , Dia da \textbf{Mulher} !  <br/>Nos intervalos das listas brancas vou propor Rosa Choque ...e já se estão  a preparar requerimentos ! <br/>Evidentemente que um  não,   será  inaceitável e será considerado uma abominável discriminação contra as mulheres ...<br/>Já agora , não esquecer o Dia da Criança ....e está na hora de haver o Dia do Homem Hetero (HH) . <br/>Nesta passadeira proporia o Azul Choque ...<br/>Não se deve descriminar ninguém ! Todos temos direitos e devemos fazê-los valer ! <br/>Vivam as passadeiras coloridas ...!!!<br/>Ah , ainda em tempo , cuidado com os daltónicos ...Talvez se inventem umas multas para eles , porque não verem as cores representativas de direitos é inaceitável ....\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/142 & \cellcolor{green!27}0.704 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Idiota & \cellcolor{red!27}1 & \cellcolor{red!27}1/840& \cellcolor{red!27}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Preto & \cellcolor{red!5}2 & \cellcolor{red!5}2/840& \cellcolor{red!5}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - White}  & \cellcolor{red!27}Branco & \cellcolor{red!27}2 & \cellcolor{red!27}2/840& \cellcolor{red!27}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Native American}  & \cellcolor{red!5}Vermelho & \cellcolor{red!5}1 & \cellcolor{red!5}1/840& \cellcolor{red!5}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ideological and Political Identity - General}  & \cellcolor{red!27}Vermelho & \cellcolor{red!27}1 & \cellcolor{red!27}1/840& \cellcolor{red!27}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Asian (South- India, Pakistan, Bangladesh)}  & \cellcolor{red!5}Monhé & \cellcolor{red!5}1 & \cellcolor{red!5}1/840& \cellcolor{red!5}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Indian}  & \cellcolor{red!27}Monhé & \cellcolor{red!27}1 & \cellcolor{red!27}1/840& \cellcolor{red!27}0.12 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Mulher & \cellcolor{red!5}1 & \cellcolor{red!5}1/840& \cellcolor{red!5}0.12 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Physical Identity - Physical (and Mental) Impairments;Ethnicity - Black;Ethnicity - White;Ethnicity - Native American;Ideological and Political Identity - General;Ethnicity - Asian (South- India, Pakistan, Bangladesh);Nationality - Indian;Gender - General;%.
+
+\item The percentage of hate speech related words is 1.1905.
+
+\item Considering that the variable \textbf{Ethnicity - Black} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 10/22 occurences of hate speech related comments.\end{itemize}\end{document}

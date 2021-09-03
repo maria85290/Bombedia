@@ -1,0 +1,106 @@
+{
+    "commentThread": [
+        {
+            "id": "4235533081",
+            "user": "Artister1990",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Que nível...",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4235478831",
+            "user": "disqus_QUg940rmiE",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Ao que a Tv chegou !!",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4235239353",
+            "user": "coniuratio_adversum_omnia",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Realmente... Não estou a ver as carcaças velhas que vão fazer coro ao programa sacarem dum strap on em esfodengarem-lhe a peidola à bruta...",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4235240778",
+            "user": "coniuratio_adversum_omnia",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Caso não saibas... O Goucha pode ser um rabecha amanteigado... mas é uma das maiores autoridades no que toca à doçaria conventual Portuguesa.",
+            "likes": 0,
+            "hasReplies": true,
+            "numberOfReplies": 2,
+            "replies": [
+                {
+                    "id": "4235261030",
+                    "user": "coniuratio_adversum_omnia",
+                    "date": "a year ago",
+                    "timestamp": "NA",
+                    "commentText": "Menos... Muito mentos....",
+                    "likes": 0,
+                    "hasReplies": true,
+                    "numberOfReplies": 1,
+                    "replies": [
+                        {
+                            "id": "4235543109",
+                            "user": "Flordelamar",
+                            "date": "a year ago",
+                            "timestamp": "NA",
+                            "commentText": "Melhor...muito melhor...nem tinha pensado...",
+                            "likes": 0,
+                            "hasReplies": false,
+                            "numberOfReplies": 0,
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4235224935",
+            "user": "disqus_chuXBUx6Qf",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "... no \"fornicanço\"...",
+            "likes": 0,
+            "hasReplies": false,
+            "numberOfReplies": 0,
+            "replies": []
+        },
+        {
+            "id": "4235148326",
+            "user": "Flordelamar",
+            "date": "a year ago",
+            "timestamp": "NA",
+            "commentText": "Boa pregunta...",
+            "likes": 2,
+            "hasReplies": true,
+            "numberOfReplies": 1,
+            "replies": [
+                {
+                    "id": "4235241154",
+                    "user": "coniuratio_adversum_omnia",
+                    "date": "a year ago",
+                    "timestamp": "NA",
+                    "commentText": "Fortissima resposta....",
+                    "likes": 0,
+                    "hasReplies": false,
+                    "numberOfReplies": 0,
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

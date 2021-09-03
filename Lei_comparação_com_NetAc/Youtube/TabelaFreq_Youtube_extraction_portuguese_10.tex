@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_10.json :}\newline \par\Large\textbf {Title: \large   Mesquita Nunes desmascarou as mentiras do Bloco e Mariana Mortágua entrou em desespero }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Essa \textbf{canalha} nao acha problemas com as cativacoes? Cativem parte do salario e benesses dela! O orcamento do estado e a sua aprovacao e uma fraude neste governo!\normalsize   & \cellcolor{green!27}Canalha & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/28 & \cellcolor{green!27}3.571 \\  \hline
+  \cellcolor{green!5}\small \@two friends só és mais um filho de uma \textbf{puta} fascista.\normalsize   & \cellcolor{green!5}Puta & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small \@two friends frustrados são vocês por ter \textbf{acabado} a mama.\normalsize   & \cellcolor{green!27}Acabado & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/10 & \cellcolor{green!27}10.0 \\  \hline
+  \cellcolor{green!5}\small Esta \textbf{gaja} alem de ladra vigarista estupida nunca trabalhou vive a custa do trabalho de quem trabalha É \textbf{PUTA} DO POVODEMOCRATA DE PERNAS ABERTAS ANTI FASCISTA COMO O TERRORISTA DO PAIESCROQUE MAL PARIDA\normalsize   & \cellcolor{green!5}Gaja, Puta & \cellcolor{green!5}Gender - Female sexuality, Gender - General & \cellcolor{green!5}2/35 & \cellcolor{green!5}5.714 \\  \hline
+  \cellcolor{green!27}\small O BE é a \textbf{esquerda caviar}, pois julga-se superior intelectualmente e o resto da malta  é toda estúpida !  A esquerda onde vota a unha estraga !  Que vão para a Venezuela, pois aqui não fazem falta nenhuma !\normalsize   & \cellcolor{green!27}Esquerda caviar & \cellcolor{green!27}Ideological and Political Identity - General & \cellcolor{green!27}1/39 & \cellcolor{green!27}2.564 \\  \hline
+  \cellcolor{green!5}\small Mariana Mortágua não é uma \textbf{mulher} estúpida,muito pelo contrário. O problema é a sua enorme arrogância,paternalismo e condescendência com todos os outros.Atributos detestáveis!\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/23 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small Quem é que acredita nesta " senhora " do bloco de esterco ? agora vem apoiar o robles e a sua dona em relação á parte imobiliária vs especulação !!! Que credibilidade tem esta \textbf{canalha} da esquerda e extrema esquerda ? Portugal acorda...!\normalsize   & \cellcolor{green!27}Canalha & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/43 & \cellcolor{green!27}2.326 \\  \hline
+  \cellcolor{green!5}\small Neste país me parece que não for \textbf{GAY}, é vítima de todos os adjectivos, nem se tenha que envolver os Pais, os primos os tios etc, etc.será que ser \textbf{Gay} é sinónimo de esperteza ?.\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}2/35 & \cellcolor{green!5}5.714 \\  \hline
+  \cellcolor{green!27}\small Ruca \textbf{Tuga} é mesmo um nome infantil. Os teus pais ainda te dão de biberão?\normalsize   & \cellcolor{green!27}Tuga & \cellcolor{green!27}Nationality - Portuguese & \cellcolor{green!27}1/15 & \cellcolor{green!27}6.667 \\  \hline
+  \cellcolor{green!5}\small Diz o \textbf{roto} ao esfarrapado. E parece que quem não entendeu o debate não foi a Beatriz\normalsize   & \cellcolor{green!5}Roto & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/17 & \cellcolor{green!5}5.882 \\  \hline
+  \cellcolor{green!27}\small É só \textbf{comunista} que fala aí nesse programa??? Manda essa \textbf{comunista} ouvir\normalsize   & \cellcolor{green!27}Comunista & \cellcolor{green!27}Ideological and Political Identity - General & \cellcolor{green!27}2/12 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Essa \textbf{canalha} dessa mariana quer falar sozinha. Traço de todo \textbf{comunista} ditador nazi-fascista\normalsize   & \cellcolor{green!5}Canalha, Comunista & \cellcolor{green!5}Age - Youngsters, Ideological and Political Identity - General & \cellcolor{green!5}2/13 & \cellcolor{green!5}15.385 \\  \hline
+  \cellcolor{green!27}\small A filha dum \textbf{vagabundo},só podia ser uma \textbf{cabra} de esquerda!!!!!!666!!!\normalsize   & \cellcolor{green!27}Cabra, Vagabundo & \cellcolor{green!27}Gender - Female sexuality, Social Class - Destitute & \cellcolor{green!27}2/10 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Mariana Mortágua é uma grande \textbf{mulher}..Mesquita Nunes devia ter vergonha de falar em cativações, depois de terem posto os portugueses na miséria com cortes escandalosos ao povo...Ela chegou bem para ele no final..!\normalsize   & \cellcolor{green!5}Mulher & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/33 & \cellcolor{green!5}3.03 \\  \hline
+  \cellcolor{green!27}\small respondeu a bixinha \textbf{gay} do cds\normalsize   & \cellcolor{green!27}Gay & \cellcolor{green!27}Sexual Identity - General & \cellcolor{green!27}1/6 & \cellcolor{green!27}16.667 \\  \hline
+  \cellcolor{green!5}\small Diz o \textbf{roto} ao nu.. tenha juizo ouça e aprenda\normalsize   & \cellcolor{green!5}Roto & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small Candidato à pena máxima segundo a cartilha \textbf{comunista}. É sempre a mesma coisa: quando vos desmascaram a vossa solução e´sempre matar. Cada \textbf{comunista} é um assassino. Já o pai Mortágua, terrorista e assassino, é um herói para vocês.\normalsize   & \cellcolor{green!27}Comunista & \cellcolor{green!27}Ideological and Political Identity - General & \cellcolor{green!27}2/38 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small Todos os comunistas têm a ideia fixa da morte dos seus opositores. Por isso é que o comunismo matou mais de 100 milhões de pessoas. Se aqui o Dom 26 pudesse, matava-nos a todos :) Cada \textbf{comunista} é um assassino.\normalsize   & \cellcolor{green!5}Comunista & \cellcolor{green!5}Ideological and Political Identity - General & \cellcolor{green!5}1/40 & \cellcolor{green!5}2.5 \\  \hline
+  \cellcolor{green!27}\small Mariana é uma \textbf{vadia} \textbf{comunista}, \textbf{puta} \textbf{vagabunda}.\normalsize   & \cellcolor{green!27}Comunista, Puta, Vadia, Vagabunda & \cellcolor{green!27}Gender - Female sexuality, Ideological and Political Identity - General & \cellcolor{green!27}4/7 & \cellcolor{green!27}57.143 \\  \hline
+  \cellcolor{green!5}\small David Alves e tu um \textbf{paneleiro} evangelista de 2 categoria.\normalsize   & \cellcolor{green!5}Paneleiro & \cellcolor{green!5}Sexual Identity - Male homosexuality & \cellcolor{green!5}1/10 & \cellcolor{green!5}10.0 \\  \hline
+  \cellcolor{green!27}\small David Alves \textbf{puta} é a tua mãe e avó\normalsize   & \cellcolor{green!27}Puta & \cellcolor{green!27}Gender - Female sexuality & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small que grande imbecil\normalsize   & \cellcolor{green!5}Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small Nao e \textbf{puta}....mas sim \textbf{FUFA} !\normalsize   & \cellcolor{green!27}Fufa, Puta & \cellcolor{green!27}Gender - Female sexuality, Sexual Identity - Female homosexuality & \cellcolor{green!27}2/6 & \cellcolor{green!27}33.333 \\  \hline
+  \cellcolor{green!5}\small E eu estou a tremer de medo, porque sofro de Coulrofobia e tu és um palhaço tão feio e tão \textbf{imbecil}, que eu  vou ter dificuldades de adormecer.Faz-me um favor e às crianças também, se não optares pela EUTANÁSIA, pelo menos não saías à rua.\normalsize   & \cellcolor{green!5}Imbecil & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/46 & \cellcolor{green!5}2.174 \\  \hline
+  \cellcolor{green!27}\small Ó \textbf{comunista}, mas ela não anda a mamar na cona da Cautela e vice-versa? Então porquê a \textbf{homofobia}? Deixa-as mamar e serem felizes, que se estivessem num pais \textbf{comunista} (como os que ela, tu e outros bandalhos defendem) seriam fuziladas ;)\normalsize   & \cellcolor{green!27}Comunista, Homofobia & \cellcolor{green!27}Ideological and Political Identity - General, Sexual Identity - General & \cellcolor{green!27}3/41 & \cellcolor{green!27}7.317 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Canalha & \cellcolor{red!27}3 & \cellcolor{red!27}3/2870& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Puta, Cabra, Vadia, Vagabunda & \cellcolor{red!5}8 & \cellcolor{red!5}8/2870& \cellcolor{red!5}0.27999999999999997 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Acabado & \cellcolor{red!27}1 & \cellcolor{red!27}1/2870& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Gaja, Mulher & \cellcolor{red!5}3 & \cellcolor{red!5}3/2870& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ideological and Political Identity - General}  & \cellcolor{red!27}Esquerda caviar, Comunista & \cellcolor{red!27}10 & \cellcolor{red!27}10/2870& \cellcolor{red!27}0.35000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay, Homofobia & \cellcolor{red!5}3 & \cellcolor{red!5}3/2870& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - Portuguese}  & \cellcolor{red!27}Tuga & \cellcolor{red!27}1 & \cellcolor{red!27}1/2870& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - Male homosexuality}  & \cellcolor{red!5}Roto, Paneleiro & \cellcolor{red!5}3 & \cellcolor{red!5}3/2870& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Social Class - Destitute}  & \cellcolor{red!27}Vagabundo & \cellcolor{red!27}1 & \cellcolor{red!27}1/2870& \cellcolor{red!27}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Imbecil & \cellcolor{red!5}2 & \cellcolor{red!5}2/2870& \cellcolor{red!5}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - Female homosexuality}  & \cellcolor{red!27}Fufa & \cellcolor{red!27}1 & \cellcolor{red!27}1/2870& \cellcolor{red!27}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Youngsters;Gender - Female sexuality;Age - Over 65s;Gender - General;Ideological and Political Identity - General;Sexual Identity - General;Nationality - Portuguese;Sexual Identity - Male homosexuality;Social Class - Destitute;Physical Identity - Physical (and Mental) Impairments;Sexual Identity - Female homosexuality;%.
+
+\item The percentage of hate speech related words is 1.2544.
+
+\item Considering that the variable \textbf{Ideological and Political Identity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 37/108 occurences of hate speech related comments.\end{itemize}\end{document}

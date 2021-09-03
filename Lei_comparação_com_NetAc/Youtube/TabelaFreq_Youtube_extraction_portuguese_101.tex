@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Youtube\_extraction\_portuguese\_101.json :}\newline \par\Large\textbf {Title: \large  A crise de refugiados: Amnistia Portugal \@RTP1 }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small na reportagem so vejo pretos. desculpa a minha ignorancia mas na siria e iraque a populaçao é de \textbf{etnia} \textbf{preta}......... acho que nao.... ponham esta merda a marchar de speed caralho...... guerra o caralho.... medo o caralho........ querem tomar portugal de assalto enquanto que o tuginha aplaude e tem pena ate o dia que se aperceber que meteu o gatuno em sua casa mas ai ja fostes tarde. Too late!!!!!!\normalsize   & \cellcolor{green!27}Etnia, Preta & \cellcolor{green!27}Ethnicity - Black, Ethnicity - General & \cellcolor{green!27}2/70 & \cellcolor{green!27}2.857 \\  \hline
+  \cellcolor{green!5}\small Só quero realçar que o autor desse vídeo é um facho pequeno que não aceita opiniões alheias, ele é que têm a razão, ele sabe, ele sabe, ele é omnipotente ele é que seguiu a luz no fundo do túnel, psicologicamente deve ter um trauma, pode ser que foi violado por um gang de negão com xixi grande e o pior é que gosto, agora não sabe como sair do armário, é \textbf{gay} e gosta de negão, malditos africanos, cara tranquilo em 2015 é perfeitamente normal ser homo, ninguém vai te julgar, pode ser que quando foste enrabado foi tão violento que agora quando saias a rua não consegue controlar e a sempre esse cheiro, cheiro que é teu, é chato admito...vai numa reunião com pessoas com o mesmo problema que o teu é a vida, conseguirás ultrapassar esta fase, vai dando notícias. x)\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/144 & \cellcolor{green!5}0.694 \\  \hline
+  \cellcolor{green!27}\small Para vocês tudo é \textbf{xenofobia} e preconceito. Não consegues perceber que as pessoas tem medo?Não vês notícias na tv ou na internet? Estes migrantes tem andado a vandalizar cidades europeias. Eles partem e queimam as coisas, tratam mal os habitantes locais e ainda chegaram a invadir casas. Deitam fora a comida que a cruz vermelha lhes oferece só por causa da cruz e já chegaram a ameaçar polícias de morte e a ofender verbalmente os locais...Mas não, nós é que somos xenófobos. Só porque tememos pelas nossas vidas e as vidas das nossas crianças.\normalsize   & \cellcolor{green!27}Xenofobia & \cellcolor{green!27}Nationality - General & \cellcolor{green!27}1/96 & \cellcolor{green!27}1.042 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Etnia & \cellcolor{red!27}1 & \cellcolor{red!27}1/1701& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Preta & \cellcolor{red!5}1 & \cellcolor{red!5}1/1701& \cellcolor{red!5}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Gay & \cellcolor{red!27}1 & \cellcolor{red!27}1/1701& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - General}  & \cellcolor{red!5}Xenofobia & \cellcolor{red!5}1 & \cellcolor{red!5}1/1701& \cellcolor{red!5}0.06 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Ethnicity - General;Ethnicity - Black;Sexual Identity - General;Nationality - General;%.
+
+\item The percentage of hate speech related words is 0.2352.
+
+\item Considering that the variable \textbf{Ethnicity - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/26 occurences of hate speech related comments.\end{itemize}\end{document}

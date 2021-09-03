@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_200.json :}\newline \par\Large\textbf {Title: \large  Taraji P. Henson Takes On Ageism | The View }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Oh well, I wish I could convince my 37 year \textbf{old} ovaries that it's just a . But yep, totally agree, now at this \textbf{age} I am wiser fitter and look so much younger than some 20 year olds which is so surprising to me. But \textbf{age} is just a number.\normalsize   & \cellcolor{green!27}Age, Old & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}3/51 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small Talking on \textbf{ageism}. "Men don't get wiser with \textbf{age}" - audience applauds\normalsize   & \cellcolor{green!5}Age, Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}2/12 & \cellcolor{green!5}16.667 \\  \hline
+  \cellcolor{green!27}\small Where is Taraji calling out Jussie Smolletts \textbf{racist} actions? She claimed her son was harassed by a white cop and retracted that story and should now. She has egg all over her face because of this. Unreal\normalsize   & \cellcolor{green!27}Racist & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/37 & \cellcolor{green!27}2.703 \\  \hline
+  \cellcolor{green!5}\small When Meghan starts moving her neck around and make \textbf{weird} mouth shapes...I feel like it is a 'tell' that she doesn't believe what she is saying.\normalsize   & \cellcolor{green!5}Weird & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small I LOVE YOU JOY!!!!! Could not have said it better.....I am a 45 yr \textbf{old} who just released my 1st music video last week for Bday...a song I wrote 25 yrs ago marvmonti - Remember Me LokalbreD . Success IS like an orgasm ...I WILL to appreciate it more now that I am older. I WISH YOU ALL A GREAT DAY!!!!\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/61 & \cellcolor{green!27}1.639 \\  \hline
+  \cellcolor{green!5}\small I thought Abbey was the same \textbf{age} as Sunny\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/9 & \cellcolor{green!5}11.111 \\  \hline
+  \cellcolor{green!27}\small Thank you Joy for pointing out Whoopi's \textbf{ageism} ever time she says AOC is "a little girl and needs to sit down and learn something!" Whoopi claims to be fighting \textbf{ageism} but she actually perpetuates it. Please keep Joy as moderator.\normalsize   & \cellcolor{green!27}Ageism & \cellcolor{green!27}Age - General & \cellcolor{green!27}2/41 & \cellcolor{green!27}4.878 \\  \hline
+  \cellcolor{green!5}\small So many people act like \textbf{age} is just a number, unfortunately we are mortal creatures with an expiration date.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/19 & \cellcolor{green!5}5.263 \\  \hline
+  \cellcolor{green!27}\small As a 23 year \textbf{old} I experience ageism\normalsize   & \cellcolor{green!27}Ageism, Old & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}2/8 & \cellcolor{green!27}25.0 \\  \hline
+  \cellcolor{green!5}\small It's silly to act like \textbf{age} isn't a factor in almost all professions. There are things the average 30 year \textbf{old} can do that the average 60 year \textbf{old} can't and vice versa. If you're an actress then of of course you're gonna get less jobs as you get older because female roles are different to male roles and (I hate to break it to you) beauty is a big part of a lot of female roles.\normalsize   & \cellcolor{green!5}Age, Old & \cellcolor{green!5}Age - General, Age - Over 65s & \cellcolor{green!5}3/77 & \cellcolor{green!5}3.896 \\  \hline
+  \cellcolor{green!27}\small Unless someone is on deaths door I don't care about \textbf{age}.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/11 & \cellcolor{green!27}9.091 \\  \hline
+  \cellcolor{green!5}\small Screw \textbf{ageism}. Luv Megan's extensions. Yas girl. Flip that hair !\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/11 & \cellcolor{green!5}9.091 \\  \hline
+  \cellcolor{green!27}\small Hello!! Taraji did her own Hoax of  white on \textbf{black} victimization Lie too. Why isnt she asked or confronted about it? OhCause it will just EXPOSE it. Just like Smollet.. The Denial, Decite and Delusion you all have about the Hoax of \textbf{Black} victimization is so Huge  youll do anything to not make the \textbf{black} kids angry..\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}3/58 & \cellcolor{green!27}5.172 \\  \hline
+  \cellcolor{green!5}\small Meghan talking about being the young is pointless as that \textbf{fat} balloon is going to have a heart attack and day now.\normalsize   & \cellcolor{green!5}Fat & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/22 & \cellcolor{green!5}4.545 \\  \hline
+  \cellcolor{green!27}\small Joy and Sunny look amazing amazing for her age\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small All of the late night comedians are using \textbf{ageist} jokes about Bernie and nobody's calling them on it.\normalsize   & \cellcolor{green!5}Ageist & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/18 & \cellcolor{green!5}5.556 \\  \hline
+  \cellcolor{green!27}\small Age matters you can't do certain things when you are old\normalsize   & \cellcolor{green!27}Age, Old & \cellcolor{green!27}Age - General, Age - Over 65s & \cellcolor{green!27}2/11 & \cellcolor{green!27}18.182 \\  \hline
+  \cellcolor{green!5}\small I'm 34 and scared to death about aging another year.  Thank God \textbf{black} dont crack!\normalsize   & \cellcolor{green!5}Black & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/15 & \cellcolor{green!5}6.667 \\  \hline
+  \cellcolor{green!27}\small Why scared though? Every \textbf{age} has its benefits and joy and wisdom. Enjoy the \textbf{age} you are fully and ...embrace it when the next year comes along, with its own gifts. 💗\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}2/32 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small Ageism is a real thing in this country, and people are obsessed with youth. It's sad!!! Getting older should be celebrated and respected.\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/23 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small Forget about Sunny, Joy is twice Abby's \textbf{age} + 12 years meaning 13 years older than Whoopi!! Holy moly.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small I hate \textbf{ageism} 😤\normalsize   & \cellcolor{green!5}Ageism & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/4 & \cellcolor{green!5}25.0 \\  \hline
+  \cellcolor{green!27}\small I think \textbf{ageism} is simply \textbf{misogyny} under a different name.\normalsize   & \cellcolor{green!27}Ageism, Misogyny & \cellcolor{green!27}Age - General, Gender - General & \cellcolor{green!27}2/10 & \cellcolor{green!27}20.0 \\  \hline
+  \cellcolor{green!5}\small Wow so Abby is younger than Sara Haines and Megan? She looks good but also  looks older without looking \textbf{old} you know . Maybe it's her outfit 🤔🤔🤔\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/28 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small She looks the same \textbf{age} as sunny!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/7 & \cellcolor{green!27}14.286 \\  \hline
+  \cellcolor{green!5}\small Fat Anna and Joyless are the biggest idiots\normalsize   & \cellcolor{green!5}Fat & \cellcolor{green!5}Physical Identity - Physical Features & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small No!! 35 looks young! With some people. The way people look and the \textbf{age} has changed so much in the past Years! I think they look 45! Some thirty year olds are playing roles of teenagers and I don't think sunny or taraji could play kid in college or a teen in high school!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/54 & \cellcolor{green!27}1.852 \\  \hline
+  \cellcolor{green!5}\small Black don't crack!\normalsize   & \cellcolor{green!5}Black & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small I'm am currently dealing with this.  I work as a freelancer/contract basis and have more than double the experience as most in my business but have a really hard time getting work now.  I'm only 48.  But to them, I'm an \textbf{old} man.  The people doing the hiring are young and they only hire the young.  My work and resume speak just don't seem to matter anymore.  So now I'm trying to find work outside my industry, just a normal job, to help pay the bills. But even then, I get laughed at a lot.  They're like what are you doing here?  They don't take me seriously.  It's SO frustrating!!!\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/110 & \cellcolor{green!27}0.909 \\  \hline
+  \cellcolor{green!5}\small LanceHenryPT it's not right but you know what, one day they will become your \textbf{age} and see what it's like then.  I hate to say that but that's the truth.  Their vision is so short sighted.  The young can be \textbf{dumb}.  It's karma for them if they don't watch out.  Oh, and your FAR from \textbf{old}, let me just tell you that now.\normalsize   & \cellcolor{green!5}Age, Dumb, Old & \cellcolor{green!5}Age - General, Age - Over 65s, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}3/63 & \cellcolor{green!5}4.762 \\  \hline
+  \cellcolor{green!27}\small in "tv makeup" and her outfits they give her. She looks her \textbf{age} or younger in her regular life.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small \@Dawny K think they need to update the fashion department because some of the clothes that they give these ladies to wear are \textbf{nothing} short of a catastrophe\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/28 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small Sunny is BEAUTIFUL and I hope that I can \textbf{age} just as beautifully as her. Love you QUEEN!!!\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/18 & \cellcolor{green!27}5.556 \\  \hline
+  \cellcolor{green!5}\small Christeenia Lee I hate the way the other ladies talk and laugh and she has this mean face all the time. She is not going to \textbf{age} well if she keeps that up!\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/33 & \cellcolor{green!5}3.03 \\  \hline
+  \cellcolor{green!27}\small I think she doesn't want to be controversial or confrontational. Let's be honest she's use to fox viewers where she can say whatever she wants and everyone agree with her the view audience are mostly liberal or lean left so are her cast mates .She's walking on \textbf{thin} ice but she need to stop playing nice and assert her view whether audience agree with it. Wasn't that was the reason why Jedediah got fired she wasn't really defending the rights or independent(leaning right) enough\normalsize   & \cellcolor{green!27}Thin & \cellcolor{green!27}Physical Identity - Physical Features & \cellcolor{green!27}1/84 & \cellcolor{green!27}1.19 \\  \hline
+  \cellcolor{green!5}\small \@Latrice Cardwell she was not. Shes a beautiful \textbf{woman} despite how some feel about her politics or personality. I wish I was a hot mess like that 😑\normalsize   & \cellcolor{green!5}Woman & \cellcolor{green!5}Gender - General & \cellcolor{green!5}1/28 & \cellcolor{green!5}3.571 \\  \hline
+  \cellcolor{green!27}\small geva tinker lol he thinks he knows every \textbf{woman} and apparently all men are perfect 😅😅😂😂\normalsize   & \cellcolor{green!27}Woman & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/16 & \cellcolor{green!27}6.25 \\  \hline
+  \cellcolor{green!5}\small You sound really \textbf{dumb} Lmaoo\normalsize   & \cellcolor{green!5}Dumb & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/5 & \cellcolor{green!5}20.0 \\  \hline
+  \cellcolor{green!27}\small geva tinker What point? The point that you hate yourself for getting \textbf{old}, and that you put makeup on to look younger, and more attractive. While simultaneously running around telling people to that it's not to bias towards older people? Any rational person would just accept the fact that we're all getting \textbf{old}, and accept that fact as part of life. Women's shallow nature is their own worst enemy, and is the reason for the hypocrisy in this video.\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}2/79 & \cellcolor{green!27}2.532 \\  \hline
+  \cellcolor{green!5}\small How do women get wiser than men? Genuine question, i know shes speaking in general terms. But i know and have met plenty mean, bitter and yes "unwise" \textbf{old} women.Edit- Alot of the view fans accuse whoopi of this behavior actually and shes the moderator of a hit talk show, hmm not doing so bad there..\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/57 & \cellcolor{green!5}1.754 \\  \hline
+  \cellcolor{green!27}\small Yea, I don't know what \textbf{age} was talking about there.   Both gain life experience and wisdom.   And what does she mean by 'wise?'    Straight intellect?   Taking care of your physical and \textbf{mental} health?    I get so tired of everything being a battle of the sexes.\normalsize   & \cellcolor{green!27}Age, Mental & \cellcolor{green!27}Age - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/45 & \cellcolor{green!27}4.444 \\  \hline
+  \cellcolor{green!5}\small I don't want to sound \textbf{racist}... but \textbf{black} really doesn't crack 🤣Sunny looks like  she's in her mid-30's! She's beautiful.\normalsize   & \cellcolor{green!5}Black, Racist & \cellcolor{green!5}Ethnicity - Black, Ethnicity - General & \cellcolor{green!5}2/21 & \cellcolor{green!5}9.524 \\  \hline
+  \cellcolor{green!27}\small Black don't crack.\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/3 & \cellcolor{green!27}33.333 \\  \hline
+  \cellcolor{green!5}\small Even allowing for "\textbf{black} don't crack," Sunny looks exceptional.  Is it all natural, I wonder, or have been some interventions?  Even if so, well done!  I would not have put her at 50, and I can be coldly cynical and blithely unforgiving when it comes to guessing \textbf{age}. Like, Trump looks like 87 to me and certain \textbf{black} celebrities also look way older to me than they say.\normalsize   & \cellcolor{green!5}Age, Black & \cellcolor{green!5}Age - General, Ethnicity - Black & \cellcolor{green!5}3/68 & \cellcolor{green!5}4.412 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age, Ageism, Ageist & \cellcolor{red!27}28 & \cellcolor{red!27}28/3054& \cellcolor{red!27}0.9199999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}12 & \cellcolor{red!5}12/3054& \cellcolor{red!5}0.38999999999999996 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - General}  & \cellcolor{red!27}Racist & \cellcolor{red!27}2 & \cellcolor{red!27}2/3054& \cellcolor{red!27}0.06999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!5}Weird, Dumb, Mental & \cellcolor{red!5}4 & \cellcolor{red!5}4/3054& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Black & \cellcolor{red!27}7 & \cellcolor{red!27}7/3054& \cellcolor{red!27}0.22999999999999998 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Physical Identity - Physical Features}  & \cellcolor{red!5}Fat, Thin & \cellcolor{red!5}3 & \cellcolor{red!5}3/3054& \cellcolor{red!5}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Misogyny, Woman & \cellcolor{red!27}3 & \cellcolor{red!27}3/3054& \cellcolor{red!27}0.1 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Youngsters}  & \cellcolor{red!5}Nothing & \cellcolor{red!5}1 & \cellcolor{red!5}1/3054& \cellcolor{red!5}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - General;Age - Over 65s;Ethnicity - General;Physical Identity - Physical (and Mental) Impairments;Ethnicity - Black;Physical Identity - Physical Features;Gender - General;Age - Youngsters;%.
+
+\item The percentage of hate speech related words is 1.9646.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 63/184 occurences of hate speech related comments.\end{itemize}\end{document}

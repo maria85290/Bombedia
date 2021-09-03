@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_54.json :}\newline \par\Large\textbf {Title: \large  Manuel Luís Goucha revela quem é o seu 'sucessor' }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small UI! Alguém, gentilmente, informe o Goucha que isto não é uma "monarquia" hereditária... por mais que tentem passar a ideia que é - impingindo preferências e conteúdos estupidificantes - e eternizando-os nos seus figurões<br/>Deixei de ouvir rádio por causa exactamente do Vasco e da cocofonia que esta geração transformou as emissões de rádio. É claramente um menino deste "sistema" que alastra agora para a tv. Não deixo de ver tv - a este nível - só pelo simples facto que nunca vi. É um formato feio, \textbf{parolo} e desonesto que não faz bem ou é útil á pessoa mais limitada e como para limitada basta a vida...\normalsize   & \cellcolor{green!27}Parolo & \cellcolor{green!27}Social Class - Working class & \cellcolor{green!27}1/107 & \cellcolor{green!27}0.935 \\  \hline
+  \cellcolor{green!5}\small Mas olha que estimular a próstata faz bem e trás beneficios para a saúde masculina, devias de exprimentar. O ponto mais sensivel e estimulante feminino é o clitóris, o dos homens é a próstata, se não tivesses faltado às aulas de ciência saberias isso e não te torna mais ou menos homem e muito menos se relaciona com a tua orientação \textbf{sexual}, é pura e simplesmente um facto cientifico. Ponto. Ser homosexual é muito mais do que sentir prazer anal, até porque esse mesmo prazer pode ser estimulado em homens hetero ou \textbf{gay}, da mesma forma que as mulheres independentemente da sua orientaçâo \textbf{sexual} todas sentem prazer na estimulação do clitóris (nem todas com a mesma intensidade e o mesmo se passa com o sexo masculino). <br/>Educa-te um bocadinho antes de passares figuras e lê o seguinte artigo com atenção:<a href=" [LINK]  rel="nofollow noopener" title=" [LINK] \normalsize   & \cellcolor{green!5}Gay, Sexual & \cellcolor{green!5}Gender - General, Sexual Identity - General & \cellcolor{green!5}3/147 & \cellcolor{green!5}2.041 \\  \hline
+  \cellcolor{green!27}\small E tu ai bixa frustrada cheia De inveja com o Dedo no cu ..... feio não é ser \textbf{gay} .. feio são os que se dizem heteros e depois andam a dar o cu  às escondidas. Os heteros De verdade é-lhes indiferente a orientação \textbf{sexual} dos outros.\normalsize   & \cellcolor{green!27}Gay, Sexual & \cellcolor{green!27}Gender - General, Sexual Identity - General & \cellcolor{green!27}2/47 & \cellcolor{green!27}4.255 \\  \hline
+  \cellcolor{green!5}\small Alguém mande o Ronaldo falar com a Goucha, que a \textbf{v\textbf{elha}} anda tonta.\normalsize   & \cellcolor{green!5}Velha & \cellcolor{green!5}Age - Over 65s, Gender - Female age and physical appearance & \cellcolor{green!5}2/13 & \cellcolor{green!5}15.385 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Social Class - Working class}  & \cellcolor{red!27}Parolo & \cellcolor{red!27}1 & \cellcolor{red!27}1/425& \cellcolor{red!27}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - General}  & \cellcolor{red!5}Sexual & \cellcolor{red!5}2 & \cellcolor{red!5}2/425& \cellcolor{red!5}0.47000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Sexual Identity - General}  & \cellcolor{red!27}Gay & \cellcolor{red!27}2 & \cellcolor{red!27}2/425& \cellcolor{red!27}0.47000000000000003 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female age and physical appearance}  & \cellcolor{red!5}Velha & \cellcolor{red!5}1 & \cellcolor{red!5}1/425& \cellcolor{red!5}0.24 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Velha & \cellcolor{red!27}1 & \cellcolor{red!27}1/425& \cellcolor{red!27}0.24 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Social Class - Working class;Gender - General;Sexual Identity - General;Gender - Female age and physical appearance;Age - Over 65s;%.
+
+\item The percentage of hate speech related words is 1.6471.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 8/12 occurences of hate speech related comments.\end{itemize}\end{document}

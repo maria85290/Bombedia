@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_185.json :}\newline \par\Large\textbf {Title: \large  Ageism in Business - Another Warning for Millennials - Ageism Against Young People }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small You're a smart guy and very capable, it's obvious. I hate to say this, but what you're going through is normal. It happened to me - I was a VP and looked young and older people questioned me. Relax, you'll get through it. Sorry to lecture here, but there is \textbf{nothing} special about your experience in regards to being a capable, younger professional and you don't need to make a video about this experience(s). Just keep pushing through and you'll be successful. For example, Bill Gates was SUPER young when he started and people underestimated him all of the time, but he just blasted through it and was successful. You'll do awesome - keep positive.\normalsize   & \cellcolor{green!27}Nothing & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/115 & \cellcolor{green!27}0.87 \\  \hline
+  \cellcolor{green!5}\small There are all kinds of "isms" out there, and unfortunately, there will always be these types of obstacles to overcome. But I think you handled it well. I'm 60, and my son recommended your videos to me. I'll say this. There are many people in your \textbf{age} category who don't have experience or are not driven to take the management of their own future into their own hands. They have become accustomed to having their parents or grandparents provide everything, which I believe is a dangerous thing for parents to do. I always taught my son how to make his own money and how to manage it and invest wisely. Very few parents do that. So you are a "rare bird". The people who are discriminating against you may just not have experience with such an accomplished, level-headed young man. Thank you for making these videos and the sound advice you give. I'm a fan.\normalsize   & \cellcolor{green!5}Age & \cellcolor{green!5}Age - General & \cellcolor{green!5}1/155 & \cellcolor{green!5}0.645 \\  \hline
+  \cellcolor{green!27}\small Dude..ignore the haters. YOu are a very smart young man. I wish I was this financially inclined when I was your \textbf{age}.  Dude you have a very bright future ahead of you. Forget the haters.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/35 & \cellcolor{green!27}2.857 \\  \hline
+  \cellcolor{green!5}\small who are the one motivated you to come up on that business when you are 18 yrs \textbf{old}?\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/18 & \cellcolor{green!5}5.556 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Nothing & \cellcolor{red!27}1 & \cellcolor{red!27}1/695& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Age & \cellcolor{red!5}2 & \cellcolor{red!5}2/695& \cellcolor{red!5}0.29 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old & \cellcolor{red!27}1 & \cellcolor{red!27}1/695& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Youngsters;Age - General;Age - Over 65s;%.
+
+\item The percentage of hate speech related words is 0.5755.
+
+\item Considering that the variable \textbf{Age - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 4/28 occurences of hate speech related comments.\end{itemize}\end{document}

@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_103.json :}\newline \par\Large\textbf {Title: \large  Bandeira LGBT hasteada na Câmara Municipal de Lisboa }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Começo por dizer,  que para mim , todo o ser humano de boa indole ,  é igual .(ponto final)  <br/>Mas, dizia o meu avô,  que seja qual for a ideia projecto  que irrompa numa qualquer sociedade, essa ideia/projecto,  na sua evolução ,  obedece a determinados comportamentos que se subsumem no chamado Costume . <br/>Por sua vez esse Costume é o que dá origem às Leis que nos regem em sociedade . <br/>Essa transformação de Costume em Lei , leva o seu tempo e cumpre-se básicamente em  3 grandes fases : <br/>1ª Fase- Ideólogica- O individuo começa por ser criador/colaborador /apoiante de uma ideia/projecto .<br/>2ª Fase- Arbitrária- O individuo , querendo , passa a ser associado/benemérito/beneficiário da ideia/projecto <br/>3ª Fase- Coerciva- O individuo passa a ser,  obrigatóriamente,  contribuinte  tributário executante  dessa ideia /projecto <br/>Pelo  que percebo vamos na 2ª fase prestes a evoluir para a 3ª fase .<br/>Vamos pois ver como vai isto evoluir para a terceira fase , mas começo a pensar , que eu na qualidade de \textbf{mulher} e heterosexual ,terei que questionar qual a côr da minha bandeira e se alguma vez a verei hasteada na Camara de Lisboa.\normalsize   & \cellcolor{green!27}Mulher & \cellcolor{green!27}Gender - General & \cellcolor{green!27}1/192 & \cellcolor{green!27}0.521 \\  \hline
+  \cellcolor{green!5}\small Isto é uma verdadeira patetice. Este Merdina não passa de um palerma. Já sabemos que na política, o lobby \textbf{gay}/lésbico é fortíssimo, mas que diabo. Tem alguma lógica isto? Já não basta termos que levar com o "circo" do dia mundial do orgulho \textbf{gay}, entre outras coisas, e agora mais isto. Eh pá, tenham dó!\normalsize   & \cellcolor{green!5}Gay & \cellcolor{green!5}Sexual Identity - General & \cellcolor{green!5}1/55 & \cellcolor{green!5}1.818 \\  \hline
+  \cellcolor{green!27}\small sopa de \textbf{macaco} uma delicia\normalsize   & \cellcolor{green!27}Macaco & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/5 & \cellcolor{green!27}20.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Gender - General}  & \cellcolor{red!27}Mulher & \cellcolor{red!27}1 & \cellcolor{red!27}1/733& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Sexual Identity - General}  & \cellcolor{red!5}Gay & \cellcolor{red!5}1 & \cellcolor{red!5}1/733& \cellcolor{red!5}0.13999999999999999 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Black}  & \cellcolor{red!27}Macaco & \cellcolor{red!27}1 & \cellcolor{red!27}1/733& \cellcolor{red!27}0.13999999999999999 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Gender - General;Sexual Identity - General;Ethnicity - Black;%.
+
+\item The percentage of hate speech related words is 0.4093.
+
+\item Considering that the variable \textbf{Gender - General} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 3/23 occurences of hate speech related comments.\end{itemize}\end{document}

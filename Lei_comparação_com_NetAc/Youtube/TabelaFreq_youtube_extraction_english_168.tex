@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_168.json :}\newline \par\Large\textbf {Title: \large  Age Discrimination in Employment in Mexico }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small I am exceedingly happy to nice to \textbf{old} people; the \textbf{disabled} and kids. At one point in my life, I was young and \textbf{disabled} and I will be \textbf{old}; thus needing someone's generosity but plan and simple kindness. If you do a good thing then surely it will come back to you. Most importantly, we should have good humanity towards all living creatures. However if it is not in you to give then God will take care of it, one way or another. The references to the brother in a negative way is just not nice nor fair on the basis that he is trying hard to be a beacon of higher self for our \textbf{race} of people. If truth be told this is who we are since the beginning of time!!! I agree completely in what he is teaching and showing for all to see. Even if you still disagree, why can't be just try harder to make a positive difference to another human being?\normalsize   & \cellcolor{green!27}Disabled, Old, Race & \cellcolor{green!27}Age - Over 65s, Ethnicity - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}4/166 & \cellcolor{green!27}2.41 \\  \hline
+  \cellcolor{green!5}\small I often see \textbf{elderly} folks helping in the checkout lines in Matamoros supermarkets and I never thought they were just there for the tips until now.\normalsize   & \cellcolor{green!5}Elderly & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small What do you mean I don't get paid 81 volunteer to go up there and do the s*** they going to drain your \textbf{black} ass out all your money\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/29 & \cellcolor{green!27}3.448 \\  \hline
+  \cellcolor{green!5}\small Your \textbf{black} ass be running back to America before it's all over with you know they don't have no social security benefits and everything in Mexico I'm not even in Mexico and I already know that why you think they run their ass over here the damn Mexicans trying to be a part of America for benefits and every damn thing else\normalsize   & \cellcolor{green!5}Black & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/62 & \cellcolor{green!5}1.613 \\  \hline
+  \cellcolor{green!27}\small I personally do anyways just to not feel bad and feel like I'm discrinating against \textbf{age} difference.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/17 & \cellcolor{green!27}5.882 \\  \hline
+  \cellcolor{green!5}\small take your bitch ass back to America ho\normalsize   & \cellcolor{green!5}Ho & \cellcolor{green!5}Gender - Female sexuality & \cellcolor{green!5}1/8 & \cellcolor{green!5}12.5 \\  \hline
+  \cellcolor{green!27}\small Do you know how much the \textbf{elderly} make a normal/common day of tipping? They make between 300 pesos to 700 pesos A DAY!!!!! in a good store and that's a lot in the Mexican way of life!!!How do I know, I've got \textbf{elderly} friends who've told me such.AND WE ALL TIP THEM AT LEAST 5 PESOS FOR THEIR BAGGING!  Gosh below that amount, we Mexican guys would say, would  think: YOU'RE A SON OF A BITCH!+But again Negrito it all depends on the neighbourhood of the store (location)!\normalsize   & \cellcolor{green!27}Elderly & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}2/91 & \cellcolor{green!27}2.198 \\  \hline
+  \cellcolor{green!5}\small Funny you should mention that...Mexico doesnt have a lot of social programs like the U.S. there is no social security check when you get \textbf{old}.. you will see older people bagging groceries, working a parking lot guards, yard service, house helpers, and selling small goods to make enough to get by...I remember that his one man used to ride his bike at night and blow a whistle as he did....turns out he was the "neighborhood watchman"...he does his bit at night then he goes around in the day and knocks on doors and asks for "donations"...from money to maybe food or whatever for his services...\normalsize   & \cellcolor{green!5}Old & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/105 & \cellcolor{green!5}0.952 \\  \hline
+  \cellcolor{green!27}\small Make a topic video or a reaction of the currency right know it's \textbf{crazy} how 1 use dollars is 20pesos it never has increase these much, does it affect you in any kind of way ? Or the community in Tj or Mexico?...:\normalsize   & \cellcolor{green!27}Crazy & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/43 & \cellcolor{green!27}2.326 \\  \hline
+  \cellcolor{green!5}\small fuck angelie Bradley a delbert grann plezz kill urselfz becuzz  the world would be better without u.. bro keep doing yo thang  push the Unite the blacks and browns movement we are more alike than we think if we joined forces American would be our already blacks browns and \textbf{r\textbf{ed}} people can live in peace in America whites keep us divided for there own gain\normalsize   & \cellcolor{green!5}Red & \cellcolor{green!5} Ideological and Political Identity - General, Ethnicity - Native-American & \cellcolor{green!5}2/65 & \cellcolor{green!5}3.077 \\  \hline
+  \cellcolor{green!27}\small Hey mi \textbf{negro}, ya fuiste al geishas en  Culiacán?\normalsize   & \cellcolor{green!27}Negro & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small Nigga fuckin stupid\normalsize   & \cellcolor{green!5}Nigga & \cellcolor{green!5}Ethnicity - Black & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small +uzarate migration may be down but there still coming . there is literally shit work over there I don't need fucking Google to get my facts bro I can just observe what I see . some of my family members from Mexico that are my \textbf{age} are getting work visas to come work over here . people don't do shit over there especially in the ranchos, all people drink all day and a find a way to hustle . there is no money out here. and if there is it's limited to a few. there's no money out there bro.\normalsize   & \cellcolor{green!27}Age & \cellcolor{green!27}Age - General & \cellcolor{green!27}1/100 & \cellcolor{green!27}1.0 \\  \hline
+  \cellcolor{green!5}\small made \textbf{zero} sense.\normalsize   & \cellcolor{green!5}Zero & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/3 & \cellcolor{green!5}33.333 \\  \hline
+  \cellcolor{green!27}\small Your also becoming very biased and \textbf{racist}!  go to Africa it doesn't seem like your comfortable in your own skin. also your teaching this guys to rely on others to take care of them. create jobs there and a market that they can become entrepreneurship.  they can grow fruits and vegetables and sell them .\normalsize   & \cellcolor{green!27}Racist & \cellcolor{green!27}Ethnicity - General & \cellcolor{green!27}1/55 & \cellcolor{green!27}1.818 \\  \hline
+  \cellcolor{green!5}\small +Angelia Bradley Blacks protest against the government all the time in the USA  but \textbf{nothing} ever changes. I guess changes are only considered for non-blacks.  Lmao\normalsize   & \cellcolor{green!5}Nothing & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}1/26 & \cellcolor{green!5}3.846 \\  \hline
+  \cellcolor{green!27}\small yes but we do! you have to start somewhere. also what do you think your teaching them. help them become entrepreneurs not help them see their potential.  your a new american person and basically they see money and they will not respect you! this seems like a 1 way relationship. what are getting out their? are you learning \textbf{black} culture. Mexico government just released afro Mexican census but you never talk about that! are you being productive to help the culture? also you are a target! go to Africa!! they looking for handouts! go back to America or Africa!\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/99 & \cellcolor{green!27}1.01 \\  \hline
+  \cellcolor{green!5}\small America didn't set up anything for the \textbf{elderly}, only a crafty pyramid scheme.\normalsize   & \cellcolor{green!5}Elderly & \cellcolor{green!5}Age - Over 65s & \cellcolor{green!5}1/13 & \cellcolor{green!5}7.692 \\  \hline
+  \cellcolor{green!27}\small They say in the US, if you paint a kano \textbf{black}, it will never tip!Our people need to work on this in US too!!!\normalsize   & \cellcolor{green!27}Black & \cellcolor{green!27}Ethnicity - Black & \cellcolor{green!27}1/25 & \cellcolor{green!27}4.0 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Over 65s}  & \cellcolor{red!27}Old, Elderly & \cellcolor{red!27}6 & \cellcolor{red!27}6/2446& \cellcolor{red!27}0.25 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - General}  & \cellcolor{red!5}Race, Racist & \cellcolor{red!5}2 & \cellcolor{red!5}2/2446& \cellcolor{red!5}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Disabled, Crazy & \cellcolor{red!27}2 & \cellcolor{red!27}2/2446& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Ethnicity - Black}  & \cellcolor{red!5}Black, Negro, Nigga & \cellcolor{red!5}6 & \cellcolor{red!5}6/2446& \cellcolor{red!5}0.25 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - General}  & \cellcolor{red!27}Age & \cellcolor{red!27}2 & \cellcolor{red!27}2/2446& \cellcolor{red!27}0.08 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Gender - Female sexuality}  & \cellcolor{red!5}Ho & \cellcolor{red!5}1 & \cellcolor{red!5}1/2446& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ethnicity - Native-American}  & \cellcolor{red!27}Red & \cellcolor{red!27}1 & \cellcolor{red!27}1/2446& \cellcolor{red!27}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5} Ideological and Political Identity - General}  & \cellcolor{red!5}Red & \cellcolor{red!5}1 & \cellcolor{red!5}1/2446& \cellcolor{red!5}0.04 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Zero, Nothing & \cellcolor{red!27}2 & \cellcolor{red!27}2/2446& \cellcolor{red!27}0.08 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Over 65s;Ethnicity - General;Physical Identity - Physical (and Mental) Impairments;Ethnicity - Black;Age - General;Gender - Female sexuality;Ethnicity - Native-American; Ideological and Political Identity - General;Age - Youngsters;%.
+
+\item The percentage of hate speech related words is 0.9403.
+
+\item Considering that the variable \textbf{Age - Over 65s} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 24/101 occurences of hate speech related comments.\end{itemize}\end{document}

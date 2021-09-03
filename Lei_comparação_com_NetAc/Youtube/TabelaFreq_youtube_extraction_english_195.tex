@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In youtube\_extraction\_english\_195.json :}\newline \par\Large\textbf {Title: \large  Brexit: Are Remainers Ageist? }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small Thank you for this video. As an under-25 Remainer, I am absolutely sick of fellow young people blaming older people for \textbf{Brexit}. 1) There are young Leavers and older \textbf{Remainers}. 2) A pitiful number of young people turned out to vote, so blame your own generation for not caring.\normalsize   & \cellcolor{green!27}Brexit, Remainers & \cellcolor{green!27}Nationality - European or anti-Europeans & \cellcolor{green!27}2/49 & \cellcolor{green!27}4.082 \\  \hline
+  \cellcolor{green!5}\small I think \textbf{Brexit} is a terrible idea, but you don't get to redo a referendum. If you've siad you'll respect it you respect it. (I think a referendum is a terrible way to solve a complicated issue, though.)\normalsize   & \cellcolor{green!5}Brexit & \cellcolor{green!5}Nationality - European or anti-Europeans & \cellcolor{green!5}1/38 & \cellcolor{green!5}2.632 \\  \hline
+  \cellcolor{green!27}\small I voted Remain, been in the EU all my working life and worked in several EU countries.  I do understand why people would vote leave, I don't want to leave but Leave won.  I'm quite \textbf{old}, but younger than Polly bloody Toynbee!  I'm not dying any time soon...\normalsize   & \cellcolor{green!27}Old & \cellcolor{green!27}Age - Over 65s & \cellcolor{green!27}1/48 & \cellcolor{green!27}2.083 \\  \hline
+  \cellcolor{green!5}\small I voted to leave based on my parents' distrust of the EU oligarchy, but I did my research well before the referendum.  If remain had won, I would have been disappointed but would accept the vote.  That's not saying I would not agitate to leave, but that comes from the ugly head we see being raised in Brussels after the vote.  I would think most \textbf{remainers} have accepted the mandate, and wish to get on with \textbf{Brexit}, but many are exhausted from the constant dilution of leaving.  No doubt the government wish to capitalise on that, so we get the merry-go-round of the blame game - the first rule of politics, it seems.  I don't blame one side or another for any division in the UK, the fault can be laid squarely with those charged with implementing our will.\normalsize   & \cellcolor{green!5}Brexit, Remainers & \cellcolor{green!5}Nationality - European or anti-Europeans & \cellcolor{green!5}2/139 & \cellcolor{green!5}1.439 \\  \hline
+  \cellcolor{green!27}\small I've given up discussing \textbf{Brexit} to any real degree.\normalsize   & \cellcolor{green!27}Brexit & \cellcolor{green!27}Nationality - European or anti-Europeans & \cellcolor{green!27}1/9 & \cellcolor{green!27}11.111 \\  \hline
+  \cellcolor{green!5}\small The issue with the extreme pro-remain types, was that they were more anti-leave than pro-remain. If there was a dominant euro-sceptic remain element that also understood the concerns of those who voted \textbf{Brexit}, I wouldn't have switched to voting \textbf{Brexit} at the last minute.I wish we'd had bigger balls to challenge the EU and make it into something far less authoritarian and more focused on plurality.Just feels like \textbf{Alien} Vs Predator whenever I vote these days. Whoever wins, we lose.I want a positive visionary as a leader for once.\normalsize   & \cellcolor{green!5}Alien, Brexit & \cellcolor{green!5}Nationality - European or anti-Europeans, Nationality - General & \cellcolor{green!5}3/92 & \cellcolor{green!5}3.261 \\  \hline
+  \cellcolor{green!27}\small What the 2016 ref did, was put eyes on  the EU and how they operate.This is why I'm confident (based on chats I've had with \textbf{Remainers}) that a 2nd ref would still end up as leave.My reasoning? Well as mentioned, the EU has eyes on it from people who weren't clued up about it before and assumed (like I did at the time) it was purely a trading bloc.I know people who voted remain because they were concerned about house prices, I know people who voted remain because they wanted to travel to Europe. I'm not kidding, they voted that way because they genuinely thought they wouldn't be able to enter Europe had we left. I even know someone who voted remain because they were concerned about the price of cheese...And they say the \textbf{Brexit} Voters were \textbf{dumb}...Anyway, great vid and a great point you make about the \textbf{ageism} argument. It's definitely a valid one they can't refute based on their logic.\normalsize   & \cellcolor{green!27}Ageism, Brexit, Dumb, Remainers & \cellcolor{green!27}Age - General, Nationality - European or anti-Europeans, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}4/167 & \cellcolor{green!27}2.395 \\  \hline
+  \cellcolor{green!5}\small And, I am still hearing the 'won't be able to travel' :)! and 'we will not have human rights' from  \textbf{remainers} ! :( .... but mention the CFP, or CAP, and there is ... 'blank'. I think there would be even more votes to leave if there was another vote - people grow up! - and think this is why they have been so keen on extension, and/or trying to renege on art.50 in parliament instead.The 'OFuck' death stuff has been offensive (and everyone ages :)).This ploy to get younger and younger people to vote as less experienced and more easily manipulated is unsound ++++.\normalsize   & \cellcolor{green!5}Remainers & \cellcolor{green!5}Nationality - European or anti-Europeans & \cellcolor{green!5}1/106 & \cellcolor{green!5}0.943 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Nationality - European or anti-Europeans}  & \cellcolor{red!27}Brexit, Remainers & \cellcolor{red!27}11 & \cellcolor{red!27}11/746& \cellcolor{red!27}1.47 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - Over 65s}  & \cellcolor{red!5}Old & \cellcolor{red!5}1 & \cellcolor{red!5}1/746& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Nationality - General}  & \cellcolor{red!27}Alien & \cellcolor{red!27}1 & \cellcolor{red!27}1/746& \cellcolor{red!27}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Age - General}  & \cellcolor{red!5}Ageism & \cellcolor{red!5}1 & \cellcolor{red!5}1/746& \cellcolor{red!5}0.13 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Dumb & \cellcolor{red!27}1 & \cellcolor{red!27}1/746& \cellcolor{red!27}0.13 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Nationality - European or anti-Europeans;Age - Over 65s;Nationality - General;Age - General;Physical Identity - Physical (and Mental) Impairments;%.
+
+\item The percentage of hate speech related words is 2.0107.
+
+\item Considering that the variable \textbf{Nationality - European or anti-Europeans} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 15/20 occurences of hate speech related comments.\end{itemize}\end{document}

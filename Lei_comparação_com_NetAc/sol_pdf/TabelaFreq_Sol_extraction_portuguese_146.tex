@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\ExplSyntaxOn
+\let\tl_length:n\tl_count:n
+\ExplSyntaxOff
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\newlength\mylength
+\usepackage[legalpaper, landscape, margin=0.8in]{geometry}
+\newcommand{\MinNumber}{0}
+\begin{document}
+
+\textbf {\huge In Sol\_extraction\_portuguese\_146.json :}\newline \par\Large\textbf {Title: \large  Sou Messias, mas não faço milagres. Bolsonaro sobre recorde de mortes no Brasil }\newline {\par\large --- Table  1: Summary of the results per comment; }
+
+ {\par\large --- \hyperlink{Table 2}{\textcolor{blue}{\underline{Table 2}}}: Summary of the results per sociolinguistic variable;}\newline \normalsize\newline
+
+\centering\textbf{\large Table  1: Summary of the results per comment 
+}
+\newcommand{\MaxNumber}{0}%
+\newcommand{\ApplyGradient}[1]{%
+\pgfmathsetmacro{\PercentColor}{100.0*(#1-\MinNumber)/(\MaxNumber-\MinNumber)}
+\xdef\PercentColor{\PercentColor}%
+\cellcolor{LightSpringGreen!\PercentColor!LightRed}{#1}
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 50\tabcolsep}
+\begin{longtable}{|C{.65\mylength}|C{.30\mylength}|C{.12\mylength}|C{.12\mylength}|C{.12\mylength}|}
+\hline
+\textbf{Comment} & \textbf{KeyWords} & \textbf{Sociolinguistic variables (Hiper - Hipo)}  & \textbf{Hate Speech Frequency} & \textbf{Hate Speech Frequency(\%)} \\
+\hline\cellcolor{green!27}\small AH!!! O Bolsonazi está doente. Basta olhar para a cara do \textbf{canalha}!\normalsize   & \cellcolor{green!27}Canalha & \cellcolor{green!27}Age - Youngsters & \cellcolor{green!27}1/12 & \cellcolor{green!27}8.333 \\  \hline
+  \cellcolor{green!5}\small QUE EXEMPLO É ESSE HOMEM? PRESIDENTE \textbf{VAGABUNDO} NAZISTA GENOCIDA INCOMPETENTE!<br/>O DESPREPARO E A IGNORÂNCIA DESSE CALHORDA SÓ CONTRIBUEM PARA A PROPAGAÇÃO DO VÍRUS. <br/>O QUE ESTÁ FALTANDO PARA O POVO PEDIR O AFASTAMENTO DESTE LOUCO? <br/>PRIMEIRO INCITA O POVO PARA IR PARA AS RUAS E AGORA RETIRA RESPONSABILIDADE, DIANTE DE MAIS DE CINCO MIL MORTES?  E AINDA TROÇA DOS MORTOS E DOS SEUS FAMILIARES DIZENDO NÃO SER O MESSIAS? CLARO QUE NÃO É, ELE É A ENCARNAÇÃO DO DEMÓNIO!<br/>TIREM ESSE ABUTRE AGOIRENTO DO GOVERNO!!!\normalsize   & \cellcolor{green!5}Vagabundo & \cellcolor{green!5}Social Class - Destitute & \cellcolor{green!5}1/84 & \cellcolor{green!5}1.19 \\  \hline
+  \cellcolor{green!27}\small Bolsobosta é um jumento, \textbf{imbecil}, egoísta e assassino.\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/8 & \cellcolor{green!27}12.5 \\  \hline
+  \cellcolor{green!5}\small Já repararam bem na fronha do anormal?<br/>Parece um palhaço pobre, o triste!<br/>Inconsequente, por aquele boca boca medonha só saem asneiras!<br/>Não se percebe o comportamento dos brasucas, como foi possível elegerem tal \textbf{bronco}, o maior que se conhece nos brasis!\normalsize   & \cellcolor{green!5}Bronco & \cellcolor{green!5}Social Class - Working class & \cellcolor{green!5}1/39 & \cellcolor{green!5}2.564 \\  \hline
+  \cellcolor{green!27}\small Este \textbf{psicopata} cada vez está pior. Ele cada vez pior e a "brasileiragem", de um modo geral, em polvorosa. Andor com essa malta toda daqui para fora. Já não se suporta o sotaque do português do Brasil em cada canto e esquina.\normalsize   & \cellcolor{green!27}Psicopata & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/42 & \cellcolor{green!27}2.381 \\  \hline
+  \cellcolor{green!5}\small Dizer mal desta figura concordo, mas um \textbf{comunista} que diga mal desta figura já penso 2 vezes no que tem dentro da cabeça...\normalsize   & \cellcolor{green!5}Comunista & \cellcolor{green!5}Ideological and Political Identity - General & \cellcolor{green!5}1/23 & \cellcolor{green!5}4.348 \\  \hline
+  \cellcolor{green!27}\small Que monstro insensível! É assim que funciona a cabeça de um \textbf{psicopata}, incapaz de ter empatia pelo sofrimento dos outros. Só falta comemorar a morte de brasileiros. <br/>Bozoloko afirmou que era só “uma gripezinha”, que brasileiro pula até no esgoto e não acontece nada. Ele é um criminoso tão frio e apático que nem consegue dizer que lamenta a morte dos brasileiros e que se associa à dor dos familiares. Pois é, essa ameba em forma de gente, é presidente de uma \textbf{nação}.  Que resposta esperar de alguém que fomenta o ódio, a guerra e tem como herói alguém mais escroto ainda, que se chama Tramp? É resposta de guerrilheiro, pai de filhos milicianos. <br/>Infeliz o país que tem um Bolsonaro como presidente!\normalsize   & \cellcolor{green!27}Nação, Psicopata & \cellcolor{green!27}Nationality - General, Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}2/123 & \cellcolor{green!27}1.626 \\  \hline
+  \cellcolor{green!5}\small Infelizmente para ti, \textbf{atrasada} mental, Trump e Bolsonaro foram eleitos democráticamente...situação que para a esquerdalha imunda é incomodativa. Temos pena...azelha.\normalsize   & \cellcolor{green!5}Atrasada & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}1/20 & \cellcolor{green!5}5.0 \\  \hline
+  \cellcolor{green!27}\small Carneirada,estão a ser manipulados mas gostam e estão habituados,aliás,não sabem viver de outra maneira.<br/>O sol mete uma noticia do Bolsonaro ou do Trump e tem o dia ganho à conta dos otários.<br/>Cambada de borregoS ESQUERDÓIDES\normalsize   & \cellcolor{green!27}Carneirada & \cellcolor{green!27}Ideological and Political Identity - General & \cellcolor{green!27}1/35 & \cellcolor{green!27}2.857 \\  \hline
+  \cellcolor{green!5}\small Para o \textbf{pirralho} notícia só é notícia se for de acordo com as suas crenças ideológicas . Factos não é com o \textbf{pirralho}!\normalsize   & \cellcolor{green!5}Pirralho & \cellcolor{green!5}Age - Youngsters & \cellcolor{green!5}2/23 & \cellcolor{green!5}8.696 \\  \hline
+  \cellcolor{green!27}\small Este bobonaro está a competir com o babuíno laranja para presidente mais \textbf{imbecil} de sempre. A ver quem ganha.\normalsize   & \cellcolor{green!27}Imbecil & \cellcolor{green!27}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!27}1/19 & \cellcolor{green!27}5.263 \\  \hline
+  \cellcolor{green!5}\small Faça o quê? Bem, pode começar por deixar de ser estúpido, anormaloide, \textbf{a\textbf{trasado} mental}, burro, muito burro, filho da outra, aldrabão, mentiroso, incompetente, falso, fraude, etc. E se para além de fechar a bocarra porca, se demitir, os brasileiros e o mundo agradecem.\normalsize   & \cellcolor{green!5}Atrasado, Atrasado mental & \cellcolor{green!5}Physical Identity - Physical (and Mental) Impairments & \cellcolor{green!5}2/43 & \cellcolor{green!5}4.651 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\centering\textbf{\large \hypertarget{Table 2}{Table 2}: Summary of the results per sociolinguistic variable 
+}
+\newcolumntype{C}[2]{>{\centering\arraybackslash}p{#1}}
+\begin{center}
+\setlength\mylength{\dimexpr\textwidth - 1\arrayrulewidth - 40\tabcolsep}
+\begin{longtable}{|C{.50\mylength}|C{.30\mylength}|C{.15\mylength}|C{.15\mylength}|C{.15\mylength}|}
+\hline
+\textbf{Sociolinguistic variables (Hiper - Hipo)} & \textbf{KeyWords} & \textbf{Number of occurrences} & \textbf{Frequency}  & \textbf{Frequency(\%)} \\
+\hline\multirow{1}{*}{\cellcolor{red!27}Age - Youngsters}  & \cellcolor{red!27}Canalha, Pirralho & \cellcolor{red!27}3 & \cellcolor{red!27}3/3212& \cellcolor{red!27}0.09 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Destitute}  & \cellcolor{red!5}Vagabundo & \cellcolor{red!5}1 & \cellcolor{red!5}1/3212& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Physical Identity - Physical (and Mental) Impairments}  & \cellcolor{red!27}Imbecil, Psicopata, Atrasada, Atrasado, Atrasado mental & \cellcolor{red!27}7 & \cellcolor{red!27}7/3212& \cellcolor{red!27}0.22 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Social Class - Working class}  & \cellcolor{red!5}Bronco & \cellcolor{red!5}1 & \cellcolor{red!5}1/3212& \cellcolor{red!5}0.03 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!27}Ideological and Political Identity - General}  & \cellcolor{red!27}Comunista, Carneirada & \cellcolor{red!27}2 & \cellcolor{red!27}2/3212& \cellcolor{red!27}0.06 \\  \hline
+  \multirow{1}{*}{\cellcolor{red!5}Nationality - General}  & \cellcolor{red!5}Nação & \cellcolor{red!5}1 & \cellcolor{red!5}1/3212& \cellcolor{red!5}0.03 \\  \hline
+  
+\end{longtable}
+\end{center}
+
+
+\textbf{\Large Result analysis:}
+
+\begin{itemize}\item Taking into account the words that were detected, we can reach the conclusion these comments are associated with : : Age - Youngsters;Social Class - Destitute;Physical Identity - Physical (and Mental) Impairments;Social Class - Working class;Ideological and Political Identity - General;Nationality - General;%.
+
+\item The percentage of hate speech related words is 0.467.
+
+\item Considering that the variable \textbf{Physical Identity - Physical (and Mental) Impairments} has the most occurences in the post, we can interpret that this is the predominant hate speech.
+
+\item Overall there were 15/76 occurences of hate speech related comments.\end{itemize}\end{document}
